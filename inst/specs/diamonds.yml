@@ -1,0 +1,8 @@
+variables:
+  cut:
+    trans: corte
+    values:
+      Good: Bueno
+      Very Good: Muy Bueno
+  clarity:
+    trans: claridad
