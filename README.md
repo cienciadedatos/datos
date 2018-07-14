@@ -3,16 +3,16 @@ datos
 
 Actualmente, el paquete `datos` tiene dos funciones:
 
-1.  Provee una manera de facilitar las traducciones de sets de datos
+1.  Provee los sets de datos ya traducidos que van a ser la base para la
+    traduccion del libro R4DS. La idea is the eventualmente publicar
+    este paquete en CRAN, para que los estudiantes del libro puedan
+    hacer los ejercicios.
+
+2.  Provee una manera de facilitar las traducciones de sets de datos
     mediante el uso de una archivo YAML. Esto permite evitar codigo
     repititivo, y abre las puertas a mas usuarios a proveer traducciones
     del los nombres de las variables y sus valores. Este metodo va a
     permitir traducir los mismos sets de datos en otros idiomas ademas.
-
-2.  Provee los sets de datos ya traducidos que van a ser la base para la
-    traduccion del libro R4DS. La idea is the eventualmente publicar
-    este paquete en CRAN, para que los estudiantes del libro puedan
-    hacer los ejercicios.
 
 Eventualmente, este paquete va a ser dividido en dos paquetes que se
 concentraran en uno de las dos funciones. Esto permitira reducir el
@@ -25,9 +25,42 @@ idiomas.
 El paquete esta disponible en GitHub, y puede ser installado utilizadon
 `devtools`:
 
-    devtools::install_github("edgararuiz/datos")
+    devtools::install_github("cienciadedatos/datos")
 
 ## Uso
+
+Despues de instalar el paquete. Utilice la funcion `data()` para ver que
+sets de datos estan disponibles:
+
+``` r
+data(package = "datos")
+```
+
+El resultado sera algo asi:
+
+``` 
+Data sets in package ‘datos’:
+
+diamantes           
+```
+
+Despues puede utlizar el paquete para sus ejercicios or para la
+traduccion:
+
+``` r
+library(datos)
+head(diamantes)
+```
+
+    ##       corte claridad
+    ## 1     Ideal      SI2
+    ## 2   Premium      SI1
+    ## 3     Bueno      VS1
+    ## 4   Premium      VS2
+    ## 5     Bueno      SI2
+    ## 6 Muy Bueno     VVS2
+
+## Traducciones
 
 Despues de instalar el paquete. La parte mas importante es el archivo
 YAML, aqui hay una muestra de como se traduce el set de datos
