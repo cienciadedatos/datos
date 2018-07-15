@@ -37,6 +37,11 @@ traducir <- function() {
       df = ggplot2::mpg,
       spec = pkg_spec("mpg.yml"),
       nombre = expr(millas)
+    ),
+    paises = list(
+      df = gapminder::gapminder,
+      spec = pkg_spec("gapminder.yml"),
+      nombre = expr(paises)
     )
   )
   purrr::walk(d, ~grabar_traduccion(.x$df, .x$spec, !!.x$nombre))
