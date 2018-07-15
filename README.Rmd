@@ -49,7 +49,7 @@ dplyr::glimpse(millas)
 
 ## Traducciones
 
-Despues de instalar el paquete.  La parte mas importante es el archivo YAML, aqui hay una muestra de como se traduce el set de datos `ggplot2::diamonds`:
+Despues de instalar el paquete.  La parte mas importante es el archivo YAML, aqui hay una muestra de como se traduce el set de datos `ggplot2::mpg`:
 
 ```yml
 variables:

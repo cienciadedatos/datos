@@ -71,7 +71,7 @@ dplyr::glimpse(millas)
 
 Despues de instalar el paquete. La parte mas importante es el archivo
 YAML, aqui hay una muestra de como se traduce el set de datos
-`ggplot2::diamonds`:
+`ggplot2::mpg`:
 
 ``` yml
 variables:
@@ -137,12 +137,12 @@ head(t)
     ## # A tibble: 6 x 11
     ##   fabricante modelo despl  anio cilindros trans  traccion cuidad autopista
     ##   <chr>      <chr>  <dbl> <int>     <int> <chr>  <fct>     <int>     <int>
-    ## 1 audi       a4       1.8  1999         4 auto(~ d            18        29
-    ## 2 audi       a4       1.8  1999         4 manua~ d            21        29
-    ## 3 audi       a4       2    2008         4 manua~ d            20        31
-    ## 4 audi       a4       2    2008         4 auto(~ d            21        30
-    ## 5 audi       a4       2.8  1999         6 auto(~ d            16        26
-    ## 6 audi       a4       2.8  1999         6 manua~ d            18        26
+    ## 1 audi       a4      1.80  1999         4 auto(~ d            18        29
+    ## 2 audi       a4      1.80  1999         4 manua~ d            21        29
+    ## 3 audi       a4      2.00  2008         4 manua~ d            20        31
+    ## 4 audi       a4      2.00  2008         4 auto(~ d            21        30
+    ## 5 audi       a4      2.80  1999         6 auto(~ d            16        26
+    ## 6 audi       a4      2.80  1999         6 manua~ d            18        26
     ## # ... with 2 more variables: combust <chr>, clase <fct>
 
 ## Compartir traducciones
