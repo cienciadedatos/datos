@@ -3,50 +3,36 @@ datos
 
 Actualmente, el paquete `datos` tiene dos funciones:
 
-1.  Provee los sets de datos ya traducidos que van a ser la base para la
-    traduccion del libro R4DS. La idea is the eventualmente publicar
-    este paquete en CRAN, para que los estudiantes del libro puedan
-    hacer los ejercicios.
+1.  Provee los conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS. La idea es eventualmente publicar este paquete en CRAN, para que los lectores puedan hacer los ejercicios.
 
-2.  Provee una manera de facilitar las traducciones de sets de datos
-    mediante el uso de una archivo YAML. Esto permite evitar codigo
-    repititivo, y abre las puertas a mas usuarios a proveer traducciones
-    del los nombres de las variables y sus valores. Este metodo va a
-    permitir traducir los mismos sets de datos en otros idiomas ademas.
+2.  Provee una manera de facilitar las traducciones de conjuntos de datos mediante el uso de un archivo YAML. Esto permite evitar codigo repetitivo, y abre las puertas a más usuarios a proveer traducciones de los nombres de las variables y sus valores. Este método va a permitir traducir los mismos conjuntos de datos en otros idiomas además.
 
-Eventualmente, este paquete va a ser dividido en dos paquetes que se
-concentraran en uno de las dos funciones. Esto permitira reducir el
-numero de dependencias del paquete `datos`, y permitira que el mismo
-metodo pueda ser utilizado para traducir los sets de datos en otros
-idiomas.
+Eventualmente, este paquete va a ser dividido en dos paquetes que se concentraran en una de las dos funciones. Esto permitira reducir el número de dependencias del paquete `datos`, y permitirá que el mismo método pueda ser utilizado para traducir los conjuntos de datos en otros idiomas.
 
-## Instalacion
+Instalación
+-----------
 
-El paquete esta disponible en GitHub, y puede ser installado utilizadon
-`devtools`:
+El paquete está disponible en GitHub, y puede ser installado utilizadon `devtools`:
 
     devtools::install_github("cienciadedatos/datos")
 
-## Uso
+Uso
+---
 
-Despues de instalar el paquete. Utilice la funcion `data()` para ver que
-sets de datos estan disponibles:
+Despues de instalar el paquete. Utilice la función `data()` para ver que sets de datos estan disponibles:
 
 ``` r
 data(package = "datos")
 ```
 
-El resultado sera algo asi:
+El resultado sera algo así:
 
-``` 
-Data sets in package ‘datos’:
+    Data sets in package ‘datos’:
 
-diamantes                 
-millas       
-```
+    diamantes                 
+    millas       
 
-Despues puede utlizar el paquete para sus ejercicios or para la
-traduccion:
+Despues puede utlizar el paquete para sus ejercicios o para la traducción:
 
 ``` r
 library(datos)
@@ -67,11 +53,10 @@ dplyr::glimpse(millas)
     ## $ combust    <chr> "p", "p", "p", "p", "p", "p", "p", "p", "p", "p", "...
     ## $ clase      <fct> compacto, compacto, compacto, compacto, compacto, c...
 
-## Traducciones
+Traducciones
+------------
 
-Despues de instalar el paquete. La parte mas importante es el archivo
-YAML, aqui hay una muestra de como se traduce el set de datos
-`ggplot2::mpg`:
+Despues de instalar el paquete. La parte mas importante es el archivo YAML, aquí hay una muestra de como se traduce el set de datos `ggplot2::mpg`:
 
 ``` yml
 variables:
@@ -80,13 +65,13 @@ variables:
   model:
     trans: modelo
   displ:
-    trans: despl
+    trans: cilindrada
   year:
     trans: anio
   cyl:
     trans: cilindros
   trans:
-    trans: trans
+    trans: transmision
   drv:
     trans: traccion
     values:
@@ -94,39 +79,41 @@ variables:
       r: t
       4: 4
   cty:
-    trans: cuidad
+    trans: ciudad
   hwy:
     trans: autopista
   fl:
-    trans: combust
+    trans: combustible
+    values:
+      p: p
+      r: r
+      e: e
+      d: d
+      c: g
   class:
     trans: clase
     values:
-      2seater: 2asiesntos
+      2seater: 2asientos
       compact: compacto
       midsize: mediano
-      minivan: van
+      minivan: minivan
       pickup: pickup
       subcompact: subcompacto
       suv: suv
 ```
 
-Crear un nuevo archivo YAML es facil, se puede crear en RStudio mediante
-abriendo un nuevo archivo *text* or usando Notepad.
+Crear un nuevo archivo YAML es fácil, se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.
 
-Lo importante is usar los espacios is los doble puntos en los lugares
-apropiados. Utilize la muestra para saber cual es el patron a seguir.
+Lo importante es usar los espacios y los dos puntos en los lugares apropiados. Utilice la muestra para saber cual es el patrón a seguir.
 
-Despues de grabar el archivo en su *Working Directory*, utilize la
-funcion `translate_data()`
+Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
 
 ``` r
 library(datos)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 
-Hay un archivo pre-grabado en el paquete para demonstrar que deberia
-pasar:
+Hay un archivo pre-grabado en el paquete para demostrar que deberia pasar:
 
 ``` r
 library(datos)
@@ -135,17 +122,18 @@ head(t)
 ```
 
     ## # A tibble: 6 x 11
-    ##   fabricante modelo despl  anio cilindros trans  traccion cuidad autopista
-    ##   <chr>      <chr>  <dbl> <int>     <int> <chr>  <fct>     <int>     <int>
-    ## 1 audi       a4      1.80  1999         4 auto(~ d            18        29
-    ## 2 audi       a4      1.80  1999         4 manua~ d            21        29
-    ## 3 audi       a4      2.00  2008         4 manua~ d            20        31
-    ## 4 audi       a4      2.00  2008         4 auto(~ d            21        30
-    ## 5 audi       a4      2.80  1999         6 auto(~ d            16        26
-    ## 6 audi       a4      2.80  1999         6 manua~ d            18        26
-    ## # ... with 2 more variables: combust <chr>, clase <fct>
+    ##   fabricante modelo cilindrada  anio cilindros transmision traccion ciudad
+    ##   <chr>      <chr>       <dbl> <int>     <int> <chr>       <fct>     <int>
+    ## 1 audi       a4            1.8  1999         4 auto(l5)    d            18
+    ## 2 audi       a4            1.8  1999         4 manual(m5)  d            21
+    ## 3 audi       a4            2    2008         4 manual(m6)  d            20
+    ## 4 audi       a4            2    2008         4 auto(av)    d            21
+    ## 5 audi       a4            2.8  1999         6 auto(l5)    d            16
+    ## 6 audi       a4            2.8  1999         6 manual(m5)  d            18
+    ## # ... with 3 more variables: autopista <int>, combustible <fct>,
+    ## #   clase <fct>
 
-## Compartir traducciones
+Compartir traducciones
+----------------------
 
-Una ves completado el archivo YAMl, mandelo por medio de un Issue en
-GitHub, or por medio del canal official del proyecto en Slack.
+Una ves completado el archivo YAML, mándelo por medio de un Issue en GitHub, o por medio del canal oficial del proyecto en Slack.
