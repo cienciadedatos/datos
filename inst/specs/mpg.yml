@@ -4,13 +4,13 @@ variables:
   model:
     trans: modelo
   displ:
-    trans: despl
+    trans: cilindrada
   year:
     trans: anio
   cyl:
     trans: cilindros
   trans:
-    trans: trans
+    trans: transmision
   drv:
     trans: traccion
     values:
@@ -18,18 +18,24 @@ variables:
       r: t
       4: 4
   cty:
-    trans: cuidad
+    trans: ciudad
   hwy:
     trans: autopista
   fl:
-    trans: combust
+    trans: combustible
+    values:
+      p: p
+      r: r
+      e: e
+      d: d
+      c: g
   class:
     trans: clase
     values:
       2seater: 2asientos
       compact: compacto
       midsize: mediano
-      minivan: van
+      minivan: minivan
       pickup: pickup
       subcompact: subcompacto
       suv: suv
