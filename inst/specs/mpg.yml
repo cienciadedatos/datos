@@ -1,0 +1,35 @@
+variables:
+  manufacturer:
+    trans: fabricante
+  model:
+    trans: modelo
+  displ:
+    trans: despl
+  year:
+    trans: anio
+  cyl:
+    trans: cilindros
+  trans:
+    trans: trans
+  drv:
+    trans: traccion
+    values:
+      f: d
+      r: t
+      4: 4
+  cty:
+    trans: cuidad
+  hwy:
+    trans: autopista
+  fl:
+    trans: combust
+  class:
+    trans: clase
+    values:
+      2seater: 2asiesntos
+      compact: compacto
+      midsize: mediano
+      minivan: van
+      pickup: pickup
+      subcompact: subcompacto
+      suv: suv
