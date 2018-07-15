@@ -41,7 +41,8 @@ El resultado sera algo asi:
 ``` 
 Data sets in package ‘datos’:
 
-diamantes           
+diamantes                 
+millas       
 ```
 
 Despues puede utlizar el paquete para sus ejercicios or para la
@@ -49,16 +50,22 @@ traduccion:
 
 ``` r
 library(datos)
-head(diamantes)
+dplyr::glimpse(millas)
 ```
 
-    ##       corte claridad
-    ## 1     Ideal      SI2
-    ## 2   Premium      SI1
-    ## 3     Bueno      VS1
-    ## 4   Premium      VS2
-    ## 5     Bueno      SI2
-    ## 6 Muy Bueno     VVS2
+    ## Observations: 234
+    ## Variables: 11
+    ## $ fabricante <chr> "audi", "audi", "audi", "audi", "audi", "audi", "au...
+    ## $ modelo     <chr> "a4", "a4", "a4", "a4", "a4", "a4", "a4", "a4 quatt...
+    ## $ despl      <dbl> 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2...
+    ## $ anio       <int> 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 199...
+    ## $ cilindros  <int> 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, ...
+    ## $ trans      <chr> "auto(l5)", "manual(m5)", "manual(m6)", "auto(av)",...
+    ## $ traccion   <fct> d, d, d, d, d, d, d, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, ...
+    ## $ cuidad     <int> 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17,...
+    ## $ autopista  <int> 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25,...
+    ## $ combust    <chr> "p", "p", "p", "p", "p", "p", "p", "p", "p", "p", "...
+    ## $ clase      <fct> compacto, compacto, compacto, compacto, compacto, c...
 
 ## Traducciones
 
@@ -68,13 +75,40 @@ YAML, aqui hay una muestra de como se traduce el set de datos
 
 ``` yml
 variables:
-  cut:
-    trans: corte
+  manufacturer:
+    trans: fabricante
+  model:
+    trans: modelo
+  displ:
+    trans: despl
+  year:
+    trans: anio
+  cyl:
+    trans: cilindros
+  trans:
+    trans: trans
+  drv:
+    trans: traccion
     values:
-      Good: Bueno
-      Very Good: Muy Bueno
-  clarity:
-    trans: claridad
+      f: d
+      r: t
+      4: 4
+  cty:
+    trans: cuidad
+  hwy:
+    trans: autopista
+  fl:
+    trans: combust
+  class:
+    trans: clase
+    values:
+      2seater: 2asiesntos
+      compact: compacto
+      midsize: mediano
+      minivan: van
+      pickup: pickup
+      subcompact: subcompacto
+      suv: suv
 ```
 
 Crear un nuevo archivo YAML es facil, se puede crear en RStudio mediante
@@ -88,7 +122,7 @@ funcion `translate_data()`
 
 ``` r
 library(datos)
-translate_data(ggplot2::diamonds, "mi_traduccion.yml")
+translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 
 Hay un archivo pre-grabado en el paquete para demonstrar que deberia
@@ -96,17 +130,20 @@ pasar:
 
 ``` r
 library(datos)
-t <- translate_data(ggplot2::diamonds, pkg_spec("diamonds.yml"))
+t <- translate_data(ggplot2::mpg, pkg_spec("mpg.yml"))
 head(t)
 ```
 
-    ##       corte claridad
-    ## 1     Ideal      SI2
-    ## 2   Premium      SI1
-    ## 3     Bueno      VS1
-    ## 4   Premium      VS2
-    ## 5     Bueno      SI2
-    ## 6 Muy Bueno     VVS2
+    ## # A tibble: 6 x 11
+    ##   fabricante modelo despl  anio cilindros trans  traccion cuidad autopista
+    ##   <chr>      <chr>  <dbl> <int>     <int> <chr>  <fct>     <int>     <int>
+    ## 1 audi       a4       1.8  1999         4 auto(~ d            18        29
+    ## 2 audi       a4       1.8  1999         4 manua~ d            21        29
+    ## 3 audi       a4       2    2008         4 manua~ d            20        31
+    ## 4 audi       a4       2    2008         4 auto(~ d            21        30
+    ## 5 audi       a4       2.8  1999         6 auto(~ d            16        26
+    ## 6 audi       a4       2.8  1999         6 manua~ d            18        26
+    ## # ... with 2 more variables: combust <chr>, clase <fct>
 
 ## Compartir traducciones
 

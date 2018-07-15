@@ -17,7 +17,6 @@ translate_data <- function(df = NULL, spec = NULL) {
   if (is.null(spec)) stop("Please provide the path of a spec")
 
   spec <- yaml::read_yaml(spec)
-
   purrr::imap(spec$variables, ~{
     col <- df[, .y]
     if (!is.null(.x$values)) {

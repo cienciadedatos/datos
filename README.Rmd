@@ -36,14 +36,15 @@ El resultado sera algo asi:
 ```
 Data sets in package ‘datos’:
 
-diamantes           
+diamantes                 
+millas       
 ```
 
 Despues puede utlizar el paquete para sus ejercicios or para la traduccion:
 
 ```{r}
 library(datos)
-head(diamantes)
+dplyr::glimpse(millas)
 ```
 
 ## Traducciones
@@ -52,13 +53,40 @@ Despues de instalar el paquete.  La parte mas importante es el archivo YAML, aqu
 
 ```yml
 variables:
-  cut:
-    trans: corte
+  manufacturer:
+    trans: fabricante
+  model:
+    trans: modelo
+  displ:
+    trans: despl
+  year:
+    trans: anio
+  cyl:
+    trans: cilindros
+  trans:
+    trans: trans
+  drv:
+    trans: traccion
     values:
-      Good: Bueno
-      Very Good: Muy Bueno
-  clarity:
-    trans: claridad
+      f: d
+      r: t
+      4: 4
+  cty:
+    trans: cuidad
+  hwy:
+    trans: autopista
+  fl:
+    trans: combust
+  class:
+    trans: clase
+    values:
+      2seater: 2asiesntos
+      compact: compacto
+      midsize: mediano
+      minivan: van
+      pickup: pickup
+      subcompact: subcompacto
+      suv: suv
 ```
 
 Crear un nuevo archivo YAML es facil, se puede crear en RStudio mediante abriendo un nuevo archivo *text* or usando Notepad.  
@@ -69,13 +97,13 @@ Despues de grabar el archivo en su *Working Directory*, utilize la funcion `tran
 
 ```r
 library(datos)
-translate_data(ggplot2::diamonds, "mi_traduccion.yml")
+translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 Hay un archivo pre-grabado en el paquete para demonstrar que deberia pasar:
 
 ```{r}
 library(datos)
-t <- translate_data(ggplot2::diamonds, pkg_spec("diamonds.yml"))
+t <- translate_data(ggplot2::mpg, pkg_spec("mpg.yml"))
 head(t)
 ```
 
