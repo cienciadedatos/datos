@@ -1,0 +1,39 @@
+variables:
+  year:
+    trans: anio
+  month:
+    trans: mes
+  day:
+    trans: dia
+  dep_time:
+    trans: horario_salida
+  sched_dep_time:
+    trans: salida_planificada
+  dep_delay:
+    trans: atraso_salida
+  arr_time:
+    trans: horario_llegada
+  sched_arr_time:
+    trans: llegada_planificada
+  arr_delay:
+    trans: atraso_llegada
+  carrier:
+    trans: aeolinea
+  flight:
+    trans: vuelo
+  tailnum:
+    trans: codigo_cola
+  origin:
+    trans: origen
+  dest:
+    trans: destino
+  air_time:
+    trans: tiempo_vuelo
+  distance:
+    trans: distancia
+  hour:
+    trans: hora
+  minute:
+    trans: minuto
+  time_hour:
+    trans: hora_minuto
