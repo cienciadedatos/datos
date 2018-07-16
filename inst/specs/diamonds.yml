@@ -1,8 +1,17 @@
 variables:
+  price:
+    trans: precio
+  carat:
+    trans: quilate
   cut:
     trans: corte
     values:
       Good: Bueno
-      Very Good: Muy Bueno
+      Very Good: Muy bueno
+      Fair: Regular
   clarity:
     trans: claridad
+  depth:
+    trans: profundidad
+  table:
+    trans: tabla

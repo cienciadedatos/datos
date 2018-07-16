@@ -13,6 +13,7 @@ pkg_spec <- function(file) {
 grabar_traduccion <- function(df, spec, nombre) {
   nombre <- enexpr(nombre)
   nombre_char <- as.character(nombre)
+  print(paste0("Grabando: ", nombre_char))
   e <- global_env()
   e[[nombre_char]] <- translate_data(df, spec)
   save(list = nombre_char, file = paste0("data/", nombre_char, ".rda"))
@@ -42,6 +43,11 @@ traducir <- function() {
       df = gapminder::gapminder,
       spec = pkg_spec("gapminder.yml"),
       nombre = expr(paises)
+    ),
+    vuelos = list(
+      df = nycflights13::flights,
+      spec = pkg_spec("flights.yml"),
+      nombre = expr(vuelos)
     )
   )
   purrr::walk(d, ~grabar_traduccion(.x$df, .x$spec, !!.x$nombre))
