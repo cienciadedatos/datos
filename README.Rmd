@@ -9,15 +9,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 Actualmente, el paquete `datos` tiene dos funciones:
 
-1. Provee los conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es eventualmente publicar este paquete en CRAN, para que los lectores puedan hacer los ejercicios.
+1. Provee los conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es, eventualmente, publicar este paquete en CRAN, para que los lectores puedan hacer los ejercicios.
 
-1. Provee una manera de facilitar las traducciones de conjuntos de datos mediante el uso de un archivo YAML. Esto permite evitar codigo repetitivo, y abre las puertas a más usuarios a proveer traducciones de los nombres de las variables y sus valores.  Este método va a permitir traducir los mismos conjuntos de datos en otros idiomas además.
+1. Provee una manera de facilitar las traducciones de conjuntos de datos mediante el uso de un archivo YAML. Esto permite evitar código repetitivo, y abre las puertas a más usuarios a proveer traducciones de los nombres de las variables y sus valores.  Este método va a permitir, además, traducir los mismos conjuntos de datos en otros idiomas
 
-Eventualmente, este paquete va a ser dividido en dos paquetes que se concentraran en una de las dos funciones. Esto permitira reducir el número de dependencias del paquete `datos`, y permitirá que el mismo método pueda ser utilizado para traducir los conjuntos de datos en otros idiomas.
+Eventualmente, este paquete va a ser dividido en dos paquetes que se concentrarán en una de las dos funciones. Esto permitirá reducir el número de dependencias del paquete `datos`, y permitirá que el mismo método pueda ser utilizado para traducir los conjuntos de datos en otros idiomas.
 
 ## Instalación
 
-El paquete está disponible en GitHub, y puede ser installado utilizadon `devtools`:
+El paquete está disponible en GitHub, y puede ser installado utilizando `devtools`:
 
 ```
 devtools::install_github("cienciadedatos/datos")
@@ -25,13 +25,13 @@ devtools::install_github("cienciadedatos/datos")
 
 ## Uso
 
-Despues de instalar el paquete.  Utilice la función `data()` para ver que sets de datos estan disponibles:
+Después de instalar el paquete. Utilice la función `data()` para ver qué sets de datos están disponibles:
 
 ```r
 data(package = "datos")
 ```
 
-El resultado sera algo así:
+El resultado será algo así:
 
 ```
 Data sets in package ‘datos’:
@@ -40,7 +40,7 @@ diamantes
 millas       
 ```
 
-Despues puede utlizar el paquete para sus ejercicios o para la traducción:
+Después puede utilizar el paquete para sus ejercicios o para la traducción:
 
 ```{r}
 library(datos)
@@ -49,7 +49,7 @@ dplyr::glimpse(millas)
 
 ## Traducciones
 
-Despues de instalar el paquete.  La parte mas importante es el archivo YAML, aquí hay una muestra de como se traduce el set de datos `ggplot2::mpg`:
+Despues de instalar el paquete.  La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos `ggplot2::mpg`:
 
 ```yml
 variables:
@@ -95,9 +95,9 @@ variables:
       suv: suv
 ```
 
-Crear un nuevo archivo YAML es fácil, se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.  
+Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.  
 
-Lo importante es usar los espacios y los dos puntos en los lugares apropiados.  Utilice la muestra para saber cual es el patrón a seguir.
+Lo importante es usar los espacios y los dos puntos en los lugares apropiados.  Utilice la muestra para saber cuál es el patrón a seguir.
 
 Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
 
@@ -105,7 +105,7 @@ Despues de grabar el archivo en su *Working Directory*, utilize la función `tra
 library(datos)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
-Hay un archivo pre-grabado en el paquete para demostrar que deberia pasar:
+Hay un archivo pre-grabado en el paquete para demostrar qué debería pasar:
 
 ```{r}
 library(datos)
@@ -115,4 +115,4 @@ head(t)
 
 ## Compartir traducciones
 
-Una ves completado el archivo YAML, mándelo por medio de un Issue en GitHub, o por medio del canal oficial del proyecto en Slack.
+Una vez completado el archivo YAML, mándelo por medio de un Issue en GitHub, o por medio del canal oficial del proyecto en Slack.
