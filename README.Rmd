@@ -17,7 +17,7 @@ Eventualmente, este paquete va a ser dividido en dos paquetes que se concentrar�
 
 ## Instalación
 
-El paquete está disponible en GitHub, y puede ser installado utilizando `devtools`:
+El paquete está disponible en GitHub, y puede ser instalando utilizando `devtools`:
 
 ```
 devtools::install_github("cienciadedatos/datos")
