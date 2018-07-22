@@ -1,9 +1,11 @@
 Package: datos
 Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
-Description: What the package does (one paragraph).
-Authors@R: person("First", "Last", , "first.last@example.com", c("aut", "cre"))
-License: What license it uses
+Title: Translates several practice data sets into Spanish
+Description: It provides translated version of the following datasets: diamonds, gapminder, mpg and flights.
+Authors@R: c(
+      person("Edgar", "Ruiz", , "edgararuiz@gmail.com", c("aut", "cre"))
+      )
+License: CC0
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true

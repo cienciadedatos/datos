@@ -7,13 +7,8 @@ output: github_document
 library(datos)
 knitr::opts_chunk$set(echo = TRUE)
 ```
-Actualmente, el paquete `datos` tiene dos funciones:
 
-1. Provee los conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es, eventualmente, publicar este paquete en CRAN, para que los lectores puedan hacer los ejercicios.
-
-1. Provee una manera de facilitar las traducciones de conjuntos de datos mediante el uso de un archivo YAML. Esto permite evitar código repetitivo, y abre las puertas a más usuarios a proveer traducciones de los nombres de las variables y sus valores.  Este método va a permitir, además, traducir los mismos conjuntos de datos en otros idiomas
-
-Eventualmente, este paquete va a ser dividido en dos paquetes que se concentrarán en una de las dos funciones. Esto permitirá reducir el número de dependencias del paquete `datos`, y permitirá que el mismo método pueda ser utilizado para traducir los conjuntos de datos en otros idiomas.
+Este paquete provee el conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es, eventualmente, publicar este paquete en CRAN, para que los lectores puedan hacer los ejercicios.
 
 ## Instalación
 
@@ -36,82 +31,104 @@ El resultado será algo así:
 ```
 Data sets in package ‘datos’:
 
-diamantes                 
-millas       
+diamantes                           Precio de 50,000 diamantes
+millas                              
+paises                              
+vuelos                              
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la traducción:
 
 ```{r}
 library(datos)
-dplyr::glimpse(millas)
+dplyr::glimpse(diamantes)
+```
+
+Estos datos tambien tendrán su propio archivo de ayuda.  
+
+```r
+?diamantes
 ```
 
 ## Traducciones
 
-Despues de instalar el paquete.  La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos `ggplot2::mpg`:
+Despues de instalar el paquete.  La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos `ggplot2::diamonds`:
 
 ```yml
+df:
+  source: ggplot2::diamonds
+  name: diamantes
 variables:
-  manufacturer:
-    trans: fabricante
-  model:
-    trans: modelo
-  displ:
-    trans: cilindrada
-  year:
-    trans: anio
-  cyl:
-    trans: cilindros
-  trans:
-    trans: transmision
-  drv:
-    trans: traccion
+  price:
+    trans: precio
+    desc: Precio en dolares US
+  carat:
+    trans: quilate
+    desc: Peso del diamante
+  cut:
+    trans: corte
+    desc: Calided del corte
     values:
-      f: d
-      r: t
-      4: 4
-  cty:
-    trans: ciudad
-  hwy:
-    trans: autopista
-  fl:
-    trans: combustible
-    values:
-      p: p
-      r: r
-      e: e
-      d: d
-      c: g
-  class:
-    trans: clase
-    values:
-      2seater: 2asientos
-      compact: compacto
-      midsize: mediano
-      minivan: minivan
-      pickup: pickup
-      subcompact: subcompacto
-      suv: suv
+      Good: Bueno
+      Very Good: Muy bueno
+      Fair: Regular
+  clarity:
+    trans: claridad
+    desc: Medida de que tan claro es el diamante
+  depth:
+    trans: profundidad
+    desc: Porcentaje total de la profundidad
+  table:
+    trans: tabla
+    desc: Medida de la parte mas ancha del diamante
+  x:
+    trans: x
+    desc: Largo in milimetros
+  y:
+    trans: y
+    desc: Ancho in milimetros
+  z:
+    trans: z
+    desc: Profundidad en milimetros
+help:
+  name: diamantes
+  alias: diamantes
+  title: Precio de 50,000 diamantes
+  description: Un set que contiene los precios de casi 54,000 diamantes.
+  usage: diamantes
+  format: Un data.frame con 53,940 lineas y 10 variables
 ```
 
 Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.  
 
 Lo importante es usar los espacios y los dos puntos en los lugares apropiados.  Utilice la muestra para saber cuál es el patrón a seguir.
 
+### Usando `datalang`
+
+El paquete `datalang` es el que se va a utilizar para hacer la traduccion del los datos.  Para instalar use:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("edgararuiz/datalang")
+```
+
 Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
 
 ```r
-library(datos)
+library(datalang)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 Hay un archivo pre-grabado en el paquete para demostrar qué debería pasar:
 
 ```{r}
-library(datos)
-t <- translate_data(ggplot2::mpg, pkg_spec("mpg.yml"))
+library(datalang)
+t <- translate_data(ggplot2::diamonds, system.file("specs/diamonds.yml", package = "datos"))
 head(t)
 ```
+
+## Actualizando el paquete
+
+Si quiere actualizar el paquete entero, utilize el commando: `datalang::translate_folder()`.  Este comando va a crear las traducciones, los archivos de ayuda, y los va a grabar en el lugar apropiado. 
 
 ## Compartir traducciones
 

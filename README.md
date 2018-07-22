@@ -1,25 +1,10 @@
 datos
 ================
 
-Actualmente, el paquete `datos` tiene dos funciones:
-
-1.  Provee los conjuntos de datos ya traducidos que van a ser la base
-    para la traducción del libro R4DS. La idea es, eventualmente,
-    publicar este paquete en CRAN, para que los lectores puedan hacer
-    los ejercicios.
-
-2.  Provee una manera de facilitar las traducciones de conjuntos de
-    datos mediante el uso de un archivo YAML. Esto permite evitar código
-    repetitivo, y abre las puertas a más usuarios a proveer traducciones
-    de los nombres de las variables y sus valores. Este método va a
-    permitir, además, traducir los mismos conjuntos de datos en otros
-    idiomas
-
-Eventualmente, este paquete va a ser dividido en dos paquetes que se
-concentrarán en una de las dos funciones. Esto permitirá reducir el
-número de dependencias del paquete `datos`, y permitirá que el mismo
-método pueda ser utilizado para traducir los conjuntos de datos en
-otros idiomas.
+Este paquete provee el conjuntos de datos ya traducidos que van a ser la
+base para la traducción del libro R4DS. La idea es, eventualmente,
+publicar este paquete en CRAN, para que los lectores puedan hacer los
+ejercicios.
 
 ## Instalación
 
@@ -42,8 +27,10 @@ El resultado será algo así:
 ``` 
 Data sets in package ‘datos’:
 
-diamantes                 
-millas       
+diamantes                           Precio de 50,000 diamantes
+millas                              
+paises                              
+vuelos                              
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la
@@ -51,71 +38,76 @@ traducción:
 
 ``` r
 library(datos)
-dplyr::glimpse(millas)
+dplyr::glimpse(diamantes)
 ```
 
-    ## Observations: 234
-    ## Variables: 11
-    ## $ fabricante  <chr> "audi", "audi", "audi", "audi", "audi", "audi", "a...
-    ## $ modelo      <chr> "a4", "a4", "a4", "a4", "a4", "a4", "a4", "a4 quat...
-    ## $ cilindrada  <dbl> 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, ...
-    ## $ anio        <int> 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 19...
-    ## $ cilindros   <int> 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6,...
-    ## $ transmision <chr> "auto(l5)", "manual(m5)", "manual(m6)", "auto(av)"...
-    ## $ traccion    <fct> d, d, d, d, d, d, d, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,...
-    ## $ ciudad      <int> 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17...
-    ## $ autopista   <int> 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25...
-    ## $ combustible <fct> p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, p,...
-    ## $ clase       <fct> compacto, compacto, compacto, compacto, compacto, ...
+    ## Observations: 53,940
+    ## Variables: 9
+    ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, ...
+    ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0....
+    ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, ...
+    ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1...
+    ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65...
+    ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61...
+    ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3....
+    ## $ `TRUE`      <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3....
+    ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2....
+
+Estos datos tambien tendrán su propio archivo de ayuda.
+
+``` r
+?diamantes
+```
 
 ## Traducciones
 
 Despues de instalar el paquete. La parte mas importante es el archivo
 YAML; aquí hay una muestra de cómo se traduce el set de datos
-`ggplot2::mpg`:
+`ggplot2::diamonds`:
 
 ``` yml
+df:
+  source: ggplot2::diamonds
+  name: diamantes
 variables:
-  manufacturer:
-    trans: fabricante
-  model:
-    trans: modelo
-  displ:
-    trans: cilindrada
-  year:
-    trans: anio
-  cyl:
-    trans: cilindros
-  trans:
-    trans: transmision
-  drv:
-    trans: traccion
+  price:
+    trans: precio
+    desc: Precio en dolares US
+  carat:
+    trans: quilate
+    desc: Peso del diamante
+  cut:
+    trans: corte
+    desc: Calided del corte
     values:
-      f: d
-      r: t
-      4: 4
-  cty:
-    trans: ciudad
-  hwy:
-    trans: autopista
-  fl:
-    trans: combustible
-    values:
-      p: p
-      r: r
-      e: e
-      d: d
-      c: g
-  class:
-    trans: clase
-    values:
-      2seater: 2asientos
-      compact: compacto
-      midsize: mediano
-      minivan: minivan
-      pickup: pickup
-      subcompact: subcompacto
-      suv: suv
+      Good: Bueno
+      Very Good: Muy bueno
+      Fair: Regular
+  clarity:
+    trans: claridad
+    desc: Medida de que tan claro es el diamante
+  depth:
+    trans: profundidad
+    desc: Porcentaje total de la profundidad
+  table:
+    trans: tabla
+    desc: Medida de la parte mas ancha del diamante
+  x:
+    trans: x
+    desc: Largo in milimetros
+  y:
+    trans: y
+    desc: Ancho in milimetros
+  z:
+    trans: z
+    desc: Profundidad en milimetros
+help:
+  name: diamantes
+  alias: diamantes
+  title: Precio de 50,000 diamantes
+  description: Un set que contiene los precios de casi 54,000 diamantes.
+  usage: diamantes
+  format: Un data.frame con 53,940 lineas y 10 variables
 ```
 
 Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo
@@ -124,11 +116,21 @@ un nuevo archivo *text* o usando Notepad.
 Lo importante es usar los espacios y los dos puntos en los lugares
 apropiados. Utilice la muestra para saber cuál es el patrón a seguir.
 
+### Usando `datalang`
+
+El paquete `datalang` es el que se va a utilizar para hacer la
+traduccion del los datos. Para instalar use:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("edgararuiz/datalang")
+```
+
 Despues de grabar el archivo en su *Working Directory*, utilize la
 función `translate_data()`
 
 ``` r
-library(datos)
+library(datalang)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 
@@ -136,22 +138,27 @@ Hay un archivo pre-grabado en el paquete para demostrar qué debería
 pasar:
 
 ``` r
-library(datos)
-t <- translate_data(ggplot2::mpg, pkg_spec("mpg.yml"))
+library(datalang)
+t <- translate_data(ggplot2::diamonds, system.file("specs/diamonds.yml", package = "datos"))
 head(t)
 ```
 
-    ## # A tibble: 6 x 11
-    ##   fabricante modelo cilindrada  anio cilindros transmision traccion ciudad
-    ##   <chr>      <chr>       <dbl> <int>     <int> <chr>       <fct>     <int>
-    ## 1 audi       a4           1.80  1999         4 auto(l5)    d            18
-    ## 2 audi       a4           1.80  1999         4 manual(m5)  d            21
-    ## 3 audi       a4           2.00  2008         4 manual(m6)  d            20
-    ## 4 audi       a4           2.00  2008         4 auto(av)    d            21
-    ## 5 audi       a4           2.80  1999         6 auto(l5)    d            16
-    ## 6 audi       a4           2.80  1999         6 manual(m5)  d            18
-    ## # ... with 3 more variables: autopista <int>, combustible <fct>,
-    ## #   clase <fct>
+    ## # A tibble: 6 x 9
+    ##   precio quilate corte     claridad profundidad tabla     x `TRUE`     z
+    ##    <int>   <dbl> <ord>     <ord>          <dbl> <dbl> <dbl>  <dbl> <dbl>
+    ## 1    326   0.230 Ideal     SI2             61.5   55.  3.95   3.98  2.43
+    ## 2    326   0.210 Premium   SI1             59.8   61.  3.89   3.84  2.31
+    ## 3    327   0.230 Bueno     VS1             56.9   65.  4.05   4.07  2.31
+    ## 4    334   0.290 Premium   VS2             62.4   58.  4.20   4.23  2.63
+    ## 5    335   0.310 Bueno     SI2             63.3   58.  4.34   4.35  2.75
+    ## 6    336   0.240 Muy bueno VVS2            62.8   57.  3.94   3.96  2.48
+
+## Actualizando el paquete
+
+Si quiere actualizar el paquete entero, utilize el commando:
+`datalang::translate_folder()`. Este comando va a crear las
+traducciones, los archivos de ayuda, y los va a grabar en el lugar
+apropiado.
 
 ## Compartir traducciones
 
