@@ -1,3 +1,6 @@
+df:
+  source: nycflights13::flights
+  name: vuelos
 variables:
   year:
     trans: anio

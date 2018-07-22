@@ -1,3 +1,6 @@
+df:
+  source: gapminder::gapminder
+  name: paises
 variables:
   country:
     trans: pais

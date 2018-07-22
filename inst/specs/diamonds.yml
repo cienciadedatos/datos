@@ -1,17 +1,42 @@
+df:
+  source: ggplot2::diamonds
+  name: diamantes
 variables:
   price:
     trans: precio
+    desc: Precio en dolares US
   carat:
     trans: quilate
+    desc: Peso del diamante
   cut:
     trans: corte
+    desc: Calided del corte
     values:
       Good: Bueno
       Very Good: Muy bueno
       Fair: Regular
   clarity:
     trans: claridad
+    desc: Medida de que tan claro es el diamante
   depth:
     trans: profundidad
+    desc: Porcentaje total de la profundidad
   table:
     trans: tabla
+    desc: Medida de la parte mas ancha del diamante
+  x:
+    trans: x
+    desc: Largo in milimetros
+  y:
+    trans: y
+    desc: Ancho in milimetros
+  z:
+    trans: z
+    desc: Profundidad en milimetros
+help:
+  name: diamantes
+  alias: diamantes
+  title: Precio de 50,000 diamantes
+  description: Un set que contiene los precios de casi 54,000 diamantes.
+  usage: diamantes
+  format: Un data.frame con 53,940 lineas y 10 variables

@@ -1,3 +1,6 @@
+df:
+  source: ggplot2::mpg
+  name: millas
 variables:
   manufacturer:
     trans: fabricante
