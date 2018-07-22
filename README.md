@@ -144,14 +144,14 @@ head(t)
 ```
 
     ## # A tibble: 6 x 9
-    ##   precio quilate corte     claridad profundidad tabla     x `TRUE`     z
-    ##    <int>   <dbl> <ord>     <ord>          <dbl> <dbl> <dbl>  <dbl> <dbl>
-    ## 1    326   0.230 Ideal     SI2             61.5   55.  3.95   3.98  2.43
-    ## 2    326   0.210 Premium   SI1             59.8   61.  3.89   3.84  2.31
-    ## 3    327   0.230 Bueno     VS1             56.9   65.  4.05   4.07  2.31
-    ## 4    334   0.290 Premium   VS2             62.4   58.  4.20   4.23  2.63
-    ## 5    335   0.310 Bueno     SI2             63.3   58.  4.34   4.35  2.75
-    ## 6    336   0.240 Muy bueno VVS2            62.8   57.  3.94   3.96  2.48
+    ##   precio quilate corte     claridad profundidad tabla     x     y     z
+    ##    <int>   <dbl> <ord>     <ord>          <dbl> <dbl> <dbl> <dbl> <dbl>
+    ## 1    326   0.230 Ideal     SI2             61.5   55.  3.95  3.98  2.43
+    ## 2    326   0.210 Premium   SI1             59.8   61.  3.89  3.84  2.31
+    ## 3    327   0.230 Bueno     VS1             56.9   65.  4.05  4.07  2.31
+    ## 4    334   0.290 Premium   VS2             62.4   58.  4.20  4.23  2.63
+    ## 5    335   0.310 Bueno     SI2             63.3   58.  4.34  4.35  2.75
+    ## 6    336   0.240 Muy bueno VVS2            62.8   57.  3.94  3.96  2.48
 
 ## Actualizando el paquete
 

@@ -130,6 +130,7 @@ head(t)
 
 Si quiere actualizar el paquete entero, utilize el commando: `datalang::translate_folder()`.  Este comando va a crear las traducciones, los archivos de ayuda, y los va a grabar en el lugar apropiado. 
 
+
 ## Compartir traducciones
 
 Una vez completado el archivo YAML, mándelo por medio de un Issue en GitHub, o por medio del canal oficial del proyecto en Slack.
