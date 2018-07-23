@@ -4,39 +4,65 @@ df:
 variables:
   year:
     trans: anio
+    desc: año de la fecha de salida
   month:
     trans: mes
+    desc: mes de la fecha de salida
   day:
     trans: dia
+    desc: día de la fecha de salida
   dep_time:
     trans: horario_salida
+    desc: horario efectivo de salida del vuelo (formato HHMM o HMM), hora local
   sched_dep_time:
-    trans: salida_planificada
+    trans: salida_programada
+    desc: horario programado para la salida (formato HHMM o HMM), hora local
   dep_delay:
     trans: atraso_salida
+    desc: atraso de la salida en minutos. Valores negativos indican salida adelantada
   arr_time:
     trans: horario_llegada
+    desc: horario efectivo de llegada del vuelo (formato HHMM o HMM), hora local
   sched_arr_time:
-    trans: llegada_planificada
+    trans: llegada_programada
+    desc: horario programado para la llegada (formato HHMM o HMM), hora local
   arr_delay:
     trans: atraso_llegada
+    desc: atraso de la llegada en minutos. Valores negativos indican llegada adelantada
   carrier:
-    trans: aeolinea
+    trans: aerolinea
+    desc: abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre
   flight:
     trans: vuelo
+    desc: número de vuelo
   tailnum:
     trans: codigo_cola
+    desc: código de cola del avión
   origin:
     trans: origen
+    desc: origen del vuelo. Ver airports() para metadatos adicionales
   dest:
     trans: destino
+    desc: destino del vuelo. Ver airports() para metadatos adicionales
   air_time:
     trans: tiempo_vuelo
+    desc: cantidad de tiempo en aire, en minutos
   distance:
     trans: distancia
+    desc: distancia entre aeropuertos, en millas
   hour:
     trans: hora
+    desc: hora del horario programado para la salida
   minute:
     trans: minuto
+    desc: minutos del horario programado para la salida
   time_hour:
-    trans: hora_minuto
+    trans: fecha_hora
+    desc: fecha y horario programados del vuelo en formato POSIXct
+help:
+  name: vuelos
+  alias: vuelos
+  title: Datos de vuelos
+  description: Datos temporales de todos los vuelos que despegaron de Nueva York (JFK, LGA o EWR) durante 2013.
+  usage: vuelos
+  format: Un data.frame con 336,776 líneas y 19 variables
