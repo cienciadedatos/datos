@@ -52,7 +52,7 @@ variables:
       pickup: pickup
       subcompact: subcompacto
       suv: suv
-    desc: "tipo" de auto
+    desc: tipo de auto
 help:
   name: millas
   alias: millas
