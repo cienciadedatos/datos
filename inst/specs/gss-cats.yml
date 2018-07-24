@@ -1,0 +1,108 @@
+df:
+  source: forcats::gss_cat
+  name: encuesta
+variables:
+  year:
+    trans: anio
+    desc: año de la encuesta, 2000-2014
+  marital:
+    trans: estado_civil
+    desc: estado civil
+    values:
+      No answer: Sin respuesta
+      Never married: Nunca se ha casado
+      Separated: Separado
+      Divorced: Divorciado
+      Widowed: Viudo
+      Married: Casado
+  age:
+    trans: edad
+    desc: edad. Edad máxima truncada a 89 años
+  race:
+    trans: raza
+    desc: categorías raciales según la encuesta
+    values:
+      Other: Otra
+      Black: Negra
+      White: Blanca
+  rincome:
+    trans: ingreso
+    desc: ingreso reportado por los encuestados (US$)
+  partyid:
+    trans: partido
+    desc: partido político con el que se identifica
+    values:
+      No answer: Sin respuesta
+      Don't know: No sabe
+      Other party: Otro partido
+      Strong republican: Republicano duro
+      Not str republican: Republicano moderano
+      Ind,near rep: Independiente pro republicano
+      Independent: Independiente
+      Ind,near dem: Independiente pro demócrata
+      Not str democrat: Demócrata moderado
+      Strong democrat: Demócrata duro
+  relig:
+    trans: religion
+    desc: religión
+    values:
+      No answer: Sin respuesta
+      Don't know: No sabe
+      Inter-nondenominational: Inter o no confensional
+      Native american: Bueno
+      Christian: Cristiana
+      Orthodox-christian: Cristiana ortodoxa
+      Moslem/islam: Musulmana/Islam
+      Other eastern: Otra religión oriental
+      Hinduism: Hinduismo
+      Buddhism: Budismo
+      Other: Otra
+      None: Ninguna
+      Jewish: Judía
+      Catholic: Católica
+      Protestant: Protestante
+      Not applicable: No aplica
+  denom:
+    trans: denominacion
+    desc: denominación religiosa a la que pertenece
+    values:
+      No answer: Sin respuesta
+      Don't know: No sabe
+      No denomination: No denominacional
+      Other: Otra
+      Episcopal: Episcopal
+      Presbyterian-dk wh: Presbiteriana, no sabe cuál
+      Presbyterian, merged: Prebiteriana, fusionadas
+      Other presbyterian: Otra presbiteriana
+      United pres ch in us: Unión presbiteriana de iglesias
+      Presbyterian c in us: Iglesia presbiteriana EEUU
+      Lutheran-dk which: Luterana, no sabe cuál
+      Evangelical luth: Evangélica luterana
+      Other lutheran: Otras luteranas
+      Wi evan luth synod: Sínodo evangélico luterano de Wisconsin
+      Lutheran-mo synod: Sínodo luterano
+      Luth ch in america: Iglesia luterana en EEUU
+      Am lutheran: Iglesia luterana americana
+      Methodist-dk which: Metodista, no sabe cuál
+      Other methodist: Otras metodistas
+      United methodist: Iglesia metodista unida
+      Afr meth ep zion: Iglesia africana metodista episcopal de Sion
+      Afr meth episcopal: Iglesia africana metodista episcopal
+      Baptist-dk which: Baptista, no sabe cuál
+      Other baptists: Otras baptistas
+      Southern baptist: Baptistas del sur
+      Nat bapt conv usa: Convensión nacional baptista EEUU
+      Nat bapt conv of am: Convensión nacional baptista de américa
+      Am bapt ch in usa: Iglesias baptistas EEUU
+      Am baptist asso: Asociación baptista estadounidense
+      Not applicable: No aplica
+  tvhours:
+    trans: horas_tv
+    desc: horas de televisión que ve al día
+help:
+  name: encuesta
+  alias: encuesta
+  title: Muestra de variables categóricas de una encuesta social
+  description: Muestra de variables categóricas de la Encuesta Social General de EE.UU.
+  usage: encuesta
+  format: Un dataframe con 21,473 líneas y 9 variables
