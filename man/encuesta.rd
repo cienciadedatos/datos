@@ -1,19 +1,19 @@
 \docType{data}
 \name{encuesta}
 \alias{encuesta}
-\title{Muestra de variables categ髍icas de una encuesta social}
-\format{Un dataframe con 21,473 l韓eas y 9 variables
+\title{Muestra de variables categ贸ricas de una encuesta social}
+\format{Un dataframe con 21,473 l铆neas y 9 variables
 \describe{
-\item{anio}{a駉 de la encuesta, 2000-2014}
+\item{anio}{a帽o de la encuesta, 2000-2014}
 \item{estado_civil}{estado civil}
-\item{edad}{edad. Edad m醲ima truncada a 89 a駉s}
-\item{raza}{categor韆s raciales seg鷑 la encuesta}
+\item{edad}{edad. Edad m谩xima truncada a 89 a帽os}
+\item{raza}{categor铆as raciales seg煤n la encuesta}
 \item{ingreso}{ingreso reportado por los encuestados (US$)}
-\item{partido}{partido pol韙ico con el que se identifica}
-\item{religion}{religi髇}
-\item{denominacion}{denominaci髇 religiosa a la que pertenece}
-\item{horas_tv}{horas de televisi髇 que ve al d韆}
+\item{partido}{partido pol铆tico con el que se identifica}
+\item{religion}{religi贸n}
+\item{denominacion}{denominaci贸n religiosa a la que pertenece}
+\item{horas_tv}{horas de televisi贸n que ve al d铆a}
 }}
 \usage{encuesta}
-\description{Muestra de variables categ髍icas de la Encuesta Social General de EE.UU.}
+\description{Muestra de variables categ贸ricas de la Encuesta Social General de EE.UU.}
 \keyword{datasets}

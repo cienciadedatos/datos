@@ -1,21 +1,21 @@
 \docType{data}
 \name{millas}
 \alias{millas}
-\title{Datos de econom韆 de combustible de 1999 y 2008 para 38 modelos populares de autom髒iles}
+\title{Datos de econom铆a de combustible de 1999 y 2008 para 38 modelos populares de autom贸viles}
 \format{Un dataframe con 234 filas y 11 variables
 \describe{
 \item{fabricante}{fabricante}
 \item{modelo}{nombre del modelo}
-\item{motor}{tama駉 del motor del autom髒il, en litros}
-\item{anio}{a駉 de fabricaci髇}
-\item{cilindros}{n鷐ero de cilindros}
-\item{transmision}{tipo de transmisi髇}
-\item{traccion}{tipo de tracci髇 (d = delantera, t = trasera, 4 = 4 ruedas)}
-\item{ciudad}{millas por gal髇 de combustible en ciudad}
-\item{autopista}{millas por gal髇 de combustible en autopista}
+\item{motor}{tama帽o del motor del autom贸vil, en litros}
+\item{anio}{a帽o de fabricaci贸n}
+\item{cilindros}{n煤mero de cilindros}
+\item{transmision}{tipo de transmisi贸n}
+\item{traccion}{tipo de tracci贸n (d = delantera, t = trasera, 4 = 4 ruedas)}
+\item{ciudad}{millas por gal贸n de combustible en ciudad}
+\item{autopista}{millas por gal贸n de combustible en autopista}
 \item{combustible}{tipo de combustible (p = premium, r = regular, e = etanol, d = diesel, g = gas natural comprimido)}
 \item{clase}{tipo de auto}
 }}
 \usage{millas}
-\description{Este conjunto de datos contiene un subconjunto de los datos de econom韆 de combustible que la Agencia de Protecci髇 Medioambiental (EPA) pone a disposici髇 en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva versi髇 cada a駉 entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del autom髒il.}
+\description{Este conjunto de datos contiene un subconjunto de los datos de econom铆a de combustible que la Agencia de Protecci贸n Medioambiental (EPA) pone a disposici贸n en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva versi贸n cada a帽o entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del autom贸vil.}
 \keyword{datasets}

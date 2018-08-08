@@ -2,20 +2,20 @@
 \name{vuelos}
 \alias{vuelos}
 \title{Datos de vuelos}
-\format{Un data.frame con 336,776 líneas y 19 variables
+\format{Un data.frame con 336,776 lÃ­neas y 19 variables
 \describe{
-\item{anio}{año de la fecha de salida}
+\item{anio}{aÃ±o de la fecha de salida}
 \item{mes}{mes de la fecha de salida}
-\item{dia}{día de la fecha de salida}
+\item{dia}{dÃ­a de la fecha de salida}
 \item{horario_salida}{horario efectivo de salida del vuelo (formato HHMM o HMM), hora local}
 \item{salida_programada}{horario programado para la salida (formato HHMM o HMM), hora local}
 \item{atraso_salida}{atraso de la salida en minutos. Valores negativos indican salida adelantada}
 \item{horario_llegada}{horario efectivo de llegada del vuelo (formato HHMM o HMM), hora local}
 \item{llegada_programada}{horario programado para la llegada (formato HHMM o HMM), hora local}
 \item{atraso_llegada}{atraso de la llegada en minutos. Valores negativos indican llegada adelantada}
-\item{aerolinea}{abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre}
-\item{vuelo}{número de vuelo}
-\item{codigo_cola}{código de cola del avión}
+\item{aerolinea}{abreviaciÃ³n de dos letras de la aerolÃ­nea. Ver airlines() para obtener el nombre}
+\item{vuelo}{nÃºmero de vuelo}
+\item{codigo_cola}{cÃ³digo de cola del aviÃ³n}
 \item{origen}{origen del vuelo. Ver airports() para metadatos adicionales}
 \item{destino}{destino del vuelo. Ver airports() para metadatos adicionales}
 \item{tiempo_vuelo}{cantidad de tiempo en aire, en minutos}
