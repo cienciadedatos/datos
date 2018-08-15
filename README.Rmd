@@ -31,10 +31,14 @@ El resultado será algo así:
 ```
 Data sets in package ‘datos’:
 
-diamantes                           Precio de 50,000 diamantes
-millas                              
-paises                              
-vuelos                              
+diamantes                              Precio de 50,000 diamantes
+encuesta                               Muestra de variables categóricas de una encuesta social
+millas                                 Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de
+                                       automóviles
+mtautos                                Pruebas de ruta de automóviles de Motor Trend
+paises                                 Datos de Gapminder
+presidencial                           Periodos de 11 presidentes, desde Eisenhower a Obama
+vuelos                                 Datos de vuelos                         
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la traducción:

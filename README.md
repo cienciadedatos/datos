@@ -27,10 +27,14 @@ El resultado será algo así:
 ``` 
 Data sets in package ‘datos’:
 
-diamantes                           Precio de 50,000 diamantes
-millas                              
-paises                              
-vuelos                              
+diamantes                              Precio de 50,000 diamantes
+encuesta                               Muestra de variables categóricas de una encuesta social
+millas                                 Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de
+                                       automóviles
+mtautos                                Pruebas de ruta de automóviles de Motor Trend
+paises                                 Datos de Gapminder
+presidencial                           Periodos de 11 presidentes, desde Eisenhower a Obama
+vuelos                                 Datos de vuelos                         
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la
@@ -42,15 +46,16 @@ dplyr::glimpse(diamantes)
 ```
 
     ## Observations: 53,940
-    ## Variables: 9
+    ## Variables: 10
     ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, ...
     ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0....
     ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, ...
+    ## $ color       <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I,...
     ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1...
     ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65...
     ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61...
     ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3....
-    ## $ `TRUE`      <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3....
+    ## $ y           <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3....
     ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2....
 
 Estos datos tambien tendrán su propio archivo de ayuda.
@@ -143,15 +148,15 @@ t <- translate_data(ggplot2::diamonds, system.file("specs/diamonds.yml", package
 head(t)
 ```
 
-    ## # A tibble: 6 x 9
-    ##   precio quilate corte     claridad profundidad tabla     x     y     z
-    ##    <int>   <dbl> <ord>     <ord>          <dbl> <dbl> <dbl> <dbl> <dbl>
-    ## 1    326   0.230 Ideal     SI2             61.5   55.  3.95  3.98  2.43
-    ## 2    326   0.210 Premium   SI1             59.8   61.  3.89  3.84  2.31
-    ## 3    327   0.230 Bueno     VS1             56.9   65.  4.05  4.07  2.31
-    ## 4    334   0.290 Premium   VS2             62.4   58.  4.20  4.23  2.63
-    ## 5    335   0.310 Bueno     SI2             63.3   58.  4.34  4.35  2.75
-    ## 6    336   0.240 Muy bueno VVS2            62.8   57.  3.94  3.96  2.48
+    ## # A tibble: 6 x 10
+    ##   precio quilate corte  color claridad profundidad tabla     x     y     z
+    ##    <int>   <dbl> <ord>  <ord> <ord>          <dbl> <dbl> <dbl> <dbl> <dbl>
+    ## 1    326   0.23  Ideal  E     SI2             61.5    55  3.95  3.98  2.43
+    ## 2    326   0.21  Premi~ E     SI1             59.8    61  3.89  3.84  2.31
+    ## 3    327   0.23  Bueno  E     VS1             56.9    65  4.05  4.07  2.31
+    ## 4    334   0.290 Premi~ I     VS2             62.4    58  4.2   4.23  2.63
+    ## 5    335   0.31  Bueno  J     SI2             63.3    58  4.34  4.35  2.75
+    ## 6    336   0.24  Muy b~ J     VVS2            62.8    57  3.94  3.96  2.48
 
 ## Actualizando el paquete
 
