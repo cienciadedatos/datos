@@ -1,11 +1,12 @@
 Package: datos
 Version: 0.0.0.9000
 Title: Translates several practice data sets into Spanish
-Description: It provides translated version of the following datasets: diamonds, gapminder, mpg and flights.
+Description: It provides translated version of the following datasets: diamonds, gapminder, mpg, mtcars, presidential, gss-cat and flights.
 Authors@R: c(
       person("Edgar", "Ruiz", , "edgararuiz@gmail.com", c("aut", "cre")),
-      person("Mauricio", "Vargas", , "mvargas@dcc.uchile.cl", c("aut")),
-      person("Riva", "Quiroga", , "riva@rladies.org", c("aut"))
+      person("Riva", "Quiroga", , "riva.quiroga@uc.cl", c("aut")),
+      person("Mauricio", "Vargas", , "mvargas@dcc.uchile.cl", c("aut"))
+
       )
 License: CC0
 Encoding: UTF-8
