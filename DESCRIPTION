@@ -6,7 +6,6 @@ Authors@R: c(
       person("Edgar", "Ruiz", , "edgararuiz@gmail.com", c("aut", "cre")),
       person("Riva", "Quiroga", , "riva.quiroga@uc.cl", c("aut")),
       person("Mauricio", "Vargas", , "mvargas@dcc.uchile.cl", c("aut"))
-
       )
 License: CC0
 Encoding: UTF-8

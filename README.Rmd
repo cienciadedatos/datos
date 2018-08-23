@@ -113,7 +113,7 @@ El paquete `datalang` es el que se va a utilizar para hacer la traduccion del lo
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("edgararuiz/datalang")
+devtools::install_github("cienciadedatos/datalang")
 ```
 
 Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
