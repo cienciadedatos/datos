@@ -1,6 +1,6 @@
 df:
-  source: tidyr::table5
-  name: tuberculosis5
+  source: tidyr::table1
+  name: tabla1
 variables:
   country:
     trans: pais
@@ -9,18 +9,18 @@ variables:
       Afghanistan: Afganistán
       Brazil: Brasil
       China: China
-  century:
-    trans: siglo
-    desc: Siglo correspondiente a los valores registrados
   year:
     trans: anio
     desc: Año correspondiente a los valores registrados
-  rate:
-    trans: tasa
-    desc: Tasa de casos de tuberculosis en relación a la población total
+  cases:
+    trans: casos
+    desc: Número de casos registrados
+  population:
+    trans: poblacion
+    desc: Población del país
 help:
-  name: tuberculosis5
-  alias: tuberculosis5
-  title: Registros de tuberculosis de la Organización Mundial de la salud (3era variante)
+  name: tabla1
+  alias: tabla1
+  title: Registros de tuberculosis de la Organización Mundial de la salud (1era variante)
   description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
   format: Un tibble con 6 filas y 4 columnas

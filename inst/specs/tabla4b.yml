@@ -1,6 +1,6 @@
 df:
-  source: tidyr::table3
-  name: tuberculosis3
+  source: tidyr::table4b
+  name: tabla4b
 variables:
   country:
     trans: pais
@@ -9,15 +9,15 @@ variables:
       Afghanistan: Afganistán
       Brazil: Brasil
       China: China
-  year:
-    trans: anio
-    desc: Año correspondiente a los valores registrados
-  rate:
-    trans: tasa
-    desc: Tasa de casos de tuberculosis en relación a la población total
+  1999:
+    trans: 1999
+    desc: Población en el año 1999.
+  2000:
+    trans: 2000
+    desc: Población en el año 2000.
 help:
-  name: tuberculosis3
-  alias: tuberculosis3
+  name: tabla4b
+  alias: tabla4b
   title: Registros de tuberculosis de la Organización Mundial de la salud (3era variante)
   description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
-  format: Un tibble con 6 filas y 3 columnas
+  format: Un tibble con 3 filas y 3 columnas

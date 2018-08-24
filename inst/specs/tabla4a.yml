@@ -1,6 +1,6 @@
 df:
   source: tidyr::table4a
-  name: tuberculosis4a
+  name: tabla4a
 variables:
   country:
     trans: pais
@@ -16,8 +16,8 @@ variables:
     trans: 2000
     desc: Casos registrados el año 2000.
 help:
-  name: tuberculosis4a
-  alias: tuberculosis4a
+  name: tabla4a
+  alias: tabla4a
   title: Registros de tuberculosis de la Organización Mundial de la salud (3era variante)
   description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
   format: Un tibble con 3 filas y 3 columnas
