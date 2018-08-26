@@ -1,0 +1,29 @@
+df:
+  source: tidyr::table2
+  name: tabla2
+variables:
+  country:
+    trans: pais
+    desc: Nombre del país
+    values:
+      Afghanistan: Afganistán
+      Brazil: Brasil
+      China: China
+  year:
+    trans: anio
+    desc: Año correspondiente a los valores registrados
+  type:
+    trans: tipo
+    desc: Categoría a la que pertenece la observación
+    values:
+      cases: casos
+      population: población
+  count:
+    trans: cuenta
+    desc: Cantidad de observaciones para cada tipo
+help:
+  name: tabla2
+  alias: tabla2
+  title: Registros de tuberculosis de la Organización Mundial de la salud (2da variante)
+  description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
+  format: Un tibble con 12 filas y 4 columnas
