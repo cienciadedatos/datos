@@ -3,8 +3,8 @@ datos
 
 Este paquete provee el conjuntos de datos ya traducidos que van a ser la
 base para la traducción del libro R4DS. La idea es, eventualmente,
-publicar este paquete en CRAN, para que los lectores puedan hacer los
-ejercicios.
+publicar este paquete en CRAN, para que los lectores del libro puedan
+practicar los ejercicios en español.
 
 ## Instalación
 
@@ -22,19 +22,30 @@ sets de datos están disponibles:
 data(package = "datos")
 ```
 
-El resultado será algo así:
-
 ``` 
 Data sets in package ‘datos’:
 
-diamantes                              Precio de 50,000 diamantes
-encuesta                               Muestra de variables categóricas de una encuesta social
-millas                                 Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de
-                                       automóviles
-mtautos                                Pruebas de ruta de automóviles de Motor Trend
-paises                                 Datos de Gapminder
-presidencial                           Periodos de 11 presidentes, desde Eisenhower a Obama
-vuelos                                 Datos de vuelos                         
+bateadores                      Tabla de bateadores
+diamantes                       Precio de 50,000 diamantes
+encuesta                        Muestra de variables categóricas de una encuesta social
+millas                          Datos de economía de combustible de 1999 y 2008 para 38 modelos
+                                populares de automóviles
+mtautos                         Pruebas de ruta de automóviles de Motor Trend
+paises                          Datos de Gapminder
+presidencial                    Periodos de 11 presidentes, desde Eisenhower a Obama
+tabla1                          Registros de tuberculosis de la Organización Mundial de la
+                                salud (1era variante)
+tabla2                          Registros de tuberculosis de la Organización Mundial de la
+                                salud (2da variante)
+tabla3                          Registros de tuberculosis de la Organización Mundial de la
+                                salud (3era variante)
+tabla4a                         Registros de tuberculosis de la Organización Mundial de la
+                                salud (3era variante)
+tabla4b                         Registros de tuberculosis de la Organización Mundial de la
+                                salud (3era variante)
+tabla5                          Registros de tuberculosis de la Organización Mundial de la
+                                salud (3era variante)
+vuelos                          Datos de vuelos                    
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la
@@ -63,6 +74,52 @@ Estos datos tambien tendrán su propio archivo de ayuda.
 ``` r
 ?diamantes
 ```
+
+    diamantes {datos}   R Documentation
+    Precio de 50,000 diamantes
+    
+    Description
+    
+    Un set de datos que contiene los precios de casi 54,000 diamantes.
+    
+    Usage
+    
+    diamantes
+    Format
+    
+    Un data.frame con 53,940 líneas y 10 variables
+    
+    precio
+    Precio en dólares US (\$326–\$18,823)
+    
+    quilate
+    Peso del diamante (0.2–5.01)
+    
+    corte
+    Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)
+    
+    color
+    Color del diamante, de J (peor) a D (mejor)
+    
+    claridad
+    Medida de qué tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))
+    
+    profundidad
+    Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43–79)
+    
+    tabla
+    Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)
+    
+    x
+    Largo en milímetros
+    
+    y
+    Ancho en milímetros
+    
+    z
+    Profundidad en milímetros
+    
+    [Package datos version 0.0.0.9000 Index]
 
 ## Traducciones
 
@@ -128,7 +185,7 @@ traduccion del los datos. Para instalar use:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("edgararuiz/datalang")
+devtools::install_github("cienciadedatos/datalang")
 ```
 
 Despues de grabar el archivo en su *Working Directory*, utilize la
