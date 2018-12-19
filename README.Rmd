@@ -183,13 +183,6 @@ Despues de grabar el archivo en su *Working Directory*, utilize la función `tra
 library(datalang)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
-Hay un archivo pre-grabado en el paquete para demostrar qué debería pasar:
-
-```{r}
-library(datalang)
-t <- translate_data(ggplot2::diamonds, system.file("specs/diamonds.yml", package = "datos"))
-head(t)
-```
 
 ## Actualizando el paquete
 

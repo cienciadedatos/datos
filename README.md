@@ -196,25 +196,6 @@ library(datalang)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 
-Hay un archivo pre-grabado en el paquete para demostrar qué debería
-pasar:
-
-``` r
-library(datalang)
-t <- translate_data(ggplot2::diamonds, system.file("specs/diamonds.yml", package = "datos"))
-head(t)
-```
-
-    ## # A tibble: 6 x 10
-    ##   precio quilate corte  color claridad profundidad tabla     x     y     z
-    ##    <int>   <dbl> <ord>  <ord> <ord>          <dbl> <dbl> <dbl> <dbl> <dbl>
-    ## 1    326   0.23  Ideal  E     SI2             61.5    55  3.95  3.98  2.43
-    ## 2    326   0.21  Premi~ E     SI1             59.8    61  3.89  3.84  2.31
-    ## 3    327   0.23  Bueno  E     VS1             56.9    65  4.05  4.07  2.31
-    ## 4    334   0.290 Premi~ I     VS2             62.4    58  4.2   4.23  2.63
-    ## 5    335   0.31  Bueno  J     SI2             63.3    58  4.34  4.35  2.75
-    ## 6    336   0.24  Muy b~ J     VVS2            62.8    57  3.94  3.96  2.48
-
 ## Actualizando el paquete
 
 Si quiere actualizar el paquete entero, utilize el commando:
