@@ -9,6 +9,8 @@ library(datos)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+[![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
+
 Este paquete provee el conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es, eventualmente, publicar este paquete en CRAN, para que los lectores del libro puedan practicar los ejercicios en español.
 
 ## Instalación
