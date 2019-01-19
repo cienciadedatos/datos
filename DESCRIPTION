@@ -1,15 +1,26 @@
 Package: datos
+Title: Traduce al Español Varios Conjuntos de Datos de Practica
 Version: 0.0.0.9000
-Title: Translates several practice data sets into Spanish
-Description: It provides translated version of the following datasets: diamonds, gapminder, mpg, mtcars, presidential, gss-cat, Batting and flights.
-Authors@R: c(
-      person("Edgar", "Ruiz", , "edgararuiz@gmail.com", c("aut", "cre")),
-      person("Riva", "Quiroga", , "riva.quiroga@uc.cl", c("aut")),
-      person("Mauricio", "Vargas", , "mvargas@dcc.uchile.cl", c("aut"))
-      )
+Authors@R: 
+    c(person(given = "Edgar",
+             family = "Ruiz",
+             role = c("aut", "cre"),
+             email = "edgararuiz@gmail.com"),
+      person(given = "Riva",
+             family = "Quiroga",
+             role = "aut",
+             email = "riva.quiroga@uc.cl"),
+      person(given = "Mauricio",
+             family = "Vargas",
+             role = "aut",
+             email = "mvargas@dcc.uchile.cl"))
+Description: Provee una versión traducida de los siguientes
+    conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
+    gss-cat, Batting and flights.
 License: CC0
-Depends: R(>= 2.10)
+Depends: 
+    R (>= 2.10)
+ByteCompile: true
 Encoding: UTF-8
 LazyData: true
-ByteCompile: true
 RoxygenNote: 6.1.1
