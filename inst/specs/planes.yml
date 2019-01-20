@@ -1,0 +1,40 @@
+df:
+  source: nycflights13::planes
+  name: aviones
+variables:
+  tailnum:
+    trans: codigo_cola
+    desc: código de cola
+  year:
+    trans: anio
+    desc: año de fabricación
+  type:
+    trans: tipo
+    desc: tipo de avión
+  manufacturer:
+    trans: fabricante
+    desc: fabricante del avión
+  model:
+    trans: modelo
+    desc: modelo del avión
+  engines:
+    trans: motores
+    desc: cantidad de motores
+  seats:
+    trans: asientos
+    desc: cantidad de asientos
+  speed:
+    trans: velocidad
+    desc: velocidad crucero promedio medida en millas por hora
+  engine:
+    trans: tipo_motor
+    desc: tipo de motor del avión
+help:
+  name: aviones
+  alias: aviones
+  title: Datos de aviones
+  description: Metadatos de los aviones y sus códigos de cola en el registro de aviación de la FAA.
+    American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por
+    lo que no es posible trazarlos.
+  usage: aviones
+  format: Un data.frame con 3,322 líneas y 9 variables

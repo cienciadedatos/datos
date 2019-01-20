@@ -3,3 +3,4 @@
 ^README\.Rmd$
 ^datos\.Rproj$
 ^\.Rproj\.user$
+.travis.yml
