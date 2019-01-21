@@ -25,32 +25,26 @@ sets de datos están disponibles:
 data(package = "datos")
 ```
 
-``` 
-Data sets in package ‘datos’:
+Data sets in package
+‘datos’:
 
-bateadores                  Tabla de bateadores
-diamantes                   Precio de 50,000 diamantes
-encuesta                    Muestra de variables categóricas de una encuesta social
-fiel                        Datos del geiser Viejo Fiel (Old Faithful)
-millas                      Datos de economía de combustible de 1999 y 2008 para 38
-                            modelos populares de automóviles
-mtautos                     Pruebas de ruta de automóviles de Motor Trend
-paises                      Datos de Gapminder
-presidencial                Periodos de 11 presidentes, desde Eisenhower a Obama
-tabla1                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (1era variante)
-tabla2                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (2da variante)
-tabla3                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla4a                     Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla4b                     Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla5                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-vuelos                      Datos de vuelos           
-```
+| Nombre       | Título                                                                                   |
+| :----------- | :--------------------------------------------------------------------------------------- |
+| bateadores   | Tabla de bateadores                                                                      |
+| diamantes    | Precio de 50,000 diamantes                                                               |
+| encuesta     | Muestra de variables categóricas de una encuesta social                                  |
+| fiel         | Datos del geiser Viejo Fiel (Old Faithful)                                               |
+| millas       | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles |
+| mtautos      | Pruebas de ruta de automóviles de Motor Trend                                            |
+| paises       | Datos de Gapminder                                                                       |
+| presidencial | Periodos de 11 presidentes, desde Eisenhower a Obama                                     |
+| tabla1       | Registros de tuberculosis de la Organización Mundial de la salud (1era variante)         |
+| tabla2       | Registros de tuberculosis de la Organización Mundial de la salud (2da variante)          |
+| tabla3       | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla4a      | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla4b      | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla5       | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| vuelos       | Datos de vuelos                                                                          |
 
 Después puede utilizar el paquete para sus ejercicios o para la
 traducción:
@@ -62,16 +56,16 @@ dplyr::glimpse(diamantes)
 
     ## Observations: 53,940
     ## Variables: 10
-    ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…
-    ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22…
-    ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Mu…
-    ## $ color       <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J…
-    ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, …
-    ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1…
-    ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, …
-    ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87…
-    ## $ y           <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…
-    ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…
+    ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, ...
+    ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0....
+    ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, ...
+    ## $ color       <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I,...
+    ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1...
+    ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65...
+    ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61...
+    ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3....
+    ## $ y           <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3....
+    ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2....
 
 Estos datos tambien tendrán su propio archivo de ayuda.
 
