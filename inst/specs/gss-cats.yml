@@ -4,7 +4,7 @@ df:
 variables:
   year:
     trans: anio
-    desc: año de la encuesta, 2000-2014
+    desc: ano de la encuesta, 2000-2014
   marital:
     trans: estado_civil
     desc: estado civil
@@ -17,10 +17,10 @@ variables:
       Married: Casado
   age:
     trans: edad
-    desc: edad. Edad máxima truncada a 89 años
+    desc: edad. Edad maxima truncada a 89 anos
   race:
     trans: raza
-    desc: categorías raciales según la encuesta
+    desc: categorias raciales segun la encuesta
     values:
       Other: Otra
       Black: Negra
@@ -30,7 +30,7 @@ variables:
     desc: ingreso reportado por los encuestados (US$)
   partyid:
     trans: partido
-    desc: partido político con el que se identifica
+    desc: partido politico con el que se identifica
     values:
       No answer: Sin respuesta
       Don't know: No sabe
@@ -39,12 +39,12 @@ variables:
       Not str republican: Republicano moderano
       Ind,near rep: Independiente pro republicano
       Independent: Independiente
-      Ind,near dem: Independiente pro demócrata
-      Not str democrat: Demócrata moderado
-      Strong democrat: Demócrata duro
+      Ind,near dem: Independiente pro democrata
+      Not str democrat: Democrata moderado
+      Strong democrat: Democrata duro
   relig:
     trans: religion
-    desc: religión
+    desc: religion
     values:
       No answer: Sin respuesta
       Don't know: No sabe
@@ -53,56 +53,56 @@ variables:
       Christian: Cristiana
       Orthodox-christian: Cristiana ortodoxa
       Moslem/islam: Musulmana/Islam
-      Other eastern: Otra religión oriental
+      Other eastern: Otra religion oriental
       Hinduism: Hinduismo
       Buddhism: Budismo
       Other: Otra
       None: Ninguna
-      Jewish: Judía
-      Catholic: Católica
+      Jewish: Judia
+      Catholic: Catolica
       Protestant: Protestante
       Not applicable: No aplica
   denom:
     trans: denominacion
-    desc: denominación religiosa a la que pertenece
+    desc: denominacion religiosa a la que pertenece
     values:
       No answer: Sin respuesta
       Don't know: No sabe
       No denomination: No denominacional
       Other: Otra
       Episcopal: Episcopal
-      Presbyterian-dk wh: Presbiteriana, no sabe cuál
+      Presbyterian-dk wh: Presbiteriana, no sabe cual
       Presbyterian, merged: Prebiteriana, fusionadas
       Other presbyterian: Otra presbiteriana
-      United pres ch in us: Unión presbiteriana de iglesias
+      United pres ch in us: Union presbiteriana de iglesias
       Presbyterian c in us: Iglesia presbiteriana EEUU
-      Lutheran-dk which: Luterana, no sabe cuál
-      Evangelical luth: Evangélica luterana
+      Lutheran-dk which: Luterana, no sabe cual
+      Evangelical luth: Evangelica luterana
       Other lutheran: Otras luteranas
-      Wi evan luth synod: Sínodo evangélico luterano de Wisconsin
-      Lutheran-mo synod: Sínodo luterano
+      Wi evan luth synod: Sinodo evangelico luterano de Wisconsin
+      Lutheran-mo synod: Sinodo luterano
       Luth ch in america: Iglesia luterana en EEUU
       Am lutheran: Iglesia luterana americana
-      Methodist-dk which: Metodista, no sabe cuál
+      Methodist-dk which: Metodista, no sabe cual
       Other methodist: Otras metodistas
       United methodist: Iglesia metodista unida
       Afr meth ep zion: Iglesia africana metodista episcopal de Sion
       Afr meth episcopal: Iglesia africana metodista episcopal
-      Baptist-dk which: Baptista, no sabe cuál
+      Baptist-dk which: Baptista, no sabe cual
       Other baptists: Otras baptistas
       Southern baptist: Baptistas del sur
-      Nat bapt conv usa: Convensión nacional baptista EEUU
-      Nat bapt conv of am: Convensión nacional baptista de américa
+      Nat bapt conv usa: Convension nacional baptista EEUU
+      Nat bapt conv of am: Convension nacional baptista de america
       Am bapt ch in usa: Iglesias baptistas EEUU
-      Am baptist asso: Asociación baptista estadounidense
+      Am baptist asso: Asociacion baptista estadounidense
       Not applicable: No aplica
   tvhours:
     trans: horas_tv
-    desc: horas de televisión que ve al día
+    desc: horas de television que ve al dia
 help:
   name: encuesta
   alias: encuesta
-  title: Muestra de variables categóricas de una encuesta social
-  description: Muestra de variables categóricas de la Encuesta Social General de EE.UU.
+  title: Muestra de variables categoricas de una encuesta social
+  description: Muestra de variables categoricas de la Encuesta Social General de EE.UU.
   usage: encuesta
-  format: Un dataframe con 21,473 líneas y 9 variables
+  format: Un dataframe con 21,473 lineas y 9 variables
