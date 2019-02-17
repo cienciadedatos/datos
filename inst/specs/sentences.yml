@@ -1,6 +1,6 @@
 df:
   source: stringr::sentences
-name: oraciones
+  name: oraciones
 help:
   name: oraciones
 alias: oraciones
