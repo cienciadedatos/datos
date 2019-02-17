@@ -1,10 +1,10 @@
 df:
   source: stringr::sentences
-  name: sentences
+name: oraciones
 help:
-  name: sentences
-  alias: sentences
-  title: Muestra de vector de caracteres para practicar manipulacion de cadena de caracteres.
-  description: "`sentences` es una colección de \"Harvard sentences\" usada para pruebas estandarizadas de voz."
-  usage: sentences
-  format: Una cadena de caracteres con 720 elmentos.
+  name: oraciones
+alias: oraciones
+title: Muestra de vector de caracteres para practicar manipulacion de cadena de caracteres.
+description: oraciones es una colección de "Harvard sentences" usada para pruebas estandarizadas de voz.
+usage: oraciones
+format: Una cadena de caracteres con 720 elmentos.
