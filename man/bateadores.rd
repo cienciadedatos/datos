@@ -2,7 +2,7 @@
 \name{bateadores}
 \alias{bateadores}
 \title{Tabla de bateadores}
-\format{Un data frame con 102816 filas y 22 variables
+\format{Un data frame con 102,816 filas y 22 variables
 \describe{
 \item{ID_jugador}{ID del jugador}
 \item{ID_anio}{Ano}
