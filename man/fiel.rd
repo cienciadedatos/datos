@@ -8,5 +8,5 @@
 \item{espera}{Minutos entre erupciones}
 }}
 \usage{fiel}
-\description{Datos de tiempo de duración y espera entry erupciones del Viejo Fiel (Old Faithful), es un géiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.}
+\description{Datos de tiempo de duracion y espera entry erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.}
 \keyword{datasets}
