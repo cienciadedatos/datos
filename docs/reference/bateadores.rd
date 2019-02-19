@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Tabla de bateadores — bateadores" />
 
-<meta property="og:description" content="Estadísticas de bateadores" />
+<meta property="og:description" content="Estadisticas de bateadores" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9001</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -101,25 +106,25 @@
 
     <div class="ref-description">
     
-    <p>Estadísticas de bateadores</p>
+    <p>Estadisticas de bateadores</p>
     
     </div>
 
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 102816 filas y 22 variables</p><dl class='dl-horizontal'>
+    <p>Un data frame con 102,816 filas y 22 variables</p><dl class='dl-horizontal'>
 <dt>ID_jugador</dt><dd><p>ID del jugador</p></dd>
-<dt>ID_anio</dt><dd><p>Año</p></dd>
-<dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
+<dt>ID_anio</dt><dd><p>Ano</p></dd>
+<dt>orden_equipos</dt><dd><p>Orden en que el jugador se movio entre equipos dentro de la misma temporada</p></dd>
 <dt>ID_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
 <dt>ID_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
-<dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
+<dt>juegos</dt><dd><p>Numero de juegos en los que participo el jugador</p></dd>
 <dt>al_bate</dt><dd><p>Turnos al bate</p></dd>
 <dt>carreras</dt><dd><p>Carreras anotadas</p></dd>
-<dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa</p></dd>
-<dt>dobles</dt><dd><p>Golpes en los que el bateador llegó a segunda base</p></dd>
-<dt>triples</dt><dd><p>Golpes en los que el bateador llegó a tercera base</p></dd>
+<dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzo la base debido a un golpe, sin error de la defensa</p></dd>
+<dt>dobles</dt><dd><p>Golpes en los que el bateador llego a segunda base</p></dd>
+<dt>triples</dt><dd><p>Golpes en los que el bateador llego a tercera base</p></dd>
 <dt>cuadrangulares</dt><dd><p>Cuadrangulares - jonrones</p></dd>
 <dt>carreras_empujadas</dt><dd><p>Carreras empujadas</p></dd>
 <dt>bases_robadas</dt><dd><p>Bases robadas</p></dd>

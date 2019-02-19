@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Datos del geiser Viejo Fiel (Old Faithful) — fiel" />
 
-<meta property="og:description" content="Datos de tiempo de duración y espera entry erupciones del Viejo Fiel (Old Faithful), es un géiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos." />
+<meta property="og:description" content="Datos de tiempo de duracion y espera entry erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9001</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -101,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Datos de tiempo de duración y espera entry erupciones del Viejo Fiel (Old Faithful), es un géiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.</p>
+    <p>Datos de tiempo de duracion y espera entry erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.</p>
     
     </div>
 

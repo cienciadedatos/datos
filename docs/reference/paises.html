@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a • datos</title>
+<title>Datos de Gapminder — paises • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a" />
+<meta property="og:title" content="Datos de Gapminder — paises" />
 
-<meta property="og:description" content="Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000." />
+<meta property="og:description" content="Extracto de datos de Gapminder sobre expectativa de vida, PIB per capita y poblacion, segun pais" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,25 +99,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)</h1>
+    <h1>Datos de Gapminder</h1>
     
-    <div class="hidden name"><code>tabla4a.rd</code></div>
+    <div class="hidden name"><code>paises.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000.</p>
+    <p>Extracto de datos de Gapminder sobre expectativa de vida, PIB per capita y poblacion, segun pais</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>paises</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un tibble con 3 filas y 3 columnas</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>Nombre del pais</p></dd>
-<dt>1999</dt><dd><p>Casos registrados el ano 1999.</p></dd>
-<dt>2000</dt><dd><p>Casos registrados el ano 2000.</p></dd>
+    <p>El dataframe principal tiene 1704 filas y 6 variables</p><dl class='dl-horizontal'>
+<dt>pais</dt><dd><p>paises incluidos (factor con 142 niveles)</p></dd>
+<dt>continente</dt><dd><p>continentes (factor con 5 niveles)</p></dd>
+<dt>anio</dt><dd><p>desde 1952 a 2007, datos cada 5 anos</p></dd>
+<dt>esperanza_de_vida</dt><dd><p>esperanza de vida al nacer, en anos</p></dd>
+<dt>poblacion</dt><dd><p>poblacion</p></dd>
+<dt>pib_per_capita</dt><dd><p>PIB per capita (en dolares US, ajustados segun inflacion)</p></dd>
 </dl>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>http://www.gapminder.org/data/</p>
     
 
   </div>
@@ -126,6 +134,8 @@
     <ul class="nav nav-pills nav-stacked">
       
       <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
           </ul>
 
   </div>
