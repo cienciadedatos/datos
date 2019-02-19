@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9001</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -109,17 +114,17 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data.frame con 53,940 líneas y 10 variables</p><dl class='dl-horizontal'>
-<dt>precio</dt><dd><p>Precio en dólares US (\$326–\$18,823)</p></dd>
-<dt>quilate</dt><dd><p>Peso del diamante (0.2–5.01)</p></dd>
+    <p>Un data.frame con 53,940 lineas y 10 variables</p><dl class='dl-horizontal'>
+<dt>precio</dt><dd><p>Precio en dolares US (\$326-\$18,823)</p></dd>
+<dt>quilate</dt><dd><p>Peso del diamante (0.2-5.01)</p></dd>
 <dt>corte</dt><dd><p>Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)</p></dd>
 <dt>color</dt><dd><p>Color del diamante, de J (peor) a D (mejor)</p></dd>
-<dt>claridad</dt><dd><p>Medida de qué tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))</p></dd>
-<dt>profundidad</dt><dd><p>Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43–79)</p></dd>
-<dt>tabla</dt><dd><p>Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)</p></dd>
-<dt>x</dt><dd><p>Largo en milímetros</p></dd>
-<dt>y</dt><dd><p>Ancho en milímetros</p></dd>
-<dt>z</dt><dd><p>Profundidad en milímetros</p></dd>
+<dt>claridad</dt><dd><p>Medida de que tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))</p></dd>
+<dt>profundidad</dt><dd><p>Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43-79)</p></dd>
+<dt>tabla</dt><dd><p>Ancho de la parte superior del diamante con relacion a su punto mas ancho (43-95)</p></dd>
+<dt>x</dt><dd><p>Largo en milimetros</p></dd>
+<dt>y</dt><dd><p>Ancho en milimetros</p></dd>
+<dt>z</dt><dd><p>Profundidad en milimetros</p></dd>
 </dl>
     
 

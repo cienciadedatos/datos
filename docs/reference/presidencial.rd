@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Periodos de 11 presidentes, desde Eisenhower a Obama — presidencial" />
 
-<meta property="og:description" content="Nombre, fecha de inicio y término de su mandato y partido político de 11 presidentes de EE.UU., desde Eisenhower a Obama." />
+<meta property="og:description" content="Nombre, fecha de inicio y termino de su mandato y partido politico de 11 presidentes de EE.UU., desde Eisenhower a Obama." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9001</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -101,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Nombre, fecha de inicio y término de su mandato y partido político de 11 presidentes de EE.UU., desde Eisenhower a Obama.</p>
+    <p>Nombre, fecha de inicio y termino de su mandato y partido politico de 11 presidentes de EE.UU., desde Eisenhower a Obama.</p>
     
     </div>
 
@@ -111,8 +116,8 @@
     <p>Un data frame con 11 filas y 4 variables</p><dl class='dl-horizontal'>
 <dt>nombre</dt><dd><p>Nombre del presidente</p></dd>
 <dt>inicio</dt><dd><p>Fecha de inicio de su periodo presidencial</p></dd>
-<dt>fin</dt><dd><p>Fecha de término de su periodo presidencial</p></dd>
-<dt>partido</dt><dd><p>Partido político al que pertenece</p></dd>
+<dt>fin</dt><dd><p>Fecha de termino de su periodo presidencial</p></dd>
+<dt>partido</dt><dd><p>Partido politico al que pertenece</p></dd>
 </dl>
     
 

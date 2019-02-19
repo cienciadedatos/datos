@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a • datos</title>
+<title>Datos de aeropuertos — aeropuertos • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a" />
+<meta property="og:title" content="Datos de aeropuertos — aeropuertos" />
 
-<meta property="og:description" content="Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000." />
+<meta property="og:description" content="Metadatos utiles de los aeropuertos" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,24 +99,30 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)</h1>
+    <h1>Datos de aeropuertos</h1>
     
-    <div class="hidden name"><code>tabla4a.rd</code></div>
+    <div class="hidden name"><code>aeropuertos.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000.</p>
+    <p>Metadatos utiles de los aeropuertos</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>aeropuertos</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un tibble con 3 filas y 3 columnas</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>Nombre del pais</p></dd>
-<dt>1999</dt><dd><p>Casos registrados el ano 1999.</p></dd>
-<dt>2000</dt><dd><p>Casos registrados el ano 2000.</p></dd>
+    <p>Un data.frame con 1,458 lineas y 8 variables</p><dl class='dl-horizontal'>
+<dt>codigo_aeropuerto</dt><dd><p>codigo FAA del aeropuerto</p></dd>
+<dt>nombre</dt><dd><p>nombre del aeropuerto</p></dd>
+<dt>latitud</dt><dd><p>coordenada de ubicacion del aeropuerto</p></dd>
+<dt>longitud</dt><dd><p>coordenada de ubicacion del aeropuerto</p></dd>
+<dt>altura</dt><dd><p>altura medida en pies</p></dd>
+<dt>zona_horaria</dt><dd><p>diferencia horaria respecto del meridiano de Greenwich (GMT)</p></dd>
+<dt>horario_verano</dt><dd><p>horario legal de acuerdo a las politicas de ahorro de energia. A = Zona Horaria de Ahorro de Luz de Dia (DST) estandar de los EEUU: comienza el segundo Sabado de Marzo y termina el primer Sabado de Noviembre. U = Desconocido. N = No tiene zona horaria especial.</p></dd>
+<dt>zona_horaria_iana</dt><dd><p>zona horaria IANA, la cual se determina de acuerdo al servicio web GeoNames</p></dd>
 </dl>
     
 
