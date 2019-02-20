@@ -13,7 +13,12 @@ Authors@R:
       person(given = "Mauricio",
              family = "Vargas",
              role = "aut",
-             email = "mvargas@dcc.uchile.cl"))
+             email = "mvargas@dcc.uchile.cl"),
+      person(given = "Mauro",
+             family = "Lepore",
+             role = "aut",
+             email = "maurolepore@gmail.com")
+      )
 Description: Provee una version traducida de los siguientes
     conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
     gss-cat, Batting and flights.
