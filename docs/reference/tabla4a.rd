@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Registros de tuberculosis de la Organización Mundial de la salud (3era variante) — tabla4a • datos</title>
+<title>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Registros de tuberculosis de la Organización Mundial de la salud (3era variante) — tabla4a" />
+<meta property="og:title" content="Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante) — tabla4a" />
 
-<meta property="og:description" content="Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000." />
+<meta property="og:description" content="Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -94,14 +99,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Registros de tuberculosis de la Organización Mundial de la salud (3era variante)</h1>
+    <h1>Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)</h1>
     
     <div class="hidden name"><code>tabla4a.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.</p>
+    <p>Contiene observaciones de casos registrados en Afganistan, Brasil y China en los anos 1999 y 2000.</p>
     
     </div>
 
@@ -109,9 +114,9 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>Un tibble con 3 filas y 3 columnas</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>Nombre del país</p></dd>
-<dt>1999</dt><dd><p>Casos registrados el año 1999.</p></dd>
-<dt>2000</dt><dd><p>Casos registrados el año 2000.</p></dd>
+<dt>pais</dt><dd><p>Nombre del pais</p></dd>
+<dt>1999</dt><dd><p>Casos registrados el ano 1999.</p></dd>
+<dt>2000</dt><dd><p>Casos registrados el ano 2000.</p></dd>
 </dl>
     
 

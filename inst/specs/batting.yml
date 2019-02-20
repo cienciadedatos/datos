@@ -7,10 +7,10 @@ variables:
     desc: ID del jugador
   yearID:
     trans: ID_anio
-    desc: Año
+    desc: Ano
   stint:
     trans: orden_equipos
-    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+    desc: Orden en que el jugador se movio entre equipos dentro de la misma temporada
   teamID:
     trans: ID_equipo
     desc: ID del equipo (factor)
@@ -19,7 +19,7 @@ variables:
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   G:
     trans: juegos
-    desc: Número de juegos en los que participó el jugador
+    desc: Numero de juegos en los que participo el jugador
   AB:
     trans: al_bate
     desc: Turnos al bate
@@ -28,13 +28,13 @@ variables:
     desc: Carreras anotadas
   H:
     trans: golpes
-    desc: "Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa"
+    desc: "Golpes: cantidad de veces que se alcanzo la base debido a un golpe, sin error de la defensa"
   X2B:
     trans: dobles
-    desc: Golpes en los que el bateador llegó a segunda base
+    desc: Golpes en los que el bateador llego a segunda base
   X3B:
     trans: triples
-    desc: Golpes en los que el bateador llegó a tercera base
+    desc: Golpes en los que el bateador llego a tercera base
   HR:
     trans: cuadrangulares
     desc: Cuadrangulares - jonrones
@@ -72,5 +72,5 @@ help:
   name: bateadores
   alias: bateadores
   title: Tabla de bateadores
-  description: Estadísticas de bateadores
-  format: Un data frame con 102816 filas y 22 variables
+  description: Estadisticas de bateadores
+  format: Un data frame con 102,816 filas y 22 variables
