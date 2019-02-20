@@ -5,7 +5,7 @@ variables:
   country:
     trans: pais
     values:
-      Afghanistan: Afganistán
+      Afghanistan: Afganistan
       Albania: Albania
       Algeria: Argelia
       Angola: Angola
@@ -14,7 +14,7 @@ variables:
       Austria: Austria
       Bahrain: Bahrein
       Bangladesh: Bangladesh
-      Belgium: Bélgica
+      Belgium: Belgica
       Benin: Benin
       Bolivia: Bolivia (Estado Plurinacional de)
       Bosnia and Herzegovina: Bosnia y Herzegovina
@@ -24,70 +24,70 @@ variables:
       Burkina Faso: Burkina Faso
       Burundi: Burundi
       Cambodia: Camboya
-      Cameroon: Camerún
-      Canada: Canadá
-      Central African Republic: República Centroafricana
+      Cameroon: Camerun
+      Canada: Canada
+      Central African Republic: Republica Centroafricana
       Chad: Chad
       Chile: Chile
       China: China
       Colombia: Colombia
       Comoros: Comoras
-      Congo, Dem. Rep.: República Democrática del Congo
+      Congo, Dem. Rep.: Republica Democratica del Congo
       Congo, Rep.: Congo
       Costa Rica: Costa Rica
       Cote d'Ivoire: Costa de Marfil
       Croatia: Croacia
       Cuba: Cuba
-      Czech Republic: República Checa
+      Czech Republic: Republica Checa
       Denmark: Dinamarca
       Djibouti: Djibouti
-      Dominican Republic: República Dominicana
+      Dominican Republic: Republica Dominicana
       Ecuador: Ecuador
       Egypt: Egipto
       El Salvador: El Salvador
       Equatorial Guinea: Guinea Ecuatorial
       Eritrea: Eritrea
-      Ethiopia: Etiopía
+      Ethiopia: Etiopia
       Finland: Finlandia
       France: Francia
-      Gabon: Gabón
-      Gambia: Gambia (República de)
+      Gabon: Gabon
+      Gambia: Gambia (Republica de)
       Germany: Alemania
       Ghana: Ghana
       Greece: Grecia
       Guatemala: Guatemala
       Guinea-Bissau: Guinea Bissau
       Guinea: Guinea
-      Haiti: Haití
+      Haiti: Haiti
       Honduras: Honduras
-      Hong Kong, China: Hong Kong (Región Administrativa Especial de China)
-      Hungary: Hungría
+      Hong Kong, China: Hong Kong (Region Administrativa Especial de China)
+      Hungary: Hungria
       Iceland: Islandia
       India: India
       Indonesia: Indonesia
-      Iran: Irán (República Islámica de)
+      Iran: Iran (Republica Islamica de)
       Iraq: Iraq
       Ireland: Irlanda
       Israel: Israel
       Italy: Italia
       Jamaica: Jamaica
-      Japan: Japón
+      Japan: Japon
       Jordan: Jordania
       Kenya: Kenya
-      Korea, Dem. Rep.: República Popular Democrática de Corea
-      Korea, Rep.: República de Corea
+      Korea, Dem. Rep.: Republica Popular Democratica de Corea
+      Korea, Rep.: Republica de Corea
       Kuwait: Kuwait
-      Lebanon: Líbano
+      Lebanon: Libano
       Lesotho: Lesotho
       Liberia: Liberia
       Libya: Libia
       Madagascar: Madagascar
       Malawi: Malawi
       Malaysia: Malasia
-      Mali: Malí
+      Mali: Mali
       Mauritania: Mauritania
       Mauritius: Mauricio
-      Mexico: México
+      Mexico: Mexico
       Mongolia: Mongolia
       Montenegro: Montenegro
       Morocco: Marruecos
@@ -95,25 +95,25 @@ variables:
       Myanmar: Myanmar
       Namibia: Namibia
       Nepal: Nepal
-      Netherlands: Países Bajos
+      Netherlands: Paises Bajos
       New Zealand: Nueva Zelandia
       Nicaragua: Nicaragua
       Niger: Niger
       Nigeria: Nigeria
       Norway: Noruega
-      Oman: Omán
-      Pakistan: Pakistán
-      Panama: Panamá
+      Oman: Oman
+      Pakistan: Pakistan
+      Panama: Panama
       Paraguay: Paraguay
-      Peru: Perú
+      Peru: Peru
       Philippines: Filipinas
       Poland: Polonia
       Portugal: Portugal
       Puerto Rico: Puerto Rico
-      Reunion: Isla Reunión y Guyana Francesa (dependientes de Francia)
+      Reunion: Isla Reunion y Guyana Francesa (dependientes de Francia)
       Romania: Rumania
       Rwanda: Ruanda
-      Sao Tome and Principe: Santo Tomé y Príncipe
+      Sao Tome and Principe: Santo Tome y Principe
       Saudi Arabia: Arabia Saudita
       Senegal: Senegal
       Serbia: Serbia
@@ -122,58 +122,58 @@ variables:
       Slovak Republic: Eslovaquia
       Slovenia: Eslovenia
       Somalia: Somalia
-      South Africa: Sudáfrica
-      Spain: España
+      South Africa: Sudafrica
+      Spain: Espana
       Sri Lanka: Sri Lanka
-      Sudan: Sudán
+      Sudan: Sudan
       Swaziland: Swazilandia
       Sweden: Suecia
       Switzerland: Suiza
-      Syria: República Árabe Siria
-      Taiwan: Taiwán (Provincia de China)
-      Tanzania: República Unida de Tanzanía
+      Syria: Republica Arabe Siria
+      Taiwan: Taiwan (Provincia de China)
+      Tanzania: Republica Unida de Tanzania
       Thailand: Tailandia
       Togo: Togo
       Trinidad and Tobago: Trinidad y Tobago
-      Tunisia: Túnez
-      Turkey: Turquía
+      Tunisia: Tunez
+      Turkey: Turquia
       Uganda: Uganda
       United Kingdom: Reino Unido
-      United States: Estados Unidos de América
+      United States: Estados Unidos de America
       Uruguay: Uruguay
-      Venezuela: Venezuela (República Bolivariana de)
+      Venezuela: Venezuela (Republica Bolivariana de)
       Vietnam: Vietnam
       West Bank and Gaza: Territorios Palestinos
       Yemen, Rep.: Yemen
       Zambia: Zambia
       Zimbabwe: Zimbabwe
-    desc: países incluidos (factor con 142 niveles)
+    desc: paises incluidos (factor con 142 niveles)
   continent:
     trans: continente
     values:
-      Africa: África
-      Americas: Américas
+      Africa: Africa
+      Americas: Americas
       Asia: Asia
       Europe: Europa
-      Oceania: Oceanía
+      Oceania: Oceania
     desc: continentes (factor con 5 niveles)
   year:
     trans: anio
-    desc: desde 1952 a 2007, datos cada 5 años
+    desc: desde 1952 a 2007, datos cada 5 anos
   lifeExp:
     trans: esperanza_de_vida
-    desc: esperanza de vida al nacer, en años
+    desc: esperanza de vida al nacer, en anos
   pop:
     trans: poblacion
-    desc: población
+    desc: poblacion
   gdpPercap:
     trans: pib_per_capita
-    desc: PIB per cápita (en dólares US, ajustados según inflación)
+    desc: PIB per capita (en dolares US, ajustados segun inflacion)
 help:
   name: paises
   alias: paises
   title: Datos de Gapminder
-  description: Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país
+  description: Extracto de datos de Gapminder sobre expectativa de vida, PIB per capita y poblacion, segun pais
   usage: paises
   format: El dataframe principal tiene 1704 filas y 6 variables
   source: http://www.gapminder.org/data/

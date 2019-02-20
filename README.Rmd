@@ -26,36 +26,8 @@ devtools::install_github("cienciadedatos/datos")
 
 Después de instalar el paquete. Utilice la función `data()` para ver qué sets de datos están disponibles:
 
-```r
+```{r}
 data(package = "datos")
-```
-
-
-```
-Data sets in package ‘datos’:
-
-bateadores                  Tabla de bateadores
-diamantes                   Precio de 50,000 diamantes
-encuesta                    Muestra de variables categóricas de una encuesta social
-fiel                        Datos del geiser Viejo Fiel (Old Faithful)
-millas                      Datos de economía de combustible de 1999 y 2008 para 38
-                            modelos populares de automóviles
-mtautos                     Pruebas de ruta de automóviles de Motor Trend
-paises                      Datos de Gapminder
-presidencial                Periodos de 11 presidentes, desde Eisenhower a Obama
-tabla1                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (1era variante)
-tabla2                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (2da variante)
-tabla3                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla4a                     Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla4b                     Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-tabla5                      Registros de tuberculosis de la Organización Mundial de
-                            la salud (3era variante)
-vuelos                      Datos de vuelos           
 ```
 
 Después puede utilizar el paquete para sus ejercicios o para la traducción:
@@ -191,7 +163,6 @@ translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ## Actualizando el paquete
 
 Si quiere actualizar el paquete entero, utilize el commando: `datalang::translate_folder()`.  Este comando va a crear las traducciones, los archivos de ayuda, y los va a grabar en el lugar apropiado. 
-
 
 ## Compartir traducciones
 

@@ -4,13 +4,13 @@ df:
 variables:
   year:
     trans: anio
-    desc: año de la fecha de salida
+    desc: ano de la fecha de salida
   month:
     trans: mes
     desc: mes de la fecha de salida
   day:
     trans: dia
-    desc: día de la fecha de salida
+    desc: dia de la fecha de salida
   dep_time:
     trans: horario_salida
     desc: horario efectivo de salida del vuelo (formato HHMM o HMM), hora local
@@ -31,13 +31,13 @@ variables:
     desc: atraso de la llegada en minutos. Valores negativos indican llegada adelantada
   carrier:
     trans: aerolinea
-    desc: abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre
+    desc: abreviacion de dos letras de la aerolinea. Ver airlines() para obtener el nombre
   flight:
     trans: vuelo
-    desc: número de vuelo
+    desc: numero de vuelo
   tailnum:
     trans: codigo_cola
-    desc: código de cola del avión
+    desc: codigo de cola del avion
   origin:
     trans: origen
     desc: origen del vuelo. Ver airports() para metadatos adicionales
@@ -65,4 +65,4 @@ help:
   title: Datos de vuelos
   description: Datos temporales de todos los vuelos que despegaron de Nueva York (JFK, LGA o EWR) durante 2013.
   usage: vuelos
-  format: Un data.frame con 336,776 líneas y 19 variables
+  format: Un data.frame con 336,776 lineas y 19 variables
