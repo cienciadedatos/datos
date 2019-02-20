@@ -141,47 +141,47 @@ variables:
     trans: nuevos_ep_m65
     desc: casos nuevos, diagnostico extrapulmonar (ep), mujeres (m) de 65 o mas anos
   newrel_m014:
-    trans: recaidas_h014
-    desc: recaidas, hombres (h) de 0 a 14 anos (014)
+    trans: nuevos_recaida_h014
+    desc: nuevas recaidas, hombres (h) de 0 a 14 anos (014)
   newrel_m1524:
-    trans: recaidas_h1524
-    desc: recaidas, hombres (h) de 15 a 24 anos (1524)
+    trans: nuevos_recaida_h1524
+    desc: nuevas recaidas, hombres (h) de 15 a 24 anos (1524)
   newrel_m2534:
-    trans: recaidas_h2534
-    desc: recaidas, hombres (h) de 25 a 34 anos (2534)
+    trans: nuevos_recaida_h2534
+    desc: nuevas recaidas, hombres (h) de 25 a 34 anos (2534)
   newrel_m3544:
-    trans: recaidas_h3534
-    desc: recaidas, hombres (h) de 35 a 44 anos (3544)
+    trans: nuevos_recaida_h3534
+    desc: nuevas recaidas, hombres (h) de 35 a 44 anos (3544)
   newrel_m4554:
-    trans: recaidas_h4554
-    desc: recaidas, hombres (h) de 45 a 54 anos (4554)
+    trans: nuevos_recaida_h4554
+    desc: nuevas recaidas, hombres (h) de 45 a 54 anos (4554)
   newrel_m5564:
-    trans: recaidas_h5564
-    desc: recaidas, hombres (h) de 55 a 64 anos (5564)
+    trans: nuevos_recaida_h5564
+    desc: nuevas recaidas, hombres (h) de 55 a 64 anos (5564)
   newrel_m65:
-    trans: recaidas_h65
-    desc: recaidas, hombres (h) de 65 o mas anos
+    trans: nuevos_recaida_h65
+    desc: nuevas recaidas, hombres (h) de 65 o mas anos
   newrel_f014:
-    trans: recaidas_m014
-    desc: recaidas, mujeres (m) de 0 a 14 anos (014)
+    trans: nuevos_recaida_m014
+    desc: nuevas recaidas, mujeres (m) de 0 a 14 anos (014)
   newrel_f1524:
-    trans: recaidas_m1524
-    desc: recaidas, mujeres (m) de 15 a 24 anos (1524)
+    trans: nuevos_recaida_m1524
+    desc: nuevas recaidas, mujeres (m) de 15 a 24 anos (1524)
   newrel_f2534:
-    trans: recaidas_m2534
-    desc: recaidas, mujeres (m) de 25 a 34 anos (2534)
+    trans: nuevos_recaida_m2534
+    desc: nuevas recaidas, mujeres (m) de 25 a 34 anos (2534)
   newrel_f3544:
-    trans: recaidas_m3534
-    desc: recaidas, mujeres (m) de 35 a 44 anos (3544)
+    trans: nuevos_recaida_m3534
+    desc: nuevas recaidas, mujeres (m) de 35 a 44 anos (3544)
   newrel_f4554:
-    trans: recaidas_m4554
-    desc: recaidas, mujeres (m) de 45 a 54 anos (4554)
+    trans: nuevos_recaida_m4554
+    desc: nuevas recaidas, mujeres (m) de 45 a 54 anos (4554)
   newrel_f5564:
-    trans: recaidas_m5564
-    desc: recaidas, mujeres (m) de 55 a 64 anos (5564)
+    trans: nuevos_recaida_m5564
+    desc: nuevas recaidas, mujeres (m) de 55 a 64 anos (5564)
   newrel_f65:
-    trans: recaidas_m65
-    desc: recaidas, mujeres (m) de 65 o mas anos
+    trans: nuevos_recaida_m65
+    desc: nuevas recaidas, mujeres (m) de 65 o mas anos
 help:
   name: oms
   alias: oms
