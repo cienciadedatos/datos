@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Datos de Gapminder — paises" />
 
-<meta property="og:description" content="Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país" />
+<meta property="og:description" content="Extracto de datos de Gapminder sobre expectativa de vida, PIB per capita y poblacion, segun pais" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/cienciadedatos/datos">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -101,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país</p>
+    <p>Extracto de datos de Gapminder sobre expectativa de vida, PIB per capita y poblacion, segun pais</p>
     
     </div>
 
@@ -110,12 +115,12 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>El dataframe principal tiene 1704 filas y 6 variables</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>países incluidos (factor con 142 niveles)</p></dd>
+<dt>pais</dt><dd><p>paises incluidos (factor con 142 niveles)</p></dd>
 <dt>continente</dt><dd><p>continentes (factor con 5 niveles)</p></dd>
-<dt>anio</dt><dd><p>desde 1952 a 2007, datos cada 5 años</p></dd>
-<dt>esperanza_de_vida</dt><dd><p>esperanza de vida al nacer, en años</p></dd>
-<dt>poblacion</dt><dd><p>población</p></dd>
-<dt>pib_per_capita</dt><dd><p>PIB per cápita (en dólares US, ajustados según inflación)</p></dd>
+<dt>anio</dt><dd><p>desde 1952 a 2007, datos cada 5 anos</p></dd>
+<dt>esperanza_de_vida</dt><dd><p>esperanza de vida al nacer, en anos</p></dd>
+<dt>poblacion</dt><dd><p>poblacion</p></dd>
+<dt>pib_per_capita</dt><dd><p>PIB per capita (en dolares US, ajustados segun inflacion)</p></dd>
 </dl>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>

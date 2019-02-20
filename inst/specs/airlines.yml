@@ -1,0 +1,17 @@
+df:
+  source: nycflights13::airlines
+  name: aerolineas
+variables:
+  carrier:
+    trans: codigo_carrier
+    desc: abreviacion de dos caracteres del nombre de la aerolinea
+  name:
+    trans: nombre
+    desc: nombre completo de la aerolinea
+help:
+  name: aerolineas
+  alias: aerolineas
+  title: Nombres de aerolineas
+  description: Nombres de aerolineas y su respectivo codigo carrier de dos digitos.
+  usage: aerolineas
+  format: Un data.frame con 16 lineas y 2 variables

@@ -3,23 +3,24 @@ datos
 
 [![Travis-CI Build
 Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
-
-Este paquete provee el conjuntos de datos ya traducidos que van a ser la
-base para la traducción del libro R4DS. La idea es, eventualmente,
+[![CRAN
+status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
+E Este paquete provee el conjuntos de datos ya traducidos que van a ser
+la base para la traducción del libro R4DS. La idea es, eventualmente,
 publicar este paquete en CRAN, para que los lectores del libro puedan
 practicar los ejercicios en español.
 
-## Instalación
+Instalación
+-----------
 
-El paquete está disponible en GitHub, y puede ser instalando utilizando
-`devtools`:
+El paquete está disponible en GitHub, y puede ser instalando utilizando `devtools`:
 
     devtools::install_github("cienciadedatos/datos")
 
-## Uso
+Uso
+---
 
-Después de instalar el paquete. Utilice la función `data()` para ver qué
-sets de datos están disponibles:
+Después de instalar el paquete. Utilice la función `data()` para ver qué sets de datos están disponibles:
 
 ``` r
 data(package = "datos")
@@ -49,6 +50,7 @@ Data sets in package
 Después puede utilizar el paquete para sus ejercicios o para la
 traducción:
 
+
 ``` r
 library(datos)
 dplyr::glimpse(diamantes)
@@ -75,55 +77,54 @@ Estos datos tambien tendrán su propio archivo de ayuda.
 
     diamantes {datos}   R Documentation
     Precio de 50,000 diamantes
-    
+
     Description
-    
+
     Un set de datos que contiene los precios de casi 54,000 diamantes.
-    
+
     Usage
-    
+
     diamantes
     Format
-    
+
     Un data.frame con 53,940 líneas y 10 variables
-    
+
     precio
     Precio en dólares US (\$326–\$18,823)
-    
+
     quilate
     Peso del diamante (0.2–5.01)
-    
+
     corte
     Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)
-    
+
     color
     Color del diamante, de J (peor) a D (mejor)
-    
+
     claridad
     Medida de qué tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))
-    
+
     profundidad
     Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43–79)
-    
+
     tabla
     Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)
-    
+
     x
     Largo en milímetros
-    
+
     y
     Ancho en milímetros
-    
+
     z
     Profundidad en milímetros
-    
+
     [Package datos version 0.0.0.9000 Index]
 
-## Traducciones
+Traducciones
+------------
 
-Despues de instalar el paquete. La parte mas importante es el archivo
-YAML; aquí hay una muestra de cómo se traduce el set de datos
-`ggplot2::diamonds`:
+Despues de instalar el paquete. La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos `ggplot2::diamonds`:
 
 ``` yml
 df:
@@ -170,38 +171,32 @@ help:
   format: Un data.frame con 53,940 lineas y 10 variables
 ```
 
-Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo
-un nuevo archivo *text* o usando Notepad.
+Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.
 
-Lo importante es usar los espacios y los dos puntos en los lugares
-apropiados. Utilice la muestra para saber cuál es el patrón a seguir.
+Lo importante es usar los espacios y los dos puntos en los lugares apropiados. Utilice la muestra para saber cuál es el patrón a seguir.
 
 ### Usando `datalang`
 
-El paquete `datalang` es el que se va a utilizar para hacer la
-traduccion del los datos. Para instalar use:
+El paquete `datalang` es el que se va a utilizar para hacer la traduccion del los datos. Para instalar use:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("cienciadedatos/datalang")
 ```
 
-Despues de grabar el archivo en su *Working Directory*, utilize la
-función `translate_data()`
+Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
 
 ``` r
 library(datalang)
 translate_data(ggplot2::mpg, "mi_traduccion.yml")
 ```
 
-## Actualizando el paquete
+Actualizando el paquete
+-----------------------
 
-Si quiere actualizar el paquete entero, utilize el commando:
-`datalang::translate_folder()`. Este comando va a crear las
-traducciones, los archivos de ayuda, y los va a grabar en el lugar
-apropiado.
+Si quiere actualizar el paquete entero, utilize el commando: `datalang::translate_folder()`. Este comando va a crear las traducciones, los archivos de ayuda, y los va a grabar en el lugar apropiado.
 
-## Compartir traducciones
+Compartir traducciones
+----------------------
 
-Una vez completado el archivo YAML, mándelo por medio de un Issue en
-GitHub, o por medio del canal oficial del proyecto en Slack.
+Una vez completado el archivo YAML, mándelo por medio de un Issue en GitHub, o por medio del canal oficial del proyecto en Slack.
