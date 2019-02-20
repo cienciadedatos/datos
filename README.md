@@ -26,7 +26,30 @@ Después de instalar el paquete. Utilice la función `data()` para ver qué sets
 data(package = "datos")
 ```
 
-Después puede utilizar el paquete para sus ejercicios o para la traducción:
+Data sets in package
+‘datos’:
+
+| Nombre       | Título                                                                                   |
+| :----------- | :--------------------------------------------------------------------------------------- |
+| bateadores   | Tabla de bateadores                                                                      |
+| diamantes    | Precio de 50,000 diamantes                                                               |
+| encuesta     | Muestra de variables categóricas de una encuesta social                                  |
+| fiel         | Datos del geiser Viejo Fiel (Old Faithful)                                               |
+| millas       | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles |
+| mtautos      | Pruebas de ruta de automóviles de Motor Trend                                            |
+| paises       | Datos de Gapminder                                                                       |
+| presidencial | Periodos de 11 presidentes, desde Eisenhower a Obama                                     |
+| tabla1       | Registros de tuberculosis de la Organización Mundial de la salud (1era variante)         |
+| tabla2       | Registros de tuberculosis de la Organización Mundial de la salud (2da variante)          |
+| tabla3       | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla4a      | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla4b      | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| tabla5       | Registros de tuberculosis de la Organización Mundial de la salud (3era variante)         |
+| vuelos       | Datos de vuelos                                                                          |
+
+Después puede utilizar el paquete para sus ejercicios o para la
+traducción:
+
 
 ``` r
 library(datos)

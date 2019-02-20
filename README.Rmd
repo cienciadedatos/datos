@@ -30,6 +30,13 @@ Después de instalar el paquete. Utilice la función `data()` para ver qué sets
 data(package = "datos")
 ```
 
+Data sets in package 'datos':
+
+```{r, echo=FALSE}
+results <- help.search("datasets", package = "datos")
+datos <- results$matches[c("Name", "Title")]
+knitr::kable(stats::setNames(datos, c("Nombre", "Título")))
+```
 Después puede utilizar el paquete para sus ejercicios o para la traducción:
 
 ```{r}
