@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -114,19 +114,19 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data.frame con 336,776 lineas y 19 variables</p><dl class='dl-horizontal'>
-<dt>anio</dt><dd><p>ano de la fecha de salida</p></dd>
+    <p>Un data.frame con 336.776 filas y 19 columnas</p><dl class='dl-horizontal'>
+<dt>anio</dt><dd><p>año de la fecha de salida</p></dd>
 <dt>mes</dt><dd><p>mes de la fecha de salida</p></dd>
-<dt>dia</dt><dd><p>dia de la fecha de salida</p></dd>
+<dt>dia</dt><dd><p>día de la fecha de salida</p></dd>
 <dt>horario_salida</dt><dd><p>horario efectivo de salida del vuelo (formato HHMM o HMM), hora local</p></dd>
 <dt>salida_programada</dt><dd><p>horario programado para la salida (formato HHMM o HMM), hora local</p></dd>
 <dt>atraso_salida</dt><dd><p>atraso de la salida en minutos. Valores negativos indican salida adelantada</p></dd>
 <dt>horario_llegada</dt><dd><p>horario efectivo de llegada del vuelo (formato HHMM o HMM), hora local</p></dd>
 <dt>llegada_programada</dt><dd><p>horario programado para la llegada (formato HHMM o HMM), hora local</p></dd>
 <dt>atraso_llegada</dt><dd><p>atraso de la llegada en minutos. Valores negativos indican llegada adelantada</p></dd>
-<dt>aerolinea</dt><dd><p>abreviacion de dos letras de la aerolinea. Ver airlines() para obtener el nombre</p></dd>
-<dt>vuelo</dt><dd><p>numero de vuelo</p></dd>
-<dt>codigo_cola</dt><dd><p>codigo de cola del avion</p></dd>
+<dt>aerolinea</dt><dd><p>abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre</p></dd>
+<dt>vuelo</dt><dd><p>número de vuelo</p></dd>
+<dt>codigo_cola</dt><dd><p>código de cola del avión</p></dd>
 <dt>origen</dt><dd><p>origen del vuelo. Ver airports() para metadatos adicionales</p></dd>
 <dt>destino</dt><dd><p>destino del vuelo. Ver airports() para metadatos adicionales</p></dd>
 <dt>tiempo_vuelo</dt><dd><p>cantidad de tiempo en aire, en minutos</p></dd>

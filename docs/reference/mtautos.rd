@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pruebas de ruta de automoviles de Motor Trend — mtautos • datos</title>
+<title>Pruebas de ruta de automóviles de Motor Trend — mtautos • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Pruebas de ruta de automoviles de Motor Trend — mtautos" />
+<meta property="og:title" content="Pruebas de ruta de automóviles de Motor Trend — mtautos" />
 
-<meta property="og:description" content="Los datos fueron extraidos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseno y performance de automoviles para 32 automoviles (modelos de 1973-73)." />
+<meta property="og:description" content="Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento de automóviles para 32 automóviles (modelos de 1973-1974)." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -99,14 +99,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Pruebas de ruta de automoviles de Motor Trend</h1>
+    <h1>Pruebas de ruta de automóviles de Motor Trend</h1>
     
     <div class="hidden name"><code>mtautos.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Los datos fueron extraidos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseno y performance de automoviles para 32 automoviles (modelos de 1973-73).</p>
+    <p>Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento de automóviles para 32 automóviles (modelos de 1973-1974).</p>
     
     </div>
 
@@ -114,18 +114,18 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 32 observaciones y 11 variables</p><dl class='dl-horizontal'>
-<dt>millas</dt><dd><p>millas por galon de Estados Unidos</p></dd>
-<dt>cilindros</dt><dd><p>numero de cilindros</p></dd>
-<dt>cilindrada</dt><dd><p>suma del volumen util de todos los cilindros del motor en pulgadas cubicas</p></dd>
+    <p>Un data.frame con 32 filas y 11 columnas</p><dl class='dl-horizontal'>
+<dt>millas</dt><dd><p>millas por galón de Estados Unidos</p></dd>
+<dt>cilindros</dt><dd><p>número de cilindros</p></dd>
+<dt>cilindrada</dt><dd><p>suma del volumen útil de todos los cilindros del motor en pulgadas cúbicas</p></dd>
 <dt>caballos</dt><dd><p>caballos de fuerza brutos</p></dd>
-<dt>eje</dt><dd><p>relacion del eje de transmision trasero</p></dd>
+<dt>eje</dt><dd><p>relación del eje de transmisión trasero</p></dd>
 <dt>peso</dt><dd><p>peso (1000 libras)</p></dd>
 <dt>velocidad</dt><dd><p>tiempo en recorrer 1/4 de milla</p></dd>
-<dt>forma</dt><dd><p>forma del motor (en V o en linea)</p></dd>
-<dt>transmision</dt><dd><p>tipo de transmision (0 = automatico, 1 = manual)</p></dd>
-<dt>cambios</dt><dd><p>numero de cambios de la caja de cambios</p></dd>
-<dt>carburadores</dt><dd><p>numero de carburadores</p></dd>
+<dt>forma</dt><dd><p>forma del motor (en V o en línea)</p></dd>
+<dt>transmision</dt><dd><p>tipo de transmisión (0 = automático, 1 = manual)</p></dd>
+<dt>cambios</dt><dd><p>número de cambios de la caja de cambios</p></dd>
+<dt>carburadores</dt><dd><p>número de carburadores</p></dd>
 </dl>
     
 

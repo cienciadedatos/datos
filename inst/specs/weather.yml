@@ -4,13 +4,13 @@ df:
 variables:
   year:
     trans: anio
-    desc: ano de la fecha de registro
+    desc: año de la fecha de registro
   month:
     trans: mes
     desc: mes de la fecha de registro
   day:
     trans: dia
-    desc: dia de la fecha de registro
+    desc: día de la fecha de registro
   hour:
     trans: hora
     desc: hora de la fecha de registro
@@ -19,26 +19,26 @@ variables:
     desc: temperatura medida en grados Fahrenheit
   dewp:
     trans: punto_rocio
-    desc: temperatura medida en grados Fahrenheit a la cual, dada la presion atmosferica y humedad,
+    desc: temperatura medida en grados Fahrenheit a la cual, dada la presion atmosférica y humedad,
       condensa el vapor de agua
   humid:
     trans: humedad
     desc: humedad relativa
   wind_dir:
     trans: direccion_viento
-    desc: direccion del viento medida en grados
+    desc: dirección del viento medida en grados
   wind_speed:
     trans: velocidad_viento
     desc: velocidad del viento medida en millas por hora
   wind_gust:
     trans: velocidad_rafaga
-    desc: velocidad de las rafagas de viento medida en millas por hora
+    desc: velocidad de las ráfagas de viento medida en millas por hora
   precip:
     trans: precipitacion
-    desc: precipitacion de lluvia medida en pulgadas
+    desc: precipitación de lluvia medida en pulgadas
   pressure:
     trans: presion
-    desc: presion atmosferica al nivel del mar medida en milibares
+    desc: presión atmosferica al nivel del mar medida en milibares
   visib:
     trans: visibilidad
     desc: visibilidad medida en millas
@@ -49,7 +49,7 @@ help:
   name: clima
   alias: clima
   title: Datos de clima
-  description: Metadatos de los clima y sus codigos de cola en el registro de aviacion de la FAA.
+  description: Metadatos del clima y los codigos de cola de los aviones en el registro de aviacion de la FAA.
     American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por
     lo que no es posible trazarlos.
   usage: clima

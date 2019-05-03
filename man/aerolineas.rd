@@ -1,12 +1,12 @@
 \docType{data}
 \name{aerolineas}
 \alias{aerolineas}
-\title{Nombres de aerolineas}
-\format{Un data.frame con 16 lineas y 2 variables
+\title{Nombres de aerolíneas}
+\format{Un data.frame con 16 filas y 2 columnas
 \describe{
-\item{codigo_carrier}{abreviacion de dos caracteres del nombre de la aerolinea}
-\item{nombre}{nombre completo de la aerolinea}
+\item{codigo_carrier}{abreviación de dos caracteres del nombre de la aerolínea}
+\item{nombre}{nombre completo de la aerolínea}
 }}
 \usage{aerolineas}
-\description{Nombres de aerolineas y su respectivo codigo carrier de dos digitos.}
+\description{Nombres de aerolíneas y su respectivo código carrier de dos dígitos.}
 \keyword{datasets}

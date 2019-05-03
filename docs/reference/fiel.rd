@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Datos del geiser Viejo Fiel (Old Faithful) — fiel" />
 
-<meta property="og:description" content="Datos de tiempo de duracion y espera entry erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos." />
+<meta property="og:description" content="Datos de tiempo de duracion y espera entre erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -106,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Datos de tiempo de duracion y espera entry erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.</p>
+    <p>Datos de tiempo de duracion y espera entre erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.</p>
     
     </div>
 
@@ -114,7 +114,7 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 272 observaciones y 2 variables</p><dl class='dl-horizontal'>
+    <p>Un data frame con 272 observaciones y 2 columnas</p><dl class='dl-horizontal'>
 <dt>erupciones</dt><dd><p>Tiempo de erupciones, en minutos</p></dd>
 <dt>espera</dt><dd><p>Minutos entre erupciones</p></dd>
 </dl>

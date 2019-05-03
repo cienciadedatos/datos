@@ -32,7 +32,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -82,10 +82,10 @@
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
 <p>Después de instalar el paquete. Utilice la función <code><a href="https://www.rdocumentation.org/packages/utils/topics/data">data()</a></code> para ver qué sets de datos están disponibles:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="dt">package =</span> <span class="st">"datos"</span>)</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="dt">package =</span> <span class="st">"datos"</span>)</a></code></pre></div>
 <p>Después puede utilizar el paquete para sus ejercicios o para la traducción:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)
-dplyr<span class="op">::</span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">dplyr<span class="op">::</span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
 <pre><code>## Observations: 53,940
 ## Variables: 10
 ## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…
@@ -99,7 +99,7 @@ dplyr<span class="op">::</span><span class="kw"><a href="https://dplyr.tidyverse
 ## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…
 ## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…</code></pre>
 <p>Estos datos tambien tendrán su propio archivo de ayuda.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><a href="https://www.rdocumentation.org/packages/datos/topics/diamantes">?diamantes</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">?diamantes</a></code></pre></div>
 <pre><code>diamantes {datos}   R Documentation
 Precio de 50,000 diamantes
 
@@ -149,49 +149,49 @@ Profundidad en milímetros
 <div id="traducciones" class="section level2">
 <h2 class="hasAnchor">
 <a href="#traducciones" class="anchor"></a>Traducciones</h2>
-<p>Despues de instalar el paquete. La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos <code><a href="https://ggplot2.tidyverse.org/reference/diamonds.html">ggplot2::diamonds</a></code>:</p>
-<div class="sourceCode"><pre class="sourceCode yml"><code class="sourceCode yaml"><span class="fu">df:</span>
-  <span class="fu">source:</span><span class="at"> ggplot2::diamonds</span>
-  <span class="fu">name:</span><span class="at"> diamantes</span>
-<span class="fu">variables:</span>
-  <span class="fu">price:</span>
-    <span class="fu">trans:</span><span class="at"> precio</span>
-    <span class="fu">desc:</span><span class="at"> Precio en dolares US</span>
-  <span class="fu">carat:</span>
-    <span class="fu">trans:</span><span class="at"> quilate</span>
-    <span class="fu">desc:</span><span class="at"> Peso del diamante</span>
-  <span class="fu">cut:</span>
-    <span class="fu">trans:</span><span class="at"> corte</span>
-    <span class="fu">desc:</span><span class="at"> Calided del corte</span>
-    <span class="fu">values:</span>
-      <span class="fu">Good:</span><span class="at"> Bueno</span>
-      <span class="fu">Very Good:</span><span class="at"> Muy bueno</span>
-      <span class="fu">Fair:</span><span class="at"> Regular</span>
-  <span class="fu">clarity:</span>
-    <span class="fu">trans:</span><span class="at"> claridad</span>
-    <span class="fu">desc:</span><span class="at"> Medida de que tan claro es el diamante</span>
-  <span class="fu">depth:</span>
-    <span class="fu">trans:</span><span class="at"> profundidad</span>
-    <span class="fu">desc:</span><span class="at"> Porcentaje total de la profundidad</span>
-  <span class="fu">table:</span>
-    <span class="fu">trans:</span><span class="at"> tabla</span>
-    <span class="fu">desc:</span><span class="at"> Medida de la parte mas ancha del diamante</span>
-  <span class="fu">x:</span>
-    <span class="fu">trans:</span><span class="at"> x</span>
-    <span class="fu">desc:</span><span class="at"> Largo in milimetros</span>
-  <span class="fu">y:</span>
-    <span class="fu">trans:</span><span class="at"> y</span>
-    <span class="fu">desc:</span><span class="at"> Ancho in milimetros</span>
-  <span class="fu">z:</span>
-    <span class="fu">trans:</span><span class="at"> z</span>
-    <span class="fu">desc:</span><span class="at"> Profundidad en milimetros</span>
-<span class="fu">help:</span>
-  <span class="fu">name:</span><span class="at"> diamantes</span>
-  <span class="fu">alias:</span><span class="at"> diamantes</span>
-  <span class="fu">title:</span><span class="at"> Precio de 50,000 diamantes</span>
-  <span class="fu">description:</span><span class="at"> Un set que contiene los precios de casi 54,000 diamantes.</span>
-  <span class="fu">usage:</span><span class="at"> diamantes</span>
-  <span class="fu">format:</span><span class="at"> Un data.frame con 53,940 lineas y 10 variables</span></code></pre></div>
+<p>Despues de instalar el paquete. La parte mas importante es el archivo YAML; aquí hay una muestra de cómo se traduce el set de datos <code><a href="https://www.rdocumentation.org/packages/ggplot2/topics/diamonds">ggplot2::diamonds</a></code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yml"><code class="sourceCode yaml"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="fu">df:</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">  <span class="fu">source:</span><span class="at"> ggplot2::diamonds</span></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">  <span class="fu">name:</span><span class="at"> diamantes</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="fu">variables:</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5">  <span class="fu">price:</span></a>
+<a class="sourceLine" id="cb7-6" data-line-number="6">    <span class="fu">trans:</span><span class="at"> precio</span></a>
+<a class="sourceLine" id="cb7-7" data-line-number="7">    <span class="fu">desc:</span><span class="at"> Precio en dolares US</span></a>
+<a class="sourceLine" id="cb7-8" data-line-number="8">  <span class="fu">carat:</span></a>
+<a class="sourceLine" id="cb7-9" data-line-number="9">    <span class="fu">trans:</span><span class="at"> quilate</span></a>
+<a class="sourceLine" id="cb7-10" data-line-number="10">    <span class="fu">desc:</span><span class="at"> Peso del diamante</span></a>
+<a class="sourceLine" id="cb7-11" data-line-number="11">  <span class="fu">cut:</span></a>
+<a class="sourceLine" id="cb7-12" data-line-number="12">    <span class="fu">trans:</span><span class="at"> corte</span></a>
+<a class="sourceLine" id="cb7-13" data-line-number="13">    <span class="fu">desc:</span><span class="at"> Calided del corte</span></a>
+<a class="sourceLine" id="cb7-14" data-line-number="14">    <span class="fu">values:</span></a>
+<a class="sourceLine" id="cb7-15" data-line-number="15">      <span class="fu">Good:</span><span class="at"> Bueno</span></a>
+<a class="sourceLine" id="cb7-16" data-line-number="16">      <span class="fu">Very Good:</span><span class="at"> Muy bueno</span></a>
+<a class="sourceLine" id="cb7-17" data-line-number="17">      <span class="fu">Fair:</span><span class="at"> Regular</span></a>
+<a class="sourceLine" id="cb7-18" data-line-number="18">  <span class="fu">clarity:</span></a>
+<a class="sourceLine" id="cb7-19" data-line-number="19">    <span class="fu">trans:</span><span class="at"> claridad</span></a>
+<a class="sourceLine" id="cb7-20" data-line-number="20">    <span class="fu">desc:</span><span class="at"> Medida de que tan claro es el diamante</span></a>
+<a class="sourceLine" id="cb7-21" data-line-number="21">  <span class="fu">depth:</span></a>
+<a class="sourceLine" id="cb7-22" data-line-number="22">    <span class="fu">trans:</span><span class="at"> profundidad</span></a>
+<a class="sourceLine" id="cb7-23" data-line-number="23">    <span class="fu">desc:</span><span class="at"> Porcentaje total de la profundidad</span></a>
+<a class="sourceLine" id="cb7-24" data-line-number="24">  <span class="fu">table:</span></a>
+<a class="sourceLine" id="cb7-25" data-line-number="25">    <span class="fu">trans:</span><span class="at"> tabla</span></a>
+<a class="sourceLine" id="cb7-26" data-line-number="26">    <span class="fu">desc:</span><span class="at"> Medida de la parte mas ancha del diamante</span></a>
+<a class="sourceLine" id="cb7-27" data-line-number="27">  <span class="fu">x:</span></a>
+<a class="sourceLine" id="cb7-28" data-line-number="28">    <span class="fu">trans:</span><span class="at"> x</span></a>
+<a class="sourceLine" id="cb7-29" data-line-number="29">    <span class="fu">desc:</span><span class="at"> Largo in milimetros</span></a>
+<a class="sourceLine" id="cb7-30" data-line-number="30">  <span class="fu">y:</span></a>
+<a class="sourceLine" id="cb7-31" data-line-number="31">    <span class="fu">trans:</span><span class="at"> y</span></a>
+<a class="sourceLine" id="cb7-32" data-line-number="32">    <span class="fu">desc:</span><span class="at"> Ancho in milimetros</span></a>
+<a class="sourceLine" id="cb7-33" data-line-number="33">  <span class="fu">z:</span></a>
+<a class="sourceLine" id="cb7-34" data-line-number="34">    <span class="fu">trans:</span><span class="at"> z</span></a>
+<a class="sourceLine" id="cb7-35" data-line-number="35">    <span class="fu">desc:</span><span class="at"> Profundidad en milimetros</span></a>
+<a class="sourceLine" id="cb7-36" data-line-number="36"><span class="fu">help:</span></a>
+<a class="sourceLine" id="cb7-37" data-line-number="37">  <span class="fu">name:</span><span class="at"> diamantes</span></a>
+<a class="sourceLine" id="cb7-38" data-line-number="38">  <span class="fu">alias:</span><span class="at"> diamantes</span></a>
+<a class="sourceLine" id="cb7-39" data-line-number="39">  <span class="fu">title:</span><span class="at"> Precio de 50,000 diamantes</span></a>
+<a class="sourceLine" id="cb7-40" data-line-number="40">  <span class="fu">description:</span><span class="at"> Un set que contiene los precios de casi 54,000 diamantes.</span></a>
+<a class="sourceLine" id="cb7-41" data-line-number="41">  <span class="fu">usage:</span><span class="at"> diamantes</span></a>
+<a class="sourceLine" id="cb7-42" data-line-number="42">  <span class="fu">format:</span><span class="at"> Un data.frame con 53,940 lineas y 10 variables</span></a></code></pre></div>
 <p>Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo un nuevo archivo <em>text</em> o usando Notepad.</p>
 <p>Lo importante es usar los espacios y los dos puntos en los lugares apropiados. Utilice la muestra para saber cuál es el patrón a seguir.</p>
 <div id="usando-datalang" class="section level3">
@@ -199,11 +199,11 @@ Profundidad en milímetros
 <a href="#usando-datalang" class="anchor"></a>Usando <code>datalang</code>
 </h3>
 <p>El paquete <code>datalang</code> es el que se va a utilizar para hacer la traduccion del los datos. Para instalar use:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
-devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"cienciadedatos/datalang"</span>)</code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"cienciadedatos/datalang"</span>)</a></code></pre></div>
 <p>Despues de grabar el archivo en su <em>Working Directory</em>, utilize la función <code><a href="https://www.rdocumentation.org/packages/datalang/topics/translate_data">translate_data()</a></code></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datalang)
-<span class="kw"><a href="https://www.rdocumentation.org/packages/datalang/topics/translate_data">translate_data</a></span>(ggplot2<span class="op">::</span>mpg, <span class="st">"mi_traduccion.yml"</span>)</code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datalang)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/datalang/topics/translate_data">translate_data</a></span>(ggplot2<span class="op">::</span>mpg, <span class="st">"mi_traduccion.yml"</span>)</a></code></pre></div>
 </div>
 </div>
 <div id="actualizando-el-paquete" class="section level2">

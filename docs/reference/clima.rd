@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Datos de clima — clima" />
 
-<meta property="og:description" content="Metadatos de los clima y sus codigos de cola en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por lo que no es posible trazarlos." />
+<meta property="og:description" content="Metadatos del clima y los codigos de cola de los aviones en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por lo que no es posible trazarlos." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -106,7 +106,7 @@
 
     <div class="ref-description">
     
-    <p>Metadatos de los clima y sus codigos de cola en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por lo que no es posible trazarlos.</p>
+    <p>Metadatos del clima y los codigos de cola de los aviones en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por lo que no es posible trazarlos.</p>
     
     </div>
 
@@ -115,18 +115,18 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>Un data.frame con 3,322 lineas y 9 variables</p><dl class='dl-horizontal'>
-<dt>anio</dt><dd><p>ano de la fecha de registro</p></dd>
+<dt>anio</dt><dd><p>año de la fecha de registro</p></dd>
 <dt>mes</dt><dd><p>mes de la fecha de registro</p></dd>
-<dt>dia</dt><dd><p>dia de la fecha de registro</p></dd>
+<dt>dia</dt><dd><p>día de la fecha de registro</p></dd>
 <dt>hora</dt><dd><p>hora de la fecha de registro</p></dd>
 <dt>temperatura</dt><dd><p>temperatura medida en grados Fahrenheit</p></dd>
-<dt>punto_rocio</dt><dd><p>temperatura medida en grados Fahrenheit a la cual, dada la presion atmosferica y humedad, condensa el vapor de agua</p></dd>
+<dt>punto_rocio</dt><dd><p>temperatura medida en grados Fahrenheit a la cual, dada la presion atmosférica y humedad, condensa el vapor de agua</p></dd>
 <dt>humedad</dt><dd><p>humedad relativa</p></dd>
-<dt>direccion_viento</dt><dd><p>direccion del viento medida en grados</p></dd>
+<dt>direccion_viento</dt><dd><p>dirección del viento medida en grados</p></dd>
 <dt>velocidad_viento</dt><dd><p>velocidad del viento medida en millas por hora</p></dd>
-<dt>velocidad_rafaga</dt><dd><p>velocidad de las rafagas de viento medida en millas por hora</p></dd>
-<dt>precipitacion</dt><dd><p>precipitacion de lluvia medida en pulgadas</p></dd>
-<dt>presion</dt><dd><p>presion atmosferica al nivel del mar medida en milibares</p></dd>
+<dt>velocidad_rafaga</dt><dd><p>velocidad de las ráfagas de viento medida en millas por hora</p></dd>
+<dt>precipitacion</dt><dd><p>precipitación de lluvia medida en pulgadas</p></dd>
+<dt>presion</dt><dd><p>presión atmosferica al nivel del mar medida en milibares</p></dd>
 <dt>visibilidad</dt><dd><p>visibilidad medida en millas</p></dd>
 <dt>fecha_hora</dt><dd><p>fecha y hora de registro en formato POSIXct</p></dd>
 </dl>

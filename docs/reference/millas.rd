@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Datos de economia de combustible de 1999 y 2008 para 38 modelos populares de automoviles — millas • datos</title>
+<title>Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles — millas • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Datos de economia de combustible de 1999 y 2008 para 38 modelos populares de automoviles — millas" />
+<meta property="og:title" content="Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles — millas" />
 
-<meta property="og:description" content="Este conjunto de datos contiene un subconjunto de los datos de economia de combustible que la Agencia de Proteccion Medioambiental (EPA) pone a disposicion en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva version cada ano entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del automovil." />
+<meta property="og:description" content="Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene sólo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo.&quot;" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9005</span>
       </span>
     </div>
 
@@ -99,14 +99,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Datos de economia de combustible de 1999 y 2008 para 38 modelos populares de automoviles</h1>
+    <h1>Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles</h1>
     
     <div class="hidden name"><code>millas.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Este conjunto de datos contiene un subconjunto de los datos de economia de combustible que la Agencia de Proteccion Medioambiental (EPA) pone a disposicion en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva version cada ano entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del automovil.</p>
+    <p>Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene sólo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo."</p>
     
     </div>
 
@@ -114,16 +114,16 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un dataframe con 234 filas y 11 variables</p><dl class='dl-horizontal'>
+    <p>Un data.frame con 234 filas y 11 columnas</p><dl class='dl-horizontal'>
 <dt>fabricante</dt><dd><p>fabricante</p></dd>
 <dt>modelo</dt><dd><p>nombre del modelo</p></dd>
-<dt>motor</dt><dd><p>tamano del motor del automovil, en litros</p></dd>
-<dt>anio</dt><dd><p>ano de fabricacion</p></dd>
-<dt>cilindros</dt><dd><p>numero de cilindros</p></dd>
-<dt>transmision</dt><dd><p>tipo de transmision</p></dd>
-<dt>traccion</dt><dd><p>tipo de traccion (d = delantera, t = trasera, 4 = 4 ruedas)</p></dd>
-<dt>ciudad</dt><dd><p>millas por galon de combustible en ciudad</p></dd>
-<dt>autopista</dt><dd><p>millas por galon de combustible en autopista</p></dd>
+<dt>motor</dt><dd><p>tamaño del motor del automovil, en litros</p></dd>
+<dt>anio</dt><dd><p>año de fabricación</p></dd>
+<dt>cilindros</dt><dd><p>número de cilindros</p></dd>
+<dt>transmision</dt><dd><p>tipo de transmisión</p></dd>
+<dt>traccion</dt><dd><p>tipo de tracción (d = delantera, t = trasera, 4 = 4 ruedas)</p></dd>
+<dt>ciudad</dt><dd><p>millas por galón de combustible en ciudad</p></dd>
+<dt>autopista</dt><dd><p>millas por galón de combustible en autopista</p></dd>
 <dt>combustible</dt><dd><p>tipo de combustible (p = premium, r = regular, e = etanol, d = diesel, g = gas natural comprimido)</p></dd>
 <dt>clase</dt><dd><p>tipo de auto</p></dd>
 </dl>
