@@ -1,0 +1,33 @@
+Package: datos
+Title: Traduce al Espaniol Varios Conjuntos de Datos de Practica
+Version: 0.0.0.9004
+Authors@R: 
+    c(person(given = "Edgar",
+             family = "Ruiz",
+             role = c("aut", "cre"),
+             email = "edgararuiz@gmail.com"),
+      person(given = "Riva",
+             family = "Quiroga",
+             role = "aut",
+             email = "riva.quiroga@uc.cl"),
+      person(given = "Mauricio",
+             family = "Vargas",
+             role = "aut",
+             email = "mvargas@dcc.uchile.cl"),
+      person(given = "Mauro",
+             family = "Lepore",
+             role = "aut",
+             email = "maurolepore@gmail.com")
+      )
+Description: Provee una version traducida de los siguientes
+    conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
+    gss-cat, Batting and flights.
+License: CC0
+Depends: 
+    R (>= 2.10)
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: https://github.com/cienciadedatos/datos
+BugReports: https://github.com/cienciadedatos/datos/issues
