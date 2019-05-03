@@ -1,7 +1,0 @@
-^docs$
-^_pkgdown\.yml$
-^README\.Rmd$
-^datos\.Rproj$
-^\.Rproj\.user$
-.travis.yml
-dev/
