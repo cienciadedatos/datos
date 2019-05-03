@@ -4,9 +4,9 @@
 \name{datos-package}
 \alias{datos}
 \alias{datos-package}
-\title{datos: Traduce al Espaniol Varios Conjuntos de Datos de Practica}
+\title{datos: Traduce al Español Varios Conjuntos de Datos de Práctica}
 \description{
-Provee una version traducida de los siguientes
+Provee una versión traducida de los siguientes
     conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
     gss-cat, Batting and flights.
 }

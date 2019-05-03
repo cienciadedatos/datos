@@ -4,19 +4,19 @@ df:
 variables:
   mpg:
     trans: millas
-    desc: millas por galon de Estados Unidos
+    desc: millas por galón de Estados Unidos
   cyl:
     trans: cilindros
-    desc: numero de cilindros
+    desc: número de cilindros
   disp:
     trans: cilindrada
-    desc: suma del volumen util de todos los cilindros del motor en pulgadas cubicas
+    desc: suma del volumen útil de todos los cilindros del motor en pulgadas cúbicas
   hp:
     trans: caballos
     desc: caballos de fuerza brutos
   drat:
     trans: eje
-    desc: relacion del eje de transmision trasero
+    desc: relación del eje de transmisión trasero
   wt:
     trans: peso
     desc: peso (1000 libras)
@@ -25,20 +25,20 @@ variables:
     desc: tiempo en recorrer 1/4 de milla
   vs:
     trans: forma
-    desc: forma del motor (en V o en linea)
+    desc: forma del motor (en V o en línea)
   am:
     trans: transmision
-    desc: tipo de transmision (0 = automatico, 1 = manual)
+    desc: tipo de transmisión (0 = automático, 1 = manual)
   gear:
     trans: cambios
-    desc: numero de cambios de la caja de cambios
+    desc: número de cambios de la caja de cambios
   carb:
     trans: carburadores
-    desc: numero de carburadores
+    desc: número de carburadores
 help:
   name: mtautos
   alias: mtautos
-  title: Pruebas de ruta de automoviles de Motor Trend
-  description: Los datos fueron extraidos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseno y performance de automoviles para 32 automoviles (modelos de 1973-73).
+  title: Pruebas de ruta de automóviles de Motor Trend
+  description: Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento de automóviles para 32 automóviles (modelos de 1973-1974).
   usage: mtautos
-  format: Un data frame con 32 observaciones y 11 variables
+  format: Un data.frame con 32 filas y 11 columnas

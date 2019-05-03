@@ -4,7 +4,7 @@ df:
 variables:
   price:
     trans: precio
-    desc: Precio en dolares US (\$326-\$18,823)
+    desc: Precio en dólares americanos (\$326-\$18,823)
   carat:
     trans: quilate
     desc: Peso del diamante (0.2-5.01)
@@ -26,7 +26,7 @@ variables:
     desc: Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43-79)
   table:
     trans: tabla
-    desc: Ancho de la parte superior del diamante con relacion a su punto mas ancho (43-95)
+    desc: Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)
   x:
     trans: x
     desc: Largo en milimetros
@@ -39,7 +39,7 @@ variables:
 help:
   name: diamantes
   alias: diamantes
-  title: Precio de 50,000 diamantes
-  description: Un set de datos que contiene los precios de casi 54,000 diamantes.
+  title: Precio de 50.000 diamantes
+  description: Un conjunto de datos que contiene los precios de casi 54.000 diamantes.
   usage: diamantes
-  format: Un data.frame con 53,940 lineas y 10 variables
+  format: Un data.frame con 53.940 filas y 10 columnas

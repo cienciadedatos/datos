@@ -4,14 +4,14 @@ df:
 variables:
   carrier:
     trans: codigo_carrier
-    desc: abreviacion de dos caracteres del nombre de la aerolinea
+    desc: abreviación de dos caracteres del nombre de la aerolínea
   name:
     trans: nombre
-    desc: nombre completo de la aerolinea
+    desc: nombre completo de la aerolínea
 help:
   name: aerolineas
   alias: aerolineas
-  title: Nombres de aerolineas
-  description: Nombres de aerolineas y su respectivo codigo carrier de dos digitos.
+  title: Nombres de aerolíneas
+  description: Nombres de aerolíneas y su respectivo código carrier de dos dígitos.
   usage: aerolineas
-  format: Un data.frame con 16 lineas y 2 variables
+  format: Un data.frame con 16 filas y 2 columnas

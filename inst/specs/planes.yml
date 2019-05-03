@@ -4,19 +4,19 @@ df:
 variables:
   tailnum:
     trans: codigo_cola
-    desc: codigo de cola
+    desc: código de cola
   year:
     trans: anio
-    desc: ano de fabricacion
+    desc: año de fabricación
   type:
     trans: tipo
-    desc: tipo de avion
+    desc: tipo de avión
   manufacturer:
     trans: fabricante
-    desc: fabricante del avion
+    desc: fabricante del avión
   model:
     trans: modelo
-    desc: modelo del avion
+    desc: modelo del avión
   engines:
     trans: motores
     desc: cantidad de motores
@@ -28,13 +28,13 @@ variables:
     desc: velocidad crucero promedio medida en millas por hora
   engine:
     trans: tipo_motor
-    desc: tipo de motor del avion
+    desc: tipo de motor del avión
 help:
   name: aviones
   alias: aviones
   title: Datos de aviones
-  description: Metadatos de los aviones y sus codigos de cola en el registro de aviacion de la FAA.
-    American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por
+  description: Metadatos de los aviones y sus códigos de cola en el registro de aviacion de la FAA.
+    American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por
     lo que no es posible trazarlos.
   usage: aviones
-  format: Un data.frame con 3,322 lineas y 9 variables
+  format: Un data.frame con 3.322 filas y 9 columnas
