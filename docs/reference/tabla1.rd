@@ -117,7 +117,7 @@
 <dt>pais</dt><dd><p>Nombre del país</p></dd>
 <dt>anio</dt><dd><p>Año correspondiente a los valores registrados</p></dd>
 <dt>casos</dt><dd><p>Número de casos registrados</p></dd>
-<dt>población</dt><dd><p>Población del país</p></dd>
+<dt>poblacion</dt><dd><p>Población del país</p></dd>
 </dl>
     
 

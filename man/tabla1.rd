@@ -7,7 +7,7 @@
 \item{pais}{Nombre del país}
 \item{anio}{Año correspondiente a los valores registrados}
 \item{casos}{Número de casos registrados}
-\item{población}{Población del país}
+\item{poblacion}{Población del país}
 }}
 \description{Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.}
 \keyword{datasets}

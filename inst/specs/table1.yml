@@ -16,7 +16,7 @@ variables:
     trans: casos
     desc: Número de casos registrados
   population:
-    trans: población
+    trans: poblacion
     desc: Población del país
 help:
   name: tabla1
