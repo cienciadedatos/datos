@@ -20,36 +20,30 @@ El paquete está disponible en GitHub, y puede ser instalando utilizando
 
 ## Uso
 
-Después de instalar el paquete. Utilice la función `data()` para ver qué
-sets de datos están disponibles:
-
-``` r
-data(package = "datos")
-```
-
 Data sets in package
 ‘datos’:
 
 | Nombre       | Título                                                                                   |
 | :----------- | :--------------------------------------------------------------------------------------- |
-| aerolineas   | Nombres de aerolineas                                                                    |
+| aerolineas   | Nombres de aerolíneas                                                                    |
 | aeropuertos  | Datos de aeropuertos                                                                     |
 | aviones      | Datos de aviones                                                                         |
 | bateadores   | Tabla de bateadores                                                                      |
 | clima        | Datos de clima                                                                           |
-| diamantes    | Precio de 50,000 diamantes                                                               |
-| encuesta     | Muestra de variables categoricas de una encuesta social                                  |
+| diamantes    | Precio de 50.000 diamantes                                                               |
+| encuesta     | Muestra de variables categóricas de una encuesta social                                  |
 | fiel         | Datos del geiser Viejo Fiel (Old Faithful)                                               |
-| millas       | Datos de economia de combustible de 1999 y 2008 para 38 modelos populares de automoviles |
-| mtautos      | Pruebas de ruta de automoviles de Motor Trend                                            |
+| millas       | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles |
+| mtautos      | Pruebas de ruta de automóviles de Motor Trend                                            |
+| oms          | Datos de tuberculosis de la Organización Mundial de la Salud                             |
 | paises       | Datos de Gapminder                                                                       |
 | presidencial | Periodos de 11 presidentes, desde Eisenhower a Obama                                     |
-| tabla1       | Registros de tuberculosis de la Organizacion Mundial de la salud (1era variante)         |
-| tabla2       | Registros de tuberculosis de la Organizacion Mundial de la salud (2da variante)          |
-| tabla3       | Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)         |
-| tabla4a      | Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)         |
-| tabla4b      | Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)         |
-| tabla5       | Registros de tuberculosis de la Organizacion Mundial de la salud (3era variante)         |
+| tabla1       | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         |
+| tabla2       | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          |
+| tabla3       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
+| tabla4a      | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
+| tabla4b      | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
+| tabla5       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
 | vuelos       | Datos de vuelos                                                                          |
 
 Después puede utilizar el paquete para sus ejercicios o para la
@@ -60,18 +54,24 @@ library(datos)
 dplyr::glimpse(diamantes)
 ```
 
+    ## Registered S3 methods overwritten by 'ggplot2':
+    ##   method         from 
+    ##   [.quosures     rlang
+    ##   c.quosures     rlang
+    ##   print.quosures rlang
+
     ## Observations: 53,940
     ## Variables: 10
-    ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, ...
-    ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0....
-    ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, ...
-    ## $ color       <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I,...
-    ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1...
-    ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65...
-    ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61...
-    ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3....
-    ## $ y           <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3....
-    ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2....
+    ## $ precio      <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…
+    ## $ quilate     <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22…
+    ## $ corte       <ord> Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Mu…
+    ## $ color       <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J…
+    ## $ claridad    <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, …
+    ## $ profundidad <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1…
+    ## $ tabla       <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, …
+    ## $ x           <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87…
+    ## $ y           <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…
+    ## $ z           <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…
 
 Estos datos tambien tendrán su propio archivo de ayuda.
 
@@ -181,31 +181,6 @@ un nuevo archivo *text* o usando Notepad.
 
 Lo importante es usar los espacios y los dos puntos en los lugares
 apropiados. Utilice la muestra para saber cuál es el patrón a seguir.
-
-### Usando `datalang`
-
-El paquete `datalang` es el que se va a utilizar para hacer la
-traduccion del los datos. Para instalar use:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("cienciadedatos/datalang")
-```
-
-Despues de grabar el archivo en su *Working Directory*, utilize la
-función `translate_data()`
-
-``` r
-library(datalang)
-translate_data(ggplot2::mpg, "mi_traduccion.yml")
-```
-
-## Actualizando el paquete
-
-Si quiere actualizar el paquete entero, utilize el commando:
-`datalang::translate_folder()`. Este comando va a crear las
-traducciones, los archivos de ayuda, y los va a grabar en el lugar
-apropiado.
 
 ## Compartir traducciones
 

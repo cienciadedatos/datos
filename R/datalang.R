@@ -1,7 +1,7 @@
 translate_data <- function(spec_path, .data = NULL) {
   #is.readable(spec_path)
 
-  spec <- read_yaml(spec_path)
+  spec <- yaml::read_yaml(spec_path)
 
   if (is.null(.data)) {
     df <- parse_expr(spec$df$source)
@@ -49,15 +49,15 @@ translate_data <- function(spec_path, .data = NULL) {
           }
         }
       }
-
-      cl <- as.data.frame(cl)
-      colnames(cl) <- new_names[x]
       cl
     }
   )
-  dfl <- as.data.frame(dfl)
-  if (was_tibble) dfl <- as_tibble(dfl)
-  dfl
+  dfl <- rlang::set_names(dfl, new_names)
+  if(was_tibble) {
+    tibble::as_tibble(dfl)
+  } else {
+    as.data.frame(dfl)
+  }
 }
 
 create_promise <- function(path, package = "datos") {
@@ -77,6 +77,6 @@ create_promise <- function(path, package = "datos") {
 }
 
 promise_datasets <- function(base_path = "specs", package = "datos") {
-  specs <- list.files(file.path(system.file(package = "datos"), "specs"))
+  specs <- list.files(file.path(system.file(package = package), "specs"))
   lapply(paste0("specs/", specs), create_promise)
 }

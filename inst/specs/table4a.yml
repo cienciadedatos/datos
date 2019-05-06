@@ -10,10 +10,10 @@ variables:
       Brazil: Brasil
       China: China
   1999:
-    trans: 1999
+    trans: "1999"
     desc: Casos registrados el año 1999.
   2000:
-    trans: 2000
+    trans: "2000"
     desc: Casos registrados el año 2000.
 help:
   name: tabla4a

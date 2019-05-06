@@ -24,7 +24,17 @@ Description: Provee una versión traducida de los siguientes
     gss-cat, Batting and flights.
 License: CC0
 Depends: 
-    R (>= 2.10)
+  R (>= 2.10)
+Imports:
+  rlang
+Suggests:
+  nycflights13,
+  Lahman,
+  ggplot2,
+  gapminder,
+  forcats,
+  tidyr,
+  testthat (>= 2.1.0)
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
