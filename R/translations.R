@@ -1,8 +1,5 @@
 translate_data <- function(spec_path, .data = NULL) {
-  #is.readable(spec_path)
-
   spec <- yaml::read_yaml(spec_path)
-
   if (is.null(.data)) {
     df <- parse_expr(spec$df$source)
     df <- eval(df)
@@ -10,14 +7,12 @@ translate_data <- function(spec_path, .data = NULL) {
   } else {
     df <- .data
   }
-
   if(tibble::is_tibble(df)){
     was_tibble <- TRUE
   } else {
     was_tibble <- FALSE
     df <-as_tibble(df)
   }
-
   vars <- spec$variables
   var_names <- names(vars)
   vars_TRUE <- var_names == "TRUE"
@@ -27,9 +22,7 @@ translate_data <- function(spec_path, .data = NULL) {
     }
     var_names[vars_TRUE]  <- "y"
   }
-
   new_names <- as.character(lapply(vars, function(x)x$trans))
-
   dfl <- lapply(
     seq_along(vars),
     function(x) {

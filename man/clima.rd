@@ -4,6 +4,7 @@
 \title{Datos de clima}
 \format{Un data.frame con 3,322 lineas y 9 variables
 \describe{
+\item{origen}{Estacion de clima}
 \item{anio}{año de la fecha de registro}
 \item{mes}{mes de la fecha de registro}
 \item{dia}{día de la fecha de registro}
