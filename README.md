@@ -1,10 +1,12 @@
 datos
 ================
 
-[![Travis-CI Build
-Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
+[![Travis-CI Build
+Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
+[![Coverage
+status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
 
 Este paquete provee el conjuntos de datos ya traducidos que van a ser la
 base para la traducción del libro R4DS. La idea es, eventualmente,
