@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.0.0.9005
+Version: 0.0.0.9006
 Authors@R: 
     c(person(given = "Edgar",
              family = "Ruiz",
@@ -24,7 +24,20 @@ Description: Provee una versión traducida de los siguientes
     gss-cat, Batting and flights.
 License: CC0
 Depends: 
-    R (>= 2.10)
+  R (>= 2.10)
+Imports:
+  rlang,
+  yaml,
+  tibble
+Suggests:
+  nycflights13,
+  Lahman,
+  ggplot2,
+  gapminder,
+  forcats,
+  tidyr,
+  testthat (>= 2.1.0),
+  covr
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true

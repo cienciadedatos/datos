@@ -9,8 +9,10 @@ library(datos)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
 [![CRAN status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
+[![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
+[![Coverage status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
+
 
 Este paquete provee el conjuntos de datos ya traducidos que van a ser la base para la traducción del libro R4DS.  La idea es, eventualmente, publicar este paquete en CRAN, para que los lectores del libro puedan practicar los ejercicios en español.
 
@@ -23,12 +25,6 @@ devtools::install_github("cienciadedatos/datos")
 ```
 
 ## Uso
-
-Después de instalar el paquete. Utilice la función `data()` para ver qué sets de datos están disponibles:
-
-```{r}
-data(package = "datos")
-```
 
 Data sets in package 'datos':
 
@@ -151,26 +147,6 @@ help:
 Crear un nuevo archivo YAML es fácil. Se puede crear en RStudio abriendo un nuevo archivo *text* o usando Notepad.  
 
 Lo importante es usar los espacios y los dos puntos en los lugares apropiados.  Utilice la muestra para saber cuál es el patrón a seguir.
-
-### Usando `datalang`
-
-El paquete `datalang` es el que se va a utilizar para hacer la traduccion del los datos.  Para instalar use:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("cienciadedatos/datalang")
-```
-
-Despues de grabar el archivo en su *Working Directory*, utilize la función `translate_data()`
-
-```r
-library(datalang)
-translate_data(ggplot2::mpg, "mi_traduccion.yml")
-```
-
-## Actualizando el paquete
-
-Si quiere actualizar el paquete entero, utilize el commando: `datalang::translate_folder()`.  Este comando va a crear las traducciones, los archivos de ayuda, y los va a grabar en el lugar apropiado. 
 
 ## Compartir traducciones
 

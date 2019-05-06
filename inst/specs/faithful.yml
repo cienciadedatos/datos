@@ -1,5 +1,5 @@
 df:
-  source: faithful
+  source: datasets::faithful
   name: fiel
 variables:
   eruptions:

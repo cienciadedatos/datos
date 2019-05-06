@@ -2,6 +2,9 @@ df:
   source: nycflights13::weather
   name: clima
 variables:
+  origin:
+    trans: origen
+    desc: Estacion de clima
   year:
     trans: anio
     desc: año de la fecha de registro
