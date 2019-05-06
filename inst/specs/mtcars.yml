@@ -1,5 +1,5 @@
 df:
-  source: mtcars
+  source: datasets::mtcars
   name: mtautos
 variables:
   mpg:
