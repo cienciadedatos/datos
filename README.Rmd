@@ -37,6 +37,8 @@ specs <- list.files("inst/specs")
 all <- map(file.path("inst", "specs", specs), yaml::read_yaml)
 sources <- map_chr(all, ~.x$df$source)
 packages <- map(strsplit(sources, "::"), ~.x[[1]])
+d <- map_chr(strsplit(sources, "::"), ~.x[[2]])
+translated <- paste0("'", paste0(d, collapse = "', '"), "'")
 knitr::kable(data.frame(Paquetes = as.character(unique(packages))))
 ```
 
