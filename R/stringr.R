@@ -1,4 +1,4 @@
-#' Vectores de caracteres de stringr
+#' Vectores de caracteres dentro del paquete stringr
 #'
 #' Muestra de vectores de caracteres para practicar la manipulación de cadenas (strings)
 #'
@@ -9,7 +9,7 @@
 #' palabras - es una selección de las 1000 palabras más frecuentes del Corpus de Referencia del Español Actual (CREA) de la RAE, disponible en github.com/rivaquiroga/frecuencias-crea
 #'
 #' @format Un vector
-#' @name stringr-data
+#' @name datos-stringr
 #' @examples
 #' length(oraciones)
 #' oraciones[1:5]
@@ -21,11 +21,11 @@
 #' palabras[1:5]
 NULL
 
-#' @rdname stringr-data
+#' @rdname datos-stringr
 "oraciones"
 
-#' @rdname stringr-data
+#' @rdname datos-stringr
 "frutas"
 
-#' @rdname stringr-data
+#' @rdname datos-stringr
 "palabras"
