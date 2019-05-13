@@ -24,7 +24,7 @@ Description: Provee una versión traducida de los siguientes
     gss-cat, Batting and flights.
 License: CC0
 Depends: 
-  R (>= 2.10)
+  R (>= 3.5.0)
 Imports:
   rlang,
   yaml,
