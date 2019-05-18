@@ -1,12 +1,12 @@
-fix_reference <- function() {
-  rds <- list.files("docs/reference", pattern = "rd")
+fix_reference <- function(ref_path = "docs/reference") {
+  rds <- list.files(ref_path, pattern = "rd")
   new_html <- paste0(substr(rds, 1, nchar(rds) - 2), "html")
-  rds <- paste0("docs/reference/", rds)
-  new_html <- paste0("docs/reference/", new_html)
+  rds <- paste0(ref_path, "/", rds)
+  new_html <- paste0(ref_path, "/", new_html)
   file.rename(rds, new_html)
-  index <- readLines("docs/reference/index.html")
+  index <- readLines(file.path(ref_path, "/index.html"))
   index <- gsub(".rd", ".html", index)
-  writeLines(index, "docs/reference/index.html")
+  writeLines(index, file.path(ref_path ,"index.html"))
 }
 
 data_script <- function(script_path) {

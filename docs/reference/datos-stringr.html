@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Datos de Gapminder — paises • datos</title>
+<title>Vectores de caracteres dentro del paquete stringr — datos-stringr • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Datos de Gapminder — paises" />
+<meta property="og:title" content="Vectores de caracteres dentro del paquete stringr — datos-stringr" />
 
-<meta property="og:description" content="Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país" />
+<meta property="og:description" content="Muestra de vectores de caracteres para practicar la manipulación de cadenas (strings)" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,35 +99,42 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Datos de Gapminder</h1>
-    
-    <div class="hidden name"><code>paises.rd</code></div>
+    <h1>Vectores de caracteres dentro del paquete stringr</h1>
+    <small class="dont-index">Source: <a href='https://github.com/cienciadedatos/datos/blob/master/R/stringr.R'><code>R/stringr.R</code></a></small>
+    <div class="hidden name"><code>datos-stringr.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país</p>
+    <p>Muestra de vectores de caracteres para practicar la manipulación de cadenas (strings)</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>paises</span></pre>
+    <pre class="usage"><span class='no'>oraciones</span>
+
+<span class='no'>frutas</span>
+
+<span class='no'>palabras</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>El cuadro de datos principal tiene 1704 filas y 6 columnas</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>países incluídos (factor con 142 niveles)</p></dd>
-<dt>continente</dt><dd><p>continentes (factor con 5 niveles)</p></dd>
-<dt>anio</dt><dd><p>desde 1952 a 2007, datos cada 5 años</p></dd>
-<dt>esperanza_de_vida</dt><dd><p>esperanza de vida al nacer, en años</p></dd>
-<dt>poblacion</dt><dd><p>población</p></dd>
-<dt>pib_per_capita</dt><dd><p>PIB per cápita (en dólares americanos, ajustados según inflación)</p></dd>
-</dl>
+    <p>Un vector</p>
     
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>http://www.gapminder.org/data/</p>
+    <p>oraciones - es una selección y adaptación al español de los datos de práctica contenidos en stringr::sentences.</p>
+<p>fruta - es una selección y adaptación al español de los datos de práctica contenidos en stringr::fruit.</p>
+<p>palabras - es una selección de las 1000 palabras más frecuentes del Corpus de Referencia del Español Actual (CREA) de la RAE, disponible en github.com/rivaquiroga/frecuencias-crea</p>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/length'>length</a></span>(<span class='no'>oraciones</span>)</div><div class='output co'>#&gt; [1] 50</div><div class='input'><span class='no'>oraciones</span>[<span class='fl'>1</span>:<span class='fl'>5</span>]</div><div class='output co'>#&gt; [1] "Las casas están construidas de ladrillos de arcilla roja."
+#&gt; [2] "La caja fue arrojada al lado del camión estacionado."     
+#&gt; [3] "El domingo es la mejor parte de la semana."               
+#&gt; [4] "Agrega a la cuenta de la tienda hasta el último centavo." 
+#&gt; [5] "Nueve hombres fueron contratados para excavar las ruinas."</div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/length'>length</a></span>(<span class='no'>frutas</span>)</div><div class='output co'>#&gt; [1] 25</div><div class='input'><span class='no'>frutas</span>[<span class='fl'>1</span>:<span class='fl'>5</span>]</div><div class='output co'>#&gt; [1] "banana"   "papaya"   "uva"      "arándano" "frutilla"</div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/length'>length</a></span>(<span class='no'>palabras</span>)</div><div class='output co'>#&gt; [1] 1000</div><div class='input'><span class='no'>palabras</span>[<span class='fl'>1</span>:<span class='fl'>5</span>]</div><div class='output co'>#&gt; [1] "a"        "abril"    "acción"   "acciones" "acerca"  </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -135,8 +142,10 @@
       
       <li><a href="#format">Format</a></li>
 
-      <li><a href="#source">Source</a></li>
-          </ul>
+      <li><a href="#details">Details</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
