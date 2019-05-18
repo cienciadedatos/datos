@@ -1,0 +1,54 @@
+translate <- function(spec_file) {
+  pkg_path <- system.file("specs", package = "datos")
+  spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
+  df <- parse(text = spec$df$source)
+  df <- eval(df)
+  if ("function" %in% class(df)) {
+    return()
+  }
+  if (tibble::is_tibble(df)) {
+    was_tibble <- TRUE
+  } else {
+    was_tibble <- FALSE
+    df <- tibble::as_tibble(df)
+  }
+  vars <- spec$variables
+  var_names <- names(vars)
+  vars_TRUE <- var_names == "TRUE"
+  if (sum(vars_TRUE) > 0) {
+    if (vars[vars_TRUE][[1]]$trans == "TRUE") {
+      vars[vars_TRUE][[1]]$trans <- "y"
+    }
+    var_names[vars_TRUE] <- "y"
+  }
+  new_names <- as.character(lapply(vars, function(x) x$trans))
+  dfl <- lapply(
+    seq_along(vars),
+    function(x) {
+      cl <- df[, var_names[x]][[1]]
+      from <- names(vars[[x]]$values)
+      if (!is.null(from)) {
+        to <- as.character(vars[[x]]$values[from])
+        if ("factor" %in% class(cl)) {
+          lv <- levels(cl)
+          for (i in seq_along(from)) {
+            lv[lv == from[i]] <- to[i]
+          }
+          levels(cl) <- lv
+        } else {
+          for (i in seq_along(from)) {
+            cl[cl == from[i]] <- to[i]
+          }
+        }
+      }
+      cl
+    }
+  )
+  dfl <- setNames(dfl, new_names)
+  if (was_tibble) {
+    tibble::as_tibble(dfl)
+  } else {
+    as.data.frame(dfl)
+  }
+}
+translate('gapminder.yml')
