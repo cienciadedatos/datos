@@ -9,17 +9,18 @@ get_all_specs <- function(base_path = "specs", package = "datos") {
 
 all_specs <- get_all_specs()
 
-lapply(all_specs,
-       function(x){
-         test_that(paste0("Load from spec works for:", x$df$name), {
-           df <- eval(rlang::parse_expr(x$df$name))
-           orig <- eval(rlang::parse_expr(x$df$source))
-           expect_is(df, "data.frame")
-           expect_is(eval(parse(text = paste0("datos::", x$df$name))),"data.frame")
-           expect_equal(names(df), as.character(lapply(x$variables, function(x) x$trans)))
-           expect_equal(nrow(orig), nrow(df))
-           expect_equal(ncol(orig), ncol(df))
-           expect_equal(class(orig), class(df))
-           })
-         })
-
+lapply(
+  all_specs,
+  function(x) {
+    test_that(paste0("Load from spec works for:", x$df$name), {
+      df <- eval(rlang::parse_expr(x$df$name))
+      orig <- eval(rlang::parse_expr(x$df$source))
+      expect_is(df, "data.frame")
+      expect_is(eval(parse(text = paste0("datos::", x$df$name))), "data.frame")
+      expect_equal(names(df), as.character(lapply(x$variables, function(x) x$trans)))
+      expect_equal(nrow(orig), nrow(df))
+      expect_equal(ncol(orig), ncol(df))
+      expect_equal(class(orig), class(df))
+    })
+  }
+)

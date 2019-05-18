@@ -3,8 +3,10 @@ translate <- function(spec_file) {
   spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
   df <- parse(text = spec$df$source)
   df <- eval(df)
-  if("function" %in% class(df)) return()
-  if(tibble::is_tibble(df)){
+  if ("function" %in% class(df)) {
+    return()
+  }
+  if (tibble::is_tibble(df)) {
     was_tibble <- TRUE
   } else {
     was_tibble <- FALSE
@@ -13,13 +15,13 @@ translate <- function(spec_file) {
   vars <- spec$variables
   var_names <- names(vars)
   vars_TRUE <- var_names == "TRUE"
-  if(sum(vars_TRUE) > 0){
-    if(vars[vars_TRUE][[1]]$trans == "TRUE"){
+  if (sum(vars_TRUE) > 0) {
+    if (vars[vars_TRUE][[1]]$trans == "TRUE") {
       vars[vars_TRUE][[1]]$trans <- "y"
     }
-    var_names[vars_TRUE]  <- "y"
+    var_names[vars_TRUE] <- "y"
   }
-  new_names <- as.character(lapply(vars, function(x)x$trans))
+  new_names <- as.character(lapply(vars, function(x) x$trans))
   dfl <- lapply(
     seq_along(vars),
     function(x) {
@@ -43,7 +45,7 @@ translate <- function(spec_file) {
     }
   )
   dfl <- setNames(dfl, new_names)
-  if(was_tibble) {
+  if (was_tibble) {
     tibble::as_tibble(dfl)
   } else {
     as.data.frame(dfl)
