@@ -15,6 +15,7 @@ lapply(all_specs,
            df <- eval(rlang::parse_expr(x$df$name))
            orig <- eval(rlang::parse_expr(x$df$source))
            expect_is(df, "data.frame")
+           expect_is(eval(parse(text = paste0("datos::", x$df$name))),"data.frame")
            expect_equal(names(df), as.character(lapply(x$variables, function(x) x$trans)))
            expect_equal(nrow(orig), nrow(df))
            expect_equal(ncol(orig), ncol(df))

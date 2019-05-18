@@ -1,17 +1,14 @@
-translate_data <- function(spec_path, .data = NULL) {
-  spec <- yaml::read_yaml(spec_path)
-  if (is.null(.data)) {
-    df <- parse_expr(spec$df$source)
-    df <- eval(df)
-    if("function" %in% class(df)) return()
-  } else {
-    df <- .data
-  }
+translate <- function(spec_file) {
+  pkg_path <- system.file("specs", package = "datos")
+  spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
+  df <- parse(text = spec$df$source)
+  df <- eval(df)
+  if("function" %in% class(df)) return()
   if(tibble::is_tibble(df)){
     was_tibble <- TRUE
   } else {
     was_tibble <- FALSE
-    df <-as_tibble(df)
+    df <- tibble::as_tibble(df)
   }
   vars <- spec$variables
   var_names <- names(vars)
@@ -45,31 +42,10 @@ translate_data <- function(spec_path, .data = NULL) {
       cl
     }
   )
-  dfl <- rlang::set_names(dfl, new_names)
+  dfl <- setNames(dfl, new_names)
   if(was_tibble) {
     tibble::as_tibble(dfl)
   } else {
     as.data.frame(dfl)
   }
-}
-
-create_promise <- function(path, package = "datos") {
-  spec_loc <- system.file(path, package = package)
-  spec <- read_yaml(spec_loc)
-  new_name <- spec$df$name
-  origin <- spec$df$source
-
-  envir <- as.environment(paste0("package:", package))
-
-  rlang::env_bind_lazy(
-    envir,
-    !! new_name := translate_data(
-      spec_loc,
-      eval(parse_expr(origin))
-    ))
-}
-
-promise_datasets <- function(base_path = "specs", package = "datos") {
-  specs <- list.files(file.path(system.file(package = package), "specs"))
-  lapply(paste0("specs/", specs), create_promise)
 }
