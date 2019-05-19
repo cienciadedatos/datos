@@ -9,7 +9,7 @@ create_rd <- function(spec_path) {
 
   items <- NULL
   items <- lapply(
-    spec$variables, function(x){
+    spec$variables, function(x) {
       variable <- x["trans"]
       if (variable == "TRUE") variable <- "y"
       paste0("\\item{", variable, "}{", x["desc"], "}")

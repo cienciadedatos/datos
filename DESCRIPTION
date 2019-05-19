@@ -1,6 +1,6 @@
 Package: datos
-Title: Translates various data sets into Spanish
-Version: 0.0.0.9007
+Title: Traduce al Español Varios Conjuntos de Datos de Práctica
+Version: 0.0.0.9008
 Authors@R: 
     c(person(given = "Edgar",
              family = "Ruiz",
@@ -19,17 +19,14 @@ Authors@R:
              role = "aut",
              email = "maurolepore@gmail.com")
       )
-Description:  It translates the name of the data set, its variables, and values. 
-  It focuses on the practice data sets used in the book 'R for Data Science'. 
-  It includes translations into Spanish for: 'airlines', 'airports', 'Batting', 
-  'diamonds', 'faithful', 'flights', 'gapminder', 'gss_cat', 'mpg', 'mtcars', 
-  'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 
-  'table5', 'weather', 'who'.
+Description:  Provee una versión traducida de los siguientes conjuntos de datos: 
+  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'weather', 'who'.
 License: CC0
 Depends: 
   R (>= 3.5.0)
 Imports:
-  rlang,
   yaml,
   tibble
 Suggests:
@@ -47,4 +44,4 @@ LazyData: true
 RoxygenNote: 6.1.1
 URL: https://github.com/cienciadedatos/datos
 BugReports: https://github.com/cienciadedatos/datos/issues
-
+Language: es
