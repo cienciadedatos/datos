@@ -4,14 +4,12 @@
 \name{datos-package}
 \alias{datos}
 \alias{datos-package}
-\title{datos: Translates various data sets into Spanish}
+\title{datos: Traduce al Español Varios Conjuntos de Datos de Práctica}
 \description{
-It translates the name of the data set, its variables, and values. 
-  It focuses on the practice data sets used in the book 'R for Data Science'. 
-  It includes translations into Spanish for: 'airlines', 'airports', 'Batting', 
-  'diamonds', 'faithful', 'flights', 'gapminder', 'gss_cat', 'mpg', 'mtcars', 
-  'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 
-  'table5', 'weather', 'who'.
+Provee una versión traducida de los siguientes conjuntos de datos: 
+  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'weather', 'who'.
 }
 \seealso{
 Useful links:
