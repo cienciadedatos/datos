@@ -1,6 +1,6 @@
 Package: datos
 Title: Translates various data sets into Spanish
-Version: 0.0.0.9007
+Version: 0.0.0.9008
 Authors@R: 
     c(person(given = "Edgar",
              family = "Ruiz",
@@ -29,7 +29,6 @@ License: CC0
 Depends: 
   R (>= 3.5.0)
 Imports:
-  rlang,
   yaml,
   tibble
 Suggests:

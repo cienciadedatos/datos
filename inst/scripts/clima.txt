@@ -3,9 +3,7 @@ translate <- function(spec_file) {
   spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
   df <- parse(text = spec$df$source)
   df <- eval(df)
-  if ("function" %in% class(df)) {
-    return()
-  }
+  if ("function" %in% class(df)) return()
   if (tibble::is_tibble(df)) {
     was_tibble <- TRUE
   } else {
