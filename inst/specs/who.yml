@@ -5,6 +5,222 @@ variables:
   country:
     trans: pais
     desc: nombre del país
+    values:
+      Afghanistan: "Afganist\u00e1n"
+      Albania: Albania
+      Algeria: Argelia
+      American Samoa: Samoa Americana
+      Andorra: Andorra
+      Angola: Angola
+      Anguilla: Anguila
+      Argentina: Argentina
+      Armenia: Armenia
+      Aruba: Aruba
+      Australia: Australia
+      Austria: Austria
+      Azeribaijan: "Azerbaiy\u00e1n"
+      Bahamas: Bahamas
+      Bahrain: "Bar\u00e9in"
+      Bangladesh: Bangladesh
+      Barbados: Barbado
+      Belarus: Bielorrusia
+      Belgium: "B\u00e9lgica"
+      Belize: Belice
+      Benin: Benin
+      Bermuda: Bermuda
+      Bolivia (Plurinational State of): Bolivia
+      Bosnia and Herzegovina: Bosnia y Herzegovina
+      Bonaire, Saint Eustatius and Saba: "Bonaire, San Eustaquio y Saba"
+      Botswana: Botswana
+      Brazil: Brasil
+      British Virgin Islands: "Islas V\u00edrgenes Brit\u00e1nicas"
+      Brunei Darussalam: "Brun\u00e9i"
+      Bulgaria: Bulgaria
+      Burkina Faso: Burkina Faso
+      Burundi: Burundi
+      Bhutan: "But\u00e1n"
+      Cabo Verde: Cabo Verde
+      Cayman Islands: "Islas Caim\u00e1n"
+      Cambodia: Camboya
+      Cameroon: "Camer\u00fan"
+      Canada: "Canad\u00e1"
+      Central African Republic: "Rep\u00fablica Centroafricana"
+      Chad: Chad
+      Chile: Chile
+      China, Macao SAR: "Macao, China"
+      Colombia: Colombia
+      Comoros: Comoras
+      Congo: Congo
+      Cook Islands: Islas Cook
+      Costa Rica: Costa Rica
+      Cote d'Ivoire: Costa de Marfil
+      Croatia: Croacia
+      Cuba: Cuba
+      Curacao: "Cura\u00e7ao"
+      Cyprus: Chipre
+      Czech Republic: "Rep\u00fablica Checa"
+      Democratic Republic of the Congo: "Rep\u00fablica Democr\u00e1tica del Congo"
+      Denmark: Dinamarca
+      Djibouti: Yibuti
+      Dominica: Dominica
+      Dominican Republic: "Rep\u00fablica Dominicana"
+      Ecuador: Ecuador
+      Egypt: Egipto
+      El Salvador: El Salvador
+      Equatorial Guinea: Guinea Ecuatorial
+      Eritrea: Eritrea
+      Estonia: Estonia
+      Ethiopia: "Etiop\u00eda"
+      Fiji: Fiji
+      Finland: Finlandia
+      France: Francia
+      French Polynesia: Polinesia Francesa
+      Gabon: "Gab\u00f3n"
+      Gambia: Gambia
+      Georgia: Georgia
+      Germany: Alemania
+      Ghana: Ghana
+      Greece: Grecia
+      Greenland: Groenlandia
+      Grenada: Granada
+      Guatemala: Guatemala
+      Guam: Guam
+      Guinea-Bissau: Guinea Bissau
+      Guyana: Guyana
+      Guinea: Guinea
+      Haiti: "Hait\u00ed"
+      Honduras: Honduras
+      China, Hong Kong SAR: "Hong Kong, China"
+      Hungary: "Hungr\u00eda"
+      Iceland: Islandia
+      India: India
+      Indonesia: Indonesia
+      Iran (Islamic Republic of): "Ir\u00e1n"
+      Iraq: Iraq
+      Ireland: Irlanda
+      Israel: Israel
+      Italy: Italia
+      Jamaica: Jamaica
+      Japan: "Jap\u00e9n"
+      Jordan: Jordania
+      Kazakhstan: "Kazajist\u00e1n"
+      Kenya: Kenia
+      Democratic People's Republic of Korea: "Corea, Rep. Dem."
+      Republic of Korea: "Corea, Rep."
+      Kiribati: Kiribati
+      Kyrgyzstan: "Kirguist\u00e1n"
+      Kuwait: Kuwait
+      Lao People's Democratic Republic: Lao
+      Latvia: Latvia
+      Lebanon: "L\u00edbano"
+      Lesotho: Lesoto
+      Liberia: Liberia
+      Libya: Libia
+      Lithuania: Lituania
+      Luxembourg: Luxemburgo
+      Madagascar: Madagascar
+      Malawi: Malaui
+      Malaysia: Malasia
+      Maldives: Maldivas
+      Mali: "Mal\u00ed"
+      Malta: Malta
+      Marshall Islands: Islas Marshall
+      Mauritania: Mauritania
+      Mauritius: Mauricio
+      Mexico: "M\u00e9xico"
+      Micronesia (Federated States of): Micronesia
+      Mongolia: Mongolia
+      Monaco: "M\u00e9naco"
+      Montenegro: Montenegro
+      Montserrat: Montserrat
+      Morocco: Marruecos
+      Mozambique: Mozambique
+      Myanmar: Myanmar
+      Namibia: Namibia
+      Nauru: Nauru
+      Nepal: Nepal
+      Netherlands: "Pa\u00edses Bajos"
+      Netherlands Antilles: Antillas Neerlandesas
+      New Caledoni: Nueva Caledonia
+      New Zealand: "Nueva Zelanda"
+      Nicaragua: Nicaragua
+      Niger: Niger
+      Nigeria: Nigeria
+      Niue: Niue
+      Norway: Noruega
+      Northern Mariana Islands: Islas Marianas del Norte
+      Oman: "Om\u00e1n"
+      Pakistan: "Pakist\u00e1n"
+      Palau: Palau
+      Panama: "Panam\u00e1"
+      Papua New Guinea: "Pap\u00fa Nueva Guinea"
+      Paraguay: Paraguay
+      Peru: "Per\u00fa"
+      Philippines: Filipinas
+      Poland: Polonia
+      Portugal: Portugal
+      Puerto Rico: Puerto Rico
+      Qatar: Catar
+      Republic of Moldova: Moldavia
+      Romania: Rumania
+      Rwanda: Ruanda
+      Russian Federation: "Federaci\u00f3n Rusa"
+      Samoa: Samoa
+      Saint Kitts and Nevis: "San Crist\u00f3bal y Nevis"
+      Saint Lucia: "Santa Luc\u00eda"
+      Saint Vincent and the Grenadines: San Vicente y las Granadinas
+      Sao Tome and Principe: "Santo Tom\u00e9 y Pr\u00edncipe"
+      San Marino: San Marino
+      Saudi Arabia: Arabia Saudita
+      Senegal: Senegal
+      Serbia & Montenegro: Serbia y Montenegro
+      Seychelles: Seychelles
+      Sierra Leone: Sierra Leona
+      Singapore: Singapur
+      Sint Maarten (Dutch part): "San Mart\u00edn (parte neerlandesa)"
+      Slovakia: Eslovaquia
+      Slovenia: Eslovenia
+      Solomon Islands: "Islas Salom\u00f3n"
+      Somalia: Somalia
+      South Africa: "Sud\u00e1frica"
+      South Sudan: "Sud\u00e1n del Sur"
+      Spain: "Espa\u00f1a"
+      Sri Lanka: Sri Lanka
+      Sudan: "Sud\u00e1n"
+      Suriname: "Surin\u00e1m"
+      Swaziland: Swazilandia
+      Sweden: Suecia
+      Switzerland: Suiza
+      Syrian Arab Republic: Siria
+      United Republic of Tanzania: Tanzania
+      Tajikistan: "Tayikist\u00e1n"
+      Thailand: Tailandia
+      The Former Yugoslav Republic of Macedonia: Macedonia
+      Timor-Leste: Timor Oriental
+      Togo: Togo
+      Trinidad and Tobago: Trinidad y Tobago
+      Tokelau: Tokelau
+      Tonga: Tonga
+      Tunisia: "T\u00fanez"
+      Turkey: "Turqu\u00eda"
+      Turkmenistan: "Turkmenist\u00e1n"
+      Turks and Caicos Islands: Islas Turcas y Caicos
+      Tuvalu: Tuvalu
+      Uganda: Uganda
+      United Arab Emirates: "Emiratos \u00C1rabes Unidos"
+      United Kingdom of Great Britain and Northern Ireland: Reino Unido
+      United States of America: Estados Unidos
+      US Virgin Islands: "Islas V\u00edrgenes de los Estados Unidos"
+      Uruguay: Uruguay
+      Uzbekistan: "Uzbekist\u00e1n"
+      Vanuatu: Vanuatu
+      Venezuela (Bolivarian Republic of): Venezuela
+      Viet Nam: Vietnam
+      Wallis and Futuna Islands: Wallis y Futuna
+      West Bank and Gaza Strip: Territorios Palestinos
+      Yemen: Yemen
+      Zambia: Zambia
+      Zimbabwe: Zimbabue
   iso2:
     trans: iso2
     desc: código ISO de dos digitos del país
