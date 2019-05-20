@@ -5,7 +5,7 @@ variables:
   country:
     trans: pais
     values:
-      Afghanistan: Afganistan
+      Afghanistan: "Afganist\u00e1n"
       Albania: Albania
       Algeria: Argelia
       Angola: Angola
@@ -16,7 +16,7 @@ variables:
       Bangladesh: Bangladesh
       Belgium: "B\u00e9lgica"
       Benin: Benin
-      Bolivia: Bolivia (Estado Plurinacional de)
+      Bolivia: Bolivia
       Bosnia and Herzegovina: Bosnia y Herzegovina
       Botswana: Botswana
       Brazil: Brasil
@@ -135,7 +135,7 @@ variables:
       Thailand: Tailandia
       Togo: Togo
       Trinidad and Tobago: Trinidad y Tobago
-      Tunisia: Tunez
+      Tunisia: "T\u00fanez"
       Turkey: "Turqu\u00eda"
       Uganda: Uganda
       United Kingdom: Reino Unido
