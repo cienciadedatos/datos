@@ -8,7 +8,7 @@
 \description{
 Provee una versión traducida de los siguientes conjuntos de datos: 
   'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'gss_cat', 'iris', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
   'table4a', 'table4b', 'table5', 'weather', 'who'.
 }
 \seealso{
