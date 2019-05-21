@@ -6,9 +6,10 @@
 \alias{datos-package}
 \title{datos: Traduce al Español Varios Conjuntos de Datos de Práctica}
 \description{
-Provee una versión traducida de los siguientes
-    conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
-    gss-cat, Batting and flights.
+Provee una versión traducida de los siguientes conjuntos de datos: 
+  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'weather', 'who'.
 }
 \seealso{
 Useful links:

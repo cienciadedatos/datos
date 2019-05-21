@@ -8,4 +8,5 @@
 .travis.yml
 dev/
 codecov.yml
-^\.httr-oauth$
+^README_files$
+cran-comments.md

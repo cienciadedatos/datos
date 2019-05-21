@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.0.0.9006
+Version: 0.0.0.9008
 Authors@R: 
     c(person(given = "Edgar",
              family = "Ruiz",
@@ -19,14 +19,14 @@ Authors@R:
              role = "aut",
              email = "maurolepore@gmail.com")
       )
-Description: Provee una versión traducida de los siguientes
-    conjuntos de datos: diamonds, gapminder, mpg, mtcars, presidential,
-    gss-cat, Batting and flights.
+Description:  Provee una versión traducida de los siguientes conjuntos de datos: 
+  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'weather', 'who'.
 License: CC0
 Depends: 
-  R (>= 2.10)
+  R (>= 3.5.0)
 Imports:
-  rlang,
   yaml,
   tibble
 Suggests:
