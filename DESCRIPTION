@@ -17,7 +17,15 @@ Authors@R:
       person(given = "Mauro",
              family = "Lepore",
              role = "aut",
-             email = "maurolepore@gmail.com")
+             email = "maurolepore@gmail.com"),
+      person(given = "Rayna",
+             family = "Harris",
+             role = "ctb",
+             email = "rayna.harris@gmail.com"),
+      person(given = "Daniela",
+             family = "Vasquez",
+             role = "ctb",
+             email = "daniela.vazquez@gmail.com")
       )
 Description:  Provee una versión traducida de los siguientes conjuntos de datos: 
   'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 

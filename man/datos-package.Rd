@@ -29,5 +29,11 @@ Authors:
   \item Mauro Lepore \email{maurolepore@gmail.com}
 }
 
+Other contributors:
+\itemize{
+  \item Rayna Harris \email{rayna.harris@gmail.com} [contributor]
+  \item Daniela Vasquez \email{daniela.vazquez@gmail.com} [contributor]
+}
+
 }
 \keyword{internal}
