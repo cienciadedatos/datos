@@ -6,6 +6,8 @@
 \alias{datos-package}
 \title{datos: Traduce al Español Varios Conjuntos de Datos de Práctica}
 \description{
+\if{html}{\figure{logo.png}{options: align='right'}}
+
 Provee una versión traducida de los siguientes conjuntos de datos: 
   'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
   'gss_cat', 'iris', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 

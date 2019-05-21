@@ -1,9 +1,7 @@
 ---
-title: "datos"
 output: 
   github_document
 ---
-
 ```{r setup, include=FALSE}
 library(datos)
 library(ggplot2)
@@ -11,6 +9,8 @@ library(dplyr)
 library(purrr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# datos <img src="man/figures/logo.png" align="right" width = "120px"/>
 
 [![CRAN status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
 [![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
