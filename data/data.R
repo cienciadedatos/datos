@@ -14,6 +14,8 @@ delayedAssign('paises',
         eval(parse(file.path(system.file('scripts','paises.txt', package = 'datos')))))
 delayedAssign('encuesta',
         eval(parse(file.path(system.file('scripts','encuesta.txt', package = 'datos')))))
+delayedAssign('flores',
+        eval(parse(file.path(system.file('scripts','flores.txt', package = 'datos')))))
 delayedAssign('millas',
         eval(parse(file.path(system.file('scripts','millas.txt', package = 'datos')))))
 delayedAssign('mtautos',

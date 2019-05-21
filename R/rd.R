@@ -1,5 +1,5 @@
 create_rd <- function(spec_path) {
-  spec <- read_yaml(spec_path)
+  spec <- yaml::read_yaml(spec_path)
   header <- list("\\docType{data}")
   if (!is.null(spec$help$name)) header <- c(header, paste0("\\name{", spec$help$name, "}"))
   if (!is.null(spec$help$alias)) header <- c(header, paste0("\\alias{", spec$help$alias, "}"))

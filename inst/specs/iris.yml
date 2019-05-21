@@ -1,0 +1,26 @@
+df:
+  source: datasets::iris
+  name: flores
+variables:
+  Sepal.Length:
+    trans: Largo.Sepalo
+    desc: Largo del sépalo
+  Sepal.Width:
+    trans: Ancho.Sepalo
+    desc: Ancho del sépalo
+  Petal.Length:
+    trans: Largo.Petalo
+    desc: Largo del pétalo
+  Petal.Width:
+    trans: Ancho.Petalo
+    desc: Ancho del pétalo
+  Species:
+    trans: Especies
+    desc: A qué especie de la flor Iris corresponde (setosa, versicolor, virginica)
+help:
+  name: flores
+  alias: flores
+  title: Datos sobre la flor Iris de Edgar Anderson
+  description: El set de datos sobre la flor Iris entrega las medidas en centímetros del largo y ancho de los sépalos y los pétalos de 50 flores de 3 especies de Iris (setosa, versicolor y virginica).
+  usage: flores
+  format: Un dataframe con 150 casos (filas) y 5 variables (columnas)

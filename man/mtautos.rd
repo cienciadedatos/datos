@@ -2,8 +2,9 @@
 \name{mtautos}
 \alias{mtautos}
 \title{Pruebas de ruta de automóviles de Motor Trend}
-\format{Un data.frame con 32 filas y 11 columnas
+\format{Un data.frame con 32 filas y 12 columnas
 \describe{
+\item{modelo}{modelo (y fabricante) del vehículo}
 \item{millas}{millas por galón de Estados Unidos}
 \item{cilindros}{número de cilindros}
 \item{cilindrada}{suma del volumen útil de todos los cilindros del motor en pulgadas cúbicas}
