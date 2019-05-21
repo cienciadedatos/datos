@@ -28,6 +28,23 @@ variables:
   rincome:
     trans: ingreso
     desc: ingreso reportado por los encuestados (US$)
+    values:
+      No answer: Sin respuesta
+      Don't know: No sabe
+      Refused: Se niega a responder
+      $25000 or more: "25000 o m\u00e1s"
+      $20000 - 24999: 20000 - 24999
+      $15000 - 19999: 15000 - 19999
+      $10000 - 14999: 10000 - 14999
+      $8000 to 9999: 8000 - 9999
+      $7000 to 7999: 7000 - 7999
+      $6000 to 6999: 6000 - 6999
+      $5000 to 5999: 5000 - 5999
+      $4000 to 4999: 4000 - 4999
+      $3000 to 3999: 3000 - 3999
+      $1000 to 2999: 1000 - 2999
+      Lt $1000: Menos de 1000
+      Not applicable: No aplica
   partyid:
     trans: partido
     desc: partido político con el que se identifica
@@ -36,10 +53,10 @@ variables:
       Don't know: No sabe
       Other party: Otro partido
       Strong republican: Republicano duro
-      Not str republican: Republicano moderano
+      Not str republican: Republicano moderado
       Ind,near rep: Independiente pro republicano
       Independent: Independiente
-      Ind,near dem: Independiente pro democrata
+      Ind,near dem: "Independiente pro dem\u00f3crata"
       Not str democrat: "Dem\u00f3crata moderado"
       Strong democrat: "Dem\u00f3crata duro"
   relig:
@@ -49,7 +66,7 @@ variables:
       No answer: Sin respuesta
       Don't know: No sabe
       Inter-nondenominational: Inter o no confensional
-      Native american: Bueno
+      Native american: Nativa americana
       Christian: Cristiana
       Orthodox-christian: Cristiana ortodoxa
       Moslem/islam: Musulmana/Islam
@@ -76,19 +93,19 @@ variables:
       Other presbyterian: Otra presbiteriana
       United pres ch in us: "Uni\u00f3n presbiteriana de iglesias"
       Presbyterian c in us: Iglesia presbiteriana de los EEUU
-      Lutheran-dk which: Luterana, no sabe cual
+      Lutheran-dk which: "Luterana, no sabe cu\u00e1l"
       Evangelical luth: "Evang\u00e9lica luterana"
       Other lutheran: Otras luteranas
-      Wi evan luth synod: "S\u00ednodo evangelico luterano de Wisconsin"
+      Wi evan luth synod: "S\u00ednodo evang\u00e9lico luterano de Wisconsin"
       Lutheran-mo synod: "S\u00ednodo luterano"
       Luth ch in america: Iglesia luterana de EEUU
       Am lutheran: Iglesia luterana americana
-      Methodist-dk which: Metodista, no sabe cual
+      Methodist-dk which: "Metodista, no sabe cu\u00e1l"
       Other methodist: Otras metodistas
       United methodist: Iglesia metodista unida
       Afr meth ep zion: Iglesia africana metodista episcopal de Sion
       Afr meth episcopal: Iglesia africana metodista episcopal
-      Baptist-dk which: Bautista, no sabe cual
+      Baptist-dk which: "Bautista, no sabe cu\u00e1l"
       Other baptists: Otras bautistas
       Southern baptist: Bautistas del sur
       Nat bapt conv usa: "Convenci\u00f3n nacional bautista de EEUU"
