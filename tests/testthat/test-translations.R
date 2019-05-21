@@ -21,4 +21,3 @@ lapply(all_specs,
            expect_equal(class(orig), class(df))
            })
          })
-
