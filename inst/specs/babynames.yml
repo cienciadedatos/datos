@@ -1,0 +1,26 @@
+df:
+  source: babynames::babynames
+  name: nombres
+variables:
+  year:
+    trans: anio
+    desc: Año del registro
+  sex:
+    trans: sexo
+    desc: Sexo del bebé
+  name:
+    trans: nombre
+    desc: Nombre
+  n:
+    trans: n
+    desc: Cantidad de ocurrencias
+  prop:
+    trans: prop
+    desc: Proporción
+help:
+  name: nombres
+  alias: nombres
+  title: Nombres de bebés
+  description: Datos completos sobre nombres de bebés provistos por la Social Security Administration de EE.UU. Incluye todos los nombres con al menos 5 usos.
+  usage: nombres
+  format: Un data.frame con 1924665 observaciones y 5 variables

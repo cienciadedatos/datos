@@ -19,6 +19,13 @@ translate <- function(spec_file) {
     }
     var_names[vars_TRUE] <- "y"
   }
+  vars_FALSE <- var_names == "FALSE"
+  if (sum(vars_FALSE) > 0) {
+    if (vars[vars_FALSE][[1]]$trans == "TRUE") {
+      vars[vars_FALSE][[1]]$trans <- "n"
+    }
+    var_names[vars_FALSE] <- "n"
+  }
   new_names <- as.character(lapply(vars, function(x) x$trans))
   dfl <- lapply(
     seq_along(vars),

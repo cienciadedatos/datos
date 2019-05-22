@@ -28,9 +28,9 @@ Authors@R:
              email = "daniela.vazquez@gmail.com")
       )
 Description:  Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'weather', 'who'.
+  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'.
 License: CC0
 Depends: 
   R (>= 3.5.0)
@@ -38,7 +38,10 @@ Imports:
   yaml,
   tibble
 Suggests:
+  babynames,
+  fueleconomy,
   nycflights13,
+  nasaweather,
   Lahman,
   ggplot2,
   gapminder,

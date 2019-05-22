@@ -9,9 +9,9 @@
 \if{html}{\figure{logo.png}{options: align='right'}}
 
 Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'weather', 'who'.
+  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
+  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
+  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'.
 }
 \seealso{
 Useful links:

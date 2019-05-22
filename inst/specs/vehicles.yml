@@ -1,0 +1,152 @@
+df:
+  source: fueleconomy::vehicles
+  name: vehiculos
+variables:
+  id:
+    trans: id
+    desc: Identificador único EPA
+  make:
+    trans: fabricante
+    desc: Fabricante
+  model:
+    trans: modelo
+    desc: Nombre del modelo
+  year:
+    trans: anio
+    desc: año de fabricación
+  class:
+    trans: clase
+    values:
+      Compact Cars: "Autom\u00f3viles compactos"
+      Large Cars: "Autom\u00f3viles grandes"
+      Midsize Cars: "Autom\u00f3viles medianos"
+      Midsize Station Wagons: Station Wagons medianos
+      Midsize-Large Station Wagons: Station Wagons medianos-grandes
+      Minicompact Cars: "Autom\u00f3viles minicompactos"
+      Minivan - 2WD: "Minivan - 2WD"
+      Minivan - 4WD: "Minivan - 4WD"
+      Small Pickup Trucks: "Camionetas peque\u00f1as"
+      Small Pickup Trucks 2WD: "Camionetas peque\u00f1as 2WD"
+      Small Pickup Trucks 4WD: "Camionetas peque\u00f1as 4WD"
+      Small Sport Utility Vehicle 2WD: "Veh\u00edculo utilitario peque\u00f1o 2WD"
+      Small Sport Utility Vehicle 4WD: "Veh\u00edculo utilitario peque\u00f1o 4WD"
+      Small Station Wagons: "Station Wagons peque\u00f1os"
+      Special Purpose Vehicle: "Veh\u00edculo prop\u00f3sito especial"
+      Special Purpose Vehicle 2WD: "Veh\u00edculo prop\u00f3sito especial 2WD"
+      Special Purpose Vehicle 4WD: "Veh\u00edculo prop\u00f3sito especial 4WD"
+      Special Purpose Vehicles: "Veh\u00edculos prop\u00f3sito especial"
+      Special Purpose Vehicles/2wd: "Veh\u00edculos prp\u00f3sito especial/2wd"
+      Special Purpose Vehicles/4wd: "Veh\u00edculos prop\u00f3sito especial/2wd"
+      Sport Utility Vehicle - 2WD: "Veh\u00edculo utilitario deportivo - 2WD"
+      Sport Utility Vehicle - 4WD: "Veh\u00edculo utilitario deportivo - 4WD"
+      Standard Pickup Trucks: "Camionetas est\u00e1ndar"
+      Standard Pickup Trucks 2WD: "Camionetas est\u00e1ndar 2WD"
+      Standard Pickup Trucks 4WD: "Camionetas est\u00e1ndar 4WD"
+      Standard Pickup Trucks/2wd: "Camionetas/2wd"
+      Standard Sport Utility Vehicle 2WD: "Veh\u00edculo utilitario deportivo est\u00e1ndar - 2WD"
+      Standard Sport Utility Vehicle 4WD: "Veh\u00edculo utilitario deportivo est\u00e1ndar - 4WD"
+      Subcompact Cars: "Autom\u00f3viles subcompactos"
+      Two Seaters: "Autom\u00f3viles de dos asientos"
+      Vans: Vans
+      Vans Passenger: Vans pasajeros
+      Vans, Cargo Type: Vans tipo carga
+      Vans, Passenger Type: Vans tipo pasajero
+    desc: tipo de auto
+  trans:
+    trans: transmision
+    values:
+      Auto (AV-S6): "Autom\u00e1tica(AV-S6)"
+      Auto (AV-S8): "Autom\u00e1tica(AV-S8)"
+      Auto (AV): "Autom\u00e1tica(AV)"
+      Auto(A1): "Autom\u00e1tica(A1)"
+      Auto(A8): "Autom\u00e1tica(A8)"
+      Auto(AM-S6): "Autom\u00e1tica(AM-S6)"
+      Auto(AM-S7): "Autom\u00e1tica(AM-S7)"
+      Auto(AM-S8): "Autom\u00e1tica(AM-S8)"
+      Auto(AM5): "Autom\u00e1tica(AM5)"
+      Auto(AM6): "Autom\u00e1tica(AM6)"
+      Auto(AM7): "Autom\u00e1tica(AM7)"
+      Auto(AV-S6): "Autom\u00e1tica(AV-S6)"
+      Auto(AV-S7): "Autom\u00e1tica(AV-S7)"
+      Auto(AV-S8): "Autom\u00e1tica(AV-S8)"
+      Auto(L3): "Autom\u00e1tica(L3)"
+      Auto(L4): "Autom\u00e1tica(L4)"
+      Automatic (A1): "Autom\u00e1tica (A1)"
+      Automatic (A6): "Autom\u00e1tica (A6)"
+      Automatic (AM-S6): "Autom\u00e1tica (AM-S6)"
+      Automatic (AM-S7): "Autom\u00e1tica (AM-S7)"
+      Automatic (AM5): "Autom\u00e1tica (AM5)"
+      Automatic (AM6): "Autom\u00e1tica (AM6)"
+      Automatic (AV-S6): "Autom\u00e1tica (AV-S6)"
+      Automatic (AV): "Autom\u00e1tica (AV)"
+      Automatic (S4): "Autom\u00e1tica (S4)"
+      Automatic (S5): "Autom\u00e1tica (S5)"
+      Automatic (S6): "Autom\u00e1tica (S6)"
+      Automatic (S7): "Autom\u00e1tica (S7)"
+      Automatic (S8): "Autom\u00e1tica (S8)"
+      Automatic (S9): "Autom\u00e1tica (S9)"
+      Automatic (variable gear ratios): "Autom\u00e1tica (proporci\u00f3n de cambios variable)"
+      Automatic 3-spd: "Autom\u00e1tica 3-velocidades"
+      Automatic 4-spd: "Autom\u00e1tica 4-velocidades"
+      Automatic 5-spd: "Autom\u00e1tica 5-velocidades"
+      Automatic 6-spd: "Autom\u00e1tica 6-velocidades"
+      Automatic 6spd: "Autom\u00e1tica 6velocidades"
+      Automatic 7-spd: "Autom\u00e1tica 7-velocidades"
+      Automatic 8-spd: "Autom\u00e1tica 8-velocidades"
+      Automatic 8spd: "Autom\u00e1tica 8velocidades"
+      Automatic 9-spd: "Autom\u00e1tica 9-velocidades"
+      Manual 3-spd: Manual 3-velocidades
+      Manual 4-spd: Manual 4-velocidades
+      Manual 5 spd: Manual 5 velocidades
+      Manual 5-spd: Manual 5-velocidades
+      Manual 6-spd: Manual 6-velocidades
+      Manual 7-spd: Manual 7-velocidades
+      Manual(M7): Manual(M7)
+    desc: tipo de transmisión
+  drive:
+    trans: traccion
+    values:
+      2-Wheel Drive: Dos ruedas
+      4-Wheel Drive: Cuatro ruedas
+      4-Wheel or All-Wheel Drive: Cuatro ruedas o Total permanente
+      All-Wheel Drive: Total permanente
+      Front-Wheel Drive: Delantera
+      Part-time 4-Wheel Drive: Cuatro ruedas conectable
+      Rear-Wheel Drive: Trasera
+    desc: tipo de tracción
+  cyl:
+    trans: cilindros
+    desc: número de cilindros
+  displ:
+    trans: motor
+    desc: tamaño del motor del automovil, en litros
+  fuel:
+    trans: combustible
+    values:
+      CNG: Gas natural comprimido
+      Diesel: "Di\u00e9sel"
+      Electricity: Electricidad
+      Gasoline or E85: Gasolina o E85
+      Gasoline or natural gas: Gasolina o Gas natural
+      Gasoline or propane: Gasolina o propano
+      Midgrade: Mediana
+      Premium: Premium
+      Premium and Electricity: Premium y electricidad
+      Premium Gas or Electricity: Gas premium o Electricidad
+      Premium or E85: Premium o E85
+      Regular: Regular
+      Regular Gas and Electricity: Gas regular o Electricidad
+    desc: tipo de combustible
+  hwy:
+    trans: autopista
+    desc: millas por galón de combustible en autopista
+  cty:
+    trans: ciudad
+    desc: millas por galón de combustible en ciudad
+help:
+  name: vehiculos
+  alias: vehiculos
+  title: Datos de economía de combustible
+  description: Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos.
+  usage: vehiculos
+  format: Un data.frame con 33442 filas y 12 columnas

@@ -2,6 +2,10 @@ delayedAssign('aerolineas',
         eval(parse(file.path(system.file('scripts','aerolineas.txt', package = 'datos')))))
 delayedAssign('aeropuertos',
         eval(parse(file.path(system.file('scripts','aeropuertos.txt', package = 'datos')))))
+delayedAssign('atmosfera',
+        eval(parse(file.path(system.file('scripts','atmosfera.txt', package = 'datos')))))
+delayedAssign('nombres',
+        eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
 delayedAssign('bateadores',
         eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
 delayedAssign('diamantes',
@@ -36,6 +40,8 @@ delayedAssign('tabla4b',
         eval(parse(file.path(system.file('scripts','tabla4b.txt', package = 'datos')))))
 delayedAssign('tabla5',
         eval(parse(file.path(system.file('scripts','tabla5.txt', package = 'datos')))))
+delayedAssign('vehiculos',
+        eval(parse(file.path(system.file('scripts','vehiculos.txt', package = 'datos')))))
 delayedAssign('clima',
         eval(parse(file.path(system.file('scripts','clima.txt', package = 'datos')))))
 delayedAssign('oms',

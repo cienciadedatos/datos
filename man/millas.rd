@@ -6,7 +6,7 @@
 \describe{
 \item{fabricante}{fabricante}
 \item{modelo}{nombre del modelo}
-\item{motor}{tamaño del motor del automovil, en litros}
+\item{motor}{tamaño del motor del automóvil, en litros}
 \item{anio}{año de fabricación}
 \item{cilindros}{número de cilindros}
 \item{transmision}{tipo de transmisión}
