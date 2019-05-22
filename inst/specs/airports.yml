@@ -22,7 +22,7 @@ variables:
     desc: diferencia horaria respecto del meridiano de Greenwich (GMT)
   dst:
     trans: horario_verano
-    desc: "horario legal de acuerdo a las politicas de ahorro de energía.
+    desc: "horario legal de acuerdo a las políticas de ahorro de energía.
       A = Zona Horaria de Ahorro de Luz de Día (DST) estándar de los EEUU:
         comienza el segundo Sábado de Marzo y
         termina el primer Sábado de Noviembre.
