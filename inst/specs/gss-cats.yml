@@ -65,7 +65,7 @@ variables:
     values:
       No answer: Sin respuesta
       Don't know: No sabe
-      Inter-nondenominational: Inter o no confensional
+      Inter-nondenominational: Inter o no confesional
       Native american: Nativa americana
       Christian: Cristiana
       Orthodox-christian: Cristiana ortodoxa
@@ -89,7 +89,7 @@ variables:
       Other: Otra
       Episcopal: Episcopal
       Presbyterian-dk wh: Presbiteriana, no sabe cual
-      Presbyterian, merged: Prebiteriana, fusionadas
+      Presbyterian, merged: Presbiteriana, fusionadas
       Other presbyterian: Otra presbiteriana
       United pres ch in us: "Uni\u00f3n presbiteriana de iglesias"
       Presbyterian c in us: Iglesia presbiteriana de los EEUU
@@ -115,7 +115,7 @@ variables:
       Not applicable: No aplica
   tvhours:
     trans: horas_tv
-    desc: horas de television que ve al dia
+    desc: horas de televisiín que ve al día
 help:
   name: encuesta
   alias: encuesta
