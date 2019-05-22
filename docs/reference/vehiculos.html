@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Datos del geiser Viejo Fiel (Old Faithful) — fiel • datos</title>
+<title>Datos de economía de combustible — vehiculos • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Datos del geiser Viejo Fiel (Old Faithful) — fiel" />
+<meta property="og:title" content="Datos de economía de combustible — vehiculos" />
 
-<meta property="og:description" content="Datos de tiempo de duración y espera entre erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos." />
+<meta property="og:description" content="Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,24 +101,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Datos del geiser Viejo Fiel (Old Faithful)</h1>
+    <h1>Datos de economía de combustible</h1>
     
-    <div class="hidden name"><code>fiel.rd</code></div>
+    <div class="hidden name"><code>vehiculos.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Datos de tiempo de duración y espera entre erupciones del Viejo Fiel (Old Faithful), es un geiser del Parque Nacional de Yellowstone, situado en Wyoming, Estados Unidos.</p>
+    <p>Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos.</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>fiel</span></pre>
+    <pre class="usage"><span class='no'>vehiculos</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 272 observaciones y 2 columnas</p><dl class='dl-horizontal'>
-<dt>erupciones</dt><dd><p>Tiempo de erupciones, en minutos</p></dd>
-<dt>espera</dt><dd><p>Minutos entre erupciones</p></dd>
+    <p>Un data.frame con 33442 filas y 12 columnas</p><dl class='dl-horizontal'>
+<dt>id</dt><dd><p>Identificador único EPA</p></dd>
+<dt>fabricante</dt><dd><p>Fabricante</p></dd>
+<dt>modelo</dt><dd><p>Nombre del modelo</p></dd>
+<dt>anio</dt><dd><p>año de fabricación</p></dd>
+<dt>clase</dt><dd><p>tipo de auto</p></dd>
+<dt>transmision</dt><dd><p>tipo de transmisión</p></dd>
+<dt>traccion</dt><dd><p>tipo de tracción</p></dd>
+<dt>cilindros</dt><dd><p>número de cilindros</p></dd>
+<dt>motor</dt><dd><p>tamaño del motor del automovil, en litros</p></dd>
+<dt>combustible</dt><dd><p>tipo de combustible</p></dd>
+<dt>autopista</dt><dd><p>millas por galón de combustible en autopista</p></dd>
+<dt>ciudad</dt><dd><p>millas por galón de combustible en ciudad</p></dd>
 </dl>
     
 
