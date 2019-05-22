@@ -85,7 +85,7 @@ cadenas (*strings*): `oraciones`, `palabras` y `fruta`.
 
 ## Uso
 
-La libreria `datos` tiene que ser cargada explícitamente en la sesión de
+La librería `datos` tiene que ser cargada explícitamente en la sesión de
 R:
 
 ``` r
