@@ -4,7 +4,7 @@ df:
 variables:
   origin:
     trans: origen
-    desc: Estacion de clima
+    desc: Estación de clima
   year:
     trans: anio
     desc: año de la fecha de registro
@@ -22,7 +22,7 @@ variables:
     desc: temperatura medida en grados Fahrenheit
   dewp:
     trans: punto_rocio
-    desc: temperatura medida en grados Fahrenheit a la cual, dada la presion atmosférica y humedad,
+    desc: temperatura medida en grados Fahrenheit a la cual, dada la presión atmosférica y humedad,
       condensa el vapor de agua
   humid:
     trans: humedad
@@ -41,7 +41,7 @@ variables:
     desc: precipitación de lluvia medida en pulgadas
   pressure:
     trans: presion
-    desc: presión atmosferica al nivel del mar medida en milibares
+    desc: presión atmosférica al nivel del mar medida en milibares
   visib:
     trans: visibilidad
     desc: visibilidad medida en millas
@@ -52,8 +52,8 @@ help:
   name: clima
   alias: clima
   title: Datos de clima
-  description: Metadatos del clima y los codigos de cola de los aviones en el registro de aviacion de la FAA.
-    American Airways (AA) y Envoy Air (MQ) reportan numero de flota en lugar de numero de cola, por
+  description: Metadatos del clima y los códigos de cola de los aviones en el registro de aviacion de la FAA.
+    American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por
     lo que no es posible trazarlos.
   usage: clima
-  format: Un data.frame con 3,322 lineas y 9 variables
+  format: Un data.frame con 3,322 líneas y 9 variables
