@@ -130,7 +130,10 @@
 </tr>
 </tbody>
 </table>
-<p>Salvo <code>gapminder</code>, <code>Lahman</code> y <code>nycflights13</code>, todos vienen incluidos en el <code>tidyverse</code> o en R base.</p>
+<p>El paquete <code>datasets</code> es parte de R base y <code>ggplot2</code>, <code>tibble</code>, <code>tidyr</code>, <code>readr</code> y <code>forcats</code> vienen incluidos en el Tidyverse. Todos los demás deben instalarse individualmente.</p>
+<p>Si el paquete necesario no está instalado, al tratar de utilizar los datos traducidos aparecerá un error como el siguiente:</p>
+<pre><code>&gt; datos::vuelos
+ Error in loadNamespace(name) : there is no package called ‘nycflights13‘</code></pre>
 </div>
 <div id="traducciones" class="section level2">
 <h2 class="hasAnchor">
@@ -244,17 +247,17 @@
 </tr>
 </tbody>
 </table>
-<p>Además, se incluyen tres set de datos para practicar la manipulación de cadenas (<em>strings</em>): <code>oraciones</code>, <code>palabras</code> y <code>fruta</code>.</p>
+<p>Los datos para practicar la manipulación de cadenas (<em>strings</em>) son <code>oraciones</code>, <code>palabras</code> y <code>frutas</code>.</p>
 </div>
 <div id="uso" class="section level2">
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
-<p>La libreria <code>datos</code> tiene que ser cargada explícitamente en la sesión de R:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a></code></pre></div>
-<p>Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se van a traducir hasta que la variable sea “llamada” explícitamente en el código que se escriba. En este ejemplo, los datos <code>diamantes</code>, que provienen de <code><a href="https://www.rdocumentation.org/packages/ggplot2/topics/diamonds">ggplot2::diamonds</a></code>, se cargan en la memoria de R cuando los llamamos por primera vez en español:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
+<p>El paquete <code>datos</code> se carga igual que todos los paquetes de R:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a></code></pre></div>
+<p>Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea “llamada” explícitamente en el código que se escriba. En este ejemplo, el <em>dataset</em> <code>diamantes</code>, que proviene de <code><a href="https://www.rdocumentation.org/packages/ggplot2/topics/diamonds">ggplot2::diamonds</a></code>, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
 <pre><code>## Observations: 53,940
 ## Variables: 10
 ## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…
@@ -267,13 +270,13 @@
 ## $ x           &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87…
 ## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…
 ## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…</code></pre>
-<p>Una vez cargado en la memoria, <code>diamantes</code> se puede utilizar como cualquier otro <em>dataset</em> en R:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">diamantes <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/theme">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/labs">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</a></code></pre></div>
+<p>Los datos traducidos quedarán cargados durante toda la sesión de R:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">diamantes <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/theme">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/labs">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</a></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
 </div>
 <div id="sobre-la-funcion-para-traducir-los-datos" class="section level2">
