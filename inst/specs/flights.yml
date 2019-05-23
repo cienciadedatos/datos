@@ -31,7 +31,7 @@ variables:
     desc: atraso de la llegada en minutos. Valores negativos indican llegada adelantada
   carrier:
     trans: aerolinea
-    desc: abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre
+    desc: abreviación de dos letras de la aerolínea. Ver `aerolineas` para obtener el nombre
   flight:
     trans: vuelo
     desc: número de vuelo
@@ -40,10 +40,10 @@ variables:
     desc: código de cola del avión
   origin:
     trans: origen
-    desc: origen del vuelo. Ver airports() para metadatos adicionales
+    desc: origen del vuelo. Ver `aeropuertos` para metadatos adicionales
   dest:
     trans: destino
-    desc: destino del vuelo. Ver airports() para metadatos adicionales
+    desc: destino del vuelo. Ver `aeropuertos` para metadatos adicionales
   air_time:
     trans: tiempo_vuelo
     desc: cantidad de tiempo en aire, en minutos
