@@ -3,7 +3,7 @@ df:
   name: aerolineas
 variables:
   carrier:
-    trans: codigo_carrier
+    trans: aerolinea
     desc: abreviación de dos caracteres del nombre de la aerolínea
   name:
     trans: nombre
