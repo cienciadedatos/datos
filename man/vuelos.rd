@@ -13,11 +13,11 @@
 \item{horario_llegada}{horario efectivo de llegada del vuelo (formato HHMM o HMM), hora local}
 \item{llegada_programada}{horario programado para la llegada (formato HHMM o HMM), hora local}
 \item{atraso_llegada}{atraso de la llegada en minutos. Valores negativos indican llegada adelantada}
-\item{aerolinea}{abreviación de dos letras de la aerolínea. Ver airlines() para obtener el nombre}
+\item{aerolinea}{abreviación de dos letras de la aerolínea. Ver `aerolineas` para obtener el nombre}
 \item{vuelo}{número de vuelo}
 \item{codigo_cola}{código de cola del avión}
-\item{origen}{origen del vuelo. Ver airports() para metadatos adicionales}
-\item{destino}{destino del vuelo. Ver airports() para metadatos adicionales}
+\item{origen}{origen del vuelo. Ver `aeropuertos` para metadatos adicionales}
+\item{destino}{destino del vuelo. Ver `aeropuertos` para metadatos adicionales}
 \item{tiempo_vuelo}{cantidad de tiempo en aire, en minutos}
 \item{distancia}{distancia entre aeropuertos, en millas}
 \item{hora}{hora del horario programado para la salida}

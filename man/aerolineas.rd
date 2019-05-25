@@ -4,7 +4,7 @@
 \title{Nombres de aerolíneas}
 \format{Un data.frame con 16 filas y 2 columnas
 \describe{
-\item{codigo_carrier}{abreviación de dos caracteres del nombre de la aerolínea}
+\item{aerolinea}{abreviación de dos caracteres del nombre de la aerolínea}
 \item{nombre}{nombre completo de la aerolínea}
 }}
 \usage{aerolineas}

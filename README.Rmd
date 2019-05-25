@@ -40,17 +40,11 @@ sources <- map_chr(all, ~.x$df$source)
 packages <- map(strsplit(sources, "::"), ~.x[[1]])
 d <- map_chr(strsplit(sources, "::"), ~.x[[2]])
 translated <- paste0("'", paste0(d, collapse = "', '"), "'")
-knitr::kable(data.frame(Paquetes = as.character(unique(packages))))
+pkgs <- as.character(unique(packages))
+knitr::kable(data.frame(Paquetes = pkgs))
 ```
 
-El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr` y `forcats` vienen incluidos en el Tidyverse. Todos los demás deben instalarse individualmente. 
-
-Si el paquete necesario no está instalado, al tratar de utilizar los datos traducidos aparecerá un error como el siguiente:
-
-```
-> datos::vuelos
- Error in loadNamespace(name) : there is no package called ‘nycflights13‘
-```
+El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr` y `forcats` vienen incluidos en el paquete `tidyverse`.  Todos los demás deben instalarse individualmente. 
 
 ## Traducciones
 
@@ -95,3 +89,18 @@ diamantes %>%
 ## Sobre la función para traducir los datos 
 
 La traducción de los datos se realiza a través de las funciones provistas en el paquete [datalang](https://github.com/edgararuiz/datalang) desarrollado por Edgar Ruiz. 
+
+## Actualizar el paquete
+
+La actualización del paquete tiene multiples pasos.  Si hace cambios a las traducciones, y desea que todas las referencias esten al día, corra los siguientes comandos:
+
+```{r, eval = FALSE}
+# Crea los scripts de traduccion
+datos:::data_script()
+# Crea los archivos de ayuda
+datos:::folder_rd()
+# Actualiza el lugar de internet
+pkgdown::build_site()
+# Cambia la referencia a tipo html
+datos:::fix_reference()
+```
