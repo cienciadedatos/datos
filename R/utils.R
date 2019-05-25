@@ -34,12 +34,13 @@ data_script <- function(script_path = "data/data.R",
   writeLines(code, script_path)
   unlink(script_target, recursive = TRUE)
   dir.create(script_target)
-  script <- ifelse(!is_test, readLines("R/translate.R"), "")
+  script <- ""
+  script <- if(! is_test)readLines("R/translate.R")
   lapply(
     seq_along(anm),
     function(x)
       writeLines(
-        c(script, paste0("translate('", specs[x], "')")),
+        c(script, paste0("translate('", specs[x], "')"), ""),
         con = file.path(script_target, paste0(anm[x], ".txt"))
       ))
 }

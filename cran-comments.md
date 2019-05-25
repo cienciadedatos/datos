@@ -7,3 +7,5 @@
 * 0 errors | 0 warnings | 0 notes
 
 ## This is the package's first submission
+
+* Documentation is in Spanish
