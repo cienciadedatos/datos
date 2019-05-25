@@ -5,5 +5,13 @@ test_that("Site fix works", {
 })
 
 test_that("Script generator works", {
-  expect_silent(data_script(tempfile(), tempdir(), TRUE))
+  expect_is(
+    data_script(
+      script_path = tempfile(),
+      script_target = tempdir(),
+      spec_path = system.file("specs", package = "datos"),
+      is_test = TRUE
+    ),
+    "list"
+  )
 })

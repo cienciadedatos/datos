@@ -16,10 +16,10 @@ fix_reference <- function(ref_path = "docs/reference/", is_test = FALSE) {
 
 data_script <- function(script_path = "data/data.R",
                         script_target = "inst/scripts",
-                        pkg_path = "inst/specs",
+                        spec_path = "inst/specs",
                         is_test = FALSE) {
-  specs <- list.files(pkg_path)
-  asp <- lapply(file.path(pkg_path, specs), yaml::read_yaml)
+  specs <- list.files(spec_path)
+  asp <- lapply(file.path(spec_path, specs), yaml::read_yaml)
   anm <- as.character(lapply(asp, function(x) x$df$name))
   code <- lapply(
     seq_along(anm),
@@ -34,8 +34,7 @@ data_script <- function(script_path = "data/data.R",
   writeLines(code, script_path)
   unlink(script_target, recursive = TRUE)
   dir.create(script_target)
-  script <- ""
-  script <- if(! is_test)readLines("R/translate.R")
+  script <- ifelse(!is_test, readLines("R/translate.R"), "")
   lapply(
     seq_along(anm),
     function(x)
