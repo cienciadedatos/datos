@@ -67,7 +67,7 @@ siguientes:
 | aviones       | Datos de aviones                                                                         |
 | bateadores    | Tabla de bateadores                                                                      |
 | clima         | Datos de clima                                                                           |
-| datos-stringr | Vectores de caracteres dentro del paquete stringr                                        |
+| datos-stringr | Vectores de caracteres dentro del paquete `stringr`                                      |
 | diamantes     | Precio de 50.000 diamantes                                                               |
 | encuesta      | Muestra de variables categóricas de una encuesta social                                  |
 | fiel          | Datos del géiser Viejo Fiel (Old Faithful)                                               |
@@ -76,7 +76,7 @@ siguientes:
 | mtautos       | Pruebas de ruta de automóviles de Motor Trend                                            |
 | nombres       | Nombres de bebés                                                                         |
 | oms           | Datos de tuberculosis de la Organización Mundial de la Salud                             |
-| paises        | Datos de Gapminder                                                                       |
+| paises        | Datos de `Gapminder`                                                                     |
 | presidencial  | Periodos de 11 presidentes, desde Eisenhower a Obama                                     |
 | tabla1        | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         |
 | tabla2        | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          |
@@ -147,7 +147,7 @@ Edgar Ruiz.
 ## Actualizar el paquete
 
 La actualización del paquete tiene multiples pasos. Si hace cambios a
-las traducciones, y desea que todas las referencias esten al día, corra
+las traducciones, y desea que todas las referencias estén al día, ejecute
 los siguientes comandos:
 
 ``` r
