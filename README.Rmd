@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
 [![Coverage status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
 
-Este paquete provee la traducción al español de conjuntos de datos en inglés originalmente disponibles en otros paquetes de R. Los datos traducidos son los que se utilizan en los ejemplos del libro [R para Ciencia de Datos](es.r4ds.hadley.nz), la versión en español de [R for Data Science](r4ds.had.nz.co) de Hadley Wickham & Garrett Grolemund. El paquete `datos` puede utilizarse junto con el libro o de manera independiente como fuente de datos de práctica en español. 
+Este paquete provee la traducción al español de conjuntos de datos en inglés originalmente disponibles en otros paquetes de R. Los datos traducidos son los que se utilizan en los ejemplos del libro [R para Ciencia de Datos](https://es.r4ds.hadley.nz/), la versión en español de [R for Data Science](https://r4ds.had.co.nz/) de Hadley Wickham & Garrett Grolemund. El paquete `datos` puede utilizarse junto con el libro o de manera independiente como fuente de datos de práctica en español. 
 
 ## Instalación
 
