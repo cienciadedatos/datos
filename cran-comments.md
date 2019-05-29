@@ -10,4 +10,6 @@
 
 This is a resubmission. In this version I have:
 
-* Converted links to proper URLs in README.md
+* Adds English version of the Description
+* Comments out installation commands
+

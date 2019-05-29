@@ -19,12 +19,18 @@ español.
 
 ## Instalación
 
+La versión en CRAN está disponible por medio de:
+
+``` r
+# install.packages("datos")
+```
+
 El paquete está disponible en GitHub y puede ser instalado utilizando
 `remotes`:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("cienciadedatos/datos")
+# remotes::install_github("cienciadedatos/datos")
 ```
 
 ## Requisitos
@@ -136,14 +142,7 @@ diamantes %>%
   labs(title = "Diamantes", subtitle = "Precio y claridad")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
-
-## Sobre la función para traducir los datos
-
-La traducción de los datos se realiza a través de las funciones
-provistas en el paquete
-[datalang](https://github.com/edgararuiz/datalang) desarrollado por
-Edgar Ruiz.
+<img src="man/figures/diamantes.png" align="right"/>
 
 ## Actualizar el paquete
 
