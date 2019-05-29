@@ -142,7 +142,7 @@ diamantes %>%
   labs(title = "Diamantes", subtitle = "Precio y claridad")
 ```
 
-<img src="man/figures/diamantes.png" align="right"/>
+<img src="man/figures/diamantes.png">
 
 ## Actualizar el paquete
 
