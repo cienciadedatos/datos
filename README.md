@@ -50,33 +50,35 @@ Traducciones
 
 Las traducciones disponibles dentro de `datos` son las siguientes:
 
-| Nombre        | Título                                                                                   |
-|:--------------|:-----------------------------------------------------------------------------------------|
-| aerolineas    | Nombres de aerolíneas                                                                    |
-| aeropuertos   | Datos de aeropuertos                                                                     |
-| atmosfera     | Datos atmosféricos                                                                       |
-| aviones       | Datos de aviones                                                                         |
-| bateadores    | Tabla de bateadores                                                                      |
-| clima         | Datos de clima                                                                           |
-| datos-stringr | Vectores de caracteres dentro del paquete stringr                                        |
-| diamantes     | Precio de 50.000 diamantes                                                               |
-| encuesta      | Muestra de variables categóricas de una encuesta social                                  |
-| fiel          | Datos del géiser Viejo Fiel (Old Faithful)                                               |
-| flores        | Datos sobre la flor Iris de Edgar Anderson                                               |
-| millas        | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles |
-| mtautos       | Pruebas de ruta de automóviles de Motor Trend                                            |
-| nombres       | Nombres de bebés                                                                         |
-| oms           | Datos de tuberculosis de la Organización Mundial de la Salud                             |
-| paises        | Datos de Gapminder                                                                       |
-| presidencial  | Periodos de 11 presidentes, desde Eisenhower a Obama                                     |
-| tabla1        | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         |
-| tabla2        | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          |
-| tabla3        | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
-| tabla4a       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
-| tabla4b       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
-| tabla5        | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         |
-| vehiculos     | Datos de economía de combustible                                                         |
-| vuelos        | Datos de vuelos                                                                          |
+    ## Joining, by = "Name"
+
+| Nombre        | Título                                                                                   | Dataset original                |
+|:--------------|:-----------------------------------------------------------------------------------------|:--------------------------------|
+| aerolineas    | Nombres de aerolíneas                                                                    | nycflights13::airlines          |
+| aeropuertos   | Datos de aeropuertos                                                                     | nycflights13::airports          |
+| atmosfera     | Datos atmosféricos                                                                       | nasaweather::atmos              |
+| aviones       | Datos de aviones                                                                         | nycflights13::planes            |
+| bateadores    | Tabla de bateadores                                                                      | Lahman::Batting                 |
+| clima         | Datos de clima                                                                           | nycflights13::weather           |
+| datos-stringr | Vectores de caracteres dentro del paquete stringr                                        | incluidos en el paquete stringr |
+| diamantes     | Precio de 50.000 diamantes                                                               | ggplot2::diamonds               |
+| encuesta      | Muestra de variables categóricas de una encuesta social                                  | forcats::gss\_cat               |
+| fiel          | Datos del géiser Viejo Fiel (Old Faithful)                                               | datasets::faithful              |
+| flores        | Datos sobre la flor Iris de Edgar Anderson                                               | datasets::iris                  |
+| millas        | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles | ggplot2::mpg                    |
+| mtautos       | Pruebas de ruta de automóviles de Motor Trend                                            | datasets::mtcars                |
+| nombres       | Nombres de bebés                                                                         | babynames::babynames            |
+| oms           | Datos de tuberculosis de la Organización Mundial de la Salud                             | tidyr::who                      |
+| paises        | Datos de Gapminder                                                                       | gapminder::gapminder            |
+| presidencial  | Periodos de 11 presidentes, desde Eisenhower a Obama                                     | ggplot2::presidential           |
+| tabla1        | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         | tidyr::table1                   |
+| tabla2        | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          | tidyr::table2                   |
+| tabla3        | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table3                   |
+| tabla4a       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table4a                  |
+| tabla4b       | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table4b                  |
+| tabla5        | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table5                   |
+| vehiculos     | Datos de economía de combustible                                                         | fueleconomy::vehicles           |
+| vuelos        | Datos de vuelos                                                                          | nycflights13::flights           |
 
 Los datos para practicar la manipulación de cadenas (*strings*) son `oraciones`, `palabras` y `frutas`.
 
