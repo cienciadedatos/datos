@@ -1,23 +1,13 @@
 
-# datos <img src="man/figures/logo.png" align="right" width = "120px"/>
+datos <img src="man/figures/logo.png" align="right" width = "120px"/>
+=====================================================================
 
-[![CRAN
-status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
-[![Travis-CI Build
-Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos)
-[![Coverage
-status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
+[![CRAN status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos) [![Travis-CI Build Status](https://travis-ci.org/cienciadedatos/datos.svg?branch=master)](https://travis-ci.org/cienciadedatos/datos) [![Coverage status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
 
-Este paquete provee la traducción al español de conjuntos de datos en
-inglés originalmente disponibles en otros paquetes de R. Los datos
-traducidos son los que se utilizan en los ejemplos del libro [R para
-Ciencia de Datos](https://es.r4ds.hadley.nz/), la versión en español de
-[R for Data Science](https://r4ds.had.co.nz/) de Hadley Wickham &
-Garrett Grolemund. El paquete `datos` puede utilizarse junto con el
-libro o de manera independiente como fuente de datos de práctica en
-español.
+Este paquete provee la traducción al español de conjuntos de datos en inglés originalmente disponibles en otros paquetes de R. Los datos traducidos son los que se utilizan en los ejemplos del libro [R para Ciencia de Datos](https://es.r4ds.hadley.nz/), la versión en español de [R for Data Science](https://r4ds.had.co.nz/) de Hadley Wickham & Garrett Grolemund. El paquete `datos` puede utilizarse junto con el libro o de manera independiente como fuente de datos de práctica en español.
 
-## Instalación
+Instalación
+-----------
 
 La versión en CRAN está disponible por medio de:
 
@@ -25,26 +15,22 @@ La versión en CRAN está disponible por medio de:
 # install.packages("datos")
 ```
 
-El paquete está disponible en GitHub y puede ser instalado utilizando
-`remotes`:
+La versión en GitHub puede ser instalada utilizando `remotes`:
 
 ``` r
 # install.packages("remotes")
 # remotes::install_github("cienciadedatos/datos")
 ```
 
-## Requisitos
+Requisitos
+----------
 
-Este paquete traduce los datos **en el momento**. Esto implica que la
-versión en español de los datos no está contenida como un objeto dentro
-del paquete, sino que se genera al momento de utilizarlos. Por lo tanto,
-para poder usar `datos`, **el paquete que contiene los datos originales
-en inglés debe estar previamente instalado**.
+Este paquete traduce los datos **en el momento**. Esto implica que la versión en español de los datos no está contenida como un objeto dentro del paquete, sino que se genera al momento de utilizarlos. Por lo tanto, para poder usar `datos`, **el paquete que contiene los datos originales en inglés debe estar previamente instalado**.
 
 Los paquetes necesarios son:
 
 | Paquetes     |
-| :----------- |
+|:-------------|
 | nycflights13 |
 | nasaweather  |
 | babynames    |
@@ -57,17 +43,15 @@ Los paquetes necesarios son:
 | tidyr        |
 | fueleconomy  |
 
-El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`,
-`readr` y `forcats` vienen incluidos en el paquete `tidyverse`. Todos
-los demás deben instalarse individualmente.
+El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr` y `forcats` vienen incluidos en el paquete `tidyverse`. Todos los demás deben instalarse individualmente.
 
-## Traducciones
+Traducciones
+------------
 
-Las traducciones disponibles dentro de `datos` son las
-siguientes:
+Las traducciones disponibles dentro de `datos` son las siguientes:
 
 | Nombre        | Título                                                                                   |
-| :------------ | :--------------------------------------------------------------------------------------- |
+|:--------------|:-----------------------------------------------------------------------------------------|
 | aerolineas    | Nombres de aerolíneas                                                                    |
 | aeropuertos   | Datos de aeropuertos                                                                     |
 | atmosfera     | Datos atmosféricos                                                                       |
@@ -94,10 +78,10 @@ siguientes:
 | vehiculos     | Datos de economía de combustible                                                         |
 | vuelos        | Datos de vuelos                                                                          |
 
-Los datos para practicar la manipulación de cadenas (*strings*) son
-`oraciones`, `palabras` y `frutas`.
+Los datos para practicar la manipulación de cadenas (*strings*) son `oraciones`, `palabras` y `frutas`.
 
-## Uso
+Uso
+---
 
 El paquete `datos` se carga igual que todos los paquetes de R:
 
@@ -107,12 +91,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-Las variables que contienen los datos van a estar disponibles
-inmediatamente para su uso, pero los datos no se traducirán hasta que la
-variable sea “llamada” explícitamente en el código que se escriba. En
-este ejemplo, el *dataset* `diamantes`, que proviene de
-`ggplot2::diamonds`, se carga en la memoria de R en el momento en que lo
-llamamos por primera vez en español:
+Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea "llamada" explícitamente en el código que se escriba. En este ejemplo, el *dataset* `diamantes`, que proviene de `ggplot2::diamonds`, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:
 
 ``` r
 glimpse(diamantes)
@@ -144,18 +123,17 @@ diamantes %>%
 
 <img src="man/figures/diamantes.png">
 
-## Actualizar el paquete
+Actualización del paquete
+-------------------------
 
-La actualización del paquete tiene multiples pasos. Si hace cambios a
-las traducciones, y desea que todas las referencias esten al día, corra
-los siguientes comandos:
+La actualización del paquete tiene múltiples pasos. Si se hacen cambios a las traducciones, se debe ejecutar el siguiente código para que todas las referencias estén al día.
 
 ``` r
-# Crea los scripts de traduccion
+# Crea los scripts de traducción
 datos:::data_script()
 # Crea los archivos de ayuda
 datos:::folder_rd()
-# Actualiza el lugar de internet
+# Actualiza el sitio web
 pkgdown::build_site()
 # Cambia la referencia a tipo html
 datos:::fix_reference()
