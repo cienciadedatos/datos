@@ -50,8 +50,6 @@ Traducciones
 
 Las traducciones disponibles dentro de `datos` son las siguientes:
 
-    ## Joining, by = "Name"
-
 | Nombre        | Título                                                                                   | Dataset original                |
 |:--------------|:-----------------------------------------------------------------------------------------|:--------------------------------|
 | aerolineas    | Nombres de aerolíneas                                                                    | nycflights13::airlines          |

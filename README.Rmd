@@ -58,7 +58,7 @@ El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr`
 
 Las traducciones disponibles dentro de `datos` son las siguientes:
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message = FALSE}
 results <- help.search("datasets", package = "datos")
 datos <- results$matches[c("Name", "Title")]
 originales <- bind_cols(list(Name = names, Originales = sources))
