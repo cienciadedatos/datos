@@ -26,7 +26,7 @@ La versión en CRAN está disponible por medio de:
 # install.packages("datos")
 ```
 
-El paquete está disponible en GitHub y puede ser instalado utilizando `remotes`:
+La versión en GitHub puede ser instalada utilizando `remotes`:
 
 ```{r, eval = FALSE}
 # install.packages("remotes")
@@ -93,16 +93,16 @@ diamantes %>%
 
 <img src="man/figures/diamantes.png">
 
-## Actualizar el paquete
+## Actualización del paquete
 
-La actualización del paquete tiene multiples pasos.  Si hace cambios a las traducciones, y desea que todas las referencias esten al día, corra los siguientes comandos:
+La actualización del paquete tiene múltiples pasos. Si se hacen cambios a las traducciones, se debe ejecutar el siguiente código para que todas las referencias estén al día.
 
 ```{r, eval = FALSE}
-# Crea los scripts de traduccion
+# Crea los scripts de traducción
 datos:::data_script()
 # Crea los archivos de ayuda
 datos:::folder_rd()
-# Actualiza el lugar de internet
+# Actualiza el sitio web
 pkgdown::build_site()
 # Cambia la referencia a tipo html
 datos:::fix_reference()
