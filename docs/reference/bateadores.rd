@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package • datos</title>
+<title>Tabla de bateadores — bateadores • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,14 +30,9 @@
 
 
 
-<meta property="og:title" content="datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package" />
+<meta property="og:title" content="Tabla de bateadores — bateadores" />
 
-<meta property="og:description" content="
-Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above." />
+<meta property="og:description" content="Estadísticas de bateadores" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -106,29 +101,44 @@ Provee una versión traducida de los siguientes conjuntos de datos:
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>datos: Traduce al Español Varios Conjuntos de Datos de Práctica</h1>
-    <small class="dont-index">Source: <a href='https://github.com/cienciadedatos/datos/blob/master/R/datos.R'><code>R/datos.R</code></a></small>
-    <div class="hidden name"><code>datos-package.Rd</code></div>
+    <h1>Tabla de bateadores</h1>
+    
+    <div class="hidden name"><code>bateadores.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p><img src='figures/logo.png' align='right' /></p>
-<p>Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above.</p>
+    <p>Estadísticas de bateadores</p>
     
     </div>
 
         
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://github.com/cienciadedatos/datos'>https://github.com/cienciadedatos/datos</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/cienciadedatos/datos/issues'>https://github.com/cienciadedatos/datos/issues</a></p></li>
-</ul></div>
+    <p>Un data frame con 102.816 filas y 22 columnas</p><dl class='dl-horizontal'>
+<dt>ID_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>ID_anio</dt><dd><p>Año</p></dd>
+<dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
+<dt>ID_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
+<dt>ID_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
+<dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
+<dt>al_bate</dt><dd><p>Turnos al bate</p></dd>
+<dt>carreras</dt><dd><p>Carreras anotadas</p></dd>
+<dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa</p></dd>
+<dt>dobles</dt><dd><p>Golpes en los que el bateador llegó a segunda base</p></dd>
+<dt>triples</dt><dd><p>Golpes en los que el bateador llegó a tercera base</p></dd>
+<dt>cuadrangulares</dt><dd><p>Cuadrangulares - jonrones</p></dd>
+<dt>carreras_empujadas</dt><dd><p>Carreras empujadas</p></dd>
+<dt>bases_robadas</dt><dd><p>Bases robadas</p></dd>
+<dt>atrapado_robo</dt><dd><p>Atrapado en intento de robo</p></dd>
+<dt>bases_bolas</dt><dd><p>Bases por bolas</p></dd>
+<dt>ponches</dt><dd><p>Ponches</p></dd>
+<dt>bases_intencional</dt><dd><p>Bases por bolas intencionales</p></dd>
+<dt>golpeado</dt><dd><p>Golpeado por lanzamiento</p></dd>
+<dt>sacrificios_golpeados</dt><dd><p>Sacrificios golpeados</p></dd>
+<dt>vuelos_sacrificio</dt><dd><p>Vuelos de sacrificio</p></dd>
+<dt>doble_matanza</dt><dd><p>Bateos para doble matanza</p></dd>
+</dl>
     
 
   </div>
@@ -136,22 +146,8 @@ Provee una versión traducida de los siguientes conjuntos de datos:
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#format">Format</a></li>
           </ul>
-
-    <h2>Author</h2>
-    <p><strong>Maintainer</strong>: Edgar Ruiz <a href='mailto:edgararuiz@gmail.com'>edgararuiz@gmail.com</a></p>
-<p>Authors:</p><ul>
-<li><p>Riva Quiroga <a href='mailto:riva.quiroga@uc.cl'>riva.quiroga@uc.cl</a></p></li>
-<li><p>Mauricio Vargas <a href='mailto:mvargas@dcc.uchile.cl'>mvargas@dcc.uchile.cl</a></p></li>
-<li><p>Mauro Lepore <a href='mailto:maurolepore@gmail.com'>maurolepore@gmail.com</a></p></li>
-</ul>
-
-<p>Other contributors:</p><ul>
-<li><p>Rayna Harris <a href='mailto:rayna.harris@gmail.com'>rayna.harris@gmail.com</a> [contributor]</p></li>
-<li><p>Daniela Vasquez <a href='mailto:daniela.vazquez@gmail.com'>daniela.vazquez@gmail.com</a> [contributor]</p></li>
-</ul>
-
 
   </div>
 </div>

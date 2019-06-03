@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -83,10 +83,10 @@
 <h2 class="hasAnchor">
 <a href="#instalacion" class="anchor"></a>Instalación</h2>
 <p>La versión en CRAN está disponible por medio de:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("datos")</span></a></code></pre></div>
-<p>El paquete está disponible en GitHub y puede ser instalado utilizando <code>remotes</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co"># remotes::install_github("cienciadedatos/datos")</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># install.packages("datos")</span></a></code></pre></div>
+<p>La versión en GitHub puede ser instalada utilizando <code>remotes</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"># remotes::install_github("cienciadedatos/datos")</span></a></code></pre></div>
 </div>
 <div id="requisitos" class="section level2">
 <h2 class="hasAnchor">
@@ -154,40 +154,32 @@
 <td align="left">Datos de aeropuertos</td>
 </tr>
 <tr class="odd">
-<td align="left">atmosfera</td>
-<td align="left">Datos atmosféricos</td>
-</tr>
-<tr class="even">
 <td align="left">aviones</td>
 <td align="left">Datos de aviones</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">bateadores</td>
 <td align="left">Tabla de bateadores</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">clima</td>
 <td align="left">Datos de clima</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">datos-stringr</td>
 <td align="left">Vectores de caracteres dentro del paquete stringr</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">diamantes</td>
 <td align="left">Precio de 50.000 diamantes</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">encuesta</td>
 <td align="left">Muestra de variables categóricas de una encuesta social</td>
 </tr>
-<tr class="even">
-<td align="left">fiel</td>
-<td align="left">Datos del géiser Viejo Fiel (Old Faithful)</td>
-</tr>
 <tr class="odd">
-<td align="left">flores</td>
-<td align="left">Datos sobre la flor Iris de Edgar Anderson</td>
+<td align="left">fiel</td>
+<td align="left">Datos del geiser Viejo Fiel (Old Faithful)</td>
 </tr>
 <tr class="even">
 <td align="left">millas</td>
@@ -198,48 +190,40 @@
 <td align="left">Pruebas de ruta de automóviles de Motor Trend</td>
 </tr>
 <tr class="even">
-<td align="left">nombres</td>
-<td align="left">Nombres de bebés</td>
-</tr>
-<tr class="odd">
 <td align="left">oms</td>
 <td align="left">Datos de tuberculosis de la Organización Mundial de la Salud</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">paises</td>
 <td align="left">Datos de Gapminder</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">presidencial</td>
 <td align="left">Periodos de 11 presidentes, desde Eisenhower a Obama</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">tabla1</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">tabla2</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">tabla3</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">tabla4a</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">tabla4b</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">tabla5</td>
 <td align="left">Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)</td>
-</tr>
-<tr class="even">
-<td align="left">vehiculos</td>
-<td align="left">Datos de economía de combustible</td>
 </tr>
 <tr class="odd">
 <td align="left">vuelos</td>
@@ -253,11 +237,11 @@
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
 <p>El paquete <code>datos</code> se carga igual que todos los paquetes de R:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a></code></pre></div>
 <p>Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea “llamada” explícitamente en el código que se escriba. En este ejemplo, el <em>dataset</em> <code>diamantes</code>, que proviene de <code><a href="https://www.rdocumentation.org/packages/ggplot2/topics/diamonds">ggplot2::diamonds</a></code>, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
 <pre><code>## Observations: 53,940
 ## Variables: 10
 ## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…
@@ -271,26 +255,26 @@
 ## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…
 ## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…</code></pre>
 <p>Los datos traducidos quedarán cargados durante toda la sesión de R:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">diamantes <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/theme">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/labs">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">diamantes <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_boxplot">geom_boxplot</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/theme">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/labs">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</a></code></pre></div>
 <p><img src="reference/figures/diamantes.png"></p>
 </div>
-<div id="actualizar-el-paquete" class="section level2">
+<div id="actualizacion-del-paquete" class="section level2">
 <h2 class="hasAnchor">
-<a href="#actualizar-el-paquete" class="anchor"></a>Actualizar el paquete</h2>
-<p>La actualización del paquete tiene multiples pasos. Si hace cambios a las traducciones, y desea que todas las referencias esten al día, corra los siguientes comandos:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># Crea los scripts de traduccion</span></a>
-<a class="sourceLine" id="cb7-2" data-line-number="2">datos<span class="op">:::</span><span class="kw">data_script</span>()</a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co"># Crea los archivos de ayuda</span></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4">datos<span class="op">:::</span><span class="kw">folder_rd</span>()</a>
-<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co"># Actualiza el lugar de internet</span></a>
-<a class="sourceLine" id="cb7-6" data-line-number="6">pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</a>
-<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="co"># Cambia la referencia a tipo html</span></a>
-<a class="sourceLine" id="cb7-8" data-line-number="8">datos<span class="op">:::</span><span class="kw">fix_reference</span>()</a></code></pre></div>
+<a href="#actualizacion-del-paquete" class="anchor"></a>Actualización del paquete</h2>
+<p>La actualización del paquete tiene múltiples pasos. Si se hacen cambios a las traducciones, se debe ejecutar el siguiente código para que todas las referencias estén al día.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># Crea los scripts de traducción</span></a>
+<a class="sourceLine" id="cb7-2" title="2">datos<span class="op">:::</span><span class="kw">data_script</span>()</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="co"># Crea los archivos de ayuda</span></a>
+<a class="sourceLine" id="cb7-4" title="4">datos<span class="op">:::</span><span class="kw">folder_rd</span>()</a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="co"># Actualiza el sitio web</span></a>
+<a class="sourceLine" id="cb7-6" title="6">pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="co"># Cambia la referencia a tipo html</span></a>
+<a class="sourceLine" id="cb7-8" title="8">datos<span class="op">:::</span><span class="kw">fix_reference</span>()</a></code></pre></div>
 </div>
 </div>
   </div>
@@ -299,6 +283,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=datos">https://​cloud.r-project.org/​package=datos</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/cienciadedatos/datos">https://​github.com/​cienciadedatos/​datos</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/cienciadedatos/datos/issues">https://​github.com/​cienciadedatos/​datos/​issues</a>

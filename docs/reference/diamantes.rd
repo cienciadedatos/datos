@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package • datos</title>
+<title>Precio de 50.000 diamantes — diamantes • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,14 +30,9 @@
 
 
 
-<meta property="og:title" content="datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package" />
+<meta property="og:title" content="Precio de 50.000 diamantes — diamantes" />
 
-<meta property="og:description" content="
-Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above." />
+<meta property="og:description" content="Un conjunto de datos que contiene los precios de casi 54.000 diamantes." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -106,29 +101,33 @@ Provee una versión traducida de los siguientes conjuntos de datos:
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>datos: Traduce al Español Varios Conjuntos de Datos de Práctica</h1>
-    <small class="dont-index">Source: <a href='https://github.com/cienciadedatos/datos/blob/master/R/datos.R'><code>R/datos.R</code></a></small>
-    <div class="hidden name"><code>datos-package.Rd</code></div>
+    <h1>Precio de 50.000 diamantes</h1>
+    
+    <div class="hidden name"><code>diamantes.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p><img src='figures/logo.png' align='right' /></p>
-<p>Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above.</p>
+    <p>Un conjunto de datos que contiene los precios de casi 54.000 diamantes.</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>diamantes</span></pre>
         
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://github.com/cienciadedatos/datos'>https://github.com/cienciadedatos/datos</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/cienciadedatos/datos/issues'>https://github.com/cienciadedatos/datos/issues</a></p></li>
-</ul></div>
+    <p>Un data.frame con 53.940 filas y 10 columnas</p><dl class='dl-horizontal'>
+<dt>precio</dt><dd><p>Precio en dólares americanos (\$326-\$18,823)</p></dd>
+<dt>quilate</dt><dd><p>Peso del diamante (0.2-5.01)</p></dd>
+<dt>corte</dt><dd><p>Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)</p></dd>
+<dt>color</dt><dd><p>Color del diamante, de J (peor) a D (mejor)</p></dd>
+<dt>claridad</dt><dd><p>Medida de que tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))</p></dd>
+<dt>profundidad</dt><dd><p>Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43-79)</p></dd>
+<dt>tabla</dt><dd><p>Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)</p></dd>
+<dt>x</dt><dd><p>Largo en milimetros</p></dd>
+<dt>y</dt><dd><p>Ancho en milimetros</p></dd>
+<dt>z</dt><dd><p>Profundidad en milimetros</p></dd>
+</dl>
     
 
   </div>
@@ -136,22 +135,8 @@ Provee una versión traducida de los siguientes conjuntos de datos:
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#format">Format</a></li>
           </ul>
-
-    <h2>Author</h2>
-    <p><strong>Maintainer</strong>: Edgar Ruiz <a href='mailto:edgararuiz@gmail.com'>edgararuiz@gmail.com</a></p>
-<p>Authors:</p><ul>
-<li><p>Riva Quiroga <a href='mailto:riva.quiroga@uc.cl'>riva.quiroga@uc.cl</a></p></li>
-<li><p>Mauricio Vargas <a href='mailto:mvargas@dcc.uchile.cl'>mvargas@dcc.uchile.cl</a></p></li>
-<li><p>Mauro Lepore <a href='mailto:maurolepore@gmail.com'>maurolepore@gmail.com</a></p></li>
-</ul>
-
-<p>Other contributors:</p><ul>
-<li><p>Rayna Harris <a href='mailto:rayna.harris@gmail.com'>rayna.harris@gmail.com</a> [contributor]</p></li>
-<li><p>Daniela Vasquez <a href='mailto:daniela.vazquez@gmail.com'>daniela.vazquez@gmail.com</a> [contributor]</p></li>
-</ul>
-
 
   </div>
 </div>

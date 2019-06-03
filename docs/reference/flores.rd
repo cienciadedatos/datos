@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package • datos</title>
+<title>Datos sobre la flor Iris de Edgar Anderson — flores • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,14 +30,9 @@
 
 
 
-<meta property="og:title" content="datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package" />
+<meta property="og:title" content="Datos sobre la flor Iris de Edgar Anderson — flores" />
 
-<meta property="og:description" content="
-Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above." />
+<meta property="og:description" content="El set de datos sobre la flor Iris entrega las medidas en centímetros del largo y ancho de los sépalos y los pétalos de 50 flores de 3 especies de Iris (setosa, versicolor y virginica)." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -106,29 +101,28 @@ Provee una versión traducida de los siguientes conjuntos de datos:
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>datos: Traduce al Español Varios Conjuntos de Datos de Práctica</h1>
-    <small class="dont-index">Source: <a href='https://github.com/cienciadedatos/datos/blob/master/R/datos.R'><code>R/datos.R</code></a></small>
-    <div class="hidden name"><code>datos-package.Rd</code></div>
+    <h1>Datos sobre la flor Iris de Edgar Anderson</h1>
+    
+    <div class="hidden name"><code>flores.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p><img src='figures/logo.png' align='right' /></p>
-<p>Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'babynames', 'Batting', 'diamonds', 'faithful', 'flights', 'gapminder', 
-  'gss_cat', 'iris', 'mpg', 'mtcars', 'atmos', 'planes', 'presidential', 'table1', 'table2', 'table3', 
-  'table4a', 'table4b', 'table5', 'vehicles','weather', 'who'. English: It provides a
-  Spanish translated version of the datasets listed above.</p>
+    <p>El set de datos sobre la flor Iris entrega las medidas en centímetros del largo y ancho de los sépalos y los pétalos de 50 flores de 3 especies de Iris (setosa, versicolor y virginica).</p>
     
     </div>
 
+    <pre class="usage"><span class='no'>flores</span></pre>
         
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://github.com/cienciadedatos/datos'>https://github.com/cienciadedatos/datos</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/cienciadedatos/datos/issues'>https://github.com/cienciadedatos/datos/issues</a></p></li>
-</ul></div>
+    <p>Un dataframe con 150 casos (filas) y 5 variables (columnas)</p><dl class='dl-horizontal'>
+<dt>Largo.Sepalo</dt><dd><p>Largo del sépalo</p></dd>
+<dt>Ancho.Sepalo</dt><dd><p>Ancho del sépalo</p></dd>
+<dt>Largo.Petalo</dt><dd><p>Largo del pétalo</p></dd>
+<dt>Ancho.Petalo</dt><dd><p>Ancho del pétalo</p></dd>
+<dt>Especies</dt><dd><p>A qué especie de la flor Iris corresponde (setosa, versicolor, virginica)</p></dd>
+</dl>
     
 
   </div>
@@ -136,22 +130,8 @@ Provee una versión traducida de los siguientes conjuntos de datos:
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#format">Format</a></li>
           </ul>
-
-    <h2>Author</h2>
-    <p><strong>Maintainer</strong>: Edgar Ruiz <a href='mailto:edgararuiz@gmail.com'>edgararuiz@gmail.com</a></p>
-<p>Authors:</p><ul>
-<li><p>Riva Quiroga <a href='mailto:riva.quiroga@uc.cl'>riva.quiroga@uc.cl</a></p></li>
-<li><p>Mauricio Vargas <a href='mailto:mvargas@dcc.uchile.cl'>mvargas@dcc.uchile.cl</a></p></li>
-<li><p>Mauro Lepore <a href='mailto:maurolepore@gmail.com'>maurolepore@gmail.com</a></p></li>
-</ul>
-
-<p>Other contributors:</p><ul>
-<li><p>Rayna Harris <a href='mailto:rayna.harris@gmail.com'>rayna.harris@gmail.com</a> [contributor]</p></li>
-<li><p>Daniela Vasquez <a href='mailto:daniela.vazquez@gmail.com'>daniela.vazquez@gmail.com</a> [contributor]</p></li>
-</ul>
-
 
   </div>
 </div>
