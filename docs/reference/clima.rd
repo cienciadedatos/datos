@@ -32,7 +32,7 @@
 
 <meta property="og:title" content="Datos de clima — clima" />
 
-<meta property="og:description" content="Metadatos del clima y los códigos de cola de los aviones en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos." />
+<meta property="og:description" content="Metadatos del clima y los códigos de cola de los aviones en el registro de aviación de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -108,7 +108,7 @@
 
     <div class="ref-description">
     
-    <p>Metadatos del clima y los códigos de cola de los aviones en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.</p>
+    <p>Metadatos del clima y los códigos de cola de los aviones en el registro de aviación de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.</p>
     
     </div>
 
