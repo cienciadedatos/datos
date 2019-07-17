@@ -21,14 +21,14 @@ variables:
       (uno si fue el primer capitán del equipo que entró esa temporada,
       dos si fue el segundo capitán del equipo que entró esa temporada, etc)
   G:
-    trans: partidos
-    desc: Partidos dirigidos
+    trans: juegos
+    desc: Juegos dirigidos
   W:
-    trans: partidos_ganados
-    desc: Partidos ganados
+    trans: juegos_ganados
+    desc: Juegos ganados
   L:
-    trans: partidos_perdidos
-    desc: Partidos perdidos
+    trans: juegos_perdidos
+    desc: Juegos perdidos
   rank:
     trans: posicion
     desc: Posición del equipo en la clasificación final del año
@@ -42,6 +42,7 @@ variables:
 help:
   name: capitanes
   alias: capitanes
-  title: Tabla de capitanes (bateadores)
-  description: Información de los bateadores que fueron capitanes de equipo
+  title: Tabla de capitanes
+  description: Información de los equipos que dirigieron y algunas estadísticas
+    básicas de los equipos en cada año.
   format: Un data frame con 3.504 filas y 10 columnas

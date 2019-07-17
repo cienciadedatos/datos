@@ -30,6 +30,6 @@ variables:
 help:
   name: premios_capitanes
   alias: premios_capitanes
-  title: Tabla de premios de los capitanes (bateadores)
-  description: Información de los premios de los bateadores que fueron capitanes de equipo
+  title: Tabla de premios de los capitanes
+  description: Información de los premios de los capitanes de equipo
   format: Un data frame con 179 filas y 6 columnas

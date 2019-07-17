@@ -1,10 +1,10 @@
 \docType{data}
 \name{personas}
 \alias{personas}
-\title{Tabla de personas (bateadores)}
+\title{Tabla de personas}
 \format{Un data frame con 19.617 filas y 26 columnas
 \describe{
-\item{ID_jugador}{ID del jugador}
+\item{id_jugador}{ID del jugador}
 \item{anio_nacimiento}{Año de nacimiento}
 \item{mes_nacimiento}{Mes de nacimiento}
 \item{dia_nacimiento}{Día de nacimiento}
@@ -31,5 +31,5 @@
 \item{fecha_fallecimiento}{Fecha de fallecimiento en formato yyyy-mm-dd}
 \item{fecha_nacimiento}{Fecha de nacimiento en formato yyyy-mm-dd}
 }}
-\description{Información de los bateadores}
+\description{Nombres de jugadores, fecha de nacimiento e información bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados en bateadores, lanzadores y otros archivos en que los jugadores está identificador por id_jugador.}
 \keyword{datasets}

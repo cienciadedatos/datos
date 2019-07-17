@@ -20,6 +20,6 @@ variables:
 help:
   name: salarios
   alias: salarios
-  title: Tabla de salarios (bateadores)
-  description: Información de los salarios de los bateadores
+  title: Tabla de salarios
+  description: Información de los salarios de los jugadores.
   format: Un data frame con 26.428 filas y 5 columnas

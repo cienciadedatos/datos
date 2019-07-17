@@ -1,0 +1,103 @@
+df:
+  source: Lahman::Pitching
+  name: bateadores
+variables:
+  playerID:
+    trans: id_jugador
+    desc: ID del jugador
+  yearID:
+    trans: id_anio
+    desc: Año
+  stint:
+    trans: orden_equipos
+    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+  teamID:
+    trans: id_equipo
+    desc: ID del equipo (factor)
+  lgID:
+    trans: id_liga
+    desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
+  W:
+    trans: juegos_ganados
+    desc: Número de juegos ganados en los que participó el jugador
+  L:
+    trans: juegos_perdidos
+    desc: Número de juegos perdidos en los que participó el jugador
+  G:
+    trans: juegos
+    desc: Número de juegos en los que participó el jugador
+  GS:
+    trans: juegos_iniciados
+    desc: Número de juegos en los que ha participado el jugador
+  CG:
+    trans: juegos_completados
+    desc: Número de juegos completos en los que ha participado el jugador
+  SHO:
+    trans: juegos_terminados
+    desc: Número de juegos en que los pitchers logran que el rival no complete la carrera
+  SV:
+    trans: juegos_salvados
+    desc: "Número de juegos en que el lanzador logra una de las siguientes condiciones
+      independientes: (i) entra al juego con una ventaja no mayor a
+      tres carreras; (ii) entra en el juego, independientemente de la cuenta, con una carrera
+      potencial de empate en base, al bate o en el círculo de espera; (iii) lanza tres entradas."
+  IPouts:
+    trans: entradas_consecutivas
+    desc: Número de entradas del lanzador multiplicado por tres.
+  H:
+    trans: golpes
+    desc: "Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa"
+  ER:
+    trans: carreras_ganadas
+    desc: Número de carreras ganadas.
+  HR:
+      trans: cuadrangulares
+      desc: Cuadrangulares - jonrones
+  BB:
+    trans: bases_bolas
+    desc: Bases por bolas
+  SO:
+    trans: ponchados
+    desc: Número de bateadores con tres cuentas negativas seguidas (strikes)
+  BAOpp:
+    trans: promedio_bateo_rival
+    desc: Prometio del total de acierto del rival en los turnos al bate
+  ERA:
+    trans: promedio_carreras_ganadas
+    desc: Promedio de carreras ganadas.
+  IBB:
+    trans: bases_intencional
+    desc: Bases por bolas intencionales
+  WP:
+    trans: lanzamientos_descontrolados
+    desc: Número de lanzamientos descontrolados
+  HBP:
+    trans: golpeado
+    desc: Golpeado por lanzamiento
+  BK:
+    trans: numero_interferencias
+    desc: Número de interferencias
+  BFP:
+    trans: BFP
+    desc: Batters faced by Pitcher
+  GF:
+    trans: GF
+    desc: Games Finished
+  R:
+    trans: R
+    desc: Runs Allowed
+  SH:
+    trans: SH
+    desc: Sacrifices by opposing batters
+  SF:
+    trans: SF
+    desc: Sacrifice flies by opposing batters
+  GIDP:
+    trans: doble_matanza
+    desc: Bateos para doble matanza
+help:
+  name: lanzadores
+  alias: lanzadores
+  title: Tabla de lanzadores
+  description: Estadísticas de lanzadores
+  format: Un data frame con 46.699 filas y 30 columnas

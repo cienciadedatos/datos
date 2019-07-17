@@ -3,7 +3,7 @@ df:
   name: personas
 variables:
   playerID:
-    trans: ID_jugador
+    trans: id_jugador
     desc: ID del jugador
   birthYear:
     trans: anio_nacimiento
@@ -89,6 +89,9 @@ variables:
 help:
   name: personas
   alias: personas
-  title: Tabla de personas (bateadores)
-  description: Información de los bateadores
+  title: Tabla de personas
+  description: Nombres de jugadores, fecha de nacimiento e información
+    bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados
+    en bateadores, lanzadores y otros archivos en que los jugadores está identificador por
+    id_jugador.
   format: Un data frame con 19.617 filas y 26 columnas
