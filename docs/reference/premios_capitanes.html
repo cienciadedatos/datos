@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Registros de tuberculosis de la Organización Mundial de la Salud (2da variante) — tabla2 • datos</title>
+<title>Tabla de premios de los capitanes (bateadores) — premios_capitanes • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Registros de tuberculosis de la Organización Mundial de la Salud (2da variante) — tabla2" />
+<meta property="og:title" content="Tabla de premios de los capitanes (bateadores) — premios_capitanes" />
 
-<meta property="og:description" content="Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000." />
+<meta property="og:description" content="Información de los premios de los bateadores que fueron capitanes de equipo" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,25 +101,27 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)</h1>
+    <h1>Tabla de premios de los capitanes (bateadores)</h1>
     
-    <div class="hidden name"><code>tabla2.rd</code></div>
+    <div class="hidden name"><code>premios_capitanes.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.</p>
+    <p>Información de los premios de los bateadores que fueron capitanes de equipo</p>
     
     </div>
 
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un tibble con 12 filas y 4 columnas</p><dl class='dl-horizontal'>
-<dt>pais</dt><dd><p>Nombre del país</p></dd>
-<dt>anio</dt><dd><p>Año correspondiente a los valores registrados</p></dd>
-<dt>tipo</dt><dd><p>Categoría a la que pertenece la observación</p></dd>
-<dt>cuenta</dt><dd><p>Cantidad de observaciones para cada tipo</p></dd>
+    <p>Un data frame con 179 filas y 6 columnas</p><dl class='dl-horizontal'>
+<dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>nombre_premio</dt><dd><p>Nombre del premio recibido</p></dd>
+<dt>anio</dt><dd><p>Año</p></dd>
+<dt>id_liga</dt><dd><p>ID liga (factor)</p></dd>
+<dt>empate</dt><dd><p>Tiene valor "S" (sí) para los premios que corresponden a un empate y "N" (no) en caso contrario.</p></dd>
+<dt>notas</dt><dd><p>Comentarios sobre el premio</p></dd>
 </dl>
     
 

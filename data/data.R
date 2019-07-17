@@ -4,6 +4,8 @@ delayedAssign('aeropuertos',
         eval(parse(file.path(system.file('scripts','aeropuertos.txt', package = 'datos')))))
 delayedAssign('atmosfera',
         eval(parse(file.path(system.file('scripts','atmosfera.txt', package = 'datos')))))
+delayedAssign('premios_capitanes',
+        eval(parse(file.path(system.file('scripts','premios_capitanes.txt', package = 'datos')))))
 delayedAssign('nombres',
         eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
 delayedAssign('bateadores',
@@ -20,14 +22,20 @@ delayedAssign('encuesta',
         eval(parse(file.path(system.file('scripts','encuesta.txt', package = 'datos')))))
 delayedAssign('flores',
         eval(parse(file.path(system.file('scripts','flores.txt', package = 'datos')))))
+delayedAssign('capitanes',
+        eval(parse(file.path(system.file('scripts','capitanes.txt', package = 'datos')))))
 delayedAssign('millas',
         eval(parse(file.path(system.file('scripts','millas.txt', package = 'datos')))))
 delayedAssign('mtautos',
         eval(parse(file.path(system.file('scripts','mtautos.txt', package = 'datos')))))
+delayedAssign('personas',
+        eval(parse(file.path(system.file('scripts','personas.txt', package = 'datos')))))
 delayedAssign('aviones',
         eval(parse(file.path(system.file('scripts','aviones.txt', package = 'datos')))))
 delayedAssign('presidencial',
         eval(parse(file.path(system.file('scripts','presidencial.txt', package = 'datos')))))
+delayedAssign('salarios',
+        eval(parse(file.path(system.file('scripts','salarios.txt', package = 'datos')))))
 delayedAssign('tabla1',
         eval(parse(file.path(system.file('scripts','tabla1.txt', package = 'datos')))))
 delayedAssign('tabla2',

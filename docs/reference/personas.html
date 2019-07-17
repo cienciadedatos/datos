@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles — millas • datos</title>
+<title>Tabla de personas (bateadores) — personas • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles — millas" />
+<meta property="og:title" content="Tabla de personas (bateadores) — personas" />
 
-<meta property="og:description" content="Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene sólo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo.&quot;" />
+<meta property="og:description" content="Información de los bateadores" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,33 +101,47 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles</h1>
+    <h1>Tabla de personas (bateadores)</h1>
     
-    <div class="hidden name"><code>millas.rd</code></div>
+    <div class="hidden name"><code>personas.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene sólo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo."</p>
+    <p>Información de los bateadores</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>millas</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data.frame con 234 filas y 11 columnas</p><dl class='dl-horizontal'>
-<dt>fabricante</dt><dd><p>fabricante</p></dd>
-<dt>modelo</dt><dd><p>nombre del modelo</p></dd>
-<dt>motor</dt><dd><p>tamaño del motor del automóvil, en litros</p></dd>
-<dt>anio</dt><dd><p>año de fabricación</p></dd>
-<dt>cilindros</dt><dd><p>número de cilindros</p></dd>
-<dt>transmision</dt><dd><p>tipo de transmisión</p></dd>
-<dt>traccion</dt><dd><p>tipo de tracción (d = delantera, t = trasera, 4 = 4 ruedas)</p></dd>
-<dt>ciudad</dt><dd><p>millas por galón de combustible en ciudad</p></dd>
-<dt>autopista</dt><dd><p>millas por galón de combustible en autopista</p></dd>
-<dt>combustible</dt><dd><p>tipo de combustible (p = premium, r = regular, e = etanol, d = diesel, g = gas natural comprimido)</p></dd>
-<dt>clase</dt><dd><p>tipo de auto</p></dd>
+    <p>Un data frame con 19.617 filas y 26 columnas</p><dl class='dl-horizontal'>
+<dt>ID_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>anio_nacimiento</dt><dd><p>Año de nacimiento</p></dd>
+<dt>mes_nacimiento</dt><dd><p>Mes de nacimiento</p></dd>
+<dt>dia_nacimiento</dt><dd><p>Día de nacimiento</p></dd>
+<dt>pais_nacimiento</dt><dd><p>País de nacimiento</p></dd>
+<dt>estado_nacimiento</dt><dd><p>Estado de nacimiento</p></dd>
+<dt>ciudad_nacimiento</dt><dd><p>Ciudad de nacimiento</p></dd>
+<dt>anio_fallecimiento</dt><dd><p>Año de fallecimiento</p></dd>
+<dt>mes_fallecimiento</dt><dd><p>Mes de fallecimiento</p></dd>
+<dt>dia_fallecimiento</dt><dd><p>Día de fallecimiento</p></dd>
+<dt>pais_fallecimiento</dt><dd><p>País de fallecimiento</p></dd>
+<dt>estado_fallecimiento</dt><dd><p>Estado de fallecimiento</p></dd>
+<dt>ciudad_fallecimiento</dt><dd><p>Ciudad de fallecimiento</p></dd>
+<dt>nombre</dt><dd><p>Nombre</p></dd>
+<dt>apellido</dt><dd><p>Apellido</p></dd>
+<dt>nombre_completo</dt><dd><p>Nombre y apellido</p></dd>
+<dt>peso</dt><dd><p>Peso en libras</p></dd>
+<dt>estatura</dt><dd><p>Estatura en pulgadas</p></dd>
+<dt>bateador</dt><dd><p>Diestro (D) o zurdo (Z)</p></dd>
+<dt>lanzador</dt><dd><p>Diestro (D) o zurdo (Z)</p></dd>
+<dt>fecha_primer_juego</dt><dd><p>Fecha primer juego en primera división</p></dd>
+<dt>fecha_ultimo_juego</dt><dd><p>Fecha último juego en primera división</p></dd>
+<dt>id_retrosheet</dt><dd><p>Código de jugador usado en Retrosheet (http://www.retrosheet.org/)</p></dd>
+<dt>id_brw</dt><dd><p>Código de jugador usado en Baseball Reference website (http://www.baseball-reference.com/)</p></dd>
+<dt>fecha_fallecimiento</dt><dd><p>Fecha de fallecimiento en formato yyyy-mm-dd</p></dd>
+<dt>fecha_nacimiento</dt><dd><p>Fecha de nacimiento en formato yyyy-mm-dd</p></dd>
 </dl>
     
 

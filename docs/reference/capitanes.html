@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Datos de economía de combustible — vehiculos • datos</title>
+<title>Tabla de capitanes (bateadores) — capitanes • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Datos de economía de combustible — vehiculos" />
+<meta property="og:title" content="Tabla de capitanes (bateadores) — capitanes" />
 
-<meta property="og:description" content="Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos." />
+<meta property="og:description" content="Información de los bateadores que fueron capitanes de equipo" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,34 +101,31 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Datos de economía de combustible</h1>
+    <h1>Tabla de capitanes (bateadores)</h1>
     
-    <div class="hidden name"><code>vehiculos.rd</code></div>
+    <div class="hidden name"><code>capitanes.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos.</p>
+    <p>Información de los bateadores que fueron capitanes de equipo</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>vehiculos</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data.frame con 33442 filas y 12 columnas</p><dl class='dl-horizontal'>
-<dt>id</dt><dd><p>Identificador único EPA</p></dd>
-<dt>fabricante</dt><dd><p>Fabricante</p></dd>
-<dt>modelo</dt><dd><p>Nombre del modelo</p></dd>
-<dt>anio</dt><dd><p>año de fabricación</p></dd>
-<dt>clase</dt><dd><p>tipo de auto</p></dd>
-<dt>transmision</dt><dd><p>tipo de transmisión</p></dd>
-<dt>traccion</dt><dd><p>tipo de tracción</p></dd>
-<dt>cilindros</dt><dd><p>número de cilindros</p></dd>
-<dt>motor</dt><dd><p>tamaño del motor del automovil, en litros</p></dd>
-<dt>combustible</dt><dd><p>tipo de combustible</p></dd>
-<dt>autopista</dt><dd><p>millas por galón de combustible en autopista</p></dd>
-<dt>ciudad</dt><dd><p>millas por galón de combustible en ciudad</p></dd>
+    <p>Un data frame con 3.504 filas y 10 columnas</p><dl class='dl-horizontal'>
+<dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>anio</dt><dd><p>Año</p></dd>
+<dt>id_equipo</dt><dd><p>ID equipo (factor)</p></dd>
+<dt>id_liga</dt><dd><p>ID liga (factor)</p></dd>
+<dt>en_temporada</dt><dd><p>Cero si fue capitán del equipo al equipo toda la temporada. En otro caso denota el orden de entrada en la temporada (uno si fue el primer capitán del equipo que entró esa temporada, dos si fue el segundo capitán del equipo que entró esa temporada, etc)</p></dd>
+<dt>partidos</dt><dd><p>Partidos dirigidos</p></dd>
+<dt>partidos_ganados</dt><dd><p>Partidos ganados</p></dd>
+<dt>partidos_perdidos</dt><dd><p>Partidos perdidos</p></dd>
+<dt>posicion</dt><dd><p>Posición del equipo en la clasificación final del año</p></dd>
+<dt>jugador_representado</dt><dd><p>Tiene valor "S" (sí) para los jugadores estuvieron de capitán del equipo durante la temporada y "N" (no) en caso contrario (factor).</p></dd>
 </dl>
     
 

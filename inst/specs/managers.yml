@@ -1,0 +1,47 @@
+df:
+  source: Lahman::Managers
+  name: capitanes
+variables:
+  playerID:
+    trans: id_jugador
+    desc: ID del jugador
+  yearID:
+    trans: anio
+    desc: Año
+  teamID:
+    trans: id_equipo
+    desc: ID equipo (factor)
+  lgID:
+    trans: id_liga
+    desc: ID liga (factor)
+  inseason:
+    trans: en_temporada
+    desc: Cero si fue capitán del equipo al equipo toda la temporada.
+      En otro caso denota el orden de entrada en la temporada
+      (uno si fue el primer capitán del equipo que entró esa temporada,
+      dos si fue el segundo capitán del equipo que entró esa temporada, etc)
+  G:
+    trans: partidos
+    desc: Partidos dirigidos
+  W:
+    trans: partidos_ganados
+    desc: Partidos ganados
+  L:
+    trans: partidos_perdidos
+    desc: Partidos perdidos
+  rank:
+    trans: posicion
+    desc: Posición del equipo en la clasificación final del año
+  plyrMgr:
+    trans: jugador_representado
+    desc: Tiene valor "S" (sí) para los jugadores estuvieron de capitán del equipo
+      durante la temporada y "N" (no) en caso contrario (factor).
+    values:
+      Y: S,
+      N: N
+help:
+  name: capitanes
+  alias: capitanes
+  title: Tabla de capitanes (bateadores)
+  description: Información de los bateadores que fueron capitanes de equipo
+  format: Un data frame con 3.504 filas y 10 columnas
