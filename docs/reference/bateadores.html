@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tabla de lanzadores — lanzadores • datos</title>
+<title>Tabla de bateadores — bateadores • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Tabla de lanzadores — lanzadores" />
+<meta property="og:title" content="Tabla de bateadores — bateadores" />
 
-<meta property="og:description" content="Estadísticas de lanzadores" />
+<meta property="og:description" content="Estadísticas de bateadores" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,50 +101,42 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Tabla de lanzadores</h1>
+    <h1>Tabla de bateadores</h1>
     
     <div class="hidden name"><code>bateadores.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Estadísticas de lanzadores</p>
+    <p>Estadísticas de bateadores</p>
     
     </div>
 
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 46.699 filas y 30 columnas</p><dl class='dl-horizontal'>
+    <p>Un data frame con 102.816 filas y 22 columnas</p><dl class='dl-horizontal'>
 <dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
 <dt>id_anio</dt><dd><p>Año</p></dd>
 <dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
 <dt>id_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
 <dt>id_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
-<dt>juegos_ganados</dt><dd><p>Número de juegos ganados en los que participó el jugador</p></dd>
-<dt>juegos_perdidos</dt><dd><p>Número de juegos perdidos en los que participó el jugador</p></dd>
 <dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
-<dt>juegos_iniciados</dt><dd><p>Número de juegos en los que ha participado el jugador</p></dd>
-<dt>juegos_completados</dt><dd><p>Número de juegos completos en los que ha participado el jugador</p></dd>
-<dt>juegos_terminados</dt><dd><p>Número de juegos en que los pitchers logran que el rival no complete la carrera</p></dd>
-<dt>juegos_salvados</dt><dd><p>Número de juegos en que el lanzador logra una de las siguientes condiciones independientes: (i) entra al juego con una ventaja no mayor a tres carreras; (ii) entra en el juego, independientemente de la cuenta, con una carrera potencial de empate en base, al bate o en el círculo de espera; (iii) lanza tres entradas.</p></dd>
-<dt>entradas_consecutivas</dt><dd><p>Número de entradas del lanzador multiplicado por tres.</p></dd>
+<dt>al_bate</dt><dd><p>Turnos al bate</p></dd>
+<dt>carreras</dt><dd><p>Carreras anotadas</p></dd>
 <dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa</p></dd>
-<dt>carreras_ganadas</dt><dd><p>Número de carreras ganadas.</p></dd>
+<dt>dobles</dt><dd><p>Golpes en los que el bateador llegó a segunda base</p></dd>
+<dt>triples</dt><dd><p>Golpes en los que el bateador llegó a tercera base</p></dd>
 <dt>cuadrangulares</dt><dd><p>Cuadrangulares - jonrones</p></dd>
+<dt>carreras_empujadas</dt><dd><p>Carreras empujadas</p></dd>
+<dt>bases_robadas</dt><dd><p>Bases robadas</p></dd>
+<dt>atrapado_robo</dt><dd><p>Atrapado en intento de robo</p></dd>
 <dt>bases_bolas</dt><dd><p>Bases por bolas</p></dd>
-<dt>ponchados</dt><dd><p>Número de bateadores con tres cuentas negativas seguidas (strikes)</p></dd>
-<dt>promedio_bateo_rival</dt><dd><p>Prometio del total de acierto del rival en los turnos al bate</p></dd>
-<dt>promedio_carreras_ganadas</dt><dd><p>Promedio de carreras ganadas.</p></dd>
+<dt>ponches</dt><dd><p>Ponches</p></dd>
 <dt>bases_intencional</dt><dd><p>Bases por bolas intencionales</p></dd>
-<dt>lanzamientos_descontrolados</dt><dd><p>Número de lanzamientos descontrolados</p></dd>
 <dt>golpeado</dt><dd><p>Golpeado por lanzamiento</p></dd>
-<dt>numero_interferencias</dt><dd><p>Número de interferencias</p></dd>
-<dt>BFP</dt><dd><p>Batters faced by Pitcher</p></dd>
-<dt>GF</dt><dd><p>Games Finished</p></dd>
-<dt>R</dt><dd><p>Runs Allowed</p></dd>
-<dt>SH</dt><dd><p>Sacrifices by opposing batters</p></dd>
-<dt>SF</dt><dd><p>Sacrifice flies by opposing batters</p></dd>
+<dt>sacrificios_golpeados</dt><dd><p>Sacrificios golpeados</p></dd>
+<dt>vuelos_sacrificio</dt><dd><p>Vuelos de sacrificio</p></dd>
 <dt>doble_matanza</dt><dd><p>Bateos para doble matanza</p></dd>
 </dl>
     

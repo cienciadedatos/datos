@@ -34,8 +34,8 @@ delayedAssign('mtautos',
         eval(parse(file.path(system.file('scripts','mtautos.txt', package = 'datos')))))
 delayedAssign('personas',
         eval(parse(file.path(system.file('scripts','personas.txt', package = 'datos')))))
-delayedAssign('bateadores',
-        eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
+delayedAssign('lanzadores',
+        eval(parse(file.path(system.file('scripts','lanzadores.txt', package = 'datos')))))
 delayedAssign('aviones',
         eval(parse(file.path(system.file('scripts','aviones.txt', package = 'datos')))))
 delayedAssign('presidencial',

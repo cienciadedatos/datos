@@ -56,5 +56,5 @@ translate <- function(spec_file) {
     as.data.frame(dfl)
   }
 }
-translate('batting.yml')
+translate('pitching.yml')
 

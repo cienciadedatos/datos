@@ -1,6 +1,6 @@
 df:
   source: Lahman::Pitching
-  name: bateadores
+  name: lanzadores
 variables:
   playerID:
     trans: id_jugador

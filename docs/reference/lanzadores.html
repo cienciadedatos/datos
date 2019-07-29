@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tabla de jardineros — jardineros • datos</title>
+<title>Tabla de lanzadores — lanzadores • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Tabla de jardineros — jardineros" />
+<meta property="og:title" content="Tabla de lanzadores — lanzadores" />
 
-<meta property="og:description" content="Estadísticas de jardineros" />
+<meta property="og:description" content="Estadísticas de lanzadores" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,39 +101,51 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Tabla de jardineros</h1>
+    <h1>Tabla de lanzadores</h1>
     
-    <div class="hidden name"><code>jardineros.rd</code></div>
+    <div class="hidden name"><code>lanzadores.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Estadísticas de jardineros</p>
+    <p>Estadísticas de lanzadores</p>
     
     </div>
 
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 140.921 filas y 18 columnas</p><dl class='dl-horizontal'>
+    <p>Un data frame con 46.699 filas y 30 columnas</p><dl class='dl-horizontal'>
 <dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
 <dt>id_anio</dt><dd><p>Año</p></dd>
 <dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
 <dt>id_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
 <dt>id_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
-<dt>posicion</dt><dd><p>Posición</p></dd>
+<dt>juegos_ganados</dt><dd><p>Número de juegos ganados en los que participó el jugador</p></dd>
+<dt>juegos_perdidos</dt><dd><p>Número de juegos perdidos en los que participó el jugador</p></dd>
 <dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
-<dt>juegos_iniciados</dt><dd><p>Juegos iniciados</p></dd>
-<dt>InnOuts</dt><dd><p>Time played in the field expressed as outs</p></dd>
-<dt>PO</dt><dd><p>Putouts</p></dd>
-<dt>A</dt><dd><p>Assists</p></dd>
-<dt>E</dt><dd><p>Errors</p></dd>
-<dt>DP</dt><dd><p>Double Plays</p></dd>
-<dt>PB</dt><dd><p>Passed Balls (by catchers)</p></dd>
-<dt>WB</dt><dd><p>Wild Pitches (by catchers)</p></dd>
-<dt>SB</dt><dd><p>Opponent Stolen Bases (by catchers)</p></dd>
-<dt>CS</dt><dd><p>Opponents Caught Stealing (by catchers)</p></dd>
-<dt>ZR</dt><dd><p>Zone Rating</p></dd>
+<dt>juegos_iniciados</dt><dd><p>Número de juegos en los que ha participado el jugador</p></dd>
+<dt>juegos_completados</dt><dd><p>Número de juegos completos en los que ha participado el jugador</p></dd>
+<dt>juegos_terminados</dt><dd><p>Número de juegos en que los pitchers logran que el rival no complete la carrera</p></dd>
+<dt>juegos_salvados</dt><dd><p>Número de juegos en que el lanzador logra una de las siguientes condiciones independientes: (i) entra al juego con una ventaja no mayor a tres carreras; (ii) entra en el juego, independientemente de la cuenta, con una carrera potencial de empate en base, al bate o en el círculo de espera; (iii) lanza tres entradas.</p></dd>
+<dt>entradas_consecutivas</dt><dd><p>Número de entradas del lanzador multiplicado por tres.</p></dd>
+<dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa</p></dd>
+<dt>carreras_ganadas</dt><dd><p>Número de carreras ganadas.</p></dd>
+<dt>cuadrangulares</dt><dd><p>Cuadrangulares - jonrones</p></dd>
+<dt>bases_bolas</dt><dd><p>Bases por bolas</p></dd>
+<dt>ponchados</dt><dd><p>Número de bateadores con tres cuentas negativas seguidas (strikes)</p></dd>
+<dt>promedio_bateo_rival</dt><dd><p>Prometio del total de acierto del rival en los turnos al bate</p></dd>
+<dt>promedio_carreras_ganadas</dt><dd><p>Promedio de carreras ganadas.</p></dd>
+<dt>bases_intencional</dt><dd><p>Bases por bolas intencionales</p></dd>
+<dt>lanzamientos_descontrolados</dt><dd><p>Número de lanzamientos descontrolados</p></dd>
+<dt>golpeado</dt><dd><p>Golpeado por lanzamiento</p></dd>
+<dt>numero_interferencias</dt><dd><p>Número de interferencias</p></dd>
+<dt>BFP</dt><dd><p>Batters faced by Pitcher</p></dd>
+<dt>GF</dt><dd><p>Games Finished</p></dd>
+<dt>R</dt><dd><p>Runs Allowed</p></dd>
+<dt>SH</dt><dd><p>Sacrifices by opposing batters</p></dd>
+<dt>SF</dt><dd><p>Sacrifice flies by opposing batters</p></dd>
+<dt>doble_matanza</dt><dd><p>Bateos para doble matanza</p></dd>
 </dl>
     
 
