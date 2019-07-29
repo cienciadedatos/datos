@@ -21,8 +21,8 @@ variables:
     trans: posicion
     desc: Posición
   G:
-    trans: juegos
-    desc: Número de juegos en los que participó el jugador
+    trans: juegos_jugados
+    desc: Juegos jugados
   GS:
     trans: juegos_iniciados
     desc: Juegos iniciados
@@ -30,32 +30,32 @@ variables:
     trans: InnOuts
     desc: Time played in the field expressed as outs
   PO:
-    trans: PO
-    desc: Putouts
+    trans: outs_realizados
+    desc: Outs realizados
   A:
-    trans: A
-    desc: Assists
+    trans: asistencias
+    desc: Asistencias
   E:
-    trans: E
-    desc: Errors
+    trans: errores
+    desc: Errores
   DP:
-    trans: DP
-    desc: Double Plays
+    trans: doble_matanzas
+    desc: Doble matanzas
   PB:
-    trans: PB
-    desc: Passed Balls (by catchers)
+    trans: bolas_pasadas
+    desc: Bolas pasadas (por los atrapadores)
   WP:
-    trans: WB
-    desc: Wild Pitches (by catchers)
+    trans: lanzamientos_salvajes
+    desc: Lanzamientos salvajes (por los atrapadores)
   SB:
-    trans: SB
-    desc: Opponent Stolen Bases (by catchers)
+    trans: bases_robadas
+    desc: Bases robadas al oponente (por los atrapadores)
   CS:
-    trans: CS
-    desc: Opponents Caught Stealing (by catchers)
+    trans: atrapados_robando
+    desc: Oponentes atrapados en intento de robo (por los atrapadores)
   ZR:
-    trans: ZR
-    desc: Zone Rating
+    trans: clasificacion_zona
+    desc: Clasificación de zona
 help:
   name: jardineros
   alias: jardineros

@@ -19,79 +19,76 @@ variables:
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   W:
     trans: juegos_ganados
-    desc: Número de juegos ganados en los que participó el jugador
+    desc: Juegos jugados ganados
   L:
     trans: juegos_perdidos
-    desc: Número de juegos perdidos en los que participó el jugador
+    desc: Juegos jugados perdidos
   G:
-    trans: juegos
-    desc: Número de juegos en los que participó el jugador
+    trans: juegos_jugados
+    desc: Juegos jugados
   GS:
     trans: juegos_iniciados
-    desc: Número de juegos en los que ha participado el jugador
+    desc: Juegos jugados iniciados
   CG:
     trans: juegos_completados
     desc: Número de juegos completos en los que ha participado el jugador
   SHO:
-    trans: juegos_terminados
-    desc: Número de juegos en que los pitchers logran que el rival no complete la carrera
+    trans: blanqueadas
+    desc: Blanqueadas
   SV:
     trans: juegos_salvados
-    desc: "Número de juegos en que el lanzador logra una de las siguientes condiciones
-      independientes: (i) entra al juego con una ventaja no mayor a
-      tres carreras; (ii) entra en el juego, independientemente de la cuenta, con una carrera
-      potencial de empate en base, al bate o en el círculo de espera; (iii) lanza tres entradas."
+    desc: Juegos salvados
   IPouts:
-    trans: entradas_consecutivas
-    desc: Número de entradas del lanzador multiplicado por tres.
+    trans: IPouts
+    desc: Outs Pitched (innings pitched x 3)
   H:
     trans: golpes
-    desc: "Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa"
+    desc: Golpes
   ER:
     trans: carreras_ganadas
-    desc: Número de carreras ganadas.
+    desc: Carreras ganadas
   HR:
       trans: cuadrangulares
       desc: Cuadrangulares - jonrones
   BB:
-    trans: bases_bolas
-    desc: Bases por bolas
+    trans: BB
+    desc: Walks
   SO:
     trans: ponchados
-    desc: Número de bateadores con tres cuentas negativas seguidas (strikes)
+    desc: Ponchados
   BAOpp:
     trans: promedio_bateo_rival
-    desc: Prometio del total de acierto del rival en los turnos al bate
+    desc: Prometio de bateo del rival
   ERA:
     trans: promedio_carreras_ganadas
-    desc: Promedio de carreras ganadas.
+    desc: Promedio de carreras ganadas
   IBB:
-    trans: bases_intencional
-    desc: Bases por bolas intencionales
+    trans: IBB
+    desc: Intentional Walks
   WP:
-    trans: lanzamientos_descontrolados
-    desc: Número de lanzamientos descontrolados
+    trans: lanzamientos_salvajes
+    desc: Lanzamientos salvajes
   HBP:
-    trans: golpeado
-    desc: Golpeado por lanzamiento
+    trans: HBP
+    desc: Batters Hit By Pitch
   BK:
-    trans: numero_interferencias
-    desc: Número de interferencias
+    trans: BK
+    desc: Balks
   BFP:
     trans: BFP
     desc: Batters faced by Pitcher
   GF:
-    trans: GF
-    desc: Games Finished
+    trans: juegos_finalizados
+    desc: Juegos finalizados
   R:
-    trans: R
-    desc: Runs Allowed
+    trans: carreras
+    desc: Carreras anotadas
   SH:
-    trans: SH
-    desc: Sacrifices by opposing batters
+    trans: sacrificios_golpeados
+    desc: Sacrificios golpeados
   SF:
-    trans: SF
-    desc: Sacrifice flies by opposing batters
+    trans: vuelos_sacrificio
+    desc: Vuelos de sacrificio
   GIDP:
     trans: doble_matanza
     desc: Bateos para doble matanza

@@ -21,7 +21,7 @@ variables:
       (uno si fue el primer capitán del equipo que entró esa temporada,
       dos si fue el segundo capitán del equipo que entró esa temporada, etc)
   G:
-    trans: juegos
+    trans: juegos_dirigidos
     desc: Juegos dirigidos
   W:
     trans: juegos_ganados
@@ -33,7 +33,7 @@ variables:
     trans: posicion
     desc: Posición del equipo en la clasificación final del año
   plyrMgr:
-    trans: jugador_representado
+    trans: jugador_capitan
     desc: Tiene valor "S" (sí) para los jugadores estuvieron de capitán del equipo
       durante la temporada y "N" (no) en caso contrario (factor).
     values:
