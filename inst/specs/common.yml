@@ -9,15 +9,15 @@ variables:
     trans: modelo
     desc: Modelo
   n:
-    trans: modelos
+    trans: total_modelos
     desc: Número total de modelos
   years:
-    trans: modelos_anios
-    desc: Número total de modelos-años
+    trans: total_modelos_anio
+    desc: Número total de modelos-año
 help:
   name: comunes
   alias: comunes
-  title: Modelos comunes
+  title: Modelos comunes de vehículos
   description: Estos modelos tienen al menos 10 años de datos. Este dataset es adecuado para efectuar un join que
     restringa el número de observaciones a un nivel manejable.
   usage: comunes
