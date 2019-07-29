@@ -1,5 +1,5 @@
 df:
-  source: fueleconomy::common
+  source: as.data.frame(fueleconomy::common)
   name: comunes
 variables:
   make:
