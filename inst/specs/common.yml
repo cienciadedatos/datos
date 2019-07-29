@@ -1,0 +1,24 @@
+df:
+  source: fueleconomy::common
+  name: comunes
+variables:
+  make:
+    trans: fabricante
+    desc: Fabricante
+  model:
+    trans: modelo
+    desc: Modelo
+  n:
+    trans: modelos
+    desc: Número total de modelos
+  years:
+    trans: modelos_anios
+    desc: Número total de modelos-años
+help:
+  name: comunes
+  alias: comunes
+  title: Modelos comunes
+  description: Estos modelos tienen al menos 10 años de datos. Este dataset es adecuado para efectuar un join que
+    restringa el número de observaciones a un nivel manejable.
+  usage: comunes
+  format: Un data.frame con 347 filas y 4 columnas

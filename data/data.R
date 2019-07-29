@@ -10,6 +10,8 @@ delayedAssign('nombres',
         eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
 delayedAssign('bateadores',
         eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
+delayedAssign('comunes',
+        eval(parse(file.path(system.file('scripts','comunes.txt', package = 'datos')))))
 delayedAssign('diamantes',
         eval(parse(file.path(system.file('scripts','diamantes.txt', package = 'datos')))))
 delayedAssign('fiel',

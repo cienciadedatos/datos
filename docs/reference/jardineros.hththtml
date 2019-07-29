@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package • datos</title>
+<title>Tabla de jardineros — jardineros • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,15 +30,9 @@
 
 
 
-<meta property="og:title" content="datos: Traduce al Español Varios Conjuntos de Datos de Práctica — datos-package" />
+<meta property="og:title" content="Tabla de jardineros — jardineros" />
 
-<meta property="og:description" content="
-Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'common', 'diamonds', 'faithful', 'Fielding', 
-  'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 
-  'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles',
-  'weather', 'who'. 
-  English: It provides a Spanish translated version of the datasets listed above." />
+<meta property="og:description" content="Estadísticas de jardineros" />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -107,30 +101,40 @@ Provee una versión traducida de los siguientes conjuntos de datos:
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>datos: Traduce al Español Varios Conjuntos de Datos de Práctica</h1>
-    <small class="dont-index">Source: <a href='https://github.com/cienciadedatos/datos/blob/master/R/datos.R'><code>R/datos.R</code></a></small>
-    <div class="hidden name"><code>datos-package.Rd</code></div>
+    <h1>Tabla de jardineros</h1>
+    
+    <div class="hidden name"><code>jardineros.rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p><img src='figures/logo.png' align='right' /></p>
-<p>Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'common', 'diamonds', 'faithful', 'Fielding', 
-  'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 
-  'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles',
-  'weather', 'who'. 
-  English: It provides a Spanish translated version of the datasets listed above.</p>
+    <p>Estadísticas de jardineros</p>
     
     </div>
 
         
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://github.com/cienciadedatos/datos'>https://github.com/cienciadedatos/datos</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/cienciadedatos/datos/issues'>https://github.com/cienciadedatos/datos/issues</a></p></li>
-</ul></div>
+    <p>Un data frame con 140.921 filas y 18 columnas</p><dl class='dl-horizontal'>
+<dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>id_anio</dt><dd><p>Año</p></dd>
+<dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
+<dt>id_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
+<dt>id_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
+<dt>posicion</dt><dd><p>Posición</p></dd>
+<dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
+<dt>juegos_iniciados</dt><dd><p>Juegos iniciados</p></dd>
+<dt>InnOuts</dt><dd><p>Time played in the field expressed as outs</p></dd>
+<dt>PO</dt><dd><p>Putouts</p></dd>
+<dt>A</dt><dd><p>Assists</p></dd>
+<dt>E</dt><dd><p>Errors</p></dd>
+<dt>DP</dt><dd><p>Double Plays</p></dd>
+<dt>PB</dt><dd><p>Passed Balls (by catchers)</p></dd>
+<dt>WB</dt><dd><p>Wild Pitches (by catchers)</p></dd>
+<dt>SB</dt><dd><p>Opponent Stolen Bases (by catchers)</p></dd>
+<dt>CS</dt><dd><p>Opponents Caught Stealing (by catchers)</p></dd>
+<dt>ZR</dt><dd><p>Zone Rating</p></dd>
+</dl>
     
 
   </div>
@@ -138,22 +142,8 @@ Provee una versión traducida de los siguientes conjuntos de datos:
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#format">Format</a></li>
           </ul>
-
-    <h2>Author</h2>
-    <p><strong>Maintainer</strong>: Edgar Ruiz <a href='mailto:edgararuiz@gmail.com'>edgararuiz@gmail.com</a></p>
-<p>Authors:</p><ul>
-<li><p>Riva Quiroga <a href='mailto:riva.quiroga@uc.cl'>riva.quiroga@uc.cl</a></p></li>
-<li><p>Mauricio Vargas <a href='mailto:mvargas@dcc.uchile.cl'>mvargas@dcc.uchile.cl</a></p></li>
-<li><p>Mauro Lepore <a href='mailto:maurolepore@gmail.com'>maurolepore@gmail.com</a></p></li>
-</ul>
-
-<p>Other contributors:</p><ul>
-<li><p>Rayna Harris <a href='mailto:rayna.harris@gmail.com'>rayna.harris@gmail.com</a> [contributor]</p></li>
-<li><p>Daniela Vasquez <a href='mailto:daniela.vazquez@gmail.com'>daniela.vazquez@gmail.com</a> [contributor]</p></li>
-</ul>
-
 
   </div>
 </div>

@@ -9,7 +9,7 @@
 \if{html}{\figure{logo.png}{options: align='right'}}
 
 Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'Fielding', 
+  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'common', 'diamonds', 'faithful', 'Fielding', 
   'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 
   'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles',
   'weather', 'who'. 
