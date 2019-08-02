@@ -1,6 +1,6 @@
 df:
   source: Lahman::Fielding
-  name: fildeo
+  name: jardineros
 variables:
   playerID:
     trans: id_jugador
@@ -57,8 +57,8 @@ variables:
     trans: clasificacion_zona
     desc: Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"
 help:
-  name: fildeo
-  alias: fildeo
-  title: Tabla de Fildeo
+  name: jardineros
+  alias: jardineros
+  title: Tabla de estadísticas de jardineros
   description: Estadísticas de jardineros
   format: Un data frame con 140.921 filas y 18 columnas

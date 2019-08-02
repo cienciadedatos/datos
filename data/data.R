@@ -8,16 +8,16 @@ delayedAssign('premios_dirigentes',
         eval(parse(file.path(system.file('scripts','premios_dirigentes.txt', package = 'datos')))))
 delayedAssign('nombres',
         eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
-delayedAssign('bateo',
-        eval(parse(file.path(system.file('scripts','bateo.txt', package = 'datos')))))
+delayedAssign('bateadores',
+        eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
 delayedAssign('comunes',
         eval(parse(file.path(system.file('scripts','comunes.txt', package = 'datos')))))
 delayedAssign('diamantes',
         eval(parse(file.path(system.file('scripts','diamantes.txt', package = 'datos')))))
 delayedAssign('fiel',
         eval(parse(file.path(system.file('scripts','fiel.txt', package = 'datos')))))
-delayedAssign('fildeo',
-        eval(parse(file.path(system.file('scripts','fildeo.txt', package = 'datos')))))
+delayedAssign('jardineros',
+        eval(parse(file.path(system.file('scripts','jardineros.txt', package = 'datos')))))
 delayedAssign('vuelos',
         eval(parse(file.path(system.file('scripts','vuelos.txt', package = 'datos')))))
 delayedAssign('paises',
