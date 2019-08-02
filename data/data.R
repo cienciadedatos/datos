@@ -16,8 +16,8 @@ delayedAssign('diamantes',
         eval(parse(file.path(system.file('scripts','diamantes.txt', package = 'datos')))))
 delayedAssign('fiel',
         eval(parse(file.path(system.file('scripts','fiel.txt', package = 'datos')))))
-delayedAssign('fildeo',
-        eval(parse(file.path(system.file('scripts','fildeo.txt', package = 'datos')))))
+delayedAssign('jardineros',
+        eval(parse(file.path(system.file('scripts','jardineros.txt', package = 'datos')))))
 delayedAssign('vuelos',
         eval(parse(file.path(system.file('scripts','vuelos.txt', package = 'datos')))))
 delayedAssign('paises',

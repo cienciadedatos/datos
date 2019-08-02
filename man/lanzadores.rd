@@ -1,7 +1,7 @@
 \docType{data}
 \name{lanzadores}
 \alias{lanzadores}
-\title{Tabla de lanzadores}
+\title{Tabla de estadísticas de lanzadores}
 \format{Un data frame con 46.699 filas y 30 columnas
 \describe{
 \item{id_jugador}{ID del jugador}
