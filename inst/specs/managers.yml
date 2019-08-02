@@ -1,6 +1,6 @@
 df:
   source: Lahman::Managers
-  name: capitanes
+  name: dirigentes
 variables:
   playerID:
     trans: id_jugador
@@ -15,11 +15,11 @@ variables:
     trans: id_liga
     desc: ID liga (factor)
   inseason:
-    trans: en_temporada
-    desc: Cero si fue capitán del equipo al equipo toda la temporada.
-      En otro caso denota el orden de entrada en la temporada
-      (uno si fue el primer capitán del equipo que entró esa temporada,
-      dos si fue el segundo capitán del equipo que entró esa temporada, etc)
+    trans: Orden (secuencia) en la dirigencia de equipos durante una temporada
+    desc: 0 si fue dirigente del equipo durante toda una temporada.
+      En otro caso denota el orden de entrada a un equipo en una temporada
+      (1 si fue el primer diriente del equipo que entró en esa temporada,
+      2 si fue el segundo dirigente del equipo que entró en esa temporada, etc.)
   G:
     trans: juegos_dirigidos
     desc: Juegos dirigidos
@@ -31,18 +31,18 @@ variables:
     desc: Juegos perdidos
   rank:
     trans: posicion
-    desc: Posición del equipo en la clasificación final del año
+    desc: Posición del equipo en la clasificación final de la temporada regular
   plyrMgr:
-    trans: jugador_capitan
-    desc: Tiene valor "S" (sí) para los jugadores estuvieron de capitán del equipo
-      durante la temporada y "N" (no) en caso contrario (factor).
+    trans: jugador_dirigente
+    desc: Tiene valor "S" (sí) para los jugadores que hayan sido jugadores y dirigentes del equipo
+      durante una temporada y "N" (no) en caso contrario (factor).
     values:
       Y: S,
       N: N
 help:
-  name: capitanes
-  alias: capitanes
-  title: Tabla de capitanes
+  name: dirigentes
+  alias: dirigentes
+  title: Tabla de dirigentes
   description: Información de los equipos que dirigieron y algunas estadísticas
-    básicas de los equipos en cada año.
+    básicas de los equipos en cada temporada.
   format: Un data frame con 3.504 filas y 10 columnas
