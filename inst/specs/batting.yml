@@ -27,7 +27,7 @@ variables:
     trans: carreras
     desc: Carreras anotadas
   H:
-    trans: hits
+    trans: golpes
     desc: "Cantidad de veces en la cual el jugador alcanz\u00f3 una base debido a un golpe, sin error de la defensa"
   X2B:
     trans: dobles
