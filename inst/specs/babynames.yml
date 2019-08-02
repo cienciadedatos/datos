@@ -4,23 +4,23 @@ df:
 variables:
   year:
     trans: anio
-    desc: Año del registro
+    desc: "A\u00f1o del registro"
   sex:
     trans: sexo
-    desc: Sexo del bebé
+    desc: "Sexo del beb\u00e9"
   name:
     trans: nombre
     desc: Nombre
-  n:
+  "n":
     trans: n
     desc: Cantidad de ocurrencias
   prop:
     trans: prop
-    desc: Proporción
+    desc: "Proporci\u00f3n"
 help:
   name: nombres
   alias: nombres
-  title: Nombres de bebés
-  description: Datos completos sobre nombres de bebés provistos por la Social Security Administration de EE.UU. Incluye todos los nombres con al menos 5 usos.
+  title: "Nombres de beb\u00e9s"
+  description: "Datos completos sobre nombres de beb\u00e9s provistos por la Social Security Administration de EE.UU. Incluye todos los nombres con al menos 5 usos."
   usage: nombres
   format: Un data.frame con 1924665 observaciones y 5 variables

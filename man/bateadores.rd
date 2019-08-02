@@ -4,11 +4,11 @@
 \title{Tabla de bateadores}
 \format{Un data frame con 102.816 filas y 22 columnas
 \describe{
-\item{ID_jugador}{ID del jugador}
-\item{ID_anio}{Año}
+\item{id_jugador}{ID del jugador}
+\item{id_anio}{Año}
 \item{orden_equipos}{Orden en que el jugador se movió entre equipos dentro de la misma temporada}
-\item{ID_equipo}{ID del equipo (factor)}
-\item{ID_liga}{ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)}
+\item{id_equipo}{ID del equipo (factor)}
+\item{id_liga}{ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)}
 \item{juegos}{Número de juegos en los que participó el jugador}
 \item{al_bate}{Turnos al bate}
 \item{carreras}{Carreras anotadas}

@@ -1,0 +1,23 @@
+df:
+  source: as.data.frame(fueleconomy::common)
+  name: comunes
+variables:
+  make:
+    trans: fabricante
+    desc: Fabricante
+  model:
+    trans: modelo
+    desc: Modelo
+  "n":
+    trans: total_modelos
+    desc: "N\u00famero total de modelos"
+  years:
+    trans: total_modelos_anio
+    desc: "N\u00famero total de modelos-a\u00f1o"
+help:
+  name: comunes
+  alias: comunes
+  title: Modelos comunes de vehículos
+  description: "Estos modelos tienen al menos 10 a\u00f1os de datos. Este dataset es adecuado para efectuar un join que restringa el n\u00famero de observaciones a un nivel manejable."
+  usage: comunes
+  format: Un data.frame con 347 filas y 4 columnas
