@@ -31,67 +31,67 @@ variables:
     desc: Juegos jugados iniciados
   CG:
     trans: juegos_completados
-    desc: Número de juegos completos en los que ha participado el jugador
+    desc: Número de juegos completos (9 innings lanzados) que lanzó el jugador
   SHO:
     trans: blanqueadas
-    desc: Blanqueadas
+    desc: Número de blanqueos (juegos completos sin permitir carreras) que lanzó el jugador
   SV:
     trans: juegos_salvados
     desc: Juegos salvados
   IPouts:
     trans: IPouts
-    desc: Outs Pitched (innings pitched x 3)
+    desc: Outs propinados al equipo contrario (Igual a innings lanzados x 3)
   H:
-    trans: golpes
-    desc: Golpes
+    trans: hits
+    desc: Hits permitidos del oponente
   ER:
     trans: carreras_ganadas
-    desc: Carreras ganadas
+    desc: Carreras limpias recibidas
   HR:
       trans: cuadrangulares
-      desc: Cuadrangulares - jonrones
+      desc: Cuadrangulares recibidos
   BB:
     trans: BB
-    desc: Walks
+    desc: Base por bolas cedidas al oponente
   SO:
-    trans: ponchados
-    desc: Ponchados
+    trans: ponches
+    desc: Ponches propinados al oponente
   BAOpp:
     trans: promedio_bateo_rival
-    desc: Prometio de bateo del rival
+    desc: Promedio de bateo del rival
   ERA:
     trans: promedio_carreras_ganadas
-    desc: Promedio de carreras ganadas
+    desc: Promedio de carreras limpias permitidas (normalizada a 9 innings lanzados)
   IBB:
     trans: IBB
-    desc: Intentional Walks
+    desc: Base por bolas intencionales cedidas al oponente
   WP:
-    trans: lanzamientos_salvajes
-    desc: Lanzamientos salvajes
+    trans: lanzamientos_desviados
+    desc: Lanzamientos desviados lanzados por el lanzador
   HBP:
     trans: HBP
-    desc: Batters Hit By Pitch
+    desc: Bateadores golpeador por el lanzador
   BK:
     trans: BK
-    desc: Balks
+    desc: Balks (movimiento ilegal del cuerpo realizado por el lanzador)
   BFP:
     trans: BFP
-    desc: Batters faced by Pitcher
+    desc: Bateadores a los que el lanzador se ha enfrentado
   GF:
     trans: juegos_finalizados
-    desc: Juegos finalizados
+    desc: Juegos en los que el lanzador finalizó el juego
   R:
     trans: carreras
-    desc: Carreras anotadas
+    desc: Carreras recebidas (sucias y limpias)
   SH:
     trans: sacrificios_golpeados
-    desc: Sacrificios golpeados
+    desc: Toques de sacrificio que el oponente le hizo al lanzador
   SF:
     trans: vuelos_sacrificio
-    desc: Vuelos de sacrificio
+    desc: Elevado (fly) de sacrificio que el oponente le hizo al lanzador
   GIDP:
     trans: doble_matanza
-    desc: Bateos para doble matanza
+    desc: Doble matanza inducidas por el lanzador
 help:
   name: lanzadores
   alias: lanzadores
