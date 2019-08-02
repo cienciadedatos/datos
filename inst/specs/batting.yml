@@ -1,6 +1,6 @@
 df:
   source: Lahman::Batting
-  name: bateo
+  name: bateadores
 variables:
   playerID:
     trans: id_jugador
