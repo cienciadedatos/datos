@@ -1,6 +1,6 @@
 df:
   source: Lahman::Fielding
-  name: jardineros
+  name: Fildeo
 variables:
   playerID:
     trans: id_jugador
@@ -19,7 +19,7 @@ variables:
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   POS:
     trans: posicion
-    desc: Posición
+    desc: Posición del jugdador a la defensiva 
   G:
     trans: juegos_jugados
     desc: Juegos jugados
@@ -28,37 +28,37 @@ variables:
     desc: Juegos iniciados
   InnOuts:
     trans: InnOuts
-    desc: Time played in the field expressed as outs
+    desc: Tiempo jugado por el jugador, expresado en outs
   PO:
     trans: outs_realizados
-    desc: Outs realizados
+    desc: Outs realizados por el jugador
   A:
     trans: asistencias
-    desc: Asistencias
+    desc: Asistencias realizadas por el jugador
   E:
     trans: errores
-    desc: Errores
+    desc: Errores realizados por el jugador
   DP:
     trans: doble_matanzas
-    desc: Doble matanzas
+    desc: Doble matanzas en las que el jugador ha estado envuelto defensivamente
   PB:
     trans: bolas_pasadas
-    desc: Bolas pasadas (por los atrapadores)
+    desc: Bolas dejadas pasar (aplicable a los receptores)
   WP:
-    trans: lanzamientos_salvajes
-    desc: Lanzamientos salvajes (por los atrapadores)
+    trans: lanzamientos_desviados
+    desc: Lanzamientos desviados (aplicable a los receptores)
   SB:
     trans: bases_robadas
-    desc: Bases robadas al oponente (por los atrapadores)
+    desc: Bases robadas por oponente (aplicable a los receptores)
   CS:
     trans: atrapados_robando
-    desc: Oponentes atrapados en intento de robo (por los atrapadores)
+    desc: Oponentes atrapados en intento de robo (aplicable a los receptores)
   ZR:
     trans: clasificacion_zona
-    desc: Clasificación de zona
+    desc: Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"
 help:
-  name: jardineros
-  alias: jardineros
-  title: Tabla de jardineros
+  name: fildeo
+  alias: Estadídticas de Fieleadores
+  title: Tabla de Fildeo
   description: Estadísticas de jardineros
   format: Un data frame con 140.921 filas y 18 columnas
