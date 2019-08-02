@@ -1,6 +1,6 @@
 \docType{data}
-\name{bateo}
-\alias{bateo}
+\name{bateadores}
+\alias{bateadores}
 \title{Tabla de estadísticas de bateo}
 \format{Un data frame con 105.861 filas y 22 columnas
 \describe{

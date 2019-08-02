@@ -69,8 +69,8 @@ variables:
     trans: doble_matanza
     desc: Batazos para doble matanza (doble play)
 help:
-  name: bateo
-  alias: bateo
+  name: bateadores
+  alias: bateadores
   title: Tabla de estadísticas de bateo
   description: Estadísticas de bateadores
   format: Un data frame con 105.861 filas y 22 columnas
