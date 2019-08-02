@@ -2,7 +2,7 @@ df:
   source: Lahman::AwardsManagers
   name: premios_dirigentes
 variables:
-  managerID:
+  playerID:
     trans: id_dirigente
     desc: ID del dirigente
   awardID:
@@ -19,8 +19,8 @@ variables:
     desc: ID liga (factor)
   tie:
     trans: empate
-    desc: Tiene valor "S" (sí) para los premios que corresponden a un empate
-      y "N" (no) en caso contrario.
+    desc: "Tiene valor \"S\" (s\u00ed) para los premios que corresponden a un empate
+      y \"N\" (no) en caso contrario."
     values:
       Y: S,
       N: N,

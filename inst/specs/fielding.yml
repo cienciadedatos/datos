@@ -1,6 +1,6 @@
 df:
   source: Lahman::Fielding
-  name: Fildeo
+  name: fildeo
 variables:
   playerID:
     trans: id_jugador
@@ -19,7 +19,7 @@ variables:
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   POS:
     trans: posicion
-    desc: Posición del jugdador a la defensiva 
+    desc: Posición del jugdador a la defensiva
   G:
     trans: juegos_jugados
     desc: Juegos jugados
@@ -58,7 +58,7 @@ variables:
     desc: Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"
 help:
   name: fildeo
-  alias: Estadídticas de Fieleadores
+  alias: fildeo
   title: Tabla de Fildeo
   description: Estadísticas de jardineros
   format: Un data frame con 140.921 filas y 18 columnas

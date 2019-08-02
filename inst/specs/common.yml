@@ -8,17 +8,16 @@ variables:
   model:
     trans: modelo
     desc: Modelo
-  n:
+  "n":
     trans: total_modelos
-    desc: Número total de modelos
+    desc: "N\u00famero total de modelos"
   years:
     trans: total_modelos_anio
-    desc: Número total de modelos-año
+    desc: "N\u00famero total de modelos-a\u00f1o"
 help:
   name: comunes
   alias: comunes
   title: Modelos comunes de vehículos
-  description: Estos modelos tienen al menos 10 años de datos. Este dataset es adecuado para efectuar un join que
-    restringa el número de observaciones a un nivel manejable.
+  description: "Estos modelos tienen al menos 10 a\u00f1os de datos. Este dataset es adecuado para efectuar un join que restringa el n\u00famero de observaciones a un nivel manejable."
   usage: comunes
   format: Un data.frame con 347 filas y 4 columnas

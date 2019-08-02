@@ -48,8 +48,8 @@ variables:
     trans: carreras_ganadas
     desc: Carreras limpias recibidas
   HR:
-      trans: cuadrangulares
-      desc: Cuadrangulares recibidos
+    trans: cuadrangulares
+    desc: Cuadrangulares recibidos
   BB:
     trans: BB
     desc: Base por bolas cedidas al oponente
