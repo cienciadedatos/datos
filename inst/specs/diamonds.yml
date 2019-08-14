@@ -30,8 +30,8 @@ variables:
   x:
     trans: x
     desc: Largo en milimetros
-  "y":
-    trans: "y"
+  y:
+    trans: y
     desc: Ancho en milimetros
   z:
     trans: z

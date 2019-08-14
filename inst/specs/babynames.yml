@@ -11,7 +11,7 @@ variables:
   name:
     trans: nombre
     desc: Nombre
-  "n":
+  n:
     trans: n
     desc: Cantidad de ocurrencias
   prop:
