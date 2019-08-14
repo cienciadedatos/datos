@@ -1,0 +1,64 @@
+df:
+  source: Lahman::Fielding
+  name: jardineros
+variables:
+  playerID:
+    trans: id_jugador
+    desc: ID del jugador
+  yearID:
+    trans: id_anio
+    desc: Año
+  stint:
+    trans: orden_equipos
+    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+  teamID:
+    trans: id_equipo
+    desc: ID del equipo (factor)
+  lgID:
+    trans: id_liga
+    desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
+  POS:
+    trans: posicion
+    desc: Posición del jugdador a la defensiva
+  G:
+    trans: juegos_jugados
+    desc: Juegos jugados
+  GS:
+    trans: juegos_iniciados
+    desc: Juegos iniciados
+  InnOuts:
+    trans: InnOuts
+    desc: Tiempo jugado por el jugador, expresado en outs
+  PO:
+    trans: outs_realizados
+    desc: Outs realizados por el jugador
+  A:
+    trans: asistencias
+    desc: Asistencias realizadas por el jugador
+  E:
+    trans: errores
+    desc: Errores realizados por el jugador
+  DP:
+    trans: doble_matanzas
+    desc: Doble matanzas en las que el jugador ha estado envuelto defensivamente
+  PB:
+    trans: bolas_pasadas
+    desc: Bolas dejadas pasar (aplicable a los receptores)
+  WP:
+    trans: lanzamientos_desviados
+    desc: Lanzamientos desviados (aplicable a los receptores)
+  SB:
+    trans: bases_robadas
+    desc: Bases robadas por oponente (aplicable a los receptores)
+  CS:
+    trans: atrapados_robando
+    desc: Oponentes atrapados en intento de robo (aplicable a los receptores)
+  ZR:
+    trans: clasificacion_zona
+    desc: Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"
+help:
+  name: jardineros
+  alias: jardineros
+  title: Tabla de estadísticas de jardineros
+  description: Estadísticas de jardineros
+  format: Un data frame con 140.921 filas y 18 columnas

@@ -3,23 +3,23 @@ df:
   name: bateadores
 variables:
   playerID:
-    trans: ID_jugador
+    trans: id_jugador
     desc: ID del jugador
   yearID:
-    trans: ID_anio
-    desc: Año
+    trans: id_anio
+    desc: "A\u00f1o"
   stint:
     trans: orden_equipos
-    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+    desc: "Orden en que el jugador se movi\u00f3 entre equipos dentro de la misma temporada"
   teamID:
-    trans: ID_equipo
+    trans: id_equipo
     desc: ID del equipo (factor)
   lgID:
-    trans: ID_liga
+    trans: id_liga
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   G:
     trans: juegos
-    desc: Número de juegos en los que participó el jugador
+    desc: "N\u00famero de juegos en los que particip\u00f3 oficialmente el jugador"
   AB:
     trans: al_bate
     desc: Turnos al bate
@@ -28,13 +28,13 @@ variables:
     desc: Carreras anotadas
   H:
     trans: golpes
-    desc: "Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa"
+    desc: "Cantidad de veces en la cual el jugador alcanz\u00f3 una base debido a un golpe, sin error de la defensa"
   X2B:
     trans: dobles
-    desc: Golpes en los que el bateador llegó a segunda base
+    desc: "Hits en los que el bateador lleg\u00f3 a segunda base"
   X3B:
     trans: triples
-    desc: Golpes en los que el bateador llegó a tercera base
+    desc: "Golpes en los que el bateador lleg\u00f3 a tercera base"
   HR:
     trans: cuadrangulares
     desc: Cuadrangulares - jonrones
@@ -45,32 +45,32 @@ variables:
     trans: bases_robadas
     desc: Bases robadas
   CS:
-    trans: atrapado_robo
-    desc: Atrapado en intento de robo
+    trans: atrapado_robando
+    desc: Atrapado (out) en intento de robo
   BB:
-    trans: bases_bolas
-    desc: Bases por bolas
+    trans: base_bolas
+    desc: Base por bolas
   SO:
     trans: ponches
     desc: Ponches
   IBB:
-    trans: bases_intencional
-    desc: Bases por bolas intencionales
+    trans: base_intencional
+    desc: Base por bolas intencional
   HBP:
     trans: golpeado
     desc: Golpeado por lanzamiento
   SH:
-    trans: sacrificios_golpeados
-    desc: Sacrificios golpeados
+    trans: toque_sacrificio
+    desc: Toque de sacrificio
   SF:
-    trans: vuelos_sacrificio
-    desc: Vuelos de sacrificio
+    trans: elavado_sacrificio
+    desc: Elevado de sacrificio
   GIDP:
     trans: doble_matanza
-    desc: Bateos para doble matanza
+    desc: Batazos para doble matanza (doble play)
 help:
   name: bateadores
   alias: bateadores
-  title: Tabla de bateadores
+  title: Tabla de estadísticas de bateo
   description: Estadísticas de bateadores
-  format: Un data frame con 102.816 filas y 22 columnas
+  format: Un data frame con 105.861 filas y 22 columnas

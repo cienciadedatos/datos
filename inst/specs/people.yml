@@ -1,0 +1,97 @@
+df:
+  source: Lahman::People
+  name: personas
+variables:
+  playerID:
+    trans: id_jugador
+    desc: ID del jugador
+  birthYear:
+    trans: anio_nacimiento
+    desc: Año de nacimiento
+  birthMonth:
+    trans: mes_nacimiento
+    desc: Mes de nacimiento
+  birthDay:
+    trans: dia_nacimiento
+    desc: Día de nacimiento
+  birthCountry:
+    trans: pais_nacimiento
+    desc: País de nacimiento
+  birthState:
+    trans: estado_nacimiento
+    desc: Estado de nacimiento
+  birthCity:
+    trans: ciudad_nacimiento
+    desc: Ciudad de nacimiento
+  deathYear:
+    trans: anio_fallecimiento
+    desc: Año de fallecimiento
+  deathMonth:
+    trans: mes_fallecimiento
+    desc: Mes de fallecimiento
+  deathDay:
+    trans: dia_fallecimiento
+    desc: Día de fallecimiento
+  deathCountry:
+    trans: pais_fallecimiento
+    desc: País de fallecimiento
+  deathState:
+    trans: estado_fallecimiento
+    desc: Estado de fallecimiento
+  deathCity:
+    trans: ciudad_fallecimiento
+    desc: Ciudad de fallecimiento
+  nameFirst:
+    trans: nombre
+    desc: Nombre
+  nameLast:
+    trans: apellido
+    desc: Apellido
+  nameGiven:
+    trans: nombre_completo
+    desc: Nombre y apellido
+  weight:
+    trans: peso
+    desc: Peso en libras
+  height:
+    trans: estatura
+    desc: Estatura en pulgadas
+  bats:
+    trans: bateador
+    desc: Diestro (D) o zurdo (Z)
+    values:
+      R: D
+      L: Z
+  throws:
+    trans: lanzador
+    desc: Diestro (D) o zurdo (Z)
+    values:
+      R: D
+      L: Z
+  debut:
+    trans: fecha_primer_juego
+    desc: Fecha primer juego en primera división
+  finalGame:
+    trans: fecha_ultimo_juego
+    desc: Fecha último juego en primera división
+  retroID:
+    trans: id_retrosheet
+    desc: Código de jugador usado en Retrosheet (http://www.retrosheet.org/)
+  bbrefID:
+    trans: id_brw
+    desc: Código de jugador usado en Baseball Reference website (http://www.baseball-reference.com/)
+  deathDate:
+    trans: fecha_fallecimiento
+    desc: Fecha de fallecimiento en formato yyyy-mm-dd
+  birthDate:
+    trans: fecha_nacimiento
+    desc: Fecha de nacimiento en formato yyyy-mm-dd
+help:
+  name: personas
+  alias: personas
+  title: Tabla de personas
+  description: Nombres de jugadores, fecha de nacimiento e información
+    bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados
+    en bateadores, lanzadores y otros archivos en que los jugadores está identificador por
+    id_jugador.
+  format: Un data frame con 19.617 filas y 26 columnas

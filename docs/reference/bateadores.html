@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tabla de bateadores — bateadores • datos</title>
+<title>Tabla de estadísticas de bateo — bateadores • datos</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
 
 
 
-<meta property="og:title" content="Tabla de bateadores — bateadores" />
+<meta property="og:title" content="Tabla de estadísticas de bateo — bateadores" />
 
 <meta property="og:description" content="Estadísticas de bateadores" />
 
@@ -65,7 +65,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9003</span>
       </span>
     </div>
 
@@ -101,7 +101,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Tabla de bateadores</h1>
+    <h1>Tabla de estadísticas de bateo</h1>
     
     <div class="hidden name"><code>bateadores.rd</code></div>
     </div>
@@ -115,29 +115,29 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Un data frame con 102.816 filas y 22 columnas</p><dl class='dl-horizontal'>
-<dt>ID_jugador</dt><dd><p>ID del jugador</p></dd>
-<dt>ID_anio</dt><dd><p>Año</p></dd>
+    <p>Un data frame con 105.861 filas y 22 columnas</p><dl class='dl-horizontal'>
+<dt>id_jugador</dt><dd><p>ID del jugador</p></dd>
+<dt>id_anio</dt><dd><p>Año</p></dd>
 <dt>orden_equipos</dt><dd><p>Orden en que el jugador se movió entre equipos dentro de la misma temporada</p></dd>
-<dt>ID_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
-<dt>ID_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
-<dt>juegos</dt><dd><p>Número de juegos en los que participó el jugador</p></dd>
+<dt>id_equipo</dt><dd><p>ID del equipo (factor)</p></dd>
+<dt>id_liga</dt><dd><p>ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)</p></dd>
+<dt>juegos</dt><dd><p>Número de juegos en los que participó oficialmente el jugador</p></dd>
 <dt>al_bate</dt><dd><p>Turnos al bate</p></dd>
 <dt>carreras</dt><dd><p>Carreras anotadas</p></dd>
-<dt>golpes</dt><dd><p>Golpes: cantidad de veces que se alcanzó la base debido a un golpe, sin error de la defensa</p></dd>
-<dt>dobles</dt><dd><p>Golpes en los que el bateador llegó a segunda base</p></dd>
+<dt>golpes</dt><dd><p>Cantidad de veces en la cual el jugador alcanzó una base debido a un golpe, sin error de la defensa</p></dd>
+<dt>dobles</dt><dd><p>Hits en los que el bateador llegó a segunda base</p></dd>
 <dt>triples</dt><dd><p>Golpes en los que el bateador llegó a tercera base</p></dd>
 <dt>cuadrangulares</dt><dd><p>Cuadrangulares - jonrones</p></dd>
 <dt>carreras_empujadas</dt><dd><p>Carreras empujadas</p></dd>
 <dt>bases_robadas</dt><dd><p>Bases robadas</p></dd>
-<dt>atrapado_robo</dt><dd><p>Atrapado en intento de robo</p></dd>
-<dt>bases_bolas</dt><dd><p>Bases por bolas</p></dd>
+<dt>atrapado_robando</dt><dd><p>Atrapado (out) en intento de robo</p></dd>
+<dt>base_bolas</dt><dd><p>Base por bolas</p></dd>
 <dt>ponches</dt><dd><p>Ponches</p></dd>
-<dt>bases_intencional</dt><dd><p>Bases por bolas intencionales</p></dd>
+<dt>base_intencional</dt><dd><p>Base por bolas intencional</p></dd>
 <dt>golpeado</dt><dd><p>Golpeado por lanzamiento</p></dd>
-<dt>sacrificios_golpeados</dt><dd><p>Sacrificios golpeados</p></dd>
-<dt>vuelos_sacrificio</dt><dd><p>Vuelos de sacrificio</p></dd>
-<dt>doble_matanza</dt><dd><p>Bateos para doble matanza</p></dd>
+<dt>toque_sacrificio</dt><dd><p>Toque de sacrificio</p></dd>
+<dt>elavado_sacrificio</dt><dd><p>Elevado de sacrificio</p></dd>
+<dt>doble_matanza</dt><dd><p>Batazos para doble matanza (doble play)</p></dd>
 </dl>
     
 

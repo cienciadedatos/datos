@@ -1,0 +1,100 @@
+df:
+  source: Lahman::Pitching
+  name: lanzadores
+variables:
+  playerID:
+    trans: id_jugador
+    desc: ID del jugador
+  yearID:
+    trans: id_anio
+    desc: Año
+  stint:
+    trans: orden_equipos
+    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+  teamID:
+    trans: id_equipo
+    desc: ID del equipo (factor)
+  lgID:
+    trans: id_liga
+    desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
+  W:
+    trans: juegos_ganados
+    desc: Juegos jugados ganados
+  L:
+    trans: juegos_perdidos
+    desc: Juegos jugados perdidos
+  G:
+    trans: juegos_jugados
+    desc: Juegos jugados
+  GS:
+    trans: juegos_iniciados
+    desc: Juegos jugados iniciados
+  CG:
+    trans: juegos_completados
+    desc: Número de juegos completos (9 innings lanzados) que lanzó el jugador
+  SHO:
+    trans: blanqueadas
+    desc: Número de blanqueos (juegos completos sin permitir carreras) que lanzó el jugador
+  SV:
+    trans: juegos_salvados
+    desc: Juegos salvados
+  IPouts:
+    trans: IPouts
+    desc: Outs propinados al equipo contrario (Igual a innings lanzados x 3)
+  H:
+    trans: hits
+    desc: Hits permitidos del oponente
+  ER:
+    trans: carreras_ganadas
+    desc: Carreras limpias recibidas
+  HR:
+    trans: cuadrangulares
+    desc: Cuadrangulares recibidos
+  BB:
+    trans: BB
+    desc: Base por bolas cedidas al oponente
+  SO:
+    trans: ponches
+    desc: Ponches propinados al oponente
+  BAOpp:
+    trans: promedio_bateo_rival
+    desc: Promedio de bateo del rival
+  ERA:
+    trans: promedio_carreras_ganadas
+    desc: Promedio de carreras limpias permitidas (normalizada a 9 innings lanzados)
+  IBB:
+    trans: IBB
+    desc: Base por bolas intencionales cedidas al oponente
+  WP:
+    trans: lanzamientos_desviados
+    desc: Lanzamientos desviados lanzados por el lanzador
+  HBP:
+    trans: HBP
+    desc: Bateadores golpeador por el lanzador
+  BK:
+    trans: BK
+    desc: Balks (movimiento ilegal del cuerpo realizado por el lanzador)
+  BFP:
+    trans: BFP
+    desc: Bateadores a los que el lanzador se ha enfrentado
+  GF:
+    trans: juegos_finalizados
+    desc: Juegos en los que el lanzador finalizó el juego
+  R:
+    trans: carreras
+    desc: Carreras recebidas (sucias y limpias)
+  SH:
+    trans: sacrificios_golpeados
+    desc: Toques de sacrificio que el oponente le hizo al lanzador
+  SF:
+    trans: vuelos_sacrificio
+    desc: Elevado (fly) de sacrificio que el oponente le hizo al lanzador
+  GIDP:
+    trans: doble_matanza
+    desc: Doble matanza inducidas por el lanzador
+help:
+  name: lanzadores
+  alias: lanzadores
+  title: Tabla de estadísticas de lanzadores
+  description: Estadísticas de lanzadores
+  format: Un data frame con 46.699 filas y 30 columnas
