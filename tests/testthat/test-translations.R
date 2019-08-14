@@ -31,7 +31,7 @@ lapply(
       expect_equal(names(df), nm)
       expect_equal(nrow(orig), nrow(df))
       expect_equal(ncol(orig), ncol(df))
-      #expect_equal(class(orig), class(df))
+      expect_equal(class(orig), class(df))
     })
   }
 )

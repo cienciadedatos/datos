@@ -38,7 +38,8 @@ Depends:
   R (>= 3.5.0)
 Imports:
   yaml,
-  tibble
+  dplyr,
+  rlang
 Suggests:
   babynames,
   fueleconomy,

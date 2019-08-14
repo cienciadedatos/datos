@@ -10,7 +10,7 @@ fix_reference <- function(ref_path = "docs/reference/", is_test = FALSE) {
   file.rename(rds, new_html)
   index_file <- file.path(ref_path, "index.html")
   index <- readLines(index_file)
-  index <- gsub(".rd", ".html", index)
+  index <- gsub("\\.rd", ".html", index)
   writeLines(index, index_file)
 }
 

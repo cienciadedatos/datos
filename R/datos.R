@@ -1,6 +1,7 @@
 #' @importFrom yaml read_yaml
-#' @importFrom tibble as_tibble
-#' @importFrom tibble is_tibble
+#' @importFrom dplyr as_tibble
+#' @importFrom dplyr group_by
 #' @importFrom stats setNames
+#' @import rlang
 #' @keywords internal
 "_PACKAGE"
