@@ -7,15 +7,19 @@ translate <- function(spec_file) {
     was_tibble <- TRUE
   } else {
     was_tibble <- FALSE
+    row_names <- rownames(df)
     df <- tibble::as_tibble(df)
   }
   vars <- spec$variables
   var_names <- names(vars)
   var_names[var_names == "FALSE"] <- "n"
   var_names[var_names == "TRUE"] <- "y"
+  vars <- vars[var_names != "ROWNAMES"]
+  var_names <- var_names[var_names != "ROWNAMES"]
   new_names <- as.character(lapply(vars, function(x) x$trans))
   new_names[new_names == "FALSE"] <- "n"
   new_names[new_names == "TRUE"] <- "y"
+  new_names <- new_names[new_names != "ROWNAMES"]
   dfl <- lapply(
     seq_along(vars),
     function(x) {
@@ -40,7 +44,13 @@ translate <- function(spec_file) {
   if (was_tibble) {
     tibble::as_tibble(dfl)
   } else {
-    as.data.frame(dfl)
+    if(!is.null(row_names)) {
+      dfl <- as.data.frame(dfl)
+      rownames(dfl) <- row_names
+      dfl
+    } else {
+      as.data.frame(dfl)
+    }
   }
 }
 translate('awardmanagers.yml')

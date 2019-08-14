@@ -1,10 +1,7 @@
 df:
-  source: tibble::rownames_to_column(datasets::mtcars, "model")
+  source: datasets::mtcars
   name: mtautos
 variables:
-  model:
-    trans: modelo
-    desc: modelo (y fabricante) del vehículo
   mpg:
     trans: millas
     desc: millas por galón de Estados Unidos

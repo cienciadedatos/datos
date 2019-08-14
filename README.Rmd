@@ -44,12 +44,13 @@ Los paquetes necesarios son:
 specs <- list.files("inst/specs")
 all <- map(file.path("inst", "specs", specs), yaml::read_yaml)
 sources <- map_chr(all, ~.x$df$source)
-names <- map_chr(all, ~.x$df$name)
-packages <- map(strsplit(sources, "::"), ~.x[[1]])
-d <- map_chr(strsplit(sources, "::"), ~.x[[2]])
-translated <- paste0("'", paste0(d, collapse = "', '"), "'")
-pkgs <- as.character(unique(packages))
-knitr::kable(data.frame(Paquetes = pkgs))
+pkgs <- tibble(
+  Nombre = map_chr(all, ~.x$df$name),
+  Titulo = map_chr(all, ~.x$help$title),
+  Paquete = map_chr(strsplit(sources, "::"), ~.x[[1]]),
+  Dataset = map_chr(strsplit(sources, "::"), ~.x[[2]])
+)
+knitr::kable(data.frame(Paquetes = unique(pkgs$Paquete)))
 ```
 
 El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr` y `forcats` vienen incluidos en el paquete `tidyverse`.  Todos los demás deben instalarse individualmente. 
@@ -58,14 +59,10 @@ El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`, `readr`
 
 Las traducciones disponibles dentro de `datos` son las siguientes:
 
-```{r, echo=FALSE, message = FALSE}
-results <- help.search("datasets", package = "datos")
-datos <- results$matches[c("Name", "Title")]
-originales <- bind_cols(list(Name = names, Originales = sources))
-traducciones <- left_join(datos, originales) %>% 
-  mutate(Originales = case_when(Name == "datos-stringr" ~ "incluidos en el paquete stringr", TRUE ~ as.character(Originales))) %>% 
-  mutate(Originales = str_replace_all(Originales, 'tibble::rownames_to_column\\(datasets::mtcars, \\\"model\\\"\\)', "datasets::mtcars"))
-knitr::kable(stats::setNames(traducciones, c("Nombre", "Título", "Dataset original")))
+```{r, echo = FALSE}
+pkgs %>%
+  arrange(Paquete, Dataset) %>%
+  knitr::kable()
 ```
 
 Los datos para practicar la manipulación de cadenas (_strings_) son `oraciones`, `palabras` y `frutas`. 

@@ -42,20 +42,18 @@ en inglés debe estar previamente instalado**.
 
 Los paquetes necesarios son:
 
-| Paquetes                  |
-| :------------------------ |
-| nycflights13              |
-| nasaweather               |
-| Lahman                    |
-| babynames                 |
-| as.data.frame(fueleconomy |
-| ggplot2                   |
-| datasets                  |
-| gapminder                 |
-| forcats                   |
-| tibble                    |
-| tidyr                     |
-| fueleconomy               |
+| Paquetes     |
+| :----------- |
+| nycflights13 |
+| nasaweather  |
+| Lahman       |
+| babynames    |
+| fueleconomy  |
+| ggplot2      |
+| datasets     |
+| gapminder    |
+| forcats      |
+| tidyr        |
 
 El paquete `datasets` es parte de R base y `ggplot2`, `tibble`, `tidyr`,
 `readr` y `forcats` vienen incluidos en el paquete `tidyverse`. Todos
@@ -66,44 +64,39 @@ los demás deben instalarse individualmente.
 Las traducciones disponibles dentro de `datos` son las
 siguientes:
 
-| Nombre              | Título                                                                                   | Dataset original                   |
-| :------------------ | :--------------------------------------------------------------------------------------- | :--------------------------------- |
-| aerolineas          | Nombres de aerolíneas                                                                    | nycflights13::airlines             |
-| aeropuertos         | Datos de aeropuertos                                                                     | nycflights13::airports             |
-| atmosfera           | Datos atmosféricos                                                                       | nasaweather::atmos                 |
-| aviones             | Datos de aviones                                                                         | nycflights13::planes               |
-| bateadores          | Tabla de estadísticas de bateo                                                           | Lahman::Batting                    |
-| capitanes           | Tabla de capitanes                                                                       | NA                                 |
-| clima               | Datos de clima                                                                           | nycflights13::weather              |
-| comunes             | Modelos comunes de vehículos                                                             | as.data.frame(fueleconomy::common) |
-| datos-stringr       | Vectores de caracteres dentro del paquete stringr                                        | incluidos en el paquete stringr    |
-| diamantes           | Precio de 50.000 diamantes                                                               | ggplot2::diamonds                  |
-| dirigentes          | Tabla de dirigentes                                                                      | Lahman::Managers                   |
-| encuesta            | Muestra de variables categóricas de una encuesta social                                  | forcats::gss\_cat                  |
-| fiel                | Datos del géiser Viejo Fiel (Old Faithful)                                               | datasets::faithful                 |
-| fildeo              | Tabla de Fildeo                                                                          | NA                                 |
-| flores              | Datos sobre la flor Iris de Edgar Anderson                                               | datasets::iris                     |
-| jardineros          | Tabla de estadísticas de jardineros                                                      | Lahman::Fielding                   |
-| lanzadores          | Tabla de estadísticas de lanzadores                                                      | Lahman::Pitching                   |
-| millas              | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles | ggplot2::mpg                       |
-| mtautos             | Pruebas de ruta de automóviles de Motor Trend                                            | datasets::mtcars                   |
-| nombres             | Nombres de bebés                                                                         | babynames::babynames               |
-| oms                 | Datos de tuberculosis de la Organización Mundial de la Salud                             | tidyr::who                         |
-| paises              | Datos de Gapminder                                                                       | gapminder::gapminder               |
-| personas            | Tabla de personas                                                                        | Lahman::People                     |
-| premios\_capitanes  | Tabla de premios de los capitanes                                                        | NA                                 |
-| premios\_dirigentes | Tabla de premios de los dirigentes                                                       | Lahman::AwardsManagers             |
-| presidencial        | Periodos de 11 presidentes, desde Eisenhower a Obama                                     | ggplot2::presidential              |
-| representantes      | Tabla de representantes (bateadores)                                                     | NA                                 |
-| salarios            | Tabla de salarios                                                                        | Lahman::Salaries                   |
-| tabla1              | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         | tidyr::table1                      |
-| tabla2              | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          | tidyr::table2                      |
-| tabla3              | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table3                      |
-| tabla4a             | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table4a                     |
-| tabla4b             | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table4b                     |
-| tabla5              | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr::table5                      |
-| vehiculos           | Datos de economía de combustible                                                         | fueleconomy::vehicles              |
-| vuelos              | Datos de vuelos                                                                          | nycflights13::flights              |
+| Nombre              | Titulo                                                                                   | Paquete      | Dataset        |
+| :------------------ | :--------------------------------------------------------------------------------------- | :----------- | :------------- |
+| nombres             | Nombres de bebés                                                                         | babynames    | babynames      |
+| fiel                | Datos del géiser Viejo Fiel (Old Faithful)                                               | datasets     | faithful       |
+| flores              | Datos sobre la flor Iris de Edgar Anderson                                               | datasets     | iris           |
+| mtautos             | Pruebas de ruta de automóviles de Motor Trend                                            | datasets     | mtcars         |
+| encuesta            | Muestra de variables categóricas de una encuesta social                                  | forcats      | gss\_cat       |
+| comunes             | Modelos comunes de vehículos                                                             | fueleconomy  | common         |
+| vehiculos           | Datos de economía de combustible                                                         | fueleconomy  | vehicles       |
+| paises              | Datos de Gapminder                                                                       | gapminder    | gapminder      |
+| diamantes           | Precio de 50.000 diamantes                                                               | ggplot2      | diamonds       |
+| millas              | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles | ggplot2      | mpg            |
+| presidencial        | Periodos de 11 presidentes, desde Eisenhower a Obama                                     | ggplot2      | presidential   |
+| premios\_dirigentes | Tabla de premios de los dirigentes                                                       | Lahman       | AwardsManagers |
+| bateadores          | Tabla de estadísticas de bateo                                                           | Lahman       | Batting        |
+| jardineros          | Tabla de estadísticas de jardineros                                                      | Lahman       | Fielding       |
+| dirigentes          | Tabla de dirigentes                                                                      | Lahman       | Managers       |
+| personas            | Tabla de personas                                                                        | Lahman       | People         |
+| lanzadores          | Tabla de estadísticas de lanzadores                                                      | Lahman       | Pitching       |
+| salarios            | Tabla de salarios                                                                        | Lahman       | Salaries       |
+| atmosfera           | Datos atmosféricos                                                                       | nasaweather  | atmos          |
+| aerolineas          | Nombres de aerolíneas                                                                    | nycflights13 | airlines       |
+| aeropuertos         | Datos de aeropuertos                                                                     | nycflights13 | airports       |
+| vuelos              | Datos de vuelos                                                                          | nycflights13 | flights        |
+| aviones             | Datos de aviones                                                                         | nycflights13 | planes         |
+| clima               | Datos de clima                                                                           | nycflights13 | weather        |
+| tabla1              | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         | tidyr        | table1         |
+| tabla2              | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          | tidyr        | table2         |
+| tabla3              | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr        | table3         |
+| tabla4a             | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr        | table4a        |
+| tabla4b             | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr        | table4b        |
+| tabla5              | Registros de tuberculosis de la Organización Mundial de la Salud (3era variante)         | tidyr        | table5         |
+| oms                 | Datos de tuberculosis de la Organización Mundial de la Salud                             | tidyr        | who            |
 
 Los datos para practicar la manipulación de cadenas (*strings*) son
 `oraciones`, `palabras` y `frutas`.
