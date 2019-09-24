@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.1.0.9004
+Version: 0.2.0
 Authors@R: 
     c(person(given = "Edgar",
              family = "Ruiz",
@@ -28,10 +28,10 @@ Authors@R:
              email = "daniela.vazquez@gmail.com")
       )
 Description:  Provee una versión traducida de los siguientes conjuntos de datos: 
-  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'common', 'diamonds', 'faithful', 'Fielding', 
-  'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 
-  'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles',
-  'weather', 'who'. 
+  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 
+  'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 
+  'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 
+  'vehicles', 'weather', 'who'. 
   English: It provides a Spanish translated version of the datasets listed above.
 License: CC0
 Depends: 
