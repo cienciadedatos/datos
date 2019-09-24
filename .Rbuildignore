@@ -11,3 +11,4 @@ codecov.yml
 ^README_files$
 cran-comments.md
 ^CRAN-RELEASE$
+pkgdown/
