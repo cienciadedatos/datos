@@ -21,13 +21,7 @@ Este paquete provee la traducción al español de conjuntos de datos en inglés 
 
 ## Instalación
 
-La versión en CRAN está disponible por medio de:
-
-```{r, eval = FALSE}
-# install.packages("datos")
-```
-
-La versión en GitHub puede ser instalada utilizando `remotes`:
+Actualmente el paquete se encuentra solo disponible en GitHub. Puede instalarse utilizando `remotes`:
 
 ```{r, eval = FALSE}
 # install.packages("remotes")
