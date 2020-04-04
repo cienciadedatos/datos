@@ -13,15 +13,14 @@
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Traduce al Español Varios Conjuntos de Datos de Práctica">
 <meta property="og:description" content="Provee una versión traducida de los siguientes conjuntos de datos: 
-  airlines, airports, AwardsManagers, babynames, Batting, diamonds, faithful, fueleconomy, 
-  Fielding, flights, gapminder, gss_cat, iris, Managers, mpg, mtcars, atmos, People, 
-  Pitching, planes, presidential, table1, table2, table3, table4a, table4b, table5, 
-  vehicles, weather, who'. 
+  'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 
+  'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'People, 
+  'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 
+  'vehicles', 'weather', 'who'. 
   English: It provides a Spanish translated version of the datasets listed above.">
 <meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
@@ -31,7 +30,7 @@
 <![endif]-->
 </head>
 <body>
-    <div class="container template-home">
+    <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -51,7 +50,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -65,7 +64,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/cienciadedatos/datos">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fa fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -78,30 +77,31 @@
 <!--/.navbar -->
 
       
-
       </header><div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
+    
+
+    
+    
 <div id="datos" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#datos" class="anchor"></a>datos <img src="reference/figures/logo.png" align="right" width="120px">
 </h1></div>
 
 <p>Este paquete provee la traducción al español de conjuntos de datos en inglés originalmente disponibles en otros paquetes de R. Los datos traducidos son los que se utilizan en los ejemplos del libro <a href="https://es.r4ds.hadley.nz/">R para Ciencia de Datos</a>, la versión en español de <a href="https://r4ds.had.co.nz/">R for Data Science</a> de Hadley Wickham &amp; Garrett Grolemund. El paquete <code>datos</code> puede utilizarse junto con el libro o de manera independiente como fuente de datos de práctica en español.</p>
-<div id="instalacion" class="section level2">
+<div id="instalación" class="section level2">
 <h2 class="hasAnchor">
-<a href="#instalacion" class="anchor"></a>Instalación</h2>
-<p>La versión en CRAN está disponible por medio de:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("datos")</span></a></code></pre></div>
-<p>La versión en GitHub puede ser instalada utilizando <code>remotes</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co"># remotes::install_github("cienciadedatos/datos")</span></a></code></pre></div>
+<a href="#instalaci%C3%B3n" class="anchor"></a>Instalación</h2>
+<p>Actualmente el paquete se encuentra solo disponible en GitHub. Puede instalarse utilizando <code>remotes</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages("remotes")</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># remotes::install_github("cienciadedatos/datos")</span></span></code></pre></div>
 </div>
 <div id="requisitos" class="section level2">
 <h2 class="hasAnchor">
 <a href="#requisitos" class="anchor"></a>Requisitos</h2>
 <p>Este paquete traduce los datos <strong>en el momento</strong>. Esto implica que la versión en español de los datos no está contenida como un objeto dentro del paquete, sino que se genera al momento de utilizarlos. Por lo tanto, para poder usar <code>datos</code>, <strong>el paquete que contiene los datos originales en inglés debe estar previamente instalado</strong>.</p>
 <p>Los paquetes necesarios son:</p>
-<table class="table">
+<table class="table table">
 <thead><tr class="header">
 <th align="left">Paquetes</th>
 </tr></thead>
@@ -144,13 +144,7 @@
 <h2 class="hasAnchor">
 <a href="#traducciones" class="anchor"></a>Traducciones</h2>
 <p>Las traducciones disponibles dentro de <code>datos</code> son las siguientes:</p>
-<table class="table">
-<colgroup>
-<col width="14%">
-<col width="66%">
-<col width="9%">
-<col width="10%">
-</colgroup>
+<table class="table table">
 <thead><tr class="header">
 <th align="left">Nombre</th>
 <th align="left">Titulo</th>
@@ -352,44 +346,44 @@
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
 <p>El paquete <code>datos</code> se carga igual que todos los paquetes de R:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(datos)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dplyr)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(datos)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</span></code></pre></div>
 <p>Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea “llamada” explícitamente en el código que se escriba. En este ejemplo, el <em>dataset</em> <code>diamantes</code>, que proviene de <code><a href="https://ggplot2.tidyverse.org/reference/diamonds.html">ggplot2::diamonds</a></code>, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</a></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co">## Observations: 53,940</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">## Variables: 10</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 33…</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co">## $ quilate     &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22…</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co">## $ corte       &lt;ord&gt; Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Mu…</span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">## $ color       &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J…</span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="co">## $ claridad    &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, …</span></a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="co">## $ profundidad &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1…</span></a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co">## $ tabla       &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, …</span></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co">## $ x           &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87…</span></a>
-<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="co">## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78…</span></a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="co">## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49…</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(diamantes)</span></code></pre></div>
+<pre><code>## Observations: 53,940
+## Variables: 10
+## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 34…
+## $ quilate     &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.2…
+## $ corte       &lt;ord&gt; Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Muy bue…
+## $ color       &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, …
+## $ claridad    &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, …
+## $ profundidad &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.…
+## $ tabla       &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 6…
+## $ x           &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.0…
+## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.0…
+## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.3…</code></pre>
 <p>Los datos traducidos quedarán cargados durante toda la sesión de R:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">diamantes <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>diamantes <span class="op">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(corte <span class="op">==</span><span class="st"> "Bueno"</span>) <span class="op">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() <span class="op">+</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(<span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(claridad, precio, <span class="dt">fill =</span> claridad)) <span class="op">+</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>) <span class="op">+</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="dt">title =</span> <span class="st">"Diamantes"</span>, <span class="dt">subtitle =</span> <span class="st">"Precio y claridad"</span>)</span></code></pre></div>
 <p><img src="reference/figures/diamantes.png"></p>
 </div>
-<div id="actualizacion-del-paquete" class="section level2">
+<div id="actualización-del-paquete" class="section level2">
 <h2 class="hasAnchor">
-<a href="#actualizacion-del-paquete" class="anchor"></a>Actualización del paquete</h2>
+<a href="#actualizaci%C3%B3n-del-paquete" class="anchor"></a>Actualización del paquete</h2>
 <p>La actualización del paquete tiene múltiples pasos. Si se hacen cambios a las traducciones, se debe ejecutar el siguiente código para que todas las referencias estén al día.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># Crea los scripts de traducción</span></a>
-<a class="sourceLine" id="cb7-2" data-line-number="2">datos<span class="op">:::</span><span class="kw">data_script</span>()</a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co"># Crea los archivos de ayuda</span></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4">datos<span class="op">:::</span><span class="kw">folder_rd</span>()</a>
-<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co"># Actualiza el sitio web</span></a>
-<a class="sourceLine" id="cb7-6" data-line-number="6">pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</a>
-<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="co"># Cambia la referencia a tipo html</span></a>
-<a class="sourceLine" id="cb7-8" data-line-number="8">datos<span class="op">:::</span><span class="kw">fix_reference</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Crea los scripts de traducción</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>datos<span class="op">:::</span><span class="kw">data_script</span>()</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="co"># Crea los archivos de ayuda</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>datos<span class="op">:::</span><span class="kw">folder_rd</span>()</span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="co"># Actualiza el sitio web</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="co"># Cambia la referencia a tipo html</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>datos<span class="op">:::</span><span class="kw">fix_reference</span>()</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -424,7 +418,8 @@
 </ul>
 </div>
 
-  <div class="dev-status">
+
+      <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://cran.r-project.org/package=datos"><img src="https://www.r-pkg.org/badges/version/datos" alt="CRAN status"></a></li>
@@ -433,6 +428,7 @@
 </ul>
 </div>
 </div>
+
 </div>
 
 
@@ -441,14 +437,12 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
 </div>
-
       </footer>
 </div>
 
   
-
 
   </body>
 </html>
