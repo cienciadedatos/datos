@@ -38,8 +38,8 @@ variables:
     desc: "Tiene valor 'S' (s\u00ED) para los jugadores que hayan sido jugadores y dirigentes del equipo
       durante una temporada y 'N' (no) en caso contrario (factor)."
     values:
-      Y: "S"
-      N: "N"
+      "Y": "S"
+      "N": "N"
 help:
   name: dirigentes
   alias: dirigentes

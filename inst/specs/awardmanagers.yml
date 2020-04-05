@@ -22,8 +22,8 @@ variables:
     desc: "Tiene valor \"S\" (s\u00ed) para los premios que corresponden a un empate
       y \"N\" (no) en caso contrario."
     values:
-      Y: "S"
-      N: "N"
+      "Y": "S"
+      "N": "N"
   notes:
     trans: notas
     desc: Comentarios sobre el premio
