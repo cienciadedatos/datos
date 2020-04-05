@@ -13,7 +13,7 @@
 \item{juegos_ganados}{Juegos ganados}
 \item{juegos_perdidos}{Juegos perdidos}
 \item{posicion}{Posición del equipo en la clasificación final de la temporada regular}
-\item{jugador_dirigente}{Tiene valor "S" (sí) para los jugadores que hayan sido jugadores y dirigentes del equipo durante una temporada y "N" (no) en caso contrario (factor).}
+\item{jugador_dirigente}{Tiene valor 'S' (sí) para los jugadores que hayan sido jugadores y dirigentes del equipo durante una temporada y 'N' (no) en caso contrario (factor).}
 }}
 \description{Información de los equipos que dirigieron y algunas estadísticas básicas de los equipos en cada temporada.}
 \keyword{datasets}

@@ -1,7 +1,7 @@
 \docType{data}
 \name{mtautos}
 \alias{mtautos}
-\title{Pruebas de ruta de automóviles de Motor Trend}
+\title{Pruebas de ruta de autómóviles de Motor Trend}
 \format{Un data.frame con 32 filas y 12 columnas
 \describe{
 \item{millas}{millas por galón de Estados Unidos}
@@ -17,5 +17,5 @@
 \item{carburadores}{número de carburadores}
 }}
 \usage{mtautos}
-\description{Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento de automóviles para 32 automóviles (modelos de 1973-1974).}
+\description{Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento para 32 automóviles (modelos de 1973-1974).}
 \keyword{datasets}

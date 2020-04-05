@@ -12,7 +12,7 @@
 \item{posicion}{Posición del jugdador a la defensiva}
 \item{juegos_jugados}{Juegos jugados}
 \item{juegos_iniciados}{Juegos iniciados}
-\item{InnOuts}{Tiempo jugado por el jugador, expresado en outs}
+\item{inn_outs}{Tiempo jugado por el jugador, expresado en outs}
 \item{outs_realizados}{Outs realizados por el jugador}
 \item{asistencias}{Asistencias realizadas por el jugador}
 \item{errores}{Errores realizados por el jugador}
@@ -21,7 +21,7 @@
 \item{lanzamientos_desviados}{Lanzamientos desviados (aplicable a los receptores)}
 \item{bases_robadas}{Bases robadas por oponente (aplicable a los receptores)}
 \item{atrapados_robando}{Oponentes atrapados en intento de robo (aplicable a los receptores)}
-\item{clasificacion_zona}{Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"}
+\item{clasificacion_zona}{Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva 'típica'}
 }}
 \description{Estadísticas de jardineros}
 \keyword{datasets}

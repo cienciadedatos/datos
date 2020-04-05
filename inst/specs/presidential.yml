@@ -10,10 +10,10 @@ variables:
     desc: Fecha de inicio de su periodo presidencial
   end:
     trans: fin
-    desc: Fecha de termino de su periodo presidencial
+    desc: "Fecha de t\u00E9rmino de su periodo presidencial"
   party:
     trans: partido
-    desc: Partido político al que pertenece
+    desc: "Partido pol\u00EDtico al que pertenece"
     values:
       Republican: Republicano
       Democratic: "Dem\u00f3crata"
@@ -21,5 +21,5 @@ help:
   name: presidencial
   alias: presidencial
   title: Periodos de 11 presidentes, desde Eisenhower a Obama
-  description: Nombre, fecha de inicio y termino de su mandato y partido político de 11 presidentes de EE.UU., desde Eisenhower a Obama.
+  description: "Nombre, fecha de inicio y t\u00E9rmino de su mandato y partido pol\u00EDtico de 11 presidentes de EE.UU., desde Eisenhower a Obama."
   format: Un data.frame con 11 filas y 4 columnas

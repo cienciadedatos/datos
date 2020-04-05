@@ -12,7 +12,7 @@
 \item{juegos}{Número de juegos en los que participó oficialmente el jugador}
 \item{al_bate}{Turnos al bate}
 \item{carreras}{Carreras anotadas}
-\item{golpes}{Cantidad de veces en la cual el jugador alcanzó una base debido a un golpe, sin error de la defensa}
+\item{golpes}{Cantidad de veces en la que el jugador alcanzó una base debido a un golpe, sin error de la defensa}
 \item{dobles}{Hits en los que el bateador llegó a segunda base}
 \item{triples}{Golpes en los que el bateador llegó a tercera base}
 \item{cuadrangulares}{Cuadrangulares - jonrones}

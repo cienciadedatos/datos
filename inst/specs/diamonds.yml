@@ -4,7 +4,7 @@ df:
 variables:
   price:
     trans: precio
-    desc: Precio en dólares americanos (\$326-\$18,823)
+    desc: "Precio en d\u00f3lares americanos ($326-$18,823)"
   carat:
     trans: quilate
     desc: Peso del diamante (0.2-5.01)
@@ -26,7 +26,7 @@ variables:
     desc: Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43-79)
   table:
     trans: tabla
-    desc: Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)
+    desc: "Ancho de la parte superior del diamante con relaci\u00f3n a su punto más ancho (43-95)"
   x:
     trans: x
     desc: Largo en milimetros

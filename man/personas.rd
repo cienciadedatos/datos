@@ -22,8 +22,8 @@
 \item{nombre_completo}{Nombre y apellido}
 \item{peso}{Peso en libras}
 \item{estatura}{Estatura en pulgadas}
-\item{bateador}{Diestro (D) o zurdo (Z)}
-\item{lanzador}{Diestro (D) o zurdo (Z)}
+\item{bateador}{Si como bateador es diestro (D) o zurdo (Z)}
+\item{lanzador}{Si como lanzador es diestro (D) o zurdo (Z)}
 \item{fecha_primer_juego}{Fecha primer juego en primera división}
 \item{fecha_ultimo_juego}{Fecha último juego en primera división}
 \item{id_retrosheet}{Código de jugador usado en Retrosheet (http://www.retrosheet.org/)}
@@ -31,5 +31,5 @@
 \item{fecha_fallecimiento}{Fecha de fallecimiento en formato yyyy-mm-dd}
 \item{fecha_nacimiento}{Fecha de nacimiento en formato yyyy-mm-dd}
 }}
-\description{Nombres de jugadores, fecha de nacimiento e información bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados en bateadores, lanzadores y otros archivos en que los jugadores está identificador por id_jugador.}
+\description{Nombres de jugadores, fecha de nacimiento e información bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados en bateadores, lanzadores y otros archivos en que los jugadores están identificados por id_jugador.}
 \keyword{datasets}

@@ -4,23 +4,23 @@ df:
 variables:
   country:
     trans: pais
-    desc: Nombre del país
+    desc: "Nombre del pa\u00EDs"
     values:
       Afghanistan: "Afganist\u00e1n"
       Brazil: Brasil
       China: China
   year:
     trans: anio
-    desc: Año correspondiente a los valores registrados
+    desc: "A\u00f1o correspondiente a los valores registrados"
   cases:
     trans: casos
-    desc: Número de casos registrados
+    desc: "N\u00famero de casos registrados"
   population:
     trans: poblacion
-    desc: Población del país
+    desc: "Poblaci\u00f3n del pa\u00EDs"
 help:
   name: tabla1
   alias: tabla1
-  title: Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)
-  description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
+  title: "Registros de tuberculosis de la Organizaci\u00f3n Mundial de la Salud (1era variante)"
+  description: "Contiene observaciones de casos registrados en Afganist\u00E1n, Brasil y China en los a\u00f1os 1999 y 2000."
   format: Un tibble con 6 filas y 4 columnas

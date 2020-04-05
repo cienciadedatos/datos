@@ -4,16 +4,16 @@ df:
 variables:
   faa:
     trans: codigo_aeropuerto
-    desc: código FAA del aeropuerto
+    desc: "c\u00f3digo FAA del aeropuerto"
   name:
     trans: nombre
     desc: nombre del aeropuerto
   lat:
     trans: latitud
-    desc: coordenada de ubicación del aeropuerto
+    desc: "coordenada de ubicaci\u00f3n del aeropuerto"
   lon:
     trans: longitud
-    desc: coordenada de ubicación del aeropuerto
+    desc: "coordenada de ubicaci\u00f3n del aeropuerto"
   alt:
     trans: altura
     desc: altura medida en pies
@@ -22,19 +22,19 @@ variables:
     desc: diferencia horaria respecto del meridiano de Greenwich (GMT)
   dst:
     trans: horario_verano
-    desc: "horario legal de acuerdo a las políticas de ahorro de energía.
-      A = Zona Horaria de Ahorro de Luz de Día (DST) estándar de los EEUU:
-        comienza el segundo Sábado de Marzo y
-        termina el primer Sábado de Noviembre.
+    desc: "horario legal de acuerdo a las pol\u00EDticas de ahorro de energ\u00EDa.
+      A = Zona Horaria de Ahorro de Luz de D\u00EDa (DST) est\u00E1ndar de los EEUU:
+        comienza el segundo S\u00E1bado de Marzo y
+        termina el primer S\u00E1bado de Noviembre.
       U = Desconocido.
       N = No tiene zona horaria especial."
   tzone:
     trans: zona_horaria_iana
-    desc: zona horaria IANA, la cual se determina de acuerdo al servicio web GeoNames
+    desc: zona horaria IANA, que se determina de acuerdo al servicio web GeoNames
 help:
   name: aeropuertos
   alias: aeropuertos
   title: Datos de aeropuertos
-  description: Metadatos útiles de los aeropuertos
+  description: "Metadatos \u00fatiles de los aeropuertos"
   usage: aeropuertos
   format: Un data.frame con 1.458 filas y 8 columnas

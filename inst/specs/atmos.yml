@@ -4,10 +4,10 @@ df:
 variables:
   lat:
     trans: latitud
-    desc: Ubicación de la medida. Grilla espacial de 24 por 24 desde longitud 113.8O a 56.2O y desde latitud 36.2N a 21.2S.
+    desc: "Ubicaci\u00f3n de la medida. Grilla espacial de 24 por 24 desde longitud 113.8O a 56.2O y desde latitud 36.2N a 21.2S."
   long:
     trans: longitud
-    desc: Ubicación de la medida. Grilla espacial de 24 por 24 desde longitud 113.8O a 56.2O y desde latitud 36.2N a 21.2S.
+    desc: "Ubicaci\u00f3n de la medida. Grilla espacial de 24 por 24 desde longitud 113.8O a 56.2O y desde latitud 36.2N a 21.2S."
   year:
     trans: anio
     desc: 72 puntos en el tiempo. Una vez al mes desde enero de 1995 hasta diciembre de 2000.
@@ -16,29 +16,29 @@ variables:
     desc: 72 puntos en el tiempo. Una vez al mes desde enero de 1995 hasta diciembre de 2000.
   surftemp:
     trans: temp_superficie
-    desc: Temperatura media mensual basada en la energía emitida desde la Tierra en condiciones de cielo despejado (en K).
+    desc: "Temperatura media mensual basada en la energ\u00EDa emitida desde la Tierra en condiciones de cielo despejado (en K)."
   temp:
     trans: temperatura
     desc: Temperatura media mensual del aire cerca de la superficie de la Tierra (en K).
   pressure:
     trans: presion
-    desc: Presión media mensual en una ubicación determinada de la superficie de la Tierra (en mb).
+    desc: "Presi\u00f3n media mensual en una ubicaci\u00f3n determinada de la superficie de la Tierra (en mb)."
   ozone:
     trans: ozono
-    desc: Cantidad media mensual de ozono en la columna atmosférica (en Dobsons).
+    desc: "Cantidad media mensual de ozono en la columna atmosf\u00E9rica (en Dobsons)."
   cloudlow:
     trans: nube_baja
-    desc: Porcentaje de la media mensual de cielo cubierto por nubes con una presión superior mayor a 680 mb o aproximadamente menor que 3.24 km.
+    desc: "Porcentaje de la media mensual de cielo cubierto por nubes con una presi\u00f3n superior mayor a 680 mb o aproximadamente menor que 3.24 km."
   cloudmid:
     trans: nube_media
-    desc: Porcentaje de la media mensual de cielo cubierto por nubes con una presión superior entre 440-680 mb o aproximadamente menor que 3.24 a 6.5 km.
+    desc: "Porcentaje de la media mensual de cielo cubierto por nubes con una presi\u00f3n superior entre 440-680 mb o aproximadamente menor que 3.24 a 6.5 km."
   cloudhigh:
     trans: nube_alta
-    desc: Porcentaje de la media mensual de cielo cubierto por nubes con una presión superior menor o igual a 440 mb o aproximadamente mayor que 6.5 km.
+    desc: "Porcentaje de la media mensual de cielo cubierto por nubes con una presi\u00f3n superior menor o igual a 440 mb o aproximadamente mayor que 6.5 km."
 help:
   name: atmosfera
   alias: atmosfera
-  title: Datos atmosféricos
-  description: Datos atmosféricos
+  title: "Datos atmosf\u00E9ricos"
+  description: "Datos atmosf\u00E9ricos"
   usage: atmosfera
   format: Un data.frame con 41472 filas y 11 columnas

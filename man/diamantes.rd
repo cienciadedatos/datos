@@ -4,7 +4,7 @@
 \title{Precio de 50.000 diamantes}
 \format{Un data.frame con 53.940 filas y 10 columnas
 \describe{
-\item{precio}{Precio en dólares americanos (\$326-\$18,823)}
+\item{precio}{Precio en dólares americanos ($326-$18,823)}
 \item{quilate}{Peso del diamante (0.2-5.01)}
 \item{corte}{Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)}
 \item{color}{Color del diamante, de J (peor) a D (mejor)}
