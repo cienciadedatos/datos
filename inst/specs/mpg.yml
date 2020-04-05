@@ -9,7 +9,7 @@ variables:
     trans: modelo
     desc: nombre del modelo
   displ:
-    trans: motor
+    trans: cilindrada
     desc: tamaño del motor del automóvil, en litros
   year:
     trans: anio
