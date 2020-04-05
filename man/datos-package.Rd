@@ -6,7 +6,7 @@
 \alias{datos-package}
 \title{datos: Traduce al Español Varios Conjuntos de Datos de Práctica}
 \description{
-\if{html}{\figure{logo.png}{options: align='right'}}
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
 Provee una versión traducida de los siguientes conjuntos de datos: 
   'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 

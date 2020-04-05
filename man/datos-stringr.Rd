@@ -7,7 +7,15 @@
 \alias{frutas}
 \alias{palabras}
 \title{Vectores de caracteres dentro del paquete stringr}
-\format{Un vector}
+\format{
+Un vector
+
+An object of class \code{character} of length 50.
+
+An object of class \code{character} of length 25.
+
+An object of class \code{character} of length 1000.
+}
 \usage{
 oraciones
 
