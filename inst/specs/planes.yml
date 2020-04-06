@@ -11,6 +11,10 @@ variables:
   type:
     trans: tipo
     desc: "tipo de avi\u00f3n"
+    values:
+      Fixed wing multi engine: Ala fija multimotor
+      Fixed wing single engine: Ala fija monomotor
+      Rotorcraft: De rotor
   manufacturer:
     trans: fabricante
     desc: "fabricante del avi\u00f3n"
@@ -29,12 +33,19 @@ variables:
   engine:
     trans: tipo_motor
     desc: "tipo de motor del avi\u00f3n"
+    values:
+      4 Cycle: "Cuatro tiempos"
+      Reciprocating: "Rec\u00EDproco"
+      Turbo-fan: "Turboventilador"
+      Turbo-jet: "Turboreactor"
+      Turbo-prop: "Turbohélice"
+      Turbo-shaft: "Turboeje"
 help:
   name: aviones
   alias: aviones
   title: Datos de aviones
-  description: Metadatos de los aviones y sus códigos de cola en el registro de aviación de la FAA.
-    American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por
-    lo que no es posible trazarlos.
+  description: "Metadatos de los aviones y sus c\u00f3digos de cola en el registro de aviaci\u00f3n de la FAA.
+    American Airways (AA) y Envoy Air (MQ) reportan n\u00famero de flota en lugar de n\u00famero de cola, por
+    lo que no es posible trazarlos."
   usage: aviones
   format: Un data.frame con 3.322 filas y 9 columnas
