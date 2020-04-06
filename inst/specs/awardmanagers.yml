@@ -13,7 +13,7 @@ variables:
       TSN Manager of the Year: "Capit\u00e1n TSN del a\u00f1o"
   yearID:
     trans: anio
-    desc: Año
+    desc: "A\u00f1o"
   lgID:
     trans: id_liga
     desc: ID liga (factor)
@@ -22,8 +22,8 @@ variables:
     desc: "Tiene valor \"S\" (s\u00ed) para los premios que corresponden a un empate
       y \"N\" (no) en caso contrario."
     values:
-      Y: S,
-      N: N,
+      "Y": "S"
+      "N": "N"
   notes:
     trans: notas
     desc: Comentarios sobre el premio
@@ -31,5 +31,5 @@ help:
   name: premios_dirigentes
   alias: premios_dirigentes
   title: Tabla de premios de los dirigentes
-  description: Información de los premios de los dirigentes de equipo
+  description: "Informaci\u00f3n de los premios de los dirigentes de equipo"
   format: Un data frame con 179 filas y 6 columnas

@@ -10,7 +10,7 @@
 \item{dia}{día de la fecha de registro}
 \item{hora}{hora de la fecha de registro}
 \item{temperatura}{temperatura medida en grados Fahrenheit}
-\item{punto_rocio}{temperatura medida en grados Fahrenheit a la cual, dada la presión atmosférica y humedad, condensa el vapor de agua}
+\item{punto_rocio}{temperatura medida en grados Fahrenheit en la que, dada la presión atmosférica y humedad, condensa el vapor de agua}
 \item{humedad}{humedad relativa}
 \item{direccion_viento}{dirección del viento medida en grados}
 \item{velocidad_viento}{velocidad del viento medida en millas por hora}
@@ -21,5 +21,5 @@
 \item{fecha_hora}{fecha y hora de registro en formato POSIXct}
 }}
 \usage{clima}
-\description{Metadatos del clima y los códigos de cola de los aviones en el registro de aviacion de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.}
+\description{Metadatos del clima y los códigos de cola de los aviones en el registro de aviación de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.}
 \keyword{datasets}

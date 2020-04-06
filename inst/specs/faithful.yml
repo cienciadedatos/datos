@@ -11,7 +11,7 @@ variables:
 help:
   name: fiel
   alias: fiel
-  title: Datos del géiser Viejo Fiel (Old Faithful)
-  description: Datos de tiempo de duración y espera entre erupciones del géiser Viejo Fiel (Old Faithful), ubicado en el Parque Nacional de Yellowstone, en Wyoming, Estados Unidos.
+  title: "Datos del g\u00E9iser Viejo Fiel (Old Faithful)"
+  description: "Datos de tiempo de duraci\u00f3n y espera entre erupciones del g\u00E9iser Viejo Fiel (Old Faithful), ubicado en el Parque Nacional de Yellowstone, en Wyoming, Estados Unidos."
   usage: fiel
   format: Un data frame con 272 observaciones y 2 columnas

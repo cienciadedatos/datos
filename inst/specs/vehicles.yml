@@ -4,7 +4,7 @@ df:
 variables:
   id:
     trans: id
-    desc: Identificador único EPA
+    desc: "Identificador \u00fanico EPA"
   make:
     trans: fabricante
     desc: Fabricante
@@ -13,7 +13,7 @@ variables:
     desc: Nombre del modelo
   year:
     trans: anio
-    desc: año de fabricación
+    desc: "a\u00f1o de fabricación"
   class:
     trans: clase
     values:
@@ -102,7 +102,7 @@ variables:
       Manual 6-spd: Manual 6-velocidades
       Manual 7-spd: Manual 7-velocidades
       Manual(M7): Manual(M7)
-    desc: tipo de transmisión
+    desc: "tipo de transmisi\u00f3n"
   drive:
     trans: traccion
     values:
@@ -113,18 +113,18 @@ variables:
       Front-Wheel Drive: Delantera
       Part-time 4-Wheel Drive: Cuatro ruedas conectable
       Rear-Wheel Drive: Trasera
-    desc: tipo de tracción
+    desc: "tipo de tracci\u00f3n"
   cyl:
     trans: cilindros
-    desc: número de cilindros
+    desc: "n\u00famero de cilindros"
   displ:
     trans: motor
-    desc: tamaño del motor del automovil, en litros
+    desc: "tama\u00f1o del motor del autom\u00f3vil, en litros"
   fuel:
     trans: combustible
     values:
       CNG: Gas natural comprimido
-      Diesel: "Di\u00e9sel"
+      Diesel: Diesel
       Electricity: Electricidad
       Gasoline or E85: Gasolina o E85
       Gasoline or natural gas: Gasolina o Gas natural
@@ -139,14 +139,14 @@ variables:
     desc: tipo de combustible
   hwy:
     trans: autopista
-    desc: millas por galón de combustible en autopista
+    desc: "millas por gal\u00f3n de combustible en autopista"
   cty:
     trans: ciudad
-    desc: millas por galón de combustible en ciudad
+    desc: "millas por gal\u00f3n de combustible en ciudad"
 help:
   name: vehiculos
   alias: vehiculos
-  title: Datos de economía de combustible
-  description: Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos.
+  title: "Datos de econom\u00EDa de combustible"
+  description: "Datos de econom\u00EDa de combustible de la Agencia de Protecci\u00f3n Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selecci\u00f3n de variables y no considera veh\u00EDculos con datos incompletos."
   usage: vehiculos
   format: Un data.frame con 33442 filas y 12 columnas

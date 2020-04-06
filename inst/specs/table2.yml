@@ -11,10 +11,10 @@ variables:
       China: China
   year:
     trans: anio
-    desc: Año correspondiente a los valores registrados
+    desc: "A\u00f1o correspondiente a los valores registrados"
   type:
     trans: tipo
-    desc: Categoría a la que pertenece la observación
+    desc: "Categor\u00EDa a la que pertenece la observaci\u00f3n"
     values:
       cases: casos
       population: "poblaci\u00f3n"
@@ -24,6 +24,6 @@ variables:
 help:
   name: tabla2
   alias: tabla2
-  title: Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)
-  description: Contiene observaciones de casos registrados en Afganistán, Brasil y China en los años 1999 y 2000.
+  title: "Registros de tuberculosis de la Organizaci\u00f3n Mundial de la Salud  (2da variante)"
+  description: "Contiene observaciones de casos registrados en Afganist\u00E1n, Brasil y China en los a\u00f1os 1999 y 2000."
   format: Un tibble con 12 filas y 4 columnas

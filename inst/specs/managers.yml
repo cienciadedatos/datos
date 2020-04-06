@@ -7,7 +7,7 @@ variables:
     desc: ID del jugador
   yearID:
     trans: anio
-    desc: Año
+    desc: "A\u00f1o"
   teamID:
     trans: id_equipo
     desc: ID equipo (factor)
@@ -16,11 +16,11 @@ variables:
     desc: ID liga (factor)
   inseason:
     trans: orden_temporada
-    desc: Orden (secuencia) en la dirigencia de equipos durante una temporada.
+    desc: "Orden (secuencia) en la dirigencia de equipos durante una temporada.
       0 si fue dirigente del equipo durante toda una temporada.
       En otro caso denota el orden de entrada a un equipo en una temporada
-      (1 si fue el primer diriente del equipo que entró en esa temporada,
-      2 si fue el segundo dirigente del equipo que entró en esa temporada, etc.)
+      (1 si fue el primer diriente del equipo que entr\u00f3 en esa temporada,
+      2 si fue el segundo dirigente del equipo que entr\u00f3 en esa temporada, etc.)"
   G:
     trans: juegos_dirigidos
     desc: Juegos dirigidos
@@ -32,18 +32,18 @@ variables:
     desc: Juegos perdidos
   rank:
     trans: posicion
-    desc: Posición del equipo en la clasificación final de la temporada regular
+    desc: "Posici\u00f3n del equipo en la clasificaci\u00f3n final de la temporada regular"
   plyrMgr:
     trans: jugador_dirigente
-    desc: Tiene valor "S" (sí) para los jugadores que hayan sido jugadores y dirigentes del equipo
-      durante una temporada y "N" (no) en caso contrario (factor).
+    desc: "Tiene valor 'S' (s\u00ED) para los jugadores que hayan sido jugadores y dirigentes del equipo
+      durante una temporada y 'N' (no) en caso contrario (factor)."
     values:
-      Y: S,
-      N: N
+      "Y": "S"
+      "N": "N"
 help:
   name: dirigentes
   alias: dirigentes
   title: Tabla de dirigentes
-  description: Información de los equipos que dirigieron y algunas estadísticas
-    básicas de los equipos en cada temporada.
+  description: "Informaci\u00f3n de los equipos que dirigieron y algunas estad\u00EDsticas
+    b\u00E1sicas de los equipos en cada temporada."
   format: Un data frame con 3.504 filas y 10 columnas

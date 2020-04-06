@@ -28,7 +28,7 @@ variables:
     desc: Carreras anotadas
   H:
     trans: golpes
-    desc: "Cantidad de veces en la cual el jugador alcanz\u00f3 una base debido a un golpe, sin error de la defensa"
+    desc: "Cantidad de veces en la que el jugador alcanz\u00f3 una base debido a un golpe, sin error de la defensa"
   X2B:
     trans: dobles
     desc: "Hits en los que el bateador lleg\u00f3 a segunda base"
@@ -71,6 +71,6 @@ variables:
 help:
   name: bateadores
   alias: bateadores
-  title: Tabla de estadísticas de bateo
-  description: Estadísticas de bateadores
+  title: "Tabla de estad\u00EDsticas de bateo"
+  description: "Estad\u00EDsticas de bateadores"
   format: Un data frame con 105.861 filas y 22 columnas

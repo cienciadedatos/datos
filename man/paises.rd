@@ -2,9 +2,9 @@
 \name{paises}
 \alias{paises}
 \title{Datos de Gapminder}
-\format{El cuadro de datos principal tiene 1704 filas y 6 columnas
+\format{Un data.frame de 1704 filas y 6 columnas
 \describe{
-\item{pais}{países incluídos (factor con 142 niveles)}
+\item{pais}{países incluidos (factor con 142 niveles)}
 \item{continente}{continentes (factor con 5 niveles)}
 \item{anio}{desde 1952 a 2007, datos cada 5 años}
 \item{esperanza_de_vida}{esperanza de vida al nacer, en años}

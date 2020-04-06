@@ -7,10 +7,10 @@ variables:
     desc: ID del jugador
   yearID:
     trans: id_anio
-    desc: Año
+    desc: "A\u00f1o"
   stint:
     trans: orden_equipos
-    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+    desc: "Orden en que el jugador se movi\u00f3 entre equipos dentro de la misma temporada"
   teamID:
     trans: id_equipo
     desc: ID del equipo (factor)
@@ -31,10 +31,10 @@ variables:
     desc: Juegos jugados iniciados
   CG:
     trans: juegos_completados
-    desc: Número de juegos completos (9 innings lanzados) que lanzó el jugador
+    desc: "N\u00famero de juegos completos (9 innings lanzados) que lanz\u00f3 el jugador"
   SHO:
     trans: blanqueadas
-    desc: Número de blanqueos (juegos completos sin permitir carreras) que lanzó el jugador
+    desc: "N\u00famero de blanqueos (juegos completos sin permitir carreras) que lanz\u00f3 el jugador"
   SV:
     trans: juegos_salvados
     desc: Juegos salvados
@@ -79,7 +79,7 @@ variables:
     desc: Bateadores a los que el lanzador se ha enfrentado
   GF:
     trans: juegos_finalizados
-    desc: Juegos en los que el lanzador finalizó el juego
+    desc: "Juegos en los que el lanzador finaliz\u00f3 el juego"
   R:
     trans: carreras
     desc: Carreras recebidas (sucias y limpias)
@@ -96,5 +96,5 @@ help:
   name: lanzadores
   alias: lanzadores
   title: Tabla de estadísticas de lanzadores
-  description: Estadísticas de lanzadores
+  description: "Estad\u00EDsticas de lanzadores"
   format: Un data frame con 46.699 filas y 30 columnas

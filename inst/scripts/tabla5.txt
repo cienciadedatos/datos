@@ -4,11 +4,15 @@ translate <- function(spec_file) {
   df <- suppressWarnings(eval(parse(text = spec$df$source)))
   class_df <- class(df)
   type_df <- NULL
-  if ("function" %in% class_df) return()
+  if ("function" %in% class_df) {
+    return()
+  }
   if ("data.frame" %in% class_df) type_df <- "data.frame"
   if ("tbl_df" %in% class_df) type_df <- "tibble"
   if ("grouped_df" %in% class_df) type_df <- "grouped_df"
-  if (is.null(type_df)) return()
+  if (is.null(type_df)) {
+    return()
+  }
   if (type_df == "grouped_df") grps <- suppressWarnings(dplyr::group_vars(df))
   if (type_df == "data.frame") row_names <- rownames(df)
   if (type_df != "tibble") df <- dplyr::as_tibble(df)
@@ -47,10 +51,10 @@ translate <- function(spec_file) {
   if (type_df == "grouped_df") {
     grps_t <- as.character(lapply(grps, function(x) new_names[var_names == x]))
     dfl <- dplyr::as_tibble(dfl)
-    dfl <- dplyr::group_by(dfl, !!! rlang::parse_exprs(grps_t))
+    dfl <- dplyr::group_by(dfl, !!!rlang::parse_exprs(grps_t))
   }
   if (type_df == "data.frame") {
-    if(!is.null(row_names)) {
+    if (!is.null(row_names)) {
       dfl <- as.data.frame(dfl)
       rownames(dfl) <- row_names
     } else {

@@ -12,7 +12,7 @@
 \item{transmision}{tipo de transmisión}
 \item{traccion}{tipo de tracción}
 \item{cilindros}{número de cilindros}
-\item{motor}{tamaño del motor del automovil, en litros}
+\item{motor}{tamaño del motor del automóvil, en litros}
 \item{combustible}{tipo de combustible}
 \item{autopista}{millas por galón de combustible en autopista}
 \item{ciudad}{millas por galón de combustible en ciudad}

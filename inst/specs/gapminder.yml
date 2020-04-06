@@ -147,7 +147,7 @@ variables:
       Yemen, Rep.: Yemen
       Zambia: Zambia
       Zimbabwe: Zimbabue
-    desc: países incluídos (factor con 142 niveles)
+    desc: "pa\u00EDses incluidos (factor con 142 niveles)"
   continent:
     trans: continente
     values:
@@ -159,21 +159,21 @@ variables:
     desc: continentes (factor con 5 niveles)
   year:
     trans: anio
-    desc: desde 1952 a 2007, datos cada 5 años
+    desc: "desde 1952 a 2007, datos cada 5 a\u00f1os"
   lifeExp:
     trans: esperanza_de_vida
-    desc: esperanza de vida al nacer, en años
+    desc: "esperanza de vida al nacer, en a\u00f1os"
   pop:
     trans: poblacion
-    desc: población
+    desc: "poblaci\u00f3n"
   gdpPercap:
     trans: pib_per_capita
-    desc: PIB per cápita (en dólares americanos, ajustados según inflación)
+    desc: "PIB per c\u00E1pita (en d\u00f3lares americanos, ajustados según inflaci\u00f3n)"
 help:
   name: paises
   alias: paises
   title: Datos de Gapminder
-  description: Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país
+  description: "Extracto de datos de Gapminder sobre expectativa de vida, PIB per c\u00E1pita y poblaci\u00f3n, seg\u00fan pa\u00EDs"
   usage: paises
-  format: El cuadro de datos principal tiene 1704 filas y 6 columnas
+  format: Un data.frame de 1704 filas y 6 columnas
   source: http://www.gapminder.org/data/

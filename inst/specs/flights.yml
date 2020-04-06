@@ -4,13 +4,13 @@ df:
 variables:
   year:
     trans: anio
-    desc: año de la fecha de salida
+    desc: "a\u00f1o de la fecha de salida"
   month:
     trans: mes
     desc: mes de la fecha de salida
   day:
     trans: dia
-    desc: día de la fecha de salida
+    desc: "d\u00EDa de la fecha de salida"
   dep_time:
     trans: horario_salida
     desc: horario efectivo de salida del vuelo (formato HHMM o HMM), hora local
@@ -31,13 +31,13 @@ variables:
     desc: atraso de la llegada en minutos. Valores negativos indican llegada adelantada
   carrier:
     trans: aerolinea
-    desc: abreviación de dos letras de la aerolínea. Ver `aerolineas` para obtener el nombre
+    desc: "abreviaci\u00f3n de dos letras de la aerol\u00EDnea. Ver `aerolineas` para obtener el nombre"
   flight:
     trans: vuelo
-    desc: número de vuelo
+    desc: "n\u00famero de vuelo"
   tailnum:
     trans: codigo_cola
-    desc: código de cola del avión
+    desc: "c\u00f3digo de cola del avión"
   origin:
     trans: origen
     desc: origen del vuelo. Ver `aeropuertos` para metadatos adicionales

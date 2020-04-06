@@ -7,16 +7,16 @@ variables:
     desc: ID del jugador
   birthYear:
     trans: anio_nacimiento
-    desc: Año de nacimiento
+    desc: "A\u00f1o de nacimiento"
   birthMonth:
     trans: mes_nacimiento
     desc: Mes de nacimiento
   birthDay:
     trans: dia_nacimiento
-    desc: Día de nacimiento
+    desc: "D\u00EDa de nacimiento"
   birthCountry:
     trans: pais_nacimiento
-    desc: País de nacimiento
+    desc: "Pa\u00EDs de nacimiento"
   birthState:
     trans: estado_nacimiento
     desc: Estado de nacimiento
@@ -25,16 +25,16 @@ variables:
     desc: Ciudad de nacimiento
   deathYear:
     trans: anio_fallecimiento
-    desc: Año de fallecimiento
+    desc: "A\u00f1o de fallecimiento"
   deathMonth:
     trans: mes_fallecimiento
     desc: Mes de fallecimiento
   deathDay:
     trans: dia_fallecimiento
-    desc: Día de fallecimiento
+    desc: "D\u00EDa de fallecimiento"
   deathCountry:
     trans: pais_fallecimiento
-    desc: País de fallecimiento
+    desc: "Pa\u00EDs de fallecimiento"
   deathState:
     trans: estado_fallecimiento
     desc: Estado de fallecimiento
@@ -58,28 +58,28 @@ variables:
     desc: Estatura en pulgadas
   bats:
     trans: bateador
-    desc: Diestro (D) o zurdo (Z)
+    desc: Si como bateador es diestro (D) o zurdo (Z)
     values:
       R: D
       L: Z
   throws:
     trans: lanzador
-    desc: Diestro (D) o zurdo (Z)
+    desc: Si como lanzador es diestro (D) o zurdo (Z)
     values:
       R: D
       L: Z
   debut:
     trans: fecha_primer_juego
-    desc: Fecha primer juego en primera división
+    desc: "Fecha primer juego en primera divisi\u00f3n"
   finalGame:
     trans: fecha_ultimo_juego
-    desc: Fecha último juego en primera división
+    desc: "Fecha último juego en primera divisi\u00f3n"
   retroID:
     trans: id_retrosheet
-    desc: Código de jugador usado en Retrosheet (http://www.retrosheet.org/)
+    desc: "C\u00f3digo de jugador usado en Retrosheet (http://www.retrosheet.org/)"
   bbrefID:
     trans: id_brw
-    desc: Código de jugador usado en Baseball Reference website (http://www.baseball-reference.com/)
+    desc: "C\u00f3digo de jugador usado en Baseball Reference website (http://www.baseball-reference.com/)"
   deathDate:
     trans: fecha_fallecimiento
     desc: Fecha de fallecimiento en formato yyyy-mm-dd
@@ -90,8 +90,8 @@ help:
   name: personas
   alias: personas
   title: Tabla de personas
-  description: Nombres de jugadores, fecha de nacimiento e información
-    bibliográfica. Este archivo se usa para obtener detalles acerca de los jugadores listados
-    en bateadores, lanzadores y otros archivos en que los jugadores está identificador por
-    id_jugador.
+  description: "Nombres de jugadores, fecha de nacimiento e informaci\u00f3n
+    bibliogr\u00E1fica. Este archivo se usa para obtener detalles acerca de los jugadores listados
+    en bateadores, lanzadores y otros archivos en que los jugadores est\u00E1n identificados por
+    id_jugador."
   format: Un data frame con 19.617 filas y 26 columnas

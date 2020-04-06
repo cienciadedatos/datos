@@ -10,7 +10,7 @@ variables:
     desc: Año
   stint:
     trans: orden_equipos
-    desc: Orden en que el jugador se movió entre equipos dentro de la misma temporada
+    desc: "Orden en que el jugador se movi\u00f3 entre equipos dentro de la misma temporada"
   teamID:
     trans: id_equipo
     desc: ID del equipo (factor)
@@ -19,7 +19,7 @@ variables:
     desc: ID de la liga (factor con niveles AA, AL, FL, NL, PL, UA)
   POS:
     trans: posicion
-    desc: Posición del jugdador a la defensiva
+    desc: "Posici\u00f3n del jugdador a la defensiva"
   G:
     trans: juegos_jugados
     desc: Juegos jugados
@@ -27,7 +27,7 @@ variables:
     trans: juegos_iniciados
     desc: Juegos iniciados
   InnOuts:
-    trans: InnOuts
+    trans: inn_outs
     desc: Tiempo jugado por el jugador, expresado en outs
   PO:
     trans: outs_realizados
@@ -55,10 +55,10 @@ variables:
     desc: Oponentes atrapados en intento de robo (aplicable a los receptores)
   ZR:
     trans: clasificacion_zona
-    desc: Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva "típica"
+    desc: "Porcentaje de pelotas atrapadas por un fildeador, en su zona defensiva 't\u00EDpica'"
 help:
   name: jardineros
   alias: jardineros
-  title: Tabla de estadísticas de jardineros
-  description: Estadísticas de jardineros
+  title: "Tabla de estad\u00EDsticas de jardineros"
+  description: "Estad\u00EDsticas de jardineros"
   format: Un data frame con 140.921 filas y 18 columnas

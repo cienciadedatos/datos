@@ -1,7 +1,7 @@
 \docType{data}
 \name{tabla2}
 \alias{tabla2}
-\title{Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)}
+\title{Registros de tuberculosis de la Organización Mundial de la Salud  (2da variante)}
 \format{Un tibble con 12 filas y 4 columnas
 \describe{
 \item{pais}{Nombre del país}

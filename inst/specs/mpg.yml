@@ -9,30 +9,30 @@ variables:
     trans: modelo
     desc: nombre del modelo
   displ:
-    trans: motor
-    desc: tamaño del motor del automóvil, en litros
+    trans: cilindrada
+    desc: "tama\u00f1o del motor del autom\u00f3vil, en litros"
   year:
     trans: anio
-    desc: año de fabricación
+    desc: "a\u00f1o de fabricaci\u00f3n"
   cyl:
     trans: cilindros
-    desc: número de cilindros
+    desc: "n\u00famero de cilindros"
   trans:
     trans: transmision
-    desc: tipo de transmisión
+    desc: "tipo de transmisi\u00f3n"
   drv:
     trans: traccion
     values:
       f: d
       r: t
       4: 4
-    desc: tipo de tracción (d = delantera, t = trasera, 4 = 4 ruedas)
+    desc: "tipo de tracci\u00f3n (d = delantera, t = trasera, 4 = 4 ruedas)"
   cty:
     trans: ciudad
-    desc: millas por galón de combustible en ciudad
+    desc: "millas por gal\u00f3n de combustible en ciudad"
   hwy:
     trans: autopista
-    desc: millas por galón de combustible en autopista
+    desc: "millas por gal\u00f3n de combustible en autopista"
   fl:
     trans: combustible
     values:
@@ -56,7 +56,7 @@ variables:
 help:
   name: millas
   alias: millas
-  title: Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles
-  description: Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene sólo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo."
+  title: "Datos de econom\u00EDa de combustible de 1999 y 2008 para 38 modelos populares de autom\u00f3viles"
+  description: "Este conjunto de datos contiene un subconjunto de los datos de econom\u00EDa de combustible que la Agencia de Protecci\u00f3n Medioambiental (EPA) pone a disposici\u00f3n en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva versi\u00f3n cada a\u00f1o entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo."
   usage: millas
   format: Un data.frame con 234 filas y 11 columnas

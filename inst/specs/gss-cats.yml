@@ -4,7 +4,7 @@ df:
 variables:
   year:
     trans: anio
-    desc: año de la encuesta, 2000-2014
+    desc: "a\u00f1o de la encuesta, 2000-2014"
   marital:
     trans: estado_civil
     desc: estado civil
@@ -17,14 +17,15 @@ variables:
       Married: Casado
   age:
     trans: edad
-    desc: edad. Edad máxima truncada a 89 años
+    desc: "edad. Edad m\u00E1xima truncada a 89 a\u00f1os"
   race:
     trans: raza
-    desc: categorías raciales según la encuesta
+    desc: "categor\u00EDas raciales seg\u00fan la encuesta"
     values:
       Other: Otra
       Black: Negra
       White: Blanca
+      Not applicable: No aplica
   rincome:
     trans: ingreso
     desc: ingreso reportado por los encuestados (US$)
@@ -47,25 +48,25 @@ variables:
       Not applicable: No aplica
   partyid:
     trans: partido
-    desc: partido político con el que se identifica
+    desc: "partido pol\u00EDtico con el que se identifica"
     values:
       No answer: Sin respuesta
       Don't know: No sabe
       Other party: Otro partido
-      Strong republican: Republicano duro
-      Not str republican: Republicano moderado
-      Ind,near rep: Independiente pro republicano
+      Strong republican: Fuertemente republicano
+      Not str republican: No fuertemente republicano
+      Ind,near rep: Ind, pro rep
       Independent: Independiente
-      Ind,near dem: "Independiente pro dem\u00f3crata"
-      Not str democrat: "Dem\u00f3crata moderado"
-      Strong democrat: "Dem\u00f3crata duro"
+      Ind,near dem: Ind, pro dem
+      Not str democrat: "No fuertemente dem\u00f3crata"
+      Strong democrat: "Fuertemente dem\u00f3crata"
   relig:
     trans: religion
     desc: religión
     values:
       No answer: Sin respuesta
       Don't know: No sabe
-      Inter-nondenominational: Inter o no confesional
+      Inter-nondenominational: "Inter o no confesional"
       Native american: Nativa americana
       Christian: Cristiana
       Orthodox-christian: Cristiana ortodoxa
@@ -81,14 +82,14 @@ variables:
       Not applicable: No aplica
   denom:
     trans: denominacion
-    desc: denominación religiosa a la que pertenece
+    desc: "denominaci\u00f3n religiosa a la que pertenece"
     values:
       No answer: Sin respuesta
       Don't know: No sabe
       No denomination: No denominacional
       Other: Otra
       Episcopal: Episcopal
-      Presbyterian-dk wh: Presbiteriana, no sabe cual
+      Presbyterian-dk wh: "Presbiteriana, no sabe cu\u00E1l"
       Presbyterian, merged: Presbiteriana, fusionadas
       Other presbyterian: Otra presbiteriana
       United pres ch in us: "Uni\u00f3n presbiteriana de iglesias"
@@ -115,11 +116,11 @@ variables:
       Not applicable: No aplica
   tvhours:
     trans: horas_tv
-    desc: horas de televisiín que ve al día
+    desc: "horas de televisiín que ve al d\u00EDa"
 help:
   name: encuesta
   alias: encuesta
-  title: Muestra de variables categóricas de una encuesta social
-  description: Muestra de variables categóricas de la Encuesta Social General de EE.UU.
+  title: "Muestra de variables categ\u00f3ricas de una encuesta social"
+  description: "Muestra de variables categ\u00f3ricas de la Encuesta Social General de EE.UU."
   usage: encuesta
   format: Un data.frame con 21.473 filas y 9 columnas

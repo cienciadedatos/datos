@@ -4,7 +4,7 @@ df:
 variables:
   yearID:
     trans: anio
-    desc: Año
+    desc: "A\u00f1o"
   teamID:
     trans: id_equipo
     desc: ID equipo (factor)
@@ -16,10 +16,10 @@ variables:
     desc: ID del jugador
   salary:
     trans: salario
-    desc: Salario en dólares
+    desc: "Salario en d\u00f3lares"
 help:
   name: salarios
   alias: salarios
   title: Tabla de salarios
-  description: Información de los salarios de los jugadores.
+  description: "Informaci\u00f3n de los salarios de los jugadores."
   format: Un data frame con 26.428 filas y 5 columnas
