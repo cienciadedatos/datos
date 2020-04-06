@@ -59,7 +59,7 @@ variables:
       Independent: Independiente
       Ind,near dem: Ind, pro dem
       Not str democrat: "No fuertemente dem\u00f3crata"
-      Strong democrat: "Fuertemente dem\u00f3crata duro"
+      Strong democrat: "Fuertemente dem\u00f3crata"
   relig:
     trans: religion
     desc: religión
