@@ -24,13 +24,13 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: EdgarFIXME Ruiz \email{maurolepore@gmail.com}
+\strong{Maintainer}: Edgar Ruiz \email{edgararuiz@gmail.com}
 
 Authors:
 \itemize{
   \item Riva Quiroga \email{riva.quiroga@uc.cl}
   \item Mauricio Vargas \email{mvargas@dcc.uchile.cl}
-  \item Mauro Lepore \email{FIXME@gmail.com}
+  \item Mauro Lepore \email{maurolepore@gmail.com}
 }
 
 Other contributors:
