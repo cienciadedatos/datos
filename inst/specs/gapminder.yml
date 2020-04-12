@@ -168,7 +168,7 @@ variables:
     desc: "poblaci\u00f3n"
   gdpPercap:
     trans: pib_per_capita
-    desc: "PIB per c\u00E1pita (en d\u00f3lares americanos, ajustados según inflaci\u00f3n)"
+    desc: "PIB per c\u00E1pita (en d\u00f3lares americanos, ajustados seg\u00fan inflaci\u00f3n)"
 help:
   name: paises
   alias: paises

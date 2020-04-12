@@ -235,7 +235,7 @@ variables:
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), hombres (h) de 0 a 14 a\u00f1os (014)"
   new_sp_m1524:
     trans: nuevos_fpp_h1524
-    desc: "casos nuevos, diagnóstico frotis pulmonar positivo (fpp), hombres (h) de 15 a 24 a\u00f1os (1524)"
+    desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), hombres (h) de 15 a 24 a\u00f1os (1524)"
   new_sp_m2534:
     trans: nuevos_fpp_h2534
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), hombres (h) de 25 a 34 a\u00f1os (2534)"

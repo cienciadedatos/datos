@@ -73,7 +73,7 @@ variables:
     desc: "Fecha primer juego en primera divisi\u00f3n"
   finalGame:
     trans: fecha_ultimo_juego
-    desc: "Fecha último juego en primera divisi\u00f3n"
+    desc: "Fecha \u00faltimo juego en primera divisi\u00f3n"
   retroID:
     trans: id_retrosheet
     desc: "C\u00f3digo de jugador usado en Retrosheet (http://www.retrosheet.org/)"

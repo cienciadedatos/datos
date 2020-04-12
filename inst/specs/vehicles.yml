@@ -13,7 +13,7 @@ variables:
     desc: Nombre del modelo
   year:
     trans: anio
-    desc: "a\u00f1o de fabricación"
+    desc: "a\u00f1o de fabricaci\u00f3n"
   class:
     trans: clase
     values:

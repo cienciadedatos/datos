@@ -22,7 +22,7 @@ variables:
     desc: temperatura medida en grados Fahrenheit
   dewp:
     trans: punto_rocio
-    desc: "temperatura medida en grados Fahrenheit en la que, dada la presi\u00f3n atmosférica y humedad,
+    desc: "temperatura medida en grados Fahrenheit en la que, dada la presi\u00f3n atmosf\u00e9rica y humedad,
       condensa el vapor de agua"
   humid:
     trans: humedad
