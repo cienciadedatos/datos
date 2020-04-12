@@ -38,7 +38,7 @@ variables:
       Reciprocating: "Rec\u00EDproco"
       Turbo-fan: "Turboventilador"
       Turbo-jet: "Turboreactor"
-      Turbo-prop: "Turbohélice"
+      Turbo-prop: "Turboh\u00e9lice"
       Turbo-shaft: "Turboeje"
 help:
   name: aviones
