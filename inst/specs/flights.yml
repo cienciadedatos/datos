@@ -37,7 +37,7 @@ variables:
     desc: "n\u00famero de vuelo"
   tailnum:
     trans: codigo_cola
-    desc: "c\u00f3digo de cola del avión"
+    desc: "c\u00f3digo de cola del avi\u00f3n"
   origin:
     trans: origen
     desc: origen del vuelo. Ver `aeropuertos` para metadatos adicionales
