@@ -1,0 +1,5 @@
+ [1] "banana"    "papaya"    "uva"       "arándano"  "frutilla"  "mora"     
+ [7] "plátano"   "ananá"     "piña"      "manzana"   "pera"      "sandía"   
+[13] "melocotón" "melón"     "damasco"   "durazno"   "frambuesa" "mango"    
+[19] "guayaba"   "guanábana" "maracuyá"  "fresa"     "coco"      "naranja"  
+[25] "kiwi"     
