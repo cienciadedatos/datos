@@ -22,7 +22,7 @@ lapply(
   get_all_specs(),
   function(x) {
     test_that(paste0("Load from spec works for:", x$df), {
-      df <- translate(x$file)
+      df <- translate(system.file("specs", x$file, package = "datos"))
       orig <- eval(parse(text = x$original))
       nm <- as.character(lapply(x$variables, function(x) x$trans))
       nm[nm == "FALSE"] <- "n"

@@ -1,62 +1,62 @@
 delayedAssign('aerolineas',
-        eval(parse(file.path(system.file('scripts','aerolineas.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'airlines.yml', package = 'datos')))
 delayedAssign('aeropuertos',
-        eval(parse(file.path(system.file('scripts','aeropuertos.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'airports.yml', package = 'datos')))
 delayedAssign('atmosfera',
-        eval(parse(file.path(system.file('scripts','atmosfera.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'atmos.yml', package = 'datos')))
 delayedAssign('premios_dirigentes',
-        eval(parse(file.path(system.file('scripts','premios_dirigentes.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'awardmanagers.yml', package = 'datos')))
 delayedAssign('nombres',
-        eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'babynames.yml', package = 'datos')))
 delayedAssign('bateadores',
-        eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'batting.yml', package = 'datos')))
 delayedAssign('comunes',
-        eval(parse(file.path(system.file('scripts','comunes.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'common.yml', package = 'datos')))
 delayedAssign('diamantes',
-        eval(parse(file.path(system.file('scripts','diamantes.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'diamonds.yml', package = 'datos')))
 delayedAssign('fiel',
-        eval(parse(file.path(system.file('scripts','fiel.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'faithful.yml', package = 'datos')))
 delayedAssign('jardineros',
-        eval(parse(file.path(system.file('scripts','jardineros.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'fielding.yml', package = 'datos')))
 delayedAssign('vuelos',
-        eval(parse(file.path(system.file('scripts','vuelos.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'flights.yml', package = 'datos')))
 delayedAssign('paises',
-        eval(parse(file.path(system.file('scripts','paises.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'gapminder.yml', package = 'datos')))
 delayedAssign('encuesta',
-        eval(parse(file.path(system.file('scripts','encuesta.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'gss-cats.yml', package = 'datos')))
 delayedAssign('flores',
-        eval(parse(file.path(system.file('scripts','flores.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'iris.yml', package = 'datos')))
 delayedAssign('dirigentes',
-        eval(parse(file.path(system.file('scripts','dirigentes.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'managers.yml', package = 'datos')))
 delayedAssign('millas',
-        eval(parse(file.path(system.file('scripts','millas.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'mpg.yml', package = 'datos')))
 delayedAssign('mtautos',
-        eval(parse(file.path(system.file('scripts','mtautos.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'mtcars.yml', package = 'datos')))
 delayedAssign('personas',
-        eval(parse(file.path(system.file('scripts','personas.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'people.yml', package = 'datos')))
 delayedAssign('lanzadores',
-        eval(parse(file.path(system.file('scripts','lanzadores.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'pitching.yml', package = 'datos')))
 delayedAssign('aviones',
-        eval(parse(file.path(system.file('scripts','aviones.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'planes.yml', package = 'datos')))
 delayedAssign('presidencial',
-        eval(parse(file.path(system.file('scripts','presidencial.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'presidential.yml', package = 'datos')))
 delayedAssign('salarios',
-        eval(parse(file.path(system.file('scripts','salarios.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'salaries.yml', package = 'datos')))
 delayedAssign('tabla1',
-        eval(parse(file.path(system.file('scripts','tabla1.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table1.yml', package = 'datos')))
 delayedAssign('tabla2',
-        eval(parse(file.path(system.file('scripts','tabla2.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table2.yml', package = 'datos')))
 delayedAssign('tabla3',
-        eval(parse(file.path(system.file('scripts','tabla3.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table3.yml', package = 'datos')))
 delayedAssign('tabla4a',
-        eval(parse(file.path(system.file('scripts','tabla4a.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table4a.yml', package = 'datos')))
 delayedAssign('tabla4b',
-        eval(parse(file.path(system.file('scripts','tabla4b.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table4b.yml', package = 'datos')))
 delayedAssign('tabla5',
-        eval(parse(file.path(system.file('scripts','tabla5.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'table5.yml', package = 'datos')))
 delayedAssign('vehiculos',
-        eval(parse(file.path(system.file('scripts','vehiculos.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'vehicles.yml', package = 'datos')))
 delayedAssign('clima',
-        eval(parse(file.path(system.file('scripts','clima.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'weather.yml', package = 'datos')))
 delayedAssign('oms',
-        eval(parse(file.path(system.file('scripts','oms.txt', package = 'datos')))))
+        datos:::translate(system.file('specs', 'who.yml', package = 'datos')))

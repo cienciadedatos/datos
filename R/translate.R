@@ -1,6 +1,5 @@
 translate <- function(spec_file) {
-  pkg_path <- system.file("specs", package = "datos")
-  spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
+  spec <- yaml::read_yaml(spec_file)
   df <- suppressWarnings(eval(parse(text = spec$df$source)))
   class_df <- class(df)
   type_df <- NULL

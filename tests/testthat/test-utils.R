@@ -5,13 +5,13 @@ test_that("Site fix works", {
 })
 
 test_that("Script generator works", {
-  expect_is(
-    data_script(
-      script_path = tempfile(),
-      script_target = tempdir(),
-      spec_path = system.file("specs", package = "datos"),
-      is_test = TRUE
-    ),
-    "list"
+  temp_file <- tempfile()
+  data_script(
+    script_path = temp_file,
+    spec_path = system.file("specs", package = "datos")
   )
+
+  expect_true(file.exists(temp_file))
+  file_contents <- paste0(readLines(temp_file), collapse = "\n")
+  expect_true(grepl("delayedAssign\\(", file_contents))
 })
