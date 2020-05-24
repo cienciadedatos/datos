@@ -1,16 +1,13 @@
-## Release summary
-
-* Adds translation for the rest of the data sets in the `Lahman` package
-* Adds translation to the `common` dataset from the `fueleconomy` package
-* Some improvements to translation code
-* Removes dependency on `rlang`
-
 ## Test environments
-* local windows 10 install, R 3.6.1
-* ubuntu desktop 18.04, R 3.6.1
-* ubuntu 16.04 (on travis-ci)
+
+* ubuntu 18.04 (local), r-release
+* ubuntu 16.04 (travis), r-release, r-oldrel, r-devel
+* macos 10.13.6 high sierra (rhub), r-release
+* win-builder, r-release, r-oldrel
 
 ## R CMD check results
-* 0 errors | 0 warnings | 0 notes
 
+0 errors | 0 warnings | 2 notes
 
+* New submission
+* Package was archived on CRAN
