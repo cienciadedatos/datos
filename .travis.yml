@@ -7,8 +7,6 @@ warnings_are_errors: false
 
 matrix:
   include:
-include:
-  - os: osx
   - r: release
   - r: oldrel
   - r: devel
