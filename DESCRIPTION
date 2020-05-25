@@ -50,6 +50,7 @@ Imports:
     nasaweather,
     nycflights13,
     rlang,
+    tibble,
     tidyr,
     yaml
 Suggests:
