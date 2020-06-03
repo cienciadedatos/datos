@@ -1,8 +1,6 @@
 # datos (development version)
 
-# datos 0.2.0.9000
-
-This is mostly a maintenance release with internal changes.
+# datos 0.3.0
 
 ### Major changes
 
