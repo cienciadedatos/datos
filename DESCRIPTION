@@ -2,14 +2,14 @@ Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
 Version: 0.2.0.9000
 Authors@R: 
-    c(person(given = "Edgar",
-             family = "Ruiz",
-             role = c("aut", "cre"),
-             email = "edgararuiz@gmail.com"),
-      person(given = "Riva",
+    c(person(given = "Riva",
              family = "Quiroga",
-             role = "aut",
+             role = c("aut", "cre"),
              email = "riva.quiroga@uc.cl"),
+      person(given = "Edgar",
+             family = "Ruiz",
+             role = "aut",
+             email = "edgararuiz@gmail.com"),
       person(given = "Mauricio",
              family = "Vargas",
              role = "aut",
