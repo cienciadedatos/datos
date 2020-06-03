@@ -26,11 +26,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Edgar Ruiz \email{edgararuiz@gmail.com}
+\strong{Maintainer}: Riva Quiroga \email{riva.quiroga@uc.cl}
 
 Authors:
 \itemize{
-  \item Riva Quiroga \email{riva.quiroga@uc.cl}
+  \item Edgar Ruiz \email{edgararuiz@gmail.com}
   \item Mauricio Vargas \email{mvargas@dcc.uchile.cl}
   \item Mauro Lepore \email{maurolepore@gmail.com}
 }
