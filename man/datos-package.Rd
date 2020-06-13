@@ -26,7 +26,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Riva Quiroga \email{riva.quiroga@uc.cl}
+\strong{Maintainer}: Riva Quiroga \email{riva.quiroga@uc.cl} (\href{https://orcid.org/0000-0002-1147-4135}{ORCID})
 
 Authors:
 \itemize{
