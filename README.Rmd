@@ -21,13 +21,21 @@ Este paquete provee la traducción al español de conjuntos de datos en inglés 
 
 ## Instalación
 
-Actualmente el paquete se encuentra solo disponible en GitHub. Puede instalarse utilizando `remotes`:
+La versión en CRAN está disponible por medio de:
 
-```{r, eval = FALSE}
-# install.packages("remotes")
-# remotes::install_github("cienciadedatos/datos")
+```r
+install.packages("datos")
 ```
 
+
+## Actualización del paquete
+
+La versión en GitHub puede ser instalada utilizando `remotes`:
+
+```r
+# install.packages("remotes")
+remotes::install_github("cienciadedatos/datos")
+```
 
 ## Traducciones
 
