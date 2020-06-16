@@ -2,7 +2,7 @@
 
 # datos 0.3.0
 
-### Major changes
+## Major changes
 
 Changes to column names:
 

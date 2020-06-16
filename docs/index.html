@@ -45,7 +45,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">datos</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0.9000</span>
       </span>
     </div>
 
@@ -92,9 +92,11 @@
 <div id="instalación" class="section level2">
 <h2 class="hasAnchor">
 <a href="#instalaci%C3%B3n" class="anchor"></a>Instalación</h2>
-<p>Actualmente el paquete se encuentra solo disponible en GitHub. Puede instalarse utilizando <code>remotes</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="r"># install.packages("remotes")
-# remotes::install_github("cienciadedatos/datos")</pre></div>
+<p>El paquete <code>datos</code> puede instalarse directamente desde CRAN:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"datos"</span>)</pre></div>
+<p>La versión en desarrollo está disponible en GitHub y puede instalarse utilizando <code>remotes</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("remotes")</span>
+<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"cienciadedatos/datos"</span>)</pre></div>
 </div>
 <div id="traducciones" class="section level2">
 <h2 class="hasAnchor">
@@ -308,25 +310,25 @@
 <h2 class="hasAnchor">
 <a href="#uso" class="anchor"></a>Uso</h2>
 <p>El paquete <code>datos</code> se carga igual que todos los paquetes de R:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">datos</span>)
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">datos</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)</pre></div>
 <p>Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea “llamada” explícitamente en el código que se escriba. En este ejemplo, el <em>dataset</em> <code>diamantes</code>, que proviene de <code><a href="https://ggplot2.tidyverse.org/reference/diamonds.html">ggplot2::diamonds</a></code>, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(<span class="no">diamantes</span>)</pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## Rows: 53,940</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co">## Columns: 10</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 340, 342, 344, 345, 345, 348…</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">## $ quilate     &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.23, 0.30, 0.23, 0.22, 0.31,…</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">## $ corte       &lt;ord&gt; Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Muy bueno, Muy bueno, Regular, Mu…</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">## $ color       &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, J, I, E, H, J, J, G, I, J,…</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co">## $ claridad    &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, VS1, SI1, SI2, SI2, I1, SI…</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">## $ profundidad &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.4, 64.0, 62.8, 60.4, 62.2,…</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co">## $ tabla       &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 62, 58, 54, 54, 56, 59, 56,…</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="co">## $ x           &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.00, 4.25, 3.93, 3.88, 4.35,…</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="co">## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.05, 4.28, 3.90, 3.84, 4.37,…</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.39, 2.73, 2.46, 2.33, 2.71,…</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="https://dplyr.tidyverse.org/reference/reexports.html">glimpse</a></span>(<span class="no">diamantes</span>)</pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">## Rows: 53,940</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co">## Columns: 10</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="co">## $ precio      &lt;int&gt; 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 34…</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co">## $ quilate     &lt;dbl&gt; 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.2…</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="co">## $ corte       &lt;ord&gt; Ideal, Premium, Bueno, Premium, Bueno, Muy bueno, Muy bue…</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="co">## $ color       &lt;ord&gt; E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, …</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co">## $ claridad    &lt;ord&gt; SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, …</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co">## $ profundidad &lt;dbl&gt; 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.…</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="co">## $ tabla       &lt;dbl&gt; 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 6…</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="co">## $ x           &lt;dbl&gt; 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.0…</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="co">## $ y           &lt;dbl&gt; 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.0…</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co">## $ z           &lt;dbl&gt; 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.3…</span></span></code></pre></div>
 <p>Los datos traducidos quedarán cargados durante toda la sesión de R:</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="no">diamantes</span> <span class="kw">%&gt;%</span>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="no">diamantes</span> <span class="kw">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="no">corte</span> <span class="kw">==</span> <span class="st">"Bueno"</span>) <span class="kw">%&gt;%</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="no">claridad</span>, <span class="no">precio</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">claridad</span>)) +
