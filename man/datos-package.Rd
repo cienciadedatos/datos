@@ -32,7 +32,7 @@ Authors:
 \itemize{
   \item Edgar Ruiz \email{edgararuiz@gmail.com}
   \item Mauricio Vargas \email{mvargas@dcc.uchile.cl}
-  \item Mauro Lepore \email{maurolepore@gmail.com}
+  \item Mauro Lepore \email{maurolepore@gmail.com} (\href{https://orcid.org/0000-0002-1986-7988}{ORCID})
 }
 
 Other contributors:
