@@ -7,6 +7,6 @@
 \item{aerolinea}{abreviación de dos caracteres del nombre de la aerolínea}
 \item{nombre}{nombre completo de la aerolínea}
 }}
-\usage{aerolineas}
+\usage{aerolineas()}
 \description{Nombres de aerolíneas y su respectivo código carrier de dos dígitos.}
 \keyword{datasets}

@@ -17,6 +17,6 @@
 \item{autopista}{millas por galón de combustible en autopista}
 \item{ciudad}{millas por galón de combustible en ciudad}
 }}
-\usage{vehiculos}
+\usage{vehiculos()}
 \description{Datos de economía de combustible de la Agencia de Protección Medioambiental (EPA) de EE.UU., 1985-2015. Contiene una selección de variables y no considera vehículos con datos incompletos.}
 \keyword{datasets}

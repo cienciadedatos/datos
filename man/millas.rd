@@ -16,6 +16,6 @@
 \item{combustible}{tipo de combustible (p = premium, r = regular, e = etanol, d = diesel, g = gas natural comprimido)}
 \item{clase}{tipo de auto}
 }}
-\usage{millas}
+\usage{millas()}
 \description{Este conjunto de datos contiene un subconjunto de los datos de economía de combustible que la Agencia de Protección Medioambiental (EPA) pone a disposición en http://fueleconomy.gov. Contiene solo modelos que tuvieron una nueva versión cada año entre 1999 y 2008, lo que fue utilizado como un proxy de la popularidad del modelo.}
 \keyword{datasets}

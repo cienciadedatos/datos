@@ -20,6 +20,6 @@
 \item{visibilidad}{visibilidad medida en millas}
 \item{fecha_hora}{fecha y hora de registro en formato POSIXct}
 }}
-\usage{clima}
+\usage{clima()}
 \description{Metadatos del clima y los códigos de cola de los aviones en el registro de aviación de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.}
 \keyword{datasets}

@@ -14,6 +14,6 @@
 \item{denominacion}{denominación religiosa a la que pertenece}
 \item{horas_tv}{horas de televisiín que ve al día}
 }}
-\usage{encuesta}
+\usage{encuesta()}
 \description{Muestra de variables categóricas de la Encuesta Social General de EE.UU.}
 \keyword{datasets}

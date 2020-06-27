@@ -24,6 +24,6 @@
 \item{minuto}{minutos del horario programado para la salida}
 \item{fecha_hora}{fecha y horario programados del vuelo en formato POSIXct}
 }}
-\usage{vuelos}
+\usage{vuelos()}
 \description{Datos temporales de todos los vuelos que despegaron de Nueva York (JFK, LGA o EWR) durante 2013.}
 \keyword{datasets}

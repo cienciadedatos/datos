@@ -10,6 +10,6 @@
 \item{Ancho.Petalo}{Ancho del pétalo}
 \item{Especies}{A qué especie de la flor Iris corresponde (setosa, versicolor, virginica)}
 }}
-\usage{flores}
+\usage{flores()}
 \description{El set de datos sobre la flor Iris entrega las medidas en centímetros del largo y ancho de los sépalos y los pétalos de 50 flores de 3 especies de Iris (setosa, versicolor y virginica).}
 \keyword{datasets}

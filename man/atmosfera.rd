@@ -16,6 +16,6 @@
 \item{nube_media}{Porcentaje de la media mensual de cielo cubierto por nubes con una presión superior entre 440-680 mb o aproximadamente menor que 3.24 a 6.5 km.}
 \item{nube_alta}{Porcentaje de la media mensual de cielo cubierto por nubes con una presión superior menor o igual a 440 mb o aproximadamente mayor que 6.5 km.}
 }}
-\usage{atmosfera}
+\usage{atmosfera()}
 \description{Datos atmosféricos}
 \keyword{datasets}

@@ -15,6 +15,6 @@
 \item{y}{Ancho en milimetros}
 \item{z}{Profundidad en milimetros}
 }}
-\usage{diamantes}
+\usage{diamantes()}
 \description{Un conjunto de datos que contiene los precios de casi 54.000 diamantes.}
 \keyword{datasets}

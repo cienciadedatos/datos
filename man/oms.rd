@@ -65,6 +65,6 @@
 \item{nuevosrecaida_m5564}{nuevas recaídas, mujeres (m) de 55 a 64 años (5564)}
 \item{nuevosrecaida_m65}{nuevas recaídas, mujeres (m) de 65 o más años}
 }}
-\usage{oms}
+\usage{oms()}
 \description{Subconjunto de datos del informe anual de tuberculosis de la Organización Mundial de la Salud}
 \keyword{datasets}

@@ -16,6 +16,6 @@
 \item{cambios}{número de cambios de la caja de cambios}
 \item{carburadores}{número de carburadores}
 }}
-\usage{mtautos}
+\usage{mtautos()}
 \description{Los datos fueron extraídos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento para 32 automóviles (modelos de 1973-1974).}
 \keyword{datasets}

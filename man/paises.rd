@@ -11,7 +11,7 @@
 \item{poblacion}{población}
 \item{pib_per_capita}{PIB per cápita (en dólares americanos, ajustados según inflación)}
 }}
-\usage{paises}
+\usage{paises()}
 \description{Extracto de datos de Gapminder sobre expectativa de vida, PIB per cápita y población, según país}
 \source{http://www.gapminder.org/data/}
 \keyword{datasets}

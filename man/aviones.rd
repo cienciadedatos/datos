@@ -14,6 +14,6 @@
 \item{velocidad}{velocidad crucero promedio medida en millas por hora}
 \item{tipo_motor}{tipo de motor del avión}
 }}
-\usage{aviones}
+\usage{aviones()}
 \description{Metadatos de los aviones y sus códigos de cola en el registro de aviación de la FAA. American Airways (AA) y Envoy Air (MQ) reportan número de flota en lugar de número de cola, por lo que no es posible trazarlos.}
 \keyword{datasets}

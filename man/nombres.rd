@@ -10,6 +10,6 @@
 \item{FALSE}{Cantidad de ocurrencias}
 \item{prop}{Proporción}
 }}
-\usage{nombres}
+\usage{nombres()}
 \description{Datos completos sobre nombres de bebés provistos por la Social Security Administration de EE.UU. Incluye todos los nombres con al menos 5 usos.}
 \keyword{datasets}
