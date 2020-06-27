@@ -54,7 +54,8 @@ Imports:
     rlang,
     tibble,
     tidyr,
-    yaml
+    yaml,
+    memoise
 Suggests:
     covr,
     testthat (>= 2.1.0)

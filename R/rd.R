@@ -20,7 +20,7 @@ create_rd <- function(spec_path) {
 
   footer <- list("}}")
   if (!is.null(spec$help$usage)) {
-    footer <- c(footer, paste0("\\usage{", spec$help$usage, "}"))
+    footer <- c(footer, paste0("\\usage{", spec$help$usage, "()", "}"))
   }
   if (!is.null(spec$help$description)) {
     footer <- c(footer, paste0("\\description{", spec$help$description, "}"))

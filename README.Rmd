@@ -78,18 +78,16 @@ library(dplyr)
 Las variables que contienen los datos van a estar disponibles inmediatamente para su uso, pero los datos no se traducirán hasta que la variable sea "llamada" explícitamente en el código que se escriba. En este ejemplo, el _dataset_ `diamantes`, que proviene de `ggplot2::diamonds`, se carga en la memoria de R en el momento en que lo llamamos por primera vez en español:
 
 ```{r}
-glimpse(diamantes)
+glimpse(diamantes())
 ```
 
 Los datos traducidos quedarán cargados durante toda la sesión de R:
 
-```{r, eval = FALSE}
-diamantes %>%
+```{r, eval = TRUE}
+diamantes() %>%
   filter(corte == "Bueno") %>%
   ggplot() +
   geom_boxplot(aes(claridad, precio, fill = claridad)) +
   theme(legend.position = "none") +
   labs(title = "Diamantes", subtitle = "Precio y claridad")
 ```
-
-<img src="man/figures/diamantes.png">
