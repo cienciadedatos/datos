@@ -55,10 +55,10 @@ translate <- function(spec_file) {
   }
   if (type_df == "data.frame") {
     if (!is.null(row_names)) {
-      dfl <- as.data.frame(dfl)
+      dfl <- as.data.frame(dfl, stringsAsFactors = FALSE)
       rownames(dfl) <- row_names
     } else {
-      dfl <- as.data.frame(dfl)
+      dfl <- as.data.frame(dfl, stringsAsFactors = FALSE)
     }
   }
   dfl
