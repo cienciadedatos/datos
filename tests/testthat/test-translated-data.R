@@ -1,6 +1,6 @@
 library(tibble)
 
-test_that("multiplication works", {
+test_that("The output of translated data is as expected", {
   verify_output(test_path("output-translated-data.txt"), {
     as_tibble(datos::aerolineas)
 
