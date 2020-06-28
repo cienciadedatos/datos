@@ -1,6 +1,6 @@
 context("RD files")
 
-pkg_path <- system.file(package = "datos")
+pkg_path <- system.file(package = "datos", lib.loc = .libPaths())
 
 test_that("Help generator works", {
   expect_silent(
