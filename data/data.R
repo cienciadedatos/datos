@@ -1,62 +1,97 @@
-delayedAssign('aerolineas',
-        eval(parse(file.path(system.file('scripts','aerolineas.txt', package = 'datos')))))
-delayedAssign('aeropuertos',
-        eval(parse(file.path(system.file('scripts','aeropuertos.txt', package = 'datos')))))
-delayedAssign('atmosfera',
-        eval(parse(file.path(system.file('scripts','atmosfera.txt', package = 'datos')))))
-delayedAssign('premios_dirigentes',
-        eval(parse(file.path(system.file('scripts','premios_dirigentes.txt', package = 'datos')))))
-delayedAssign('nombres',
-        eval(parse(file.path(system.file('scripts','nombres.txt', package = 'datos')))))
-delayedAssign('bateadores',
-        eval(parse(file.path(system.file('scripts','bateadores.txt', package = 'datos')))))
-delayedAssign('comunes',
-        eval(parse(file.path(system.file('scripts','comunes.txt', package = 'datos')))))
-delayedAssign('diamantes',
-        eval(parse(file.path(system.file('scripts','diamantes.txt', package = 'datos')))))
-delayedAssign('fiel',
-        eval(parse(file.path(system.file('scripts','fiel.txt', package = 'datos')))))
-delayedAssign('jardineros',
-        eval(parse(file.path(system.file('scripts','jardineros.txt', package = 'datos')))))
-delayedAssign('vuelos',
-        eval(parse(file.path(system.file('scripts','vuelos.txt', package = 'datos')))))
-delayedAssign('paises',
-        eval(parse(file.path(system.file('scripts','paises.txt', package = 'datos')))))
-delayedAssign('encuesta',
-        eval(parse(file.path(system.file('scripts','encuesta.txt', package = 'datos')))))
-delayedAssign('flores',
-        eval(parse(file.path(system.file('scripts','flores.txt', package = 'datos')))))
-delayedAssign('dirigentes',
-        eval(parse(file.path(system.file('scripts','dirigentes.txt', package = 'datos')))))
-delayedAssign('millas',
-        eval(parse(file.path(system.file('scripts','millas.txt', package = 'datos')))))
-delayedAssign('mtautos',
-        eval(parse(file.path(system.file('scripts','mtautos.txt', package = 'datos')))))
-delayedAssign('personas',
-        eval(parse(file.path(system.file('scripts','personas.txt', package = 'datos')))))
-delayedAssign('lanzadores',
-        eval(parse(file.path(system.file('scripts','lanzadores.txt', package = 'datos')))))
-delayedAssign('aviones',
-        eval(parse(file.path(system.file('scripts','aviones.txt', package = 'datos')))))
-delayedAssign('presidencial',
-        eval(parse(file.path(system.file('scripts','presidencial.txt', package = 'datos')))))
-delayedAssign('salarios',
-        eval(parse(file.path(system.file('scripts','salarios.txt', package = 'datos')))))
-delayedAssign('tabla1',
-        eval(parse(file.path(system.file('scripts','tabla1.txt', package = 'datos')))))
-delayedAssign('tabla2',
-        eval(parse(file.path(system.file('scripts','tabla2.txt', package = 'datos')))))
-delayedAssign('tabla3',
-        eval(parse(file.path(system.file('scripts','tabla3.txt', package = 'datos')))))
-delayedAssign('tabla4a',
-        eval(parse(file.path(system.file('scripts','tabla4a.txt', package = 'datos')))))
-delayedAssign('tabla4b',
-        eval(parse(file.path(system.file('scripts','tabla4b.txt', package = 'datos')))))
-delayedAssign('tabla5',
-        eval(parse(file.path(system.file('scripts','tabla5.txt', package = 'datos')))))
-delayedAssign('vehiculos',
-        eval(parse(file.path(system.file('scripts','vehiculos.txt', package = 'datos')))))
-delayedAssign('clima',
-        eval(parse(file.path(system.file('scripts','clima.txt', package = 'datos')))))
-delayedAssign('oms',
-        eval(parse(file.path(system.file('scripts','oms.txt', package = 'datos')))))
+translate <- function(spec_file) {
+  pkg_path <- system.file("specs", package = "datos", lib.loc = .libPaths())
+  spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
+  df <- suppressWarnings(eval(parse(text = spec$df$source)))
+  class_df <- class(df)
+  type_df <- NULL
+  if ("function" %in% class_df) {
+    return()
+  }
+  if ("data.frame" %in% class_df) type_df <- "data.frame"
+  if ("tbl_df" %in% class_df) type_df <- "tibble"
+  if ("grouped_df" %in% class_df) type_df <- "grouped_df"
+  if (is.null(type_df)) {
+    return()
+  }
+  if (type_df == "grouped_df") grps <- suppressWarnings(dplyr::group_vars(df))
+  if (type_df == "data.frame") row_names <- rownames(df)
+  if (type_df != "tibble") df <- dplyr::as_tibble(df)
+  vars <- spec$variables
+  var_names <- names(vars)
+  var_names[var_names == "FALSE"] <- "n"
+  var_names[var_names == "TRUE"] <- "y"
+  vars <- vars[var_names != "ROWNAMES"]
+  var_names <- var_names[var_names != "ROWNAMES"]
+  new_names <- as.character(lapply(vars, function(x) x$trans))
+  new_names[new_names == "FALSE"] <- "n"
+  new_names[new_names == "TRUE"] <- "y"
+  new_names <- new_names[new_names != "ROWNAMES"]
+  dfl <- lapply(
+    seq_along(vars),
+    function(x) {
+      cl <- df[, var_names[x]][[1]]
+      from <- names(vars[[x]]$values)
+      if (!is.null(from)) {
+        to <- as.character(vars[[x]]$values[from])
+        if ("factor" %in% class(cl)) {
+          lv <- levels(cl)
+          for (i in seq_along(from)) {
+            lv[lv == from[i]] <- to[i]
+          }
+          levels(cl) <- lv
+        } else {
+          for (i in seq_along(from)) cl[cl == from[i]] <- to[i]
+        }
+      }
+      cl
+    }
+  )
+  dfl <- stats::setNames(dfl, new_names)
+  if (type_df == "tibble") dfl <- dplyr::as_tibble(dfl)
+  if (type_df == "grouped_df") {
+    grps_t <- as.character(lapply(grps, function(x) new_names[var_names == x]))
+    dfl <- dplyr::as_tibble(dfl)
+    dfl <- dplyr::group_by(dfl, !!!rlang::parse_exprs(grps_t))
+  }
+  if (type_df == "data.frame") {
+    if (!is.null(row_names)) {
+      dfl <- as.data.frame(dfl)
+      rownames(dfl) <- row_names
+    } else {
+      dfl <- as.data.frame(dfl)
+    }
+  }
+  dfl
+}
+
+delayedAssign("aerolineas", translate("airlines.yml"))
+delayedAssign("aeropuertos", translate("airports.yml"))
+delayedAssign("atmosfera", translate("atmos.yml"))
+delayedAssign("premios_dirigentes", translate("awardmanagers.yml"))
+delayedAssign("nombres", translate("babynames.yml"))
+delayedAssign("bateadores", translate("batting.yml"))
+delayedAssign("comunes", translate("common.yml"))
+delayedAssign("diamantes", translate("diamonds.yml"))
+delayedAssign("fiel", translate("faithful.yml"))
+delayedAssign("jardineros", translate("fielding.yml"))
+delayedAssign("vuelos", translate("flights.yml"))
+delayedAssign("paises", translate("gapminder.yml"))
+delayedAssign("encuesta", translate("gss-cats.yml"))
+delayedAssign("flores", translate("iris.yml"))
+delayedAssign("dirigentes", translate("managers.yml"))
+delayedAssign("millas", translate("mpg.yml"))
+delayedAssign("mtautos", translate("mtcars.yml"))
+delayedAssign("personas", translate("people.yml"))
+delayedAssign("lanzadores", translate("pitching.yml"))
+delayedAssign("aviones", translate("planes.yml"))
+delayedAssign("presidencial", translate("presidential.yml"))
+delayedAssign("salarios", translate("salaries.yml"))
+delayedAssign("tabla1", translate("table1.yml"))
+delayedAssign("tabla2", translate("table2.yml"))
+delayedAssign("tabla3", translate("table3.yml"))
+delayedAssign("tabla4a", translate("table4a.yml"))
+delayedAssign("tabla4b", translate("table4b.yml"))
+delayedAssign("tabla5", translate("table5.yml"))
+delayedAssign("vehiculos", translate("vehicles.yml"))
+delayedAssign("clima", translate("weather.yml"))
+delayedAssign("oms", translate("who.yml"))

@@ -44,3 +44,7 @@ data_script <- function(script_path = "data/data.R",
         con = file.path(script_target, paste0(anm[x], ".txt"))
       ))
 }
+
+#' Avoid R CMD check warning
+#' @keywords internal
+"translate"

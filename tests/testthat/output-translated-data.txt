@@ -1,0 +1,523 @@
+> as_tibble(datos::aerolineas)
+# A tibble: 16 x 2
+   aerolinea nombre                     
+   <chr>     <chr>                      
+ 1 9E        Endeavor Air Inc.          
+ 2 AA        American Airlines Inc.     
+ 3 AS        Alaska Airlines Inc.       
+ 4 B6        JetBlue Airways            
+ 5 DL        Delta Air Lines Inc.       
+ 6 EV        ExpressJet Airlines Inc.   
+ 7 F9        Frontier Airlines Inc.     
+ 8 FL        AirTran Airways Corporation
+ 9 HA        Hawaiian Airlines Inc.     
+10 MQ        Envoy Air                  
+11 OO        SkyWest Airlines Inc.      
+12 UA        United Air Lines Inc.      
+13 US        US Airways Inc.            
+14 VX        Virgin America             
+15 WN        Southwest Airlines Co.     
+16 YV        Mesa Airlines Inc.         
+
+> as_tibble(datos::aeropuertos)
+# A tibble: 1,458 x 8
+   codigo_aeropuer~ nombre latitud longitud altura zona_horaria horario_verano
+   <chr>            <chr>    <dbl>    <dbl>  <dbl>        <dbl> <chr>         
+ 1 04G              Lansd~    41.1    -80.6   1044           -5 A             
+ 2 06A              Moton~    32.5    -85.7    264           -6 A             
+ 3 06C              Schau~    42.0    -88.1    801           -6 A             
+ 4 06N              Randa~    41.4    -74.4    523           -5 A             
+ 5 09J              Jekyl~    31.1    -81.4     11           -5 A             
+ 6 0A9              Eliza~    36.4    -82.2   1593           -5 A             
+ 7 0G6              Willi~    41.5    -84.5    730           -5 A             
+ 8 0G7              Finge~    42.9    -76.8    492           -5 A             
+ 9 0P2              Shoes~    39.8    -76.6   1000           -5 U             
+10 0S9              Jeffe~    48.1   -123.     108           -8 A             
+# ... with 1,448 more rows, and 1 more variable: zona_horaria_iana <chr>
+
+> as_tibble(datos::atmosfera)
+# A tibble: 41,472 x 11
+   latitud longitud  anio   mes temp_superficie temperatura presion ozono
+     <dbl>    <dbl> <int> <int>           <dbl>       <dbl>   <dbl> <dbl>
+ 1    36.2    -114.  1995     1            273.        272.     835   304
+ 2    33.7    -114.  1995     1            280.        282.     940   304
+ 3    31.2    -114.  1995     1            285.        285.     960   298
+ 4    28.7    -114.  1995     1            289.        291.     990   276
+ 5    26.2    -114.  1995     1            292.        293.    1000   274
+ 6    23.7    -114.  1995     1            294.        294.    1000   264
+ 7    21.2    -114.  1995     1            295         295.    1000   258
+ 8    18.7    -114.  1995     1            298.        297.    1000   252
+ 9    16.2    -114.  1995     1            300.        298.    1000   250
+10    13.7    -114.  1995     1            300.        299.    1000   250
+# ... with 41,462 more rows, and 3 more variables: nube_baja <dbl>,
+#   nube_media <dbl>, nube_alta <dbl>
+
+> as_tibble(datos::premios_dirigentes)
+# A tibble: 179 x 6
+   id_dirigente nombre_premio          anio id_liga empate notas
+   <chr>        <chr>                 <int> <fct>   <chr>  <lgl>
+ 1 larusto01    Capitán BBWAA del año  1983 AL      <NA>   NA   
+ 2 lasorto01    Capitán BBWAA del año  1983 NL      <NA>   NA   
+ 3 andersp01    Capitán BBWAA del año  1984 AL      <NA>   NA   
+ 4 freyji99     Capitán BBWAA del año  1984 NL      <NA>   NA   
+ 5 coxbo01      Capitán BBWAA del año  1985 AL      <NA>   NA   
+ 6 herzowh01    Capitán BBWAA del año  1985 NL      <NA>   NA   
+ 7 mcnamjo99    Capitán BBWAA del año  1986 AL      <NA>   NA   
+ 8 lanieha01    Capitán BBWAA del año  1986 NL      <NA>   NA   
+ 9 andersp01    Capitán BBWAA del año  1987 AL      <NA>   NA   
+10 rodgebu01    Capitán BBWAA del año  1987 NL      <NA>   NA   
+# ... with 169 more rows
+
+> as_tibble(datos::nombres)
+# A tibble: 1,924,665 x 5
+    anio sexo  nombre        n   prop
+   <dbl> <chr> <chr>     <int>  <dbl>
+ 1  1880 F     Mary       7065 0.0724
+ 2  1880 F     Anna       2604 0.0267
+ 3  1880 F     Emma       2003 0.0205
+ 4  1880 F     Elizabeth  1939 0.0199
+ 5  1880 F     Minnie     1746 0.0179
+ 6  1880 F     Margaret   1578 0.0162
+ 7  1880 F     Ida        1472 0.0151
+ 8  1880 F     Alice      1414 0.0145
+ 9  1880 F     Bertha     1320 0.0135
+10  1880 F     Sarah      1288 0.0132
+# ... with 1,924,655 more rows
+
+> as_tibble(datos::bateadores)
+# A tibble: 107,429 x 22
+   id_jugador id_anio orden_equipos id_equipo id_liga juegos al_bate carreras
+   <chr>        <int>         <int> <fct>     <fct>    <int>   <int>    <int>
+ 1 abercda01     1871             1 TRO       NA           1       4        0
+ 2 addybo01      1871             1 RC1       NA          25     118       30
+ 3 allisar01     1871             1 CL1       NA          29     137       28
+ 4 allisdo01     1871             1 WS3       NA          27     133       28
+ 5 ansonca01     1871             1 RC1       NA          25     120       29
+ 6 armstbo01     1871             1 FW1       NA          12      49        9
+ 7 barkeal01     1871             1 RC1       NA           1       4        0
+ 8 barnero01     1871             1 BS1       NA          31     157       66
+ 9 barrebi01     1871             1 FW1       NA           1       5        1
+10 barrofr01     1871             1 BS1       NA          18      86       13
+# ... with 107,419 more rows, and 14 more variables: golpes <int>,
+#   dobles <int>, triples <int>, cuadrangulares <int>,
+#   carreras_empujadas <int>, bases_robadas <int>, atrapado_robando <int>,
+#   base_bolas <int>, ponches <int>, base_intencional <int>, golpeado <int>,
+#   toque_sacrificio <int>, elavado_sacrificio <int>, doble_matanza <int>
+
+> as_tibble(datos::comunes)
+# A tibble: 347 x 4
+   fabricante modelo           total_modelos total_modelos_anio
+   <chr>      <chr>                    <int>              <int>
+ 1 Acura      Integra                     42                 16
+ 2 Acura      Legend                      28                 10
+ 3 Acura      MDX 4WD                     12                 12
+ 4 Acura      NSX                         28                 14
+ 5 Acura      TSX                         27                 11
+ 6 Audi       A4                          49                 19
+ 7 Audi       A4 Avant quattro            49                 15
+ 8 Audi       A4 quattro                  66                 19
+ 9 Audi       A6                          20                 19
+10 Audi       A6 Avant quattro            12                 12
+# ... with 337 more rows
+
+> as_tibble(datos::diamantes)
+# A tibble: 53,940 x 10
+   precio quilate corte     color claridad profundidad tabla     x     y     z
+    <int>   <dbl> <ord>     <ord> <ord>          <dbl> <dbl> <dbl> <dbl> <dbl>
+ 1    326   0.23  Ideal     E     SI2             61.5    55  3.95  3.98  2.43
+ 2    326   0.21  Premium   E     SI1             59.8    61  3.89  3.84  2.31
+ 3    327   0.23  Bueno     E     VS1             56.9    65  4.05  4.07  2.31
+ 4    334   0.290 Premium   I     VS2             62.4    58  4.2   4.23  2.63
+ 5    335   0.31  Bueno     J     SI2             63.3    58  4.34  4.35  2.75
+ 6    336   0.24  Muy bueno J     VVS2            62.8    57  3.94  3.96  2.48
+ 7    336   0.24  Muy bueno I     VVS1            62.3    57  3.95  3.98  2.47
+ 8    337   0.26  Muy bueno H     SI1             61.9    55  4.07  4.11  2.53
+ 9    337   0.22  Regular   E     VS2             65.1    61  3.87  3.78  2.49
+10    338   0.23  Muy bueno H     VS1             59.4    61  4     4.05  2.39
+# ... with 53,930 more rows
+
+> as_tibble(datos::fiel)
+# A tibble: 272 x 2
+   erupciones espera
+        <dbl>  <dbl>
+ 1       3.6      79
+ 2       1.8      54
+ 3       3.33     74
+ 4       2.28     62
+ 5       4.53     85
+ 6       2.88     55
+ 7       4.7      88
+ 8       3.6      85
+ 9       1.95     51
+10       4.35     85
+# ... with 262 more rows
+
+> as_tibble(datos::jardineros)
+# A tibble: 143,046 x 18
+   id_jugador id_anio orden_equipos id_equipo id_liga posicion juegos_jugados
+   <chr>        <int>         <int> <fct>     <fct>   <chr>             <int>
+ 1 abercda01     1871             1 TRO       NA      SS                    1
+ 2 addybo01      1871             1 RC1       NA      2B                   22
+ 3 addybo01      1871             1 RC1       NA      SS                    3
+ 4 allisar01     1871             1 CL1       NA      2B                    2
+ 5 allisar01     1871             1 CL1       NA      OF                   29
+ 6 allisdo01     1871             1 WS3       NA      C                    27
+ 7 ansonca01     1871             1 RC1       NA      1B                    1
+ 8 ansonca01     1871             1 RC1       NA      2B                    2
+ 9 ansonca01     1871             1 RC1       NA      3B                   20
+10 ansonca01     1871             1 RC1       NA      C                     5
+# ... with 143,036 more rows, and 11 more variables: juegos_iniciados <int>,
+#   inn_outs <int>, outs_realizados <int>, asistencias <int>, errores <int>,
+#   doble_matanzas <int>, bolas_pasadas <int>, lanzamientos_desviados <int>,
+#   bases_robadas <int>, atrapados_robando <int>, clasificacion_zona <int>
+
+> as_tibble(datos::vuelos)
+# A tibble: 336,776 x 19
+    anio   mes   dia horario_salida salida_programa~ atraso_salida
+   <int> <int> <int>          <int>            <int>         <dbl>
+ 1  2013     1     1            517              515             2
+ 2  2013     1     1            533              529             4
+ 3  2013     1     1            542              540             2
+ 4  2013     1     1            544              545            -1
+ 5  2013     1     1            554              600            -6
+ 6  2013     1     1            554              558            -4
+ 7  2013     1     1            555              600            -5
+ 8  2013     1     1            557              600            -3
+ 9  2013     1     1            557              600            -3
+10  2013     1     1            558              600            -2
+# ... with 336,766 more rows, and 13 more variables: horario_llegada <int>,
+#   llegada_programada <int>, atraso_llegada <dbl>, aerolinea <chr>,
+#   vuelo <int>, codigo_cola <chr>, origen <chr>, destino <chr>,
+#   tiempo_vuelo <dbl>, distancia <dbl>, hora <dbl>, minuto <dbl>,
+#   fecha_hora <dttm>
+
+> as_tibble(datos::paises)
+# A tibble: 1,704 x 6
+   pais       continente  anio esperanza_de_vida poblacion pib_per_capita
+   <fct>      <fct>      <int>             <dbl>     <int>          <dbl>
+ 1 Afganistán Asia        1952              28.8   8425333           779.
+ 2 Afganistán Asia        1957              30.3   9240934           821.
+ 3 Afganistán Asia        1962              32.0  10267083           853.
+ 4 Afganistán Asia        1967              34.0  11537966           836.
+ 5 Afganistán Asia        1972              36.1  13079460           740.
+ 6 Afganistán Asia        1977              38.4  14880372           786.
+ 7 Afganistán Asia        1982              39.9  12881816           978.
+ 8 Afganistán Asia        1987              40.8  13867957           852.
+ 9 Afganistán Asia        1992              41.7  16317921           649.
+10 Afganistán Asia        1997              41.8  22227415           635.
+# ... with 1,694 more rows
+
+> as_tibble(datos::encuesta)
+# A tibble: 21,483 x 9
+    anio estado_civil  edad raza  ingreso partido religion denominacion horas_tv
+   <int> <fct>        <int> <fct> <fct>   <fct>   <fct>    <fct>           <int>
+ 1  2000 Nunca se ha~    26 Blan~ 8000 -~ Ind, p~ Protest~ Bautistas d~       12
+ 2  2000 Divorciado      48 Blan~ 8000 -~ No fue~ Protest~ Bautista, n~       NA
+ 3  2000 Viudo           67 Blan~ No apl~ Indepe~ Protest~ No denomina~        2
+ 4  2000 Nunca se ha~    39 Blan~ No apl~ Ind, p~ Cristia~ No aplica           4
+ 5  2000 Divorciado      25 Blan~ No apl~ No fue~ Ninguna  No aplica           1
+ 6  2000 Casado          25 Blan~ 20000 ~ Fuerte~ Protest~ Bautistas d~       NA
+ 7  2000 Nunca se ha~    36 Blan~ 25000 ~ No fue~ Cristia~ No aplica           3
+ 8  2000 Divorciado      44 Blan~ 7000 -~ Ind, p~ Protest~ Sínodo lute~       NA
+ 9  2000 Casado          44 Blan~ 25000 ~ No fue~ Protest~ Otra                0
+10  2000 Casado          47 Blan~ 25000 ~ Fuerte~ Protest~ Bautistas d~        3
+# ... with 21,473 more rows
+
+> as_tibble(datos::flores)
+# A tibble: 150 x 5
+   Largo.Sepalo Ancho.Sepalo Largo.Petalo Ancho.Petalo Especies
+          <dbl>        <dbl>        <dbl>        <dbl> <fct>   
+ 1          5.1          3.5          1.4          0.2 setosa  
+ 2          4.9          3            1.4          0.2 setosa  
+ 3          4.7          3.2          1.3          0.2 setosa  
+ 4          4.6          3.1          1.5          0.2 setosa  
+ 5          5            3.6          1.4          0.2 setosa  
+ 6          5.4          3.9          1.7          0.4 setosa  
+ 7          4.6          3.4          1.4          0.3 setosa  
+ 8          5            3.4          1.5          0.2 setosa  
+ 9          4.4          2.9          1.4          0.2 setosa  
+10          4.9          3.1          1.5          0.1 setosa  
+# ... with 140 more rows
+
+> as_tibble(datos::dirigentes)
+# A tibble: 3,536 x 10
+   id_jugador  anio id_equipo id_liga orden_temporada juegos_dirigidos
+   <chr>      <int> <fct>     <fct>             <int>            <int>
+ 1 wrighha01   1871 BS1       NA                    1               31
+ 2 woodji01    1871 CH1       NA                    1               28
+ 3 paborch01   1871 CL1       NA                    1               29
+ 4 lennobi01   1871 FW1       NA                    1               14
+ 5 deaneha01   1871 FW1       NA                    2                5
+ 6 fergubo01   1871 NY2       NA                    1               33
+ 7 mcbridi01   1871 PH1       NA                    1               28
+ 8 hastisc01   1871 RC1       NA                    1               25
+ 9 pikeli01    1871 TRO       NA                    1                4
+10 cravebi01   1871 TRO       NA                    2               25
+# ... with 3,526 more rows, and 4 more variables: juegos_ganados <int>,
+#   juegos_perdidos <int>, posicion <int>, jugador_dirigente <fct>
+
+> as_tibble(datos::millas)
+# A tibble: 234 x 11
+   fabricante modelo cilindrada  anio cilindros transmision traccion ciudad
+   <chr>      <chr>       <dbl> <int>     <int> <chr>       <chr>     <int>
+ 1 audi       a4            1.8  1999         4 auto(l5)    d            18
+ 2 audi       a4            1.8  1999         4 manual(m5)  d            21
+ 3 audi       a4            2    2008         4 manual(m6)  d            20
+ 4 audi       a4            2    2008         4 auto(av)    d            21
+ 5 audi       a4            2.8  1999         6 auto(l5)    d            16
+ 6 audi       a4            2.8  1999         6 manual(m5)  d            18
+ 7 audi       a4            3.1  2008         6 auto(av)    d            18
+ 8 audi       a4 qu~        1.8  1999         4 manual(m5)  4            18
+ 9 audi       a4 qu~        1.8  1999         4 auto(l5)    4            16
+10 audi       a4 qu~        2    2008         4 manual(m6)  4            20
+# ... with 224 more rows, and 3 more variables: autopista <int>,
+#   combustible <chr>, clase <chr>
+
+> as_tibble(datos::mtautos)
+# A tibble: 32 x 11
+   millas cilindros cilindrada caballos   eje  peso velocidad forma transmision
+    <dbl>     <dbl>      <dbl>    <dbl> <dbl> <dbl>     <dbl> <dbl>       <dbl>
+ 1   21           6       160       110  3.9   2.62      16.5     0           1
+ 2   21           6       160       110  3.9   2.88      17.0     0           1
+ 3   22.8         4       108        93  3.85  2.32      18.6     1           1
+ 4   21.4         6       258       110  3.08  3.22      19.4     1           0
+ 5   18.7         8       360       175  3.15  3.44      17.0     0           0
+ 6   18.1         6       225       105  2.76  3.46      20.2     1           0
+ 7   14.3         8       360       245  3.21  3.57      15.8     0           0
+ 8   24.4         4       147.       62  3.69  3.19      20       1           0
+ 9   22.8         4       141.       95  3.92  3.15      22.9     1           0
+10   19.2         6       168.      123  3.92  3.44      18.3     1           0
+# ... with 22 more rows, and 2 more variables: cambios <dbl>,
+#   carburadores <dbl>
+
+> as_tibble(datos::personas)
+# A tibble: 19,878 x 26
+   id_jugador anio_nacimiento mes_nacimiento dia_nacimiento pais_nacimiento
+   <chr>                <int>          <int>          <int> <chr>          
+ 1 aardsda01             1981             12             27 USA            
+ 2 aaronha01             1934              2              5 USA            
+ 3 aaronto01             1939              8              5 USA            
+ 4 aasedo01              1954              9              8 USA            
+ 5 abadan01              1972              8             25 USA            
+ 6 abadfe01              1985             12             17 D.R.           
+ 7 abadijo01             1850             11              4 USA            
+ 8 abbated01             1877              4             15 USA            
+ 9 abbeybe01             1869             11             11 USA            
+10 abbeych01             1866             10             14 USA            
+# ... with 19,868 more rows, and 21 more variables: estado_nacimiento <chr>,
+#   ciudad_nacimiento <chr>, anio_fallecimiento <int>, mes_fallecimiento <int>,
+#   dia_fallecimiento <int>, pais_fallecimiento <chr>,
+#   estado_fallecimiento <chr>, ciudad_fallecimiento <chr>, nombre <chr>,
+#   apellido <chr>, nombre_completo <chr>, peso <int>, estatura <int>,
+#   bateador <fct>, lanzador <fct>, fecha_primer_juego <chr>,
+#   fecha_ultimo_juego <chr>, id_retrosheet <chr>, id_brw <chr>,
+#   fecha_fallecimiento <date>, fecha_nacimiento <date>
+
+> as_tibble(datos::lanzadores)
+# A tibble: 47,628 x 30
+   id_jugador id_anio orden_equipos id_equipo id_liga juegos_ganados
+   <chr>        <int>         <int> <fct>     <fct>            <int>
+ 1 bechtge01     1871             1 PH1       NA                   1
+ 2 brainas01     1871             1 WS3       NA                  12
+ 3 fergubo01     1871             1 NY2       NA                   0
+ 4 fishech01     1871             1 RC1       NA                   4
+ 5 fleetfr01     1871             1 NY2       NA                   0
+ 6 flowedi01     1871             1 TRO       NA                   0
+ 7 mackde01      1871             1 RC1       NA                   0
+ 8 mathebo01     1871             1 FW1       NA                   6
+ 9 mcbridi01     1871             1 PH1       NA                  18
+10 mcmuljo01     1871             1 TRO       NA                  12
+# ... with 47,618 more rows, and 24 more variables: juegos_perdidos <int>,
+#   juegos_jugados <int>, juegos_iniciados <int>, juegos_completados <int>,
+#   blanqueadas <int>, juegos_salvados <int>, IPouts <int>, hits <int>,
+#   carreras_ganadas <int>, cuadrangulares <int>, BB <int>, ponches <int>,
+#   promedio_bateo_rival <dbl>, promedio_carreras_ganadas <dbl>, IBB <int>,
+#   lanzamientos_desviados <int>, HBP <int>, BK <int>, BFP <int>,
+#   juegos_finalizados <int>, carreras <int>, sacrificios_golpeados <int>,
+#   vuelos_sacrificio <int>, doble_matanza <int>
+
+> as_tibble(datos::aviones)
+# A tibble: 3,322 x 9
+   codigo_cola  anio tipo  fabricante modelo motores asientos velocidad
+   <chr>       <int> <chr> <chr>      <chr>    <int>    <int>     <int>
+ 1 N10156       2004 Ala ~ EMBRAER    EMB-1~       2       55        NA
+ 2 N102UW       1998 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 3 N103US       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 4 N104UW       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 5 N10575       2002 Ala ~ EMBRAER    EMB-1~       2       55        NA
+ 6 N105UW       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 7 N107US       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 8 N108UW       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+ 9 N109UW       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+10 N110UW       1999 Ala ~ AIRBUS IN~ A320-~       2      182        NA
+# ... with 3,312 more rows, and 1 more variable: tipo_motor <chr>
+
+> as_tibble(datos::presidencial)
+# A tibble: 11 x 4
+   nombre     inicio     fin        partido    
+   <chr>      <date>     <date>     <chr>      
+ 1 Eisenhower 1953-01-20 1961-01-20 Republicano
+ 2 Kennedy    1961-01-20 1963-11-22 Demócrata  
+ 3 Johnson    1963-11-22 1969-01-20 Demócrata  
+ 4 Nixon      1969-01-20 1974-08-09 Republicano
+ 5 Ford       1974-08-09 1977-01-20 Republicano
+ 6 Carter     1977-01-20 1981-01-20 Demócrata  
+ 7 Reagan     1981-01-20 1989-01-20 Republicano
+ 8 Bush       1989-01-20 1993-01-20 Republicano
+ 9 Clinton    1993-01-20 2001-01-20 Demócrata  
+10 Bush       2001-01-20 2009-01-20 Republicano
+11 Obama      2009-01-20 2017-01-20 Demócrata  
+
+> as_tibble(datos::salarios)
+# A tibble: 26,428 x 5
+    anio id_equipo id_liga id_jugador salario
+   <int> <fct>     <fct>   <chr>        <int>
+ 1  1985 ATL       NL      barkele01   870000
+ 2  1985 ATL       NL      bedrost01   550000
+ 3  1985 ATL       NL      benedbr01   545000
+ 4  1985 ATL       NL      campri01    633333
+ 5  1985 ATL       NL      ceronri01   625000
+ 6  1985 ATL       NL      chambch01   800000
+ 7  1985 ATL       NL      dedmoje01   150000
+ 8  1985 ATL       NL      forstte01   483333
+ 9  1985 ATL       NL      garbege01   772000
+10  1985 ATL       NL      harpete01   250000
+# ... with 26,418 more rows
+
+> as_tibble(datos::tabla1)
+# A tibble: 6 x 4
+  pais        anio  casos  poblacion
+  <chr>      <int>  <int>      <int>
+1 Afganistán  1999    745   19987071
+2 Afganistán  2000   2666   20595360
+3 Brasil      1999  37737  172006362
+4 Brasil      2000  80488  174504898
+5 China       1999 212258 1272915272
+6 China       2000 213766 1280428583
+
+> as_tibble(datos::tabla2)
+# A tibble: 12 x 4
+   pais        anio tipo          cuenta
+   <chr>      <int> <chr>          <int>
+ 1 Afganistán  1999 casos            745
+ 2 Afganistán  1999 población   19987071
+ 3 Afganistán  2000 casos           2666
+ 4 Afganistán  2000 población   20595360
+ 5 Brasil      1999 casos          37737
+ 6 Brasil      1999 población  172006362
+ 7 Brasil      2000 casos          80488
+ 8 Brasil      2000 población  174504898
+ 9 China       1999 casos         212258
+10 China       1999 población 1272915272
+11 China       2000 casos         213766
+12 China       2000 población 1280428583
+
+> as_tibble(datos::tabla3)
+# A tibble: 6 x 3
+  pais        anio tasa             
+  <chr>      <int> <chr>            
+1 Afganistán  1999 745/19987071     
+2 Afganistán  2000 2666/20595360    
+3 Brasil      1999 37737/172006362  
+4 Brasil      2000 80488/174504898  
+5 China       1999 212258/1272915272
+6 China       2000 213766/1280428583
+
+> as_tibble(datos::tabla4a)
+# A tibble: 3 x 3
+  pais       `1999` `2000`
+  <chr>       <int>  <int>
+1 Afganistán    745   2666
+2 Brasil      37737  80488
+3 China      212258 213766
+
+> as_tibble(datos::tabla4b)
+# A tibble: 3 x 3
+  pais           `1999`     `2000`
+  <chr>           <int>      <int>
+1 Afganistán   19987071   20595360
+2 Brasil      172006362  174504898
+3 China      1272915272 1280428583
+
+> as_tibble(datos::tabla5)
+# A tibble: 6 x 4
+  pais       siglo anio  tasa             
+  <chr>      <chr> <chr> <chr>            
+1 Afganistán 19    99    745/19987071     
+2 Afganistán 20    00    2666/20595360    
+3 Brasil     19    99    37737/172006362  
+4 Brasil     20    00    80488/174504898  
+5 China      19    99    212258/1272915272
+6 China      20    00    213766/1280428583
+
+> as_tibble(datos::vehiculos)
+# A tibble: 33,442 x 12
+      id fabricante modelo  anio clase transmision traccion cilindros motor
+   <dbl> <chr>      <chr>  <dbl> <chr> <chr>       <chr>        <dbl> <dbl>
+ 1 13309 Acura      2.2CL~  1997 Auto~ Automática~ Delante~         4   2.2
+ 2 13310 Acura      2.2CL~  1997 Auto~ Manual 5-v~ Delante~         4   2.2
+ 3 13311 Acura      2.2CL~  1997 Auto~ Automática~ Delante~         6   3  
+ 4 14038 Acura      2.3CL~  1998 Auto~ Automática~ Delante~         4   2.3
+ 5 14039 Acura      2.3CL~  1998 Auto~ Manual 5-v~ Delante~         4   2.3
+ 6 14040 Acura      2.3CL~  1998 Auto~ Automática~ Delante~         6   3  
+ 7 14834 Acura      2.3CL~  1999 Auto~ Automática~ Delante~         4   2.3
+ 8 14835 Acura      2.3CL~  1999 Auto~ Manual 5-v~ Delante~         4   2.3
+ 9 14836 Acura      2.3CL~  1999 Auto~ Automática~ Delante~         6   3  
+10 11789 Acura      2.5TL   1995 Auto~ Automática~ Delante~         5   2.5
+# ... with 33,432 more rows, and 3 more variables: combustible <chr>,
+#   autopista <dbl>, ciudad <dbl>
+
+> as_tibble(datos::clima)
+# A tibble: 26,115 x 15
+   origen  anio   mes   dia  hora temperatura punto_rocio humedad
+   <chr>  <int> <int> <int> <int>       <dbl>       <dbl>   <dbl>
+ 1 EWR     2013     1     1     1        39.0        26.1    59.4
+ 2 EWR     2013     1     1     2        39.0        27.0    61.6
+ 3 EWR     2013     1     1     3        39.0        28.0    64.4
+ 4 EWR     2013     1     1     4        39.9        28.0    62.2
+ 5 EWR     2013     1     1     5        39.0        28.0    64.4
+ 6 EWR     2013     1     1     6        37.9        28.0    67.2
+ 7 EWR     2013     1     1     7        39.0        28.0    64.4
+ 8 EWR     2013     1     1     8        39.9        28.0    62.2
+ 9 EWR     2013     1     1     9        39.9        28.0    62.2
+10 EWR     2013     1     1    10        41          28.0    59.6
+# ... with 26,105 more rows, and 7 more variables: direccion_viento <dbl>,
+#   velocidad_viento <dbl>, velocidad_rafaga <dbl>, precipitacion <dbl>,
+#   presion <dbl>, visibilidad <dbl>, fecha_hora <dttm>
+
+> as_tibble(datos::oms)
+# A tibble: 7,240 x 60
+   pais  iso2  iso3   anio nuevos_fpp_h014 nuevos_fpp_h1524 nuevos_fpp_h2534
+   <chr> <chr> <chr> <int>           <int>            <int>            <int>
+ 1 Afga~ AF    AFG    1980              NA               NA               NA
+ 2 Afga~ AF    AFG    1981              NA               NA               NA
+ 3 Afga~ AF    AFG    1982              NA               NA               NA
+ 4 Afga~ AF    AFG    1983              NA               NA               NA
+ 5 Afga~ AF    AFG    1984              NA               NA               NA
+ 6 Afga~ AF    AFG    1985              NA               NA               NA
+ 7 Afga~ AF    AFG    1986              NA               NA               NA
+ 8 Afga~ AF    AFG    1987              NA               NA               NA
+ 9 Afga~ AF    AFG    1988              NA               NA               NA
+10 Afga~ AF    AFG    1989              NA               NA               NA
+# ... with 7,230 more rows, and 53 more variables: nuevos_fpp_h3534 <int>,
+#   nuevos_fpp_h4554 <int>, nuevos_fpp_h5564 <int>, nuevos_fpp_h65 <int>,
+#   nuevos_fpp_m014 <int>, nuevos_fpp_m1524 <int>, nuevos_fpp_m2534 <int>,
+#   nuevos_fpp_m3534 <int>, nuevos_fpp_m4554 <int>, nuevos_fpp_m5564 <int>,
+#   nuevos_fpp_m65 <int>, nuevos_fpn_h014 <int>, nuevos_fpn_h1524 <int>,
+#   nuevos_fpn_h2534 <int>, nuevos_fpn_h3534 <int>, nuevos_fpn_h4554 <int>,
+#   nuevos_fpn_h5564 <int>, nuevos_fpn_h65 <int>, nuevos_fpn_m014 <int>,
+#   nuevos_fpn_m1524 <int>, nuevos_fpn_m2534 <int>, nuevos_fpn_m3534 <int>,
+#   nuevos_fpn_m4554 <int>, nuevos_fpn_m5564 <int>, nuevos_fpn_m65 <int>,
+#   nuevos_ep_h014 <int>, nuevos_ep_h1524 <int>, nuevos_ep_h2534 <int>,
+#   nuevos_ep_h3534 <int>, nuevos_ep_h4554 <int>, nuevos_ep_h5564 <int>,
+#   nuevos_ep_h65 <int>, nuevos_ep_m014 <int>, nuevos_ep_m1524 <int>,
+#   nuevos_ep_m2534 <int>, nuevos_ep_m3534 <int>, nuevos_ep_m4554 <int>,
+#   nuevos_ep_m5564 <int>, nuevos_ep_m65 <int>, nuevosrecaida_h014 <int>,
+#   nuevosrecaida_h1524 <int>, nuevosrecaida_h2534 <int>,
+#   nuevosrecaida_h3534 <int>, nuevosrecaida_h4554 <int>,
+#   nuevosrecaida_h5564 <int>, nuevosrecaida_h65 <int>,
+#   nuevosrecaida_m014 <int>, nuevosrecaida_m1524 <int>,
+#   nuevosrecaida_m2534 <int>, nuevosrecaida_m3534 <int>,
+#   nuevosrecaida_m4554 <int>, nuevosrecaida_m5564 <int>,
+#   nuevosrecaida_m65 <int>
+
