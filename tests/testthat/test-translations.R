@@ -1,7 +1,7 @@
 context("translation")
 
 get_all_specs <- function(base_path = "specs", package = "datos") {
-  pkg_path <- system.file(package = package, lib.loc = .libPaths())
+  pkg_path <- system.file(package = package)
   specs <- list.files(file.path(pkg_path, base_path))
   spec_paths <- file.path(file.path(pkg_path, base_path, specs))
   ry <- lapply(spec_paths, yaml::read_yaml)
