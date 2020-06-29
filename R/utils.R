@@ -14,6 +14,37 @@ fix_reference <- function(ref_path = "docs/reference/", is_test = FALSE) {
   writeLines(index, index_file)
 }
 
+data_script <- function(script_path = "data/data.R",
+                        script_target = "inst/scripts",
+                        spec_path = "inst/specs",
+                        is_test = FALSE) {
+  specs <- list.files(spec_path)
+  asp <- lapply(file.path(spec_path, specs), yaml::read_yaml)
+  anm <- as.character(lapply(asp, function(x) x$df$name))
+  code <- lapply(
+    seq_along(anm),
+    function(x)
+      paste0(
+        "delayedAssign('", anm[x], "',
+        eval(parse(file.path(system.file('scripts','",
+        anm[x], ".txt', package = 'datos')))))"
+        ))
+  code <- as.character(code)
+  if (file.exists(script_path)) unlink(script_path, force = TRUE)
+  writeLines(code, script_path)
+  unlink(script_target, recursive = TRUE)
+  dir.create(script_target)
+  script <- ""
+  script <- if(! is_test)readLines("R/translate.R")
+  lapply(
+    seq_along(anm),
+    function(x)
+      writeLines(
+        c(script, paste0("translate('", specs[x], "')"), ""),
+        con = file.path(script_target, paste0(anm[x], ".txt"))
+      ))
+}
+
 #' Avoid R CMD check warning
 #' @keywords internal
 "translate"
