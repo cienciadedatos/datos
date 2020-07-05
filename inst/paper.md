@@ -33,9 +33,8 @@ citation_author: Quiroga et. al.
 date: 30 June 2020
 year: 2020
 bibliography: references.bib
-output: rticles::joss_article
 csl: apa.csl
-journal: JOSS
+output: rticles::jose_article
 ---
 
 # Summary
@@ -102,22 +101,6 @@ help:
 # Conclusion
 
 We the people of the R Community, in order to form a stronger and more integrated community, ease learning, promote diversity, and secure the development and usage of the R Programming language, do need to acknowledge that a large language gap exists and it prevents a large number of users from accesing the existing good quality materials created by and for ourselves. The solution to close the gap resides in the R Community itself, not in software. Our software can be used to start translating well-known R datasets and R4DS itself into other languages without reinventing the wheel. What we did is not merely translating a book and creating a package. We created the human and technical infrastrucure to shorten the language gap. Our process, which resulted in brand new errors, which leaded us to find ways to make our community stronger.
-
-# Resumen
-  
-'R for Data Science'  es un libro práctico utilizado ...
-
-# Diversidad, equidad e inclusión
-
-'R for Data Science (R4DS)' y el 'R Cookbook` [@rcookbook] ambos ....
-
-# Implementación
-
-El paquete `datos ::` utiliza las especificaciones de YAML para automáticamente... 
-
-# Conclusión
-
-Nosotros, la gente de la Comunidad R, para formar un grupo más fuerte y más
 
 # Acknowlegments 
 

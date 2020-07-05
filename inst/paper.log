@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.6.18)  5 JUL 2020 15:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.6.18)  5 JUL 2020 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,12 +1462,12 @@ Package hyperref Warning: Suppressing link with empty target on input line 263.
 
 
 File: /home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates
-/joss_article/resources/JOSS-logo.png Graphic file (type bmp)
-</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/joss
-_article/resources/JOSS-logo.png>
+/jose_article/resources/JOSE-logo.png Graphic file (type bmp)
+</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/jose
+_article/resources/JOSE-logo.png>
 
 Package Fancyhdr Warning: \headheight is too small (62.59596pt): 
- Make it at least 63.55022pt.
+ Make it at least 64.31554pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1479,41 +1479,41 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 324.
 File: /home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates
-/joss_article/resources/JOSS-logo.png Graphic file (type bmp)
-</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/joss
-_article/resources/JOSS-logo.png>
+/jose_article/resources/JOSE-logo.png Graphic file (type bmp)
+</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/jose
+_article/resources/JOSE-logo.png>
 
 Package Fancyhdr Warning: \headheight is too small (62.59596pt): 
- Make it at least 63.55022pt.
+ Make it at least 64.31554pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [2]
 File: /home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates
-/joss_article/resources/JOSS-logo.png Graphic file (type bmp)
-</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/joss
-_article/resources/JOSS-logo.png>
+/jose_article/resources/JOSE-logo.png Graphic file (type bmp)
+</home/pacha/R/x86_64-pc-linux-gnu-library/3.6/rticles/rmarkdown/templates/jose
+_article/resources/JOSE-logo.png>
 
 Package Fancyhdr Warning: \headheight is too small (62.59596pt): 
- Make it at least 63.55022pt.
+ Make it at least 64.31554pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 416.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 416.
 (./paper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 416.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 416.
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41498 strings out of 493007
- 811768 string characters out of 6136719
- 1279255 words of memory out of 5000000
- 44962 multiletter control sequences out of 15000+600000
+ 41494 strings out of 493007
+ 811690 string characters out of 6136719
+ 1279257 words of memory out of 5000000
+ 44958 multiletter control sequences out of 15000+600000
  537128 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  55i,12n,73p,10446b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
