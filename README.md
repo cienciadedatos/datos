@@ -37,39 +37,40 @@ remotes::install_github("cienciadedatos/datos")
 
 Las traducciones disponibles dentro de `datos` son las siguientes:
 
-| Nombre              | Titulo                                                                                   | Paquete      | Dataset        |
-| :------------------ | :--------------------------------------------------------------------------------------- | :----------- | :------------- |
-| nombres             | Nombres de bebés                                                                         | babynames    | babynames      |
-| fiel                | Datos del géiser Viejo Fiel (Old Faithful)                                               | datasets     | faithful       |
-| flores              | Datos sobre la flor Iris de Edgar Anderson                                               | datasets     | iris           |
-| mtautos             | Pruebas de ruta de autómóviles de Motor Trend                                            | datasets     | mtcars         |
-| encuesta            | Muestra de variables categóricas de una encuesta social                                  | forcats      | gss\_cat       |
-| comunes             | Modelos comunes de vehículos                                                             | fueleconomy  | common         |
-| vehiculos           | Datos de economía de combustible                                                         | fueleconomy  | vehicles       |
-| paises              | Datos de Gapminder                                                                       | gapminder    | gapminder      |
-| diamantes           | Precio de 50.000 diamantes                                                               | ggplot2      | diamonds       |
-| millas              | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles | ggplot2      | mpg            |
-| presidencial        | Periodos de 11 presidentes, desde Eisenhower a Obama                                     | ggplot2      | presidential   |
-| premios\_dirigentes | Tabla de premios de los dirigentes                                                       | Lahman       | AwardsManagers |
-| bateadores          | Tabla de estadísticas de bateo                                                           | Lahman       | Batting        |
-| jardineros          | Tabla de estadísticas de jardineros                                                      | Lahman       | Fielding       |
-| dirigentes          | Tabla de dirigentes                                                                      | Lahman       | Managers       |
-| personas            | Tabla de personas                                                                        | Lahman       | People         |
-| lanzadores          | Tabla de estadísticas de lanzadores                                                      | Lahman       | Pitching       |
-| salarios            | Tabla de salarios                                                                        | Lahman       | Salaries       |
-| atmosfera           | Datos atmosféricos                                                                       | nasaweather  | atmos          |
-| aerolineas          | Nombres de aerolíneas                                                                    | nycflights13 | airlines       |
-| aeropuertos         | Datos de aeropuertos                                                                     | nycflights13 | airports       |
-| vuelos              | Datos de vuelos                                                                          | nycflights13 | flights        |
-| aviones             | Datos de aviones                                                                         | nycflights13 | planes         |
-| clima               | Datos de clima                                                                           | nycflights13 | weather        |
-| tabla1              | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)         | tidyr        | table1         |
-| tabla2              | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)          | tidyr        | table2         |
-| tabla3              | Registros de tuberculosis de la Organización Mundial de la Salud (3ra variante)          | tidyr        | table3         |
-| tabla4a             | Registros de tuberculosis de la Organización Mundial de la Salud (variante 4a)           | tidyr        | table4a        |
-| tabla4b             | Registros de tuberculosis de la Organización Mundial de la Salud (variante 4b)           | tidyr        | table4b        |
-| tabla5              | Registros de tuberculosis de la Organización Mundial de la Salud (5ta variante)          | tidyr        | table5         |
-| oms                 | Datos de tuberculosis de la Organización Mundial de la Salud                             | tidyr        | who            |
+| Nombre              | Titulo                                                                                                 | Paquete        | Dataset        |
+| :------------------ | :----------------------------------------------------------------------------------------------------- | :------------- | :------------- |
+| nombres             | Nombres de bebés                                                                                       | babynames      | babynames      |
+| fiel                | Datos del géiser Viejo Fiel (Old Faithful)                                                             | datasets       | faithful       |
+| flores              | Datos sobre la flor Iris de Edgar Anderson                                                             | datasets       | iris           |
+| mtautos             | Pruebas de ruta de autómóviles de Motor Trend                                                          | datasets       | mtcars         |
+| encuesta            | Muestra de variables categóricas de una encuesta social                                                | forcats        | gss\_cat       |
+| comunes             | Modelos comunes de vehículos                                                                           | fueleconomy    | common         |
+| vehiculos           | Datos de economía de combustible                                                                       | fueleconomy    | vehicles       |
+| paises              | Datos de Gapminder                                                                                     | gapminder      | gapminder      |
+| diamantes           | Precio de 50.000 diamantes                                                                             | ggplot2        | diamonds       |
+| millas              | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles               | ggplot2        | mpg            |
+| presidencial        | Periodos de 11 presidentes, desde Eisenhower a Obama                                                   | ggplot2        | presidential   |
+| premios\_dirigentes | Tabla de premios de los dirigentes                                                                     | Lahman         | AwardsManagers |
+| bateadores          | Tabla de estadísticas de bateo                                                                         | Lahman         | Batting        |
+| jardineros          | Tabla de estadísticas de jardineros                                                                    | Lahman         | Fielding       |
+| dirigentes          | Tabla de dirigentes                                                                                    | Lahman         | Managers       |
+| personas            | Tabla de personas                                                                                      | Lahman         | People         |
+| lanzadores          | Tabla de estadísticas de lanzadores                                                                    | Lahman         | Pitching       |
+| salarios            | Tabla de salarios                                                                                      | Lahman         | Salaries       |
+| atmosfera           | Datos atmosféricos                                                                                     | nasaweather    | atmos          |
+| aerolineas          | Nombres de aerolíneas                                                                                  | nycflights13   | airlines       |
+| aeropuertos         | Datos de aeropuertos                                                                                   | nycflights13   | airports       |
+| vuelos              | Datos de vuelos                                                                                        | nycflights13   | flights        |
+| aviones             | Datos de aviones                                                                                       | nycflights13   | planes         |
+| clima               | Datos de clima                                                                                         | nycflights13   | weather        |
+| pinguinos           | Medidas de tamaño de pingüinos adultos en busca de comida cerca de la estación Palmer en la Antártica. | palmerpenguins | penguins       |
+| tabla1              | Registros de tuberculosis de la Organización Mundial de la Salud (1era variante)                       | tidyr          | table1         |
+| tabla2              | Registros de tuberculosis de la Organización Mundial de la Salud (2da variante)                        | tidyr          | table2         |
+| tabla3              | Registros de tuberculosis de la Organización Mundial de la Salud (3ra variante)                        | tidyr          | table3         |
+| tabla4a             | Registros de tuberculosis de la Organización Mundial de la Salud (variante 4a)                         | tidyr          | table4a        |
+| tabla4b             | Registros de tuberculosis de la Organización Mundial de la Salud (variante 4b)                         | tidyr          | table4b        |
+| tabla5              | Registros de tuberculosis de la Organización Mundial de la Salud (5ta variante)                        | tidyr          | table5         |
+| oms                 | Datos de tuberculosis de la Organización Mundial de la Salud                                           | tidyr          | who            |
 
 Los datos para practicar la manipulación de cadenas (*strings*) son
 `oraciones`, `palabras` y `frutas`.
