@@ -1,0 +1,67 @@
+translate <- function(spec_file) {
+  pkg_path <- system.file("specs", package = "datos")
+  spec <- yaml::read_yaml(file.path(pkg_path, spec_file))
+  df <- suppressWarnings(eval(parse(text = spec$df$source)))
+  class_df <- class(df)
+  type_df <- NULL
+  if ("function" %in% class_df) {
+    return()
+  }
+  if ("data.frame" %in% class_df) type_df <- "data.frame"
+  if ("tbl_df" %in% class_df) type_df <- "tibble"
+  if ("grouped_df" %in% class_df) type_df <- "grouped_df"
+  if (is.null(type_df)) {
+    return()
+  }
+  if (type_df == "grouped_df") grps <- suppressWarnings(dplyr::group_vars(df))
+  if (type_df == "data.frame") row_names <- rownames(df)
+  if (type_df != "tibble") df <- dplyr::as_tibble(df)
+  vars <- spec$variables
+  var_names <- names(vars)
+  var_names[var_names == "FALSE"] <- "n"
+  var_names[var_names == "TRUE"] <- "y"
+  vars <- vars[var_names != "ROWNAMES"]
+  var_names <- var_names[var_names != "ROWNAMES"]
+  new_names <- as.character(lapply(vars, function(x) x$trans))
+  new_names[new_names == "FALSE"] <- "n"
+  new_names[new_names == "TRUE"] <- "y"
+  new_names <- new_names[new_names != "ROWNAMES"]
+  dfl <- lapply(
+    seq_along(vars),
+    function(x) {
+      cl <- df[, var_names[x]][[1]]
+      from <- names(vars[[x]]$values)
+      if (!is.null(from)) {
+        to <- as.character(vars[[x]]$values[from])
+        if ("factor" %in% class(cl)) {
+          lv <- levels(cl)
+          for (i in seq_along(from)) {
+            lv[lv == from[i]] <- to[i]
+          }
+          levels(cl) <- lv
+        } else {
+          for (i in seq_along(from)) cl[cl == from[i]] <- to[i]
+        }
+      }
+      cl
+    }
+  )
+  dfl <- setNames(dfl, new_names)
+  if (type_df == "tibble") dfl <- dplyr::as_tibble(dfl)
+  if (type_df == "grouped_df") {
+    grps_t <- as.character(lapply(grps, function(x) new_names[var_names == x]))
+    dfl <- dplyr::as_tibble(dfl)
+    dfl <- dplyr::group_by(dfl, !!!rlang::parse_exprs(grps_t))
+  }
+  if (type_df == "data.frame") {
+    if (!is.null(row_names)) {
+      dfl <- as.data.frame(dfl)
+      rownames(dfl) <- row_names
+    } else {
+      dfl <- as.data.frame(dfl)
+    }
+  }
+  dfl
+}
+translate('penguins.yml')
+

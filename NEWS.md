@@ -1,5 +1,7 @@
 # datos (development version)
 
+* New dataset: translation of `palmerpenguins::penguins`
+
 # datos 0.3.0
 
 ## Major changes

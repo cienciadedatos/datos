@@ -51,6 +51,7 @@ Imports:
     Lahman,
     nasaweather,
     nycflights13,
+    palmerpenguins,
     rlang,
     tibble,
     tidyr,
@@ -62,4 +63,4 @@ ByteCompile: true
 Encoding: UTF-8
 Language: es
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
