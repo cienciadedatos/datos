@@ -1,6 +1,7 @@
 # datos (development version)
 
 * New dataset: translation of `palmerpenguins::penguins`
+* Fix variable name: `oms$nuevos_fpp_h3534` -> `oms$nuevos_fpp_h3544`
 
 # datos 0.3.0
 
