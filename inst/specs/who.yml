@@ -240,7 +240,7 @@ variables:
     trans: nuevos_fpp_h2534
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), hombres (h) de 25 a 34 a\u00f1os (2534)"
   new_sp_m3544:
-    trans: nuevos_fpp_h3534
+    trans: nuevos_fpp_h3544
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), hombres (h) de 35 a 44 a\u00f1os (3544)"
   new_sp_m4554:
     trans: nuevos_fpp_h4554
@@ -261,7 +261,7 @@ variables:
     trans: nuevos_fpp_m2534
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), mujeres (m) de 25 a 34 a\u00f1os (2534)"
   new_sp_f3544:
-    trans: nuevos_fpp_m3534
+    trans: nuevos_fpp_m3544
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar positivo (fpp), mujeres (m) de 35 a 44 a\u00f1os (3544)"
   new_sp_f4554:
     trans: nuevos_fpp_m4554
@@ -282,7 +282,7 @@ variables:
     trans: nuevos_fpn_h2534
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar negativo (fpn), hombres (h) de 25 a 34 a\u00f1os (2534)"
   new_sn_m3544:
-    trans: nuevos_fpn_h3534
+    trans: nuevos_fpn_h3544
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar negativo (fpn), hombres (h) de 35 a 44 a\u00f1os (3544)"
   new_sn_m4554:
     trans: nuevos_fpn_h4554
@@ -303,7 +303,7 @@ variables:
     trans: nuevos_fpn_m2534
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar negativo (fpn), mujeres (m) de 25 a 34 a\u00f1os (2534)"
   new_sn_f3544:
-    trans: nuevos_fpn_m3534
+    trans: nuevos_fpn_m3544
     desc: "casos nuevos, diagn\u00f3stico frotis pulmonar negativo (fpn), mujeres (m) de 35 a 44 a\u00f1os (3544)"
   new_sn_f4554:
     trans: nuevos_fpn_m4554
@@ -324,7 +324,7 @@ variables:
     trans: nuevos_ep_h2534
     desc: "casos nuevos, diagn\u00f3stico extrapulmonar (ep), hombres (h) de 25 a 34 a\u00f1os (2534)"
   new_ep_m3544:
-    trans: nuevos_ep_h3534
+    trans: nuevos_ep_h3544
     desc: "casos nuevos, diagn\u00f3stico extrapulmonar (ep), hombres (h) de 35 a 44 a\u00f1os (3544)"
   new_ep_m4554:
     trans: nuevos_ep_h4554
@@ -345,7 +345,7 @@ variables:
     trans: nuevos_ep_m2534
     desc: "casos nuevos, diagn\u00f3stico extrapulmonar (ep), mujeres (m) de 25 a 34 a\u00f1os (2534)"
   new_ep_f3544:
-    trans: nuevos_ep_m3534
+    trans: nuevos_ep_m3544
     desc: "casos nuevos, diagn\u00f3stico extrapulmonar (ep), mujeres (m) de 35 a 44 a\u00f1os (3544)"
   new_ep_f4554:
     trans: nuevos_ep_m4554
@@ -366,7 +366,7 @@ variables:
     trans: nuevosrecaida_h2534
     desc: "nuevas reca\u00EDdas, hombres (h) de 25 a 34 a\u00f1os (2534)"
   newrel_m3544:
-    trans: nuevosrecaida_h3534
+    trans: nuevosrecaida_h3544
     desc: "nuevas reca\u00EDdas, hombres (h) de 35 a 44 a\u00f1os (3544)"
   newrel_m4554:
     trans: nuevosrecaida_h4554
@@ -387,7 +387,7 @@ variables:
     trans: nuevosrecaida_m2534
     desc: "nuevas reca\u00EDdas, mujeres (m) de 25 a 34 a\u00f1os (2534)"
   newrel_f3544:
-    trans: nuevosrecaida_m3534
+    trans: nuevosrecaida_m3544
     desc: "nuevas reca\u00EDdas, mujeres (m) de 35 a 44 a\u00f1os (3544)"
   newrel_f4554:
     trans: nuevosrecaida_m4554
