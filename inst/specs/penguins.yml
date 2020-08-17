@@ -37,7 +37,7 @@ help:
   name: pinguinos
   alias: pinguinos
   title: "Medidas de tama\u00f1o de ping\u00fcinos adultos en busca de comida cerca de la estaci\u00f3n Palmer en la Ant\u00e1rtica."
-  description: "Incluye medidas para especie de ping\u00fcino, isla dentro del Archipi\u00e9lago de Palmer, tama\u00f1o (largo de aleta, masa corporal, dimensiones de pico) y sexo."
+  description: "Incluye medidas para: especie de ping\u00fcino, isla dentro del Archipi\u00e9lago de Palmer, tama\u00f1o (largo de aleta, masa corporal, dimensiones de pico) y sexo."
   usage: pinguinos
   format: Un tibble con 344 filas y 8 variables
   source: " *** Ping\u00fcinos Adelia: Palmer Station Antarctica LTER and K. Gorman. 2020.
