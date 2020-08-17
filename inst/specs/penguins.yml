@@ -16,8 +16,8 @@ variables:
     trans: largo_pico_mm
     desc: "un n\u00famero que indica el largo del pico (mil\u00edmetros)"
   bill_depth_mm:
-    trans: ancho_pico_mm
-    desc: "un n\u00famero que indica el ancho del pico (mil\u00edmetros)"
+    trans: alto_pico_mm
+    desc: "un n\u00famero que indica el alto del pico (mil\u00edmetros)"
   flipper_length_mm:
     trans: largo_aleta_mm
     desc: "un entero que indica el largo de la aleta (mil\u00edmetros)"
@@ -40,14 +40,14 @@ help:
   description: "Incluye medidas para especie de ping\u00fcino, isla dentro del Archipi\u00e9lago de Palmer, tama\u00f1o (largo de aleta, masa corporal, dimensiones de pico) y sexo."
   usage: pinguinos
   format: Un tibble con 344 filas y 8 variables
-  source: "Ping\u00fcinos Adelia: Palmer Station Antarctica LTER and K. Gorman. 2020.
+  source: " *** Ping\u00fcinos Adelia: Palmer Station Antarctica LTER and K. Gorman. 2020.
   Structural size measurements and isotopic signatures of foraging among adult male and female Ad\u00e9lie penguins (Pygoscelis adeliae) nesting along the Palmer Archipelago
   near Palmer Station, 2007-2009 ver 5. Environmental Data Initiative https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f.
-  Ping\u00fcinos Pap\u00faa: Palmer Station Antarctica LTER and K. Gorman. 2020. Structural size measurements and isotopic signatures of foraging among adult male and
+  *** Ping\u00fcinos Pap\u00faa: Palmer Station Antarctica LTER and K. Gorman. 2020. Structural size measurements and isotopic signatures of foraging among adult male and
   female Gentoo penguin (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009 ver 5. Environmental Data Initiative
   https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689.
-  Ping\u00fc\u00ednos Barbijo: Palmer Station Antarctica LTER and K. Gorman. 2020. Structural size measurements and isotopic signatures of foraging among adult male
+  *** Ping\u00fc\u00ednos Barbijo: Palmer Station Antarctica LTER and K. Gorman. 2020. Structural size measurements and isotopic signatures of foraging among adult male
   and female Chinstrap penguin (Pygoscelis antarcticus) nesting along the Palmer Archipelago near Palmer Station, 2007-2009 ver 6. Environmental Data Initiative
   https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e.
-  Publicado originalmente en: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic
+  *** Publicado originalmente en: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic
   Penguins (Genus Pygoscelis). PLoS ONE 9(3): e90081. doi:10.1371/journal.pone.0090081"
