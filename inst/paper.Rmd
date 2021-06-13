@@ -1,5 +1,6 @@
 ---
-title: 'Datos: datasets translations to promote diversity, equity, and inclusion'
+title: 'Datos: datasets translations to facilitate the teaching of data science 
+ in different languages'
 tags:
   - R
   - learning
@@ -39,29 +40,57 @@ output: rticles::joss_article
 
 # Summary
   
-'R for Data Science' [@r4ds] is a hands-on book used by many to learn the fundamental of the R language. However, many Spanish speakers struggle
+'R for Data Science' [@r4ds] is a hands-on book used by many to learn the 
+fundamental of the R language. However, many Spanish speakers struggle
 to use this book as a resources because of the English language barrier.
 To address this gap in accessibility, Quiroga et al translated
-the book to Spanish ('R para Ciencia de Datos' [FIXME instert reference]). 
-Additionally, we created the R package `datos::`  to automatically translate datasets from English to Spanish using computational tools already existing in both @base and @tidyverse. Together, the book 'R Para Ciencia de Datos' and the `datos::` package allows
-Spanish speakers to spend their energy not in understanding English but in
-learning data science in R.
+the book to Spanish ('R para Ciencia de Datos' [@r4dses]). 
+Additionally, we created the R package `datos::` to automatically translate 
+datasets from English to Spanish using computational tools already existing in 
+both @base and @tidyverse. Together, the book 'R Para Ciencia de Datos' and the 
+`datos::` package allows Spanish speakers to spend their energy not in 
+understanding English but in learning data science in R.
 
 # Diversity, equity and inclusion
 
-'R for Data Science (R4DS)' [@r4ds] and the 'R Cookbook' [@rcookbook] both provide context and detailed examples for different R functions. However, understanding this context, written in English, incrases the cognitive load required to learn the R language. Both in Latin America and Spain, the lack of a key English proficiency in large groups of population, constitutes a large learning barrier that has its roots in economic inequality and access to education.  Some peple may ask 'why don't they learn English?'. That is a possibility for the few, but not for all. Just as an example, in the case of Chile, an elementary level English course costs around 500 USD/month while the minimum wage is 350 USD/month. Rather than placing the burden of learning English on the learner, we, the community leaders and educators can take action to reduce the language barries with social and technological solutions. 
+'R for Data Science (R4DS)' [@r4ds] and the 'R Cookbook' [@rcookbook] both 
+provide context and detailed examples for different R functions. However, 
+understanding this context, written in English, increases the cognitive load 
+required to learn the R language. Both in Latin America and Spain, the lack of 
+a key English proficiency in large groups of population, constitutes a large 
+learning barrier that has its roots in economic inequality and access to 
+education.  Some peple may ask 'why don't they learn English?'. That is a 
+possibility for the few, but not for all. Just as an example, in the case of 
+Chile, an elementary level English course costs around 500 USD/month while the 
+minimum wage is 350 USD/month. Rather than placing the burden of learning 
+English on the learner, we, the community leaders and educators can take action 
+to reduce the language barries with social and technological solutions. 
 
 # Implementation 
 
-The `datos::`package makes use of YAML specifications to automatically translate data sets originally available in other R packages. The translated data can be used together with R4DS book or independently as a source of practice data in Spanish. The YAML specification for each dataset that provides the dataset name, how you want to translate the variables, and the description for the documentation. This process not only gets the dataset translated, but also the help page for the dataset, which is very useful for people who are learning. `datos::` translates the datasets on the fly, thanks to `delayedAssign()` from base R, so the datasets are not in the package, as it just contains YAML files with translation specifications and functions that translate the datasets called from other packages.
+The `datos::`package makes use of YAML specifications to automatically 
+translate data sets originally available in other R packages. The translated 
+data can be used together with R4DS book or independently as a source of 
+practice data in Spanish. The YAML specification for each dataset that provides 
+the dataset name, how you want to translate the variables, and the description 
+for the documentation. This process not only gets the dataset translated, but 
+also the help page for the dataset, which is very useful for people who are 
+learning. `datos::` translates the datasets on the fly, thanks to 
+`delayedAssign()` from base R, so the datasets are not in the package, as it 
+just contains YAML files with translation specifications and functions that 
+translate the datasets called from other packages.
 
-As an example, let's inspect the first rows of the `airlines` table from `nycflights13::`. This dataset has two columns `carrier` and `name`, which provide a two-letter abbreviation and the full name of the airline.
+As an example, let's inspect the first rows of the `airlines` table from 
+`nycflights13::`. This dataset has two columns `carrier` and `name`, which 
+provide a two-letter abbreviation and the full name of the airline.
 
 ```{r}
 head(nycflights13::airlines)
 ```
 
-This is the specification for the `airlines` table from `nycflights13::`: Here, we provide both a translation (trans:) and description (desc:) in Spanish as well as additional helpful information.
+This is the specification for the `airlines` table from `nycflights13::`: Here, 
+we provide both a translation (trans:) and description (desc:) in Spanish as 
+well as additional helpful information.
 
 ```yaml
 df:
@@ -87,10 +116,23 @@ help:
 
 # Conclusion
 
-We the people of the R Community, in order to form a stronger and more integrated community, ease learning, promote diversity, and secure the development and usage of the R Programming Language, do need to acknowledge that a large language gap exists and it prevents a large number of users from accessing the existing good quality materials created by and for ourselves. The solution to close the gap resides in the R Community itself, not in software. Our software can be used to start translating well-known R datasets and R4DS itself into other languages without reinventing the wheel. What we did is not merely translating a book and creating a package. We created the human and technical infrastructure to shorten the language gap. Our process, which resulted in brand new errors, which leaded us to find ways to make our community stronger.
+Us, as members he people of the R Community, in order to form a stronger and 
+more integrated community, ease learning, foster access to education for 
+students in non-English speaking countries, and secure the development and 
+usage of the R Programming Language, do need to acknowledge that a large 
+language gap exists and it prevents a large number of users from accessing the 
+existing good quality materials created by and for ourselves. The 
+solution to close the gap resides in the R Community itself, not in software. 
+Our software can be used to start translating well-known R datasets and R4DS 
+itself into other languages without reinventing the wheel. What we did is not 
+merely translating a book and creating a package. We created the human and 
+technical infrastructure to shorten the language gap. Our process, which 
+resulted in brand new errors, which leaded us to find ways to make our 
+community stronger.
 
 # Acknowlegments 
 
-We are grateful to our colleagues in R-Ladies, R Users Groups, rOpenSci, and The Carpentries for their perspectives and support. 
+We are grateful to our colleagues in R-Ladies, R Users Groups, rOpenSci, and 
+The Carpentries for their perspectives and support. 
 
 # References
