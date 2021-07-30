@@ -64,7 +64,7 @@ possibility for the few, but not for all. Just as an example, in the case of
 Chile, an elementary level English course costs around 500 USD/month while the 
 minimum wage is 350 USD/month. Rather than placing the burden of learning 
 English on the learner, we, the community leaders and educators can take action 
-to reduce the language barries with social and technological solutions. 
+to reduce the language barriers with social and technological solutions. 
 
 # Implementation 
 
