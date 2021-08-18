@@ -52,8 +52,6 @@ help:
   name: clima
   alias: clima
   title: Datos de clima
-  description: "Metadatos del clima y los c\u00f3digos de cola de los aviones en el registro de aviaci\u00f3n de la FAA.
-    American Airways (AA) y Envoy Air (MQ) reportan n\u00famero de flota en lugar de n\u00famero de cola, por
-    lo que no es posible trazarlos."
+  description: "Datos meteorol\u00f3gicos horarios para LGA, JFK y EWR."
   usage: clima
   format: Un data.frame con 3,322 líneas y 9 variables
