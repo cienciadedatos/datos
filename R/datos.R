@@ -19,4 +19,5 @@ NULL
 #' @import gapminder
 #' @import nasaweather
 #' @import nycflights13
+#' @import palmerpenguins
 NULL

@@ -9,7 +9,7 @@ frutas <- c(
   "mora",
   "pl\u00e1tano",
   "anan\u00e1",
-  "pi\u00f1a",  # FIXME
+  "pi\u00f1a",
   "manzana",
   "pera",
   "sand\u00eda",
