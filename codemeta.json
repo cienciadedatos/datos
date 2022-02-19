@@ -1,13 +1,13 @@
 {
-  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "datos",
-  "description": "Provee una versión traducida de los siguientes\n    conjuntos de datos: 'airlines', 'airports', 'AwardsManagers',\n    'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy',\n    'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers',\n    'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 'planes',\n    'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b',\n    'table5', 'vehicles', 'weather', 'who'.  English: It provides a\n    Spanish translated version of the datasets listed above.",
+  "description": "Provee una versión traducida de los siguientes conjuntos de datos: 'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles', 'weather', 'who'. English: It provides a Spanish translated version of the datasets listed above.",
   "name": "datos: Traduce al Español Varios Conjuntos de Datos de Práctica",
   "codeRepository": "https://github.com/cienciadedatos/datos",
   "issueTracker": "https://github.com/cienciadedatos/datos/issues",
   "license": "https://spdx.org/licenses/CC0-1.0",
-  "version": "0.3.0.9000",
+  "version": "0.4.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -62,8 +62,6 @@
       "email": "daniela.vazquez@gmail.com"
     }
   ],
-  "copyrightHolder": {},
-  "funder": {},
   "maintainer": [
     {
       "@type": "Person",
@@ -100,14 +98,14 @@
       "sameAs": "https://CRAN.R-project.org/package=testthat"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": ">= 3.5.0"
     },
-    {
+    "2": {
       "@type": "SoftwareApplication",
       "identifier": "babynames",
       "name": "babynames",
@@ -119,7 +117,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=babynames"
     },
-    {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
@@ -131,7 +129,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=dplyr"
     },
-    {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "forcats",
       "name": "forcats",
@@ -143,7 +141,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=forcats"
     },
-    {
+    "5": {
       "@type": "SoftwareApplication",
       "identifier": "fueleconomy",
       "name": "fueleconomy",
@@ -155,7 +153,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=fueleconomy"
     },
-    {
+    "6": {
       "@type": "SoftwareApplication",
       "identifier": "gapminder",
       "name": "gapminder",
@@ -167,7 +165,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=gapminder"
     },
-    {
+    "7": {
       "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
@@ -179,7 +177,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=ggplot2"
     },
-    {
+    "8": {
       "@type": "SoftwareApplication",
       "identifier": "Lahman",
       "name": "Lahman",
@@ -191,7 +189,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=Lahman"
     },
-    {
+    "9": {
       "@type": "SoftwareApplication",
       "identifier": "nasaweather",
       "name": "nasaweather",
@@ -203,7 +201,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=nasaweather"
     },
-    {
+    "10": {
       "@type": "SoftwareApplication",
       "identifier": "nycflights13",
       "name": "nycflights13",
@@ -215,7 +213,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=nycflights13"
     },
-    {
+    "11": {
       "@type": "SoftwareApplication",
       "identifier": "palmerpenguins",
       "name": "palmerpenguins",
@@ -227,7 +225,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=palmerpenguins"
     },
-    {
+    "12": {
       "@type": "SoftwareApplication",
       "identifier": "rlang",
       "name": "rlang",
@@ -239,7 +237,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rlang"
     },
-    {
+    "13": {
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
@@ -251,7 +249,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
-    {
+    "14": {
       "@type": "SoftwareApplication",
       "identifier": "tidyr",
       "name": "tidyr",
@@ -263,7 +261,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tidyr"
     },
-    {
+    "15": {
       "@type": "SoftwareApplication",
       "identifier": "yaml",
       "name": "yaml",
@@ -274,11 +272,12 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=yaml"
-    }
-  ],
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "268.35KB",
   "releaseNotes": "https://github.com/cienciadedatos/datos/blob/master/NEWS.md",
-  "readme": "https://github.com/cienciadedatos/datos/blob/master/README.md",
-  "fileSize": "268.392KB",
+  "readme": "https://github.com/cienciadedatos/datos/blob/main/README.md",
   "contIntegration": ["https://github.com/cienciadedatos/datos/actions", "https://codecov.io/github/cienciadedatos/datos?branch=master"],
   "relatedLink": "https://CRAN.R-project.org/package=datos"
 }
