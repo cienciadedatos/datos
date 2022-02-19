@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.3.0.9000
+Version: 0.4.0
 Authors@R: 
     c(person(given = "Riva",
              family = "Quiroga",
@@ -32,7 +32,7 @@ Description: Provee una versión traducida de los siguientes
     conjuntos de datos: 'airlines', 'airports', 'AwardsManagers',
     'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy',
     'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers',
-    'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 'planes',
+    'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes',
     'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b',
     'table5', 'vehicles', 'weather', 'who'.  English: It provides a
     Spanish translated version of the datasets listed above.
@@ -63,4 +63,4 @@ ByteCompile: true
 Encoding: UTF-8
 Language: es
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

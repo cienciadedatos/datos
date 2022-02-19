@@ -1,7 +1,10 @@
-# datos (development version)
+# datos 0.4.0
+
+## Major changes
 
 * New dataset: translation of `palmerpenguins::penguins`
 * Fix variable name: `oms$nuevos_fpp_h3534` -> `oms$nuevos_fpp_h3544`
+* Fix variable name: `flores$Especies` -> `flores$Especie`
 
 # datos 0.3.0
 
@@ -9,25 +12,25 @@
 
 Changes to column names:
 
-* Unify mpg and mtcars: `datos::mtautos$motor` is now named `datos::mtautos$cilindrada` (@rivaquiroga).
+* Unify mpg and mtcars: `datos::mtautos$motor` is now named `datos::mtautos$cilindrada` .
 
 Compatibility:
 
-* Import required packages (pachamaltese).
+* Import required packages.
 
 ## Minor changes
 
 Changes to dataset values:
 
-* Translate values in variables of `datos::aviones` (@rivaquiroga).
-* Update `datos::encuesta` (@rivaquiroga).
-* Fix yaml issues in `dirigentes` and `premios_dirigentes` (@rivaquiroga).
-* Fix factor levels in `encuesta::partido` (@rivaquiroga).
+* Translate values in variables of `datos::aviones`.
+* Update `datos::encuesta`.
+* Fix yaml issues in `dirigentes` and `premios_dirigentes`.
+* Fix factor levels in `encuesta::partido.
 
 Changes to metadata:
 
-* Latin letters with acute now use unicode (@maurolepore, #114).
-* Fix non-ASCII characters, some typos, and style (@rivaquiroga).
+* Latin letters with acute now use unicode.
+* Fix non-ASCII characters, some typos, and style.
 
 # datos 0.2.0
 

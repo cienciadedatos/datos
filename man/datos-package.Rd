@@ -8,14 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Provee una versión traducida de los siguientes
-    conjuntos de datos: 'airlines', 'airports', 'AwardsManagers',
-    'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy',
-    'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers',
-    'mpg', 'mtcars', 'atmos', 'People, 'Pitching', 'planes',
-    'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b',
-    'table5', 'vehicles', 'weather', 'who'.  English: It provides a
-    Spanish translated version of the datasets listed above.
+Provee una versión traducida de los siguientes conjuntos de datos: 'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles', 'weather', 'who'. English: It provides a Spanish translated version of the datasets listed above.
 }
 \seealso{
 Useful links:

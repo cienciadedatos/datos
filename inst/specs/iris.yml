@@ -15,7 +15,7 @@ variables:
     trans: Ancho.Petalo
     desc: "Ancho del p\u00E9talo"
   Species:
-    trans: Especies
+    trans: Especie
     desc: "A qu\u00E9 especie de la flor Iris corresponde (setosa, versicolor, virginica)"
 help:
   name: flores
