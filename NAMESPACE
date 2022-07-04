@@ -3,6 +3,7 @@
 import(babynames)
 import(fueleconomy)
 import(gapminder)
+import(modeldata)
 import(nasaweather)
 import(nycflights13)
 import(palmerpenguins)
