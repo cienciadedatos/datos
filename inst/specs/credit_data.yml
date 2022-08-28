@@ -1,0 +1,76 @@
+df:
+  source: modeldata::credit_data
+  name: datos_credito
+variables:
+  Status:
+    trans: Estado
+    desc: "estado del cr\u00E9dito"
+    values:
+      bad: malo
+      good: bueno
+  Seniority:
+    trans: Antiguedad
+    desc: "Antig\u00FCedad laboral"
+  Home:
+    trans: Vivienda
+    desc: tipo de propiedad de la vivienda
+    values:
+      ignore: ignorar
+      other: otra
+      owner: propietario
+      parents: padres
+      priv: privado
+      rent: alquila
+  Time:
+    trans: Plazo
+    desc: "Plazo del cr\u00E9dito en meses"
+  Age:
+    trans: Edad
+    desc: edad del cliente
+  Marital:
+    trans: EstadoCivil
+    desc: estado civil
+    values:
+      divorced: divorciado
+      married: casado
+      separated: separado
+      single: soltero
+      widow: viudo
+  Records:
+    trans: Registros
+    desc: existencia de registros previos
+    values:
+      "no": "no"
+      "yes": "s\u00ed"
+  Job:
+    trans: Trabajo
+    desc: tipo de trabajo
+    values:
+      fixed: fijo
+      freelance: freelance
+      others: otros
+      partime: tiempo parcial
+  Expenses:
+    trans: Gastos
+    desc: cantidad o monto de gastos
+  Income:
+    trans: Ingresos
+    desc: cantidad o monto de ingresos
+  Assets:
+    trans: Activos
+    desc: cantidad o monto de activos
+  Debt:
+    trans: Deuda
+    desc: cantidad o monto de deudas
+  Amount:
+    trans: Cantidad
+    desc: "cantidad solicitada de pr\u00E9stamo"
+  Price:
+    trans: Precio
+    desc: "precio del cr\u00E9dito"
+help:
+  name: datos_credito
+  alias: datos_credito
+  title: "Datos de cr\u00E9dito"
+  description: Datos asociado a creditos de consumo.
+  format: Un data.frame con 14 filas y 4454 columnas

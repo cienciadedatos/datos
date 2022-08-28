@@ -20,4 +20,5 @@ NULL
 #' @import nasaweather
 #' @import nycflights13
 #' @import palmerpenguins
+#' @import modeldata
 NULL

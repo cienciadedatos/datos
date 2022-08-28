@@ -52,6 +52,7 @@ Imports:
     nasaweather,
     nycflights13,
     palmerpenguins,
+    modeldata (>= 1.0.0),
     rlang,
     tibble,
     tidyr,
@@ -63,4 +64,4 @@ ByteCompile: true
 Encoding: UTF-8
 Language: es
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
