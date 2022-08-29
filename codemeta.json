@@ -2,18 +2,18 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "datos",
-  "description": "Provee una versión traducida de los siguientes conjuntos de datos: 'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy', 'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles', 'weather', 'who'. English: It provides a Spanish translated version of the datasets listed above.",
+  "description": "Provee una versión traducida de los siguientes conjuntos de datos: 'airlines', 'airports', 'AwardsManagers', 'babynames', 'Batting', 'credit_data', 'diamonds', 'faithful', 'fueleconomy', 'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers', 'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes', 'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b', 'table5', 'vehicles', 'weather', 'who'. English: It provides a Spanish translated version of the datasets listed above.",
   "name": "datos: Traduce al Español Varios Conjuntos de Datos de Práctica",
   "codeRepository": "https://github.com/cienciadedatos/datos",
   "issueTracker": "https://github.com/cienciadedatos/datos/issues",
   "license": "https://spdx.org/licenses/CC0-1.0",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.1.2 (2021-11-01)",
+  "runtimePlatform": "R version 4.2.1 (2022-06-23)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -60,6 +60,12 @@
       "givenName": "Daniela",
       "familyName": "Vasquez",
       "email": "daniela.vazquez@gmail.com"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Joshua",
+      "familyName": "Kunst",
+      "email": "jbkunst@gmail.com"
     }
   ],
   "maintainer": [
@@ -227,6 +233,19 @@
     },
     "12": {
       "@type": "SoftwareApplication",
+      "identifier": "modeldata",
+      "name": "modeldata",
+      "version": ">= 1.0.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=modeldata"
+    },
+    "13": {
+      "@type": "SoftwareApplication",
       "identifier": "rlang",
       "name": "rlang",
       "provider": {
@@ -237,7 +256,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=rlang"
     },
-    "13": {
+    "14": {
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
@@ -249,7 +268,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
-    "14": {
+    "15": {
       "@type": "SoftwareApplication",
       "identifier": "tidyr",
       "name": "tidyr",
@@ -261,7 +280,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tidyr"
     },
-    "15": {
+    "16": {
       "@type": "SoftwareApplication",
       "identifier": "yaml",
       "name": "yaml",
@@ -275,7 +294,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "268.35KB",
+  "fileSize": "273.674KB",
   "releaseNotes": "https://github.com/cienciadedatos/datos/blob/master/NEWS.md",
   "readme": "https://github.com/cienciadedatos/datos/blob/main/README.md",
   "contIntegration": ["https://github.com/cienciadedatos/datos/actions", "https://codecov.io/github/cienciadedatos/datos?branch=master"],
