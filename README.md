@@ -56,6 +56,7 @@ Las traducciones disponibles dentro de `datos` son las siguientes:
 | personas           | Tabla de personas                                                                                      | Lahman         | People         |
 | lanzadores         | Tabla de estadísticas de lanzadores                                                                    | Lahman         | Pitching       |
 | salarios           | Tabla de salarios                                                                                      | Lahman         | Salaries       |
+| datos_credito      | Datos de crédito                                                                                       | modeldata      | credit_data    |
 | atmosfera          | Datos atmosféricos                                                                                     | nasaweather    | atmos          |
 | aerolineas         | Nombres de aerolíneas                                                                                  | nycflights13   | airlines       |
 | aeropuertos        | Datos de aeropuertos                                                                                   | nycflights13   | airports       |

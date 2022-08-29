@@ -72,5 +72,5 @@ help:
   name: datos_credito
   alias: datos_credito
   title: "Datos de cr\u00E9dito"
-  description: Datos asociado a creditos de consumo.
+  description: "Datos asociados a cr\u00E9ditos de consumo."
   format: Un data.frame con 14 filas y 4454 columnas
