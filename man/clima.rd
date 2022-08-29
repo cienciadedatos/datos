@@ -21,5 +21,5 @@
 \item{fecha_hora}{fecha y hora de registro en formato POSIXct}
 }}
 \usage{clima}
-\description{Datos meteorológicos horarios para LGA, JFK y EWR.}
+\description{Datos meteorológicos por hora para LGA, JFK y EWR.}
 \keyword{datasets}

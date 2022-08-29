@@ -19,5 +19,5 @@
 \item{Cantidad}{cantidad solicitada de préstamo}
 \item{Precio}{precio del crédito}
 }}
-\description{Datos asociado a creditos de consumo.}
+\description{Datos asociados a créditos de consumo.}
 \keyword{datasets}

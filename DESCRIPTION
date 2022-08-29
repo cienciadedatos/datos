@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.4.0
+Version: 0.5.0
 Authors@R: 
     c(person(given = "Riva",
              family = "Quiroga",
@@ -27,10 +27,14 @@ Authors@R:
       person(given = "Daniela",
              family = "Vasquez",
              role = "ctb",
-             email = "daniela.vazquez@gmail.com"))
+             email = "daniela.vazquez@gmail.com"),
+      person(given = "Joshua",
+             family = "Kunst",
+             role = "ctb",
+             email = "jbkunst@gmail.com"))
 Description: Provee una versión traducida de los siguientes
     conjuntos de datos: 'airlines', 'airports', 'AwardsManagers',
-    'babynames', 'Batting', 'diamonds', 'faithful', 'fueleconomy',
+    'babynames', 'Batting', 'credit_data', 'diamonds', 'faithful', 'fueleconomy',
     'Fielding', 'flights', 'gapminder', 'gss_cat', 'iris', 'Managers',
     'mpg', 'mtcars', 'atmos', 'palmerpenguins', 'People, 'Pitching', 'planes',
     'presidential', 'table1', 'table2', 'table3', 'table4a', 'table4b',
@@ -64,4 +68,4 @@ ByteCompile: true
 Encoding: UTF-8
 Language: es
 LazyData: true
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1

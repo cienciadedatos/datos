@@ -1,3 +1,9 @@
+# datos 0.5.0
+
+* New dataset: translation of `modeldata::credit_data`
+* Fix `clima` description
+* Fix R CDM check failures (HTML validation)
+
 # datos 0.4.0
 
 ## Major changes

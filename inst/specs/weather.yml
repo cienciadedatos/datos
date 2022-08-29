@@ -52,6 +52,6 @@ help:
   name: clima
   alias: clima
   title: Datos de clima
-  description: "Datos meteorol\u00f3gicos horarios para LGA, JFK y EWR."
+  description: "Datos meteorol\u00f3gicos por hora para LGA, JFK y EWR."
   usage: clima
   format: Un data.frame con 3,322 líneas y 9 variables
