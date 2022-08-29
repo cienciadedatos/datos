@@ -1,8 +1,8 @@
 ## Test environments
 
-* ubuntu 18.04 (local), r-release
 * debian GCC, r-release
-* macos 11.5.2, r-release
+* x86_64-pc-linux-gnu, r-devel, r-release, r-oldrel-1
+* x86_64-apple-darwin17.0, r-release
 * windows server x86_64, r-devel, r-release
 
 ## R CMD check results
