@@ -1,6 +1,6 @@
 Package: datos
 Title: Traduce al Español Varios Conjuntos de Datos de Práctica
-Version: 0.5.9000
+Version: 0.5.9001
 Authors@R: 
     c(person(given = "Riva",
              family = "Quiroga",
