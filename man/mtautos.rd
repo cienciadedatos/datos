@@ -1,7 +1,7 @@
 \docType{data}
 \name{mtautos}
 \alias{mtautos}
-\title{Pruebas de ruta de autómóviles de Motor Trend}
+\title{Pruebas de ruta de automóviles de Motor Trend}
 \format{Un data.frame con 32 filas y 12 columnas
 \describe{
 \item{millas}{millas por galón de Estados Unidos}

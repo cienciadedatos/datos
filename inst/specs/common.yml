@@ -17,7 +17,7 @@ variables:
 help:
   name: comunes
   alias: comunes
-  title: Modelos comunes de vehículos
+  title: "Modelos comunes de veh\u00edculos"
   description: "Estos modelos tienen al menos 10 a\u00f1os de datos. Este dataset es adecuado para efectuar un join que restringa el n\u00famero de observaciones a un nivel manejable."
   usage: comunes
   format: Un data.frame con 347 filas y 4 columnas

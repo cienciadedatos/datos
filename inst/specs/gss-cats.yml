@@ -62,7 +62,7 @@ variables:
       Strong democrat: "Fuertemente dem\u00f3crata"
   relig:
     trans: religion
-    desc: religión
+    desc: "religi\u00f3n"
     values:
       No answer: Sin respuesta
       Don't know: No sabe
@@ -116,7 +116,7 @@ variables:
       Not applicable: No aplica
   tvhours:
     trans: horas_tv
-    desc: "horas de televisiín que ve al d\u00EDa"
+    desc: "horas de televisi\u00f3n que ve al d\u00EDa"
 help:
   name: encuesta
   alias: encuesta

@@ -1,5 +1,7 @@
 # datos 0.5.9001
 
+* Patch release: fix non-ascii characters issue
+
 # datos 0.5.0
 
 * New dataset: translation of `modeldata::credit_data`
