@@ -16,3 +16,4 @@ pkgdown/
 ^cran-comments\.md$
 ^\.github$
 ^codemeta\.json$
+^CRAN-SUBMISSION$
