@@ -4,17 +4,15 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/datos)](https://cran.r-project.org/package=datos)
 [![R-CMD-check](https://github.com/cienciadedatos/datos/workflows/R-CMD-check/badge.svg)](https://github.com/cienciadedatos/datos/actions)
-[![Coverage
-status](https://codecov.io/gh/cienciadedatos/datos/branch/master/graph/badge.svg)](https://codecov.io/github/cienciadedatos/datos?branch=master)
 
 Este paquete provee la traducción al español de conjuntos de datos en
 inglés originalmente disponibles en otros paquetes de R. Los datos
 traducidos son los que se utilizan en los ejemplos del libro [R para
-Ciencia de Datos](https://es.r4ds.hadley.nz/), la versión en español de
-[R for Data Science](https://r4ds.had.co.nz/) de Hadley Wickham &
-Garrett Grolemund. El paquete `datos` puede utilizarse junto con el
-libro o de manera independiente como fuente de datos de práctica en
-español.
+Ciencia de Datos](https://cienciadedatos.github.io/r4ds/), la versión en
+español de [R for Data Science](https://r4ds.had.co.nz/) de Hadley
+Wickham & Garrett Grolemund. El paquete `datos` puede utilizarse junto
+con el libro o de manera independiente como fuente de datos de práctica
+en español.
 
 ## Instalación
 
@@ -38,17 +36,6 @@ Las traducciones disponibles dentro de `datos` son las siguientes:
 
 | Nombre             | Titulo                                                                                                 | Paquete        | Dataset        |
 |:-------------------|:-------------------------------------------------------------------------------------------------------|:---------------|:---------------|
-| nombres            | Nombres de bebés                                                                                       | babynames      | babynames      |
-| fiel               | Datos del géiser Viejo Fiel (Old Faithful)                                                             | datasets       | faithful       |
-| flores             | Datos sobre la flor Iris de Edgar Anderson                                                             | datasets       | iris           |
-| mtautos            | Pruebas de ruta de autómóviles de Motor Trend                                                          | datasets       | mtcars         |
-| encuesta           | Muestra de variables categóricas de una encuesta social                                                | forcats        | gss_cat        |
-| comunes            | Modelos comunes de vehículos                                                                           | fueleconomy    | common         |
-| vehiculos          | Datos de economía de combustible                                                                       | fueleconomy    | vehicles       |
-| paises             | Datos de Gapminder                                                                                     | gapminder      | gapminder      |
-| diamantes          | Precio de 50.000 diamantes                                                                             | ggplot2        | diamonds       |
-| millas             | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles               | ggplot2        | mpg            |
-| presidencial       | Periodos de 11 presidentes, desde Eisenhower a Obama                                                   | ggplot2        | presidential   |
 | premios_dirigentes | Tabla de premios de los dirigentes                                                                     | Lahman         | AwardsManagers |
 | bateadores         | Tabla de estadísticas de bateo                                                                         | Lahman         | Batting        |
 | jardineros         | Tabla de estadísticas de jardineros                                                                    | Lahman         | Fielding       |
@@ -56,6 +43,17 @@ Las traducciones disponibles dentro de `datos` son las siguientes:
 | personas           | Tabla de personas                                                                                      | Lahman         | People         |
 | lanzadores         | Tabla de estadísticas de lanzadores                                                                    | Lahman         | Pitching       |
 | salarios           | Tabla de salarios                                                                                      | Lahman         | Salaries       |
+| nombres            | Nombres de bebés                                                                                       | babynames      | babynames      |
+| fiel               | Datos del géiser Viejo Fiel (Old Faithful)                                                             | datasets       | faithful       |
+| flores             | Datos sobre la flor Iris de Edgar Anderson                                                             | datasets       | iris           |
+| mtautos            | Pruebas de ruta de automóviles de Motor Trend                                                          | datasets       | mtcars         |
+| encuesta           | Muestra de variables categóricas de una encuesta social                                                | forcats        | gss_cat        |
+| comunes            | Modelos comunes de vehículos                                                                           | fueleconomy    | common         |
+| vehiculos          | Datos de economía de combustible                                                                       | fueleconomy    | vehicles       |
+| paises             | Datos de Gapminder                                                                                     | gapminder      | gapminder      |
+| diamantes          | Precio de 50.000 diamantes                                                                             | ggplot2        | diamonds       |
+| millas             | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles               | ggplot2        | mpg            |
+| presidencial       | Periodos de 11 presidentes, desde Eisenhower a Obama                                                   | ggplot2        | presidential   |
 | datos_credito      | Datos de crédito                                                                                       | modeldata      | credit_data    |
 | atmosfera          | Datos atmosféricos                                                                                     | nasaweather    | atmos          |
 | aerolineas         | Nombres de aerolíneas                                                                                  | nycflights13   | airlines       |

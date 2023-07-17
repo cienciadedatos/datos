@@ -25,10 +25,10 @@ variables:
     desc: tiempo en recorrer 1/4 de milla
   vs:
     trans: forma
-    desc: forma del motor (en V o en línea)
+    desc: "forma del motor (en V o en l\u00ednea)"
   am:
     trans: transmision
-    desc: "tipo de transmisi\u00f3n (0 = automático, 1 = manual)"
+    desc: "tipo de transmisi\u00f3n (0 = autom\u00e1tico, 1 = manual)"
   gear:
     trans: cambios
     desc: "n\u00famero de cambios de la caja de cambios"
@@ -38,7 +38,7 @@ variables:
 help:
   name: mtautos
   alias: mtautos
-  title: "Pruebas de ruta de aut\u00f3móviles de Motor Trend"
-  description: "Los datos fueron extra\u00EDdos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de diseño y rendimiento para 32 autom\u00f3viles (modelos de 1973-1974)."
+  title: "Pruebas de ruta de autom\u00f3viles de Motor Trend"
+  description: "Los datos fueron extra\u00EDdos de la revista Motor Trend de Estados Unidos de 1974, y tiene datos de consumo de combustible y 10 aspectos de dise\u00f1o y rendimiento para 32 autom\u00f3viles (modelos de 1973-1974)."
   usage: mtautos
   format: Un data.frame con 32 filas y 12 columnas

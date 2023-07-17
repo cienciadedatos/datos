@@ -12,7 +12,7 @@
 \item{partido}{partido político con el que se identifica}
 \item{religion}{religión}
 \item{denominacion}{denominación religiosa a la que pertenece}
-\item{horas_tv}{horas de televisiín que ve al día}
+\item{horas_tv}{horas de televisión que ve al día}
 }}
 \usage{encuesta}
 \description{Muestra de variables categóricas de la Encuesta Social General de EE.UU.}

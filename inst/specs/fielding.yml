@@ -7,7 +7,7 @@ variables:
     desc: ID del jugador
   yearID:
     trans: id_anio
-    desc: Año
+    desc: "A\u00f1o"
   stint:
     trans: orden_equipos
     desc: "Orden en que el jugador se movi\u00f3 entre equipos dentro de la misma temporada"

@@ -4,7 +4,7 @@ df:
 variables:
   country:
     trans: pais
-    desc: Nombre del país
+    desc: "Nombre del pa\u00eds"
     values:
       Afghanistan: "Afganist\u00e1n"
       Brazil: Brasil
