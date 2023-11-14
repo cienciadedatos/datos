@@ -20,6 +20,6 @@ variables:
 help:
   name: presidencial
   alias: presidencial
-  title: Periodos de 11 presidentes, desde Eisenhower a Obama
+  title: Periodos de 12 presidentes, desde Eisenhower a Obama
   description: "Nombre, fecha de inicio y t\u00E9rmino de su mandato y partido pol\u00EDtico de 11 presidentes de EE.UU., desde Eisenhower a Obama."
-  format: Un data.frame con 11 filas y 4 columnas
+  format: Un data.frame con 12 filas y 4 columnas
