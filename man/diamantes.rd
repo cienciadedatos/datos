@@ -8,7 +8,7 @@
 \item{quilate}{Peso del diamante (0.2-5.01)}
 \item{corte}{Calidad del corte (Regular, Bueno, Muy bueno, Premium, Ideal)}
 \item{color}{Color del diamante, de J (peor) a D (mejor)}
-\item{claridad}{Medida de que tan claro es el diamante (I1 (peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (mejor))}
+\item{claridad}{Medida de que tan claro es el diamante (I1 (peor), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (mejor))}
 \item{profundidad}{Porcentaje de la profundidad total = z / mean(x, y) = 2 * z / (x + y) (43-79)}
 \item{tabla}{Ancho de la parte superior del diamante con relación a su punto más ancho (43-95)}
 \item{x}{Largo en milimetros}
