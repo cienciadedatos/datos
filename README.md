@@ -53,7 +53,7 @@ Las traducciones disponibles dentro de `datos` son las siguientes:
 | paises             | Datos de Gapminder                                                                                     | gapminder      | gapminder      |
 | diamantes          | Precio de 50.000 diamantes                                                                             | ggplot2        | diamonds       |
 | millas             | Datos de economía de combustible de 1999 y 2008 para 38 modelos populares de automóviles               | ggplot2        | mpg            |
-| presidencial       | Periodos de 12 presidentes, desde Eisenhower a Obama                                                   | ggplot2        | presidential   |
+| presidencial       | Periodos de 12 presidentes, desde Eisenhower a Trump                                                   | ggplot2        | presidential   |
 | datos_credito      | Datos de crédito                                                                                       | modeldata      | credit_data    |
 | atmosfera          | Datos atmosféricos                                                                                     | nasaweather    | atmos          |
 | aerolineas         | Nombres de aerolíneas                                                                                  | nycflights13   | airlines       |
