@@ -1,0 +1,52 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: datos
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Riva
+    family-names: Quiroga
+    orcid: 'https://orcid.org/0000-0002-1147-4135'
+  - given-names: Edgar
+    family-names: Ruiz
+  - given-names: Mauricio
+    family-names: Vargas
+    orcid: 'https://orcid.org/0000-0003-1017-7574'
+  - given-names: Mauro
+    family-names: Lepore
+    orcid: 'https://orcid.org/0000-0002-1986-7988'
+  - given-names: Rayna
+    family-names: Harris
+  - given-names: Daniela
+    family-names: Vázquez
+  - given-names: Joshua
+    family-names: Kunst
+identifiers:
+  - type: doi
+    value: 10.32614/CRAN.package.datos
+    description: CRAN version
+repository-code: 'https://github.com/cienciadedatos/datos'
+url: 'https://cienciadedatos.github.io/datos/'
+repository: 'https://CRAN.R-project.org/package=datos'
+abstract: >-
+  Este paquete provee la traducción al español de conjuntos
+  de datos en inglés originalmente disponibles en otros
+  paquetes de R. Los datos traducidos son los que se
+  utilizan en los ejemplos del libro R para Ciencia de
+  Datos, la versión en español de R for Data Science de
+  Hadley Wickham & Garrett Grolemund. El paquete datos puede
+  utilizarse junto con el libro o de manera independiente
+  como fuente de datos de práctica en español.
+commit: 80192a0
+version: 0.5.1
+date-released: '2023-07-17'
+references:
+  - authors:
+      - family-names: "Ruiz"
+        given-names: "Edgard"
+    title: "datalang: a package to translate R data sets"
+    type: software
